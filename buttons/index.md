@@ -1,54 +1,75 @@
 # 2D Pixel Art Buttons (9-Slice / Border-Image)
 
 Generated on: 2026-04-18  
-Style: Retro pixel art, 9-slice border-image style, RPG game HUD  
 Resolution: 512×256 (가로형 버튼)  
 Workflow: z-image-turbo (ComfyUI)
 
 ---
 
-## 버튼 목록
+## 기존 5 테마 — Normal / Pressed / Disabled 3상태
 
 ### 🌿 식물 / 덩굴 (Plant & Vine)
-![Plant Button](https://genai.home.codepoet.site/outputs/2026/04/18/82a7d504-c3dc-45f7-8e09-001cd0254e10.png)
-- **URL:** https://genai.home.codepoet.site/outputs/2026/04/18/82a7d504-c3dc-45f7-8e09-001cd0254e10.png
-- **짝꿍 패널:** [🌿 식물 패널](../ui-panels/index.md#-식물--덩굴-plant--vine)
-- **어울리는 용도:** 자연/숲 테마 확인 버튼, 퀘스트 수락 버튼
+| 상태 | 링크 |
+|------|------|
+| Normal | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/82a7d504-c3dc-45f7-8e09-001cd0254e10.png) |
+| Pressed | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/ac7b5f98-e1f2-4b39-9a31-352b9dbfc2c1.png) |
+| Disabled | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/c86a118c-8fc5-4df7-bace-c4cb47bf613b.png) |
 
 ### 🌸 꽃 / 벚꽃 (Flower & Blossom)
-![Flower Button](https://genai.home.codepoet.site/outputs/2026/04/18/9b0e5cf4-c1b7-4066-a4e0-dc957cc4a8f3.png)
-- **URL:** https://genai.home.codepoet.site/outputs/2026/04/18/9b0e5cf4-c1b7-4066-a4e0-dc957cc4a8f3.png
-- **짝꿍 패널:** [🌸 꽃 패널](../ui-panels/index.md#-꽃--벚꽃-flower--blossom)
-- **어울리는 용도:** 봄/낭만 테마 대화 버튼, 선택지 버튼
+| 상태 | 링크 |
+|------|------|
+| Normal | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/9b0e5cf4-c1b7-4066-a4e0-dc957cc4a8f3.png) |
+| Pressed | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/fc91d878-5b03-4a93-a9d6-a3ffddf85910.png) |
+| Disabled | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/8acca1cf-2cac-41b5-b6af-5658143d07db.png) |
 
 ### 🪵 나무 / 목재 (Wood & Tree)
-![Wood Button](https://genai.home.codepoet.site/outputs/2026/04/18/6b0a2b47-498b-4009-81eb-f66819170f74.png)
-- **URL:** https://genai.home.codepoet.site/outputs/2026/04/18/6b0a2b47-498b-4009-81eb-f66819170f74.png
-- **짝꿍 패널:** [🪵 나무 패널](../ui-panels/index.md#-나무--목재-wood--tree)
-- **어울리는 용도:** 마을/상점 테마 구매 버튼, 인벤토리 버튼
+| 상태 | 링크 |
+|------|------|
+| Normal | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/6b0a2b47-498b-4009-81eb-f66819170f74.png) |
+| Pressed | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/14b18e68-881f-4e66-af07-17c0a4e48cf0.png) |
+| Disabled | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/696e70be-8448-44fe-aefa-51f379f1c155.png) |
 
 ### 🪨 돌 / 석재 (Stone & Rock)
-![Stone Button](https://genai.home.codepoet.site/outputs/2026/04/18/71ca124b-5531-4916-b93e-04d549fcbc62.png)
-- **URL:** https://genai.home.codepoet.site/outputs/2026/04/18/71ca124b-5531-4916-b93e-04d549fcbc62.png
-- **짝꿍 패널:** [🪨 돌 패널](../ui-panels/index.md#-돌--석재-stone--rock)
-- **어울리는 용도:** 던전/성 테마 스킬 버튼, 전투 액션 버튼
+| 상태 | 링크 |
+|------|------|
+| Normal | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/71ca124b-5531-4916-b93e-04d549fcbc62.png) |
+| Pressed | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/09b9895c-426a-4360-a472-42182bf608d1.png) |
+| Disabled | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/f19c8a52-eecc-4f6b-a4ea-0c20ec917129.png) |
 
 ### 🏜️ 모래 / 사막 (Sand & Desert)
-![Sand Button](https://genai.home.codepoet.site/outputs/2026/04/18/593bc05e-8e94-4709-8677-2de20f224c50.png)
-- **URL:** https://genai.home.codepoet.site/outputs/2026/04/18/593bc05e-8e94-4709-8677-2de20f224c50.png
-- **짝꿍 패널:** [🏜️ 모래 패널](../ui-panels/index.md#️-모래--사막-sand--desert)
-- **어울리는 용도:** 사막/탐험 테마 이동 버튼, 지도 버튼
+| 상태 | 링크 |
+|------|------|
+| Normal | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/593bc05e-8e94-4709-8677-2de20f224c50.png) |
+| Pressed | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/e2c6e55d-edf5-4ddf-adf5-398d5b7a5ecc.png) |
+| Disabled | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/c1a6e83e-eb61-4f08-afe4-e4b9b4fae2da.png) |
 
 ---
 
-## 전체 목록 요약
+## 신규 5 테마 — Normal
 
-| 테마 | 해상도 | 링크 |
-|------|--------|------|
-| 🌿 식물 / 덩굴 | 512×256 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/82a7d504-c3dc-45f7-8e09-001cd0254e10.png) |
-| 🌸 꽃 / 벚꽃 | 512×256 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/9b0e5cf4-c1b7-4066-a4e0-dc957cc4a8f3.png) |
-| 🪵 나무 / 목재 | 512×256 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/6b0a2b47-498b-4009-81eb-f66819170f74.png) |
-| 🪨 돌 / 석재 | 512×256 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/71ca124b-5531-4916-b93e-04d549fcbc62.png) |
-| 🏜️ 모래 / 사막 | 512×256 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/593bc05e-8e94-4709-8677-2de20f224c50.png) |
+### ❄️ 얼음 (Ice & Snow)
+| 상태 | 링크 |
+|------|------|
+| Normal | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/0bf90747-79af-45ae-8086-dc74fa97a3ad.png) |
+
+### 🔥 화염 (Fire & Flame)
+| 상태 | 링크 |
+|------|------|
+| Normal | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/9d5cd7af-eda1-4f96-8a05-d2788c816d9d.png) |
+
+### ⚡ 마법 (Magic & Arcane)
+| 상태 | 링크 |
+|------|------|
+| Normal | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/97fb7c24-9a67-4691-b3ed-9a33dab5fbc6.png) |
+
+### 🌊 바다 (Ocean & Sea)
+| 상태 | 링크 |
+|------|------|
+| Normal | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/962245d3-31c9-46d9-9bf5-20fb87c23d67.png) |
+
+### 👑 왕실 (Royal & Gold)
+| 상태 | 링크 |
+|------|------|
+| Normal | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/07ddda64-7517-4c59-bd93-9cbbd3dd9756.png) |
 
 ← [목차로 돌아가기](../README.md)
