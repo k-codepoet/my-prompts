@@ -26,10 +26,10 @@ Workflow: z-image-turbo (ComfyUI)
 
 ---
 
-| 종류 | 색상 | 링크 |
-|------|------|------|
-| ❤️ HP | Red | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/e7e32374-fc3d-48d5-b8fd-19dd960a02c0.png) |
-| 💙 MP | Blue | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/79f8c1b0-284b-4148-9e7f-ebdf84926273.png) |
-| 💛 EXP | Yellow | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/440774db-dcd6-4905-acd3-143bb5793b25.png) |
+| 종류 | 색상 | 미리보기 |
+|------|------|---------|
+| ❤️ HP | Red | ![](https://genai.home.codepoet.site/outputs/2026/04/18/e7e32374-fc3d-48d5-b8fd-19dd960a02c0.png) |
+| 💙 MP | Blue | ![](https://genai.home.codepoet.site/outputs/2026/04/18/79f8c1b0-284b-4148-9e7f-ebdf84926273.png) |
+| 💛 EXP | Yellow | ![](https://genai.home.codepoet.site/outputs/2026/04/18/440774db-dcd6-4905-acd3-143bb5793b25.png) |
 
 ← [목차로 돌아가기](../README.md)

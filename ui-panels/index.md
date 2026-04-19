@@ -7,13 +7,13 @@ Resolution: 512×512 | Workflow: z-image-turbo (ComfyUI)
 
 ## 자연 테마 5종
 
-| 테마 | 링크 |
-|------|------|
-| 🌿 식물 / 덩굴 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/43117e0c-8ebb-46ee-8e0f-b0a7434292c3.png) |
-| 🌸 꽃 / 벚꽃 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/b1673f37-1501-4c0e-9fdb-7b11ed71e67b.png) |
-| 🪵 나무 / 목재 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/3a31a245-9490-4eb9-ba05-59d450aa363e.png) |
-| 🪨 돌 / 석재 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/229c94a9-61ae-404b-8bd0-ece3fe03fa27.png) |
-| 🏜️ 모래 / 사막 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/0852a63f-fa69-4b15-a751-6d8d22574623.png) |
+| 테마 | 미리보기 |
+|------|---------|
+| 🌿 식물 / 덩굴 | ![](https://genai.home.codepoet.site/outputs/2026/04/18/43117e0c-8ebb-46ee-8e0f-b0a7434292c3.png) |
+| 🌸 꽃 / 벚꽃 | ![](https://genai.home.codepoet.site/outputs/2026/04/18/b1673f37-1501-4c0e-9fdb-7b11ed71e67b.png) |
+| 🪵 나무 / 목재 | ![](https://genai.home.codepoet.site/outputs/2026/04/18/3a31a245-9490-4eb9-ba05-59d450aa363e.png) |
+| 🪨 돌 / 석재 | ![](https://genai.home.codepoet.site/outputs/2026/04/18/229c94a9-61ae-404b-8bd0-ece3fe03fa27.png) |
+| 🏜️ 모래 / 사막 | ![](https://genai.home.codepoet.site/outputs/2026/04/18/0852a63f-fa69-4b15-a751-6d8d22574623.png) |
 
 ---
 

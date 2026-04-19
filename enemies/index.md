@@ -28,11 +28,11 @@ Resolution: 512×512 | Workflow: z-image-turbo
 
 ---
 
-| 캐릭터 | 링크 |
-|--------|------|
-| 🟢 슬라임 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/ca245121-53fb-4308-8a6a-f874b420bf02.png) |
-| 👺 고블린 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/64da413c-f0e7-47ff-ae26-5a9c94280a0e.png) |
-| 💀 스켈레톤 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/442e278b-19ce-445b-baaa-885125011a9f.png) |
-| 🐉 드래곤 보스 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/f7bd096c-c417-4245-ad5e-75221f5b185f.png) |
+| 캐릭터 | 미리보기 |
+|--------|---------|
+| 🟢 슬라임 | ![](https://genai.home.codepoet.site/outputs/2026/04/18/ca245121-53fb-4308-8a6a-f874b420bf02.png) |
+| 👺 고블린 | ![](https://genai.home.codepoet.site/outputs/2026/04/18/64da413c-f0e7-47ff-ae26-5a9c94280a0e.png) |
+| 💀 스켈레톤 | ![](https://genai.home.codepoet.site/outputs/2026/04/18/442e278b-19ce-445b-baaa-885125011a9f.png) |
+| 🐉 드래곤 보스 | ![](https://genai.home.codepoet.site/outputs/2026/04/18/f7bd096c-c417-4245-ad5e-75221f5b185f.png) |
 
 ← [목차로 돌아가기](../README.md)

@@ -21,9 +21,9 @@ Workflow: z-image-turbo (ComfyUI)
 
 ---
 
-| 종류 | 해상도 | 링크 |
-|------|--------|------|
-| 인벤토리 패널 | 512×512 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/204d0edd-3f6c-4f00-a9b3-681a2a9a3867.png) |
-| 아이템 슬롯 | 128×128 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/e478068b-3ab5-4539-aa65-b9a131334cb1.png) |
+| 종류 | 해상도 | 미리보기 |
+|------|--------|---------|
+| 인벤토리 패널 | 512×512 | ![](https://genai.home.codepoet.site/outputs/2026/04/18/204d0edd-3f6c-4f00-a9b3-681a2a9a3867.png) |
+| 아이템 슬롯 | 128×128 | ![](https://genai.home.codepoet.site/outputs/2026/04/18/e478068b-3ab5-4539-aa65-b9a131334cb1.png) |
 
 ← [목차로 돌아가기](../README.md)

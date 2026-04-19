@@ -28,11 +28,11 @@ Resolution: 512×512 | Workflow: z-image-turbo
 
 ---
 
-| 종류 | 링크 |
-|------|------|
-| ⚔️ 무기 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/690b46b7-71f7-4b83-b39c-2816aadbf34a.png) |
-| 🧪 포션/소모품 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/631ed397-794b-480d-b273-95407058e014.png) |
-| 🛡️ 방어구/장비 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/85f8d1ed-15e6-497f-a7b6-36a62827fa96.png) |
-| 🗝️ 퀘스트 아이템 | [보기](https://genai.home.codepoet.site/outputs/2026/04/18/e523f718-c2fe-471d-b842-39775804f339.png) |
+| 종류 | 미리보기 |
+|------|---------|
+| ⚔️ 무기 | ![](https://genai.home.codepoet.site/outputs/2026/04/18/690b46b7-71f7-4b83-b39c-2816aadbf34a.png) |
+| 🧪 포션/소모품 | ![](https://genai.home.codepoet.site/outputs/2026/04/18/631ed397-794b-480d-b273-95407058e014.png) |
+| 🛡️ 방어구/장비 | ![](https://genai.home.codepoet.site/outputs/2026/04/18/85f8d1ed-15e6-497f-a7b6-36a62827fa96.png) |
+| 🗝️ 퀘스트 아이템 | ![](https://genai.home.codepoet.site/outputs/2026/04/18/e523f718-c2fe-471d-b842-39775804f339.png) |
 
 ← [목차로 돌아가기](../README.md)
