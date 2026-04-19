@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "my-genai": {
+      "type": "http",
+      "url": "https://genai.home.codepoet.site/mcp"
+    }
+  }
+}
