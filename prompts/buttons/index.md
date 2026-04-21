@@ -1,8 +1,8 @@
 # 2D Pixel Art Buttons (9-Slice / Border-Image)
 
-Generated on: 2026-04-18  
+Reference output generated on: 2026-04-18  
 Resolution: 512×256 (가로형 버튼)  
-Workflow: z-image-turbo (ComfyUI)
+Reference workflow: z-image-turbo (ComfyUI)
 
 ---
 

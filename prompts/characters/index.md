@@ -1,9 +1,9 @@
 # 2D Pixel Art Characters
 
-Generated on: 2026-04-18  
+Reference output generated on: 2026-04-18  
 Style: Retro 16-bit pixel art, game sprite style, nostalgic arcade aesthetic  
 Resolution: 512x512  
-Workflow: z-image-turbo (ComfyUI)
+Reference workflow: z-image-turbo (ComfyUI)
 
 ---
 

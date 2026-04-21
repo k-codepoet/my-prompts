@@ -1,7 +1,7 @@
 # 인벤토리 (Inventory)
 
-Generated on: 2026-04-18  
-Workflow: z-image-turbo (ComfyUI)
+Reference output generated on: 2026-04-18  
+Reference workflow: z-image-turbo (ComfyUI)
 
 ---
 

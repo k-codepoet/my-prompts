@@ -31,11 +31,11 @@ This batch creates representative cover assets per folder, not the full 100+ ima
 
 The prompts were shaped from the existing guides in:
 
-- `prompts/character-guide.md`
-- `prompts/ui-panel-guide.md`
-- `prompts/button-guide.md`
-- `prompts/hud-elements-guide.md`
-- `prompts/game-views-guide.md`
+- `prompts/guides/character-guide.md`
+- `prompts/guides/ui-panel-guide.md`
+- `prompts/guides/button-guide.md`
+- `prompts/guides/hud-elements-guide.md`
+- `prompts/guides/game-views-guide.md`
 
 Each generated asset was constrained to:
 

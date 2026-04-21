@@ -1,7 +1,7 @@
 # 2D Pixel Art UI Panels (9-Slice / Border-Image)
 
-Generated on: 2026-04-18  
-Resolution: 512×512 | Workflow: z-image-turbo (ComfyUI)
+Reference output generated on: 2026-04-18  
+Resolution: 512×512 | Reference workflow: z-image-turbo (ComfyUI)
 
 ---
 

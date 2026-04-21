@@ -1,8 +1,8 @@
 # 아이템 아이콘 시트 (Item Icon Sheets)
 
-Generated on: 2026-04-18  
+Reference output generated on: 2026-04-18  
 Style: Classic RPG 16-bit pixel art icon grid  
-Resolution: 512×512 | Workflow: z-image-turbo
+Resolution: 512×512 | Reference workflow: z-image-turbo
 
 ---
 

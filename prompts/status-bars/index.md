@@ -1,8 +1,8 @@
 # 상태 바 (Status Bars)
 
-Generated on: 2026-04-18  
+Reference output generated on: 2026-04-18  
 Resolution: 512×128 (가로형 바)  
-Workflow: z-image-turbo (ComfyUI)
+Reference workflow: z-image-turbo (ComfyUI)
 
 ---
 

@@ -7,6 +7,7 @@
 - [`prompts/`](./prompts/README.md): 공용 프롬프트 소스
 - 같은 프롬프트를 여러 모델에 반복 적용하는 기준점
 - 추후 벤치마크나 회귀 비교 시 변경 없이 재사용
+- 모델별 튜닝 프롬프트를 여기서 따로 분기하지 않음
 
 ## Outputs
 
@@ -14,6 +15,7 @@
 - 현재 정리된 모델:
   - [`outputs/gpt-image-1.5/`](./outputs/gpt-image-1.5/README.md)
   - [`outputs/comfyui-z-image-turbo/`](./outputs/comfyui-z-image-turbo/README.md)
+- 새 모델 추가 시 동일한 `prompts/`를 입력으로 사용하고 `outputs/<model>/`만 추가
 
 ## Structure
 

@@ -1,8 +1,8 @@
 # 랭킹 / 리더보드 (Leaderboard)
 
-Generated on: 2026-04-18  
+Reference output generated on: 2026-04-18  
 Resolution: 512×512  
-Workflow: z-image-turbo (ComfyUI)
+Reference workflow: z-image-turbo (ComfyUI)
 
 ---
 

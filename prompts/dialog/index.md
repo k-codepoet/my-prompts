@@ -1,8 +1,8 @@
 # 대화창 (Dialogue Box)
 
-Generated on: 2026-04-18  
+Reference output generated on: 2026-04-18  
 Resolution: 512×256  
-Workflow: z-image-turbo (ComfyUI)
+Reference workflow: z-image-turbo (ComfyUI)
 
 ---
 

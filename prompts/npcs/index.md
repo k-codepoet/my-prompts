@@ -1,8 +1,8 @@
 # NPC 캐릭터 스프라이트 (NPC Sprites)
 
-Generated on: 2026-04-18  
+Reference output generated on: 2026-04-18  
 Style: Classic JRPG 16-bit pixel art  
-Resolution: 512×512 | Workflow: z-image-turbo
+Resolution: 512×512 | Reference workflow: z-image-turbo
 
 ---
 
