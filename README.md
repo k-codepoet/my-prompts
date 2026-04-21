@@ -1,20 +1,26 @@
-# Model Prompt Library
+# Prompt Library
 
-모델별 프롬프트와 생성 결과를 분리해서 관리하는 루트 인덱스입니다.
+프롬프트는 한 곳에서 관리하고, 모델별 결과물은 별도로 저장하는 구조입니다.
 
-## Models
+## Source of Truth
 
-| Model | Path | Status | Notes |
-|---|---|---|---|
-| ComfyUI z-image-turbo | [`comfyui-z-image-turbo/`](./comfyui-z-image-turbo/README.md) | 기존 라이브러리 정리 완료 | 원본 프롬프트 구조와 문서 세트 |
-| GPT Image 1.5 | [`gpt-image-1.5/`](./gpt-image-1.5/README.md) | 대표 이미지 1차 정리 완료 | 폴더별 대표 이미지 생성본과 매니페스트 |
+- [`prompts/`](./prompts/README.md): 공용 프롬프트 소스
+- 같은 프롬프트를 여러 모델에 반복 적용하는 기준점
+- 추후 벤치마크나 회귀 비교 시 변경 없이 재사용
+
+## Outputs
+
+- [`outputs/`](./outputs/README.md): 모델별 생성 결과물 저장소
+- 현재 정리된 모델:
+  - [`outputs/gpt-image-1.5/`](./outputs/gpt-image-1.5/README.md)
+  - [`outputs/comfyui-z-image-turbo/`](./outputs/comfyui-z-image-turbo/README.md)
 
 ## Structure
 
 ```text
 my-prompts/
 ├── README.md
-├── comfyui-z-image-turbo/
+├── prompts/
 │   ├── README.md
 │   ├── game-views/
 │   ├── characters/
@@ -28,27 +34,15 @@ my-prompts/
 │   ├── leaderboard/
 │   ├── settings/
 │   ├── items/
-│   └── prompts/
-└── gpt-image-1.5/
+│   └── guides/
+└── outputs/
     ├── README.md
-    ├── manifest.md
-    ├── game-views/
-    ├── characters/
-    ├── enemies/
-    ├── npcs/
-    ├── ui-panels/
-    ├── buttons/
-    ├── status-bars/
-    ├── inventory/
-    ├── dialog/
-    ├── leaderboard/
-    ├── settings/
-    ├── items/
-    └── prompts/
+    ├── comfyui-z-image-turbo/
+    └── gpt-image-1.5/
 ```
 
-## Conventions
+## Rules
 
-- 모델별 자산과 문서는 모델 폴더 아래에서만 관리
-- 공통 카테고리명은 최대한 동일하게 유지
-- 각 모델 폴더에는 자체 `README.md` 또는 `manifest.md`를 둬서 상태 추적
+- 프롬프트는 모델별로 복제하지 않음
+- 결과물만 모델별 폴더에 저장
+- 새 모델 테스트 시 `prompts/`는 그대로 두고 `outputs/<model>/`만 추가
