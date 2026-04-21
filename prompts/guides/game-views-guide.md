@@ -68,7 +68,7 @@ warm earthy green brown tones,
 clean tile edges, multiple tile variants,
 512x512
 ```
-결과: https://genai.home.codepoet.site/outputs/2026/04/18/f4338823-ab59-42b1-a551-70acbb46e2ad.png
+결과: ../../outputs/comfyui-z-image-turbo/reference-images/f4338823-ab59-42b1-a551-70acbb46e2ad.png
 
 ---
 
@@ -97,7 +97,7 @@ idle run jump attack animation frames,
 warm earthy tones cool shadow blue contrast,
 512x512
 ```
-결과: https://genai.home.codepoet.site/outputs/2026/04/18/6bb91556-5bd8-4d48-a1e7-96c24d93aff7.png
+결과: ../../outputs/comfyui-z-image-turbo/reference-images/6bb91556-5bd8-4d48-a1e7-96c24d93aff7.png
 
 ---
 
@@ -126,7 +126,7 @@ rich earthy jewel tones deep green gray gold,
 neat sprite collection sheet,
 512x512
 ```
-결과: https://genai.home.codepoet.site/outputs/2026/04/18/c27de129-2f8b-4f8a-a559-1450ebb37745.png
+결과: ../../outputs/comfyui-z-image-turbo/reference-images/c27de129-2f8b-4f8a-a559-1450ebb37745.png
 
 ---
 
@@ -159,7 +159,7 @@ warm earthy tones,
 detailed 16-bit pixel shading, game dialogue portrait illustration,
 512x512
 ```
-결과: https://genai.home.codepoet.site/outputs/2026/04/18/63126a30-5556-4eb9-a94f-cd6424674702.png
+결과: ../../outputs/comfyui-z-image-turbo/reference-images/63126a30-5556-4eb9-a94f-cd6424674702.png
 
 ---
 
@@ -188,7 +188,7 @@ warm foreground cool distant background depth,
 multiple depth layers visible,
 512x512
 ```
-결과: https://genai.home.codepoet.site/outputs/2026/04/18/3a4f27f0-4abb-40d5-a57d-d8d0a4f7269a.png
+결과: ../../outputs/comfyui-z-image-turbo/reference-images/3a4f27f0-4abb-40d5-a57d-d8d0a4f7269a.png
 
 ---
 
@@ -222,3 +222,14 @@ multiple depth layers visible,
 ---
 
 ← [목차로 돌아가기](../README.md)
+---
+
+## Metadata Prompts
+
+| Image | Positive prompt | Seed | Model |
+|---|---|---|---|
+| `f4338823-ab59-42b1-a551-70acbb46e2ad.png` | top-down 2D pixel art game tileset, classic JRPG overhead style, grass and dirt path terrain tiles, seamlessly tileable square tile, warm green brown earthy tones, 16-bit retro pixel art, overhead top-down flat view, clean tile edges, multiple tile variants, 512x512 | `3969491981` | `z_image_turbo_bf16.safetensors` |
+| `6bb91556-5bd8-4d48-a1e7-96c24d93aff7.png` | side-view 2D pixel art character sprite sheet, classic action platformer style, young adventurer green tunic brown boots sword, side-facing poses idle run jump attack, warm earthy tones cool shadow contrast, 16-bit retro pixel art, clear side profile silhouette, animation frames, 512x512 | `330578880` | `z_image_turbo_bf16.safetensors` |
+| `c27de129-2f8b-4f8a-a559-1450ebb37745.png` | isometric 2D pixel art game props objects sheet, classic isometric RPG style, trees rocks treasure chests barrels well fence stone wall isometric view, rich earthy jewel tones, 16-bit retro pixel art, isometric 45 degree perspective, neat sprite collection, 512x512 | `3814652203` | `z_image_turbo_bf16.safetensors` |
+| `63126a30-5556-4eb9-a94f-cd6424674702.png` | 2D pixel art character dialogue portrait, classic JRPG style, young adventurer hero bust portrait, green tunic short brown hair expressive warm face, warm earthy tones, detailed 16-bit pixel shading, game dialogue box portrait illustration, friendly expression, 512x512 | `2620296115` | `z_image_turbo_bf16.safetensors` |
+| `3a4f27f0-4abb-40d5-a57d-d8d0a4f7269a.png` | side-view 2D pixel art game background, classic action platformer style, layered parallax forest scene with tall trees mountains clouds from side view, warm foreground cool distant background depth, 16-bit retro pixel art, multiple depth layers visible, 512x512 | `2839410542` | `z_image_turbo_bf16.safetensors` |
