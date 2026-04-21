@@ -68,7 +68,7 @@ warm earthy green brown tones,
 clean tile edges, multiple tile variants,
 512x512
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/f4338823-ab59-42b1-a551-70acbb46e2ad.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/f4338823-ab59-42b1-a551-70acbb46e2ad.png
 
 ---
 
@@ -97,7 +97,7 @@ idle run jump attack animation frames,
 warm earthy tones cool shadow blue contrast,
 512x512
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/6bb91556-5bd8-4d48-a1e7-96c24d93aff7.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/6bb91556-5bd8-4d48-a1e7-96c24d93aff7.png
 
 ---
 
@@ -126,7 +126,7 @@ rich earthy jewel tones deep green gray gold,
 neat sprite collection sheet,
 512x512
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/c27de129-2f8b-4f8a-a559-1450ebb37745.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/c27de129-2f8b-4f8a-a559-1450ebb37745.png
 
 ---
 
@@ -159,7 +159,7 @@ warm earthy tones,
 detailed 16-bit pixel shading, game dialogue portrait illustration,
 512x512
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/63126a30-5556-4eb9-a94f-cd6424674702.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/63126a30-5556-4eb9-a94f-cd6424674702.png
 
 ---
 
@@ -188,7 +188,7 @@ warm foreground cool distant background depth,
 multiple depth layers visible,
 512x512
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/3a4f27f0-4abb-40d5-a57d-d8d0a4f7269a.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/3a4f27f0-4abb-40d5-a57d-d8d0a4f7269a.png
 
 ---
 

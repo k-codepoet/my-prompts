@@ -13,11 +13,11 @@ Prompt template: `top-down 2D pixel art, classic JRPG overhead style, 16-bit ret
 
 | 에셋 | 미리보기 |
 |------|---------|
-| 🟩 타일 | ![](../../../outputs/comfyui-z-image-turbo/reference-images/f4338823-ab59-42b1-a551-70acbb46e2ad.png) |
-| 🚶 캐릭터 | ![](../../../outputs/comfyui-z-image-turbo/reference-images/a4a44159-3db6-40c0-9688-b684925825a0.png) |
-| 🌳 오브젝트 | ![](../../../outputs/comfyui-z-image-turbo/reference-images/c416a92b-4dcc-403d-b0eb-3ffa144e574c.png) |
-| 🖼️ 대화창 초상화 | ![](../../../outputs/comfyui-z-image-turbo/reference-images/63126a30-5556-4eb9-a94f-cd6424674702.png) |
-| 🌄 배경 | ![](../../../outputs/comfyui-z-image-turbo/reference-images/31094d9f-07af-43dd-9148-50a924edabe9.png) |
+| 🟩 타일 | ![](../../../outputs/comfyui-z-image-turbo/game-views/top-down/f4338823-ab59-42b1-a551-70acbb46e2ad.png) |
+| 🚶 캐릭터 | ![](../../../outputs/comfyui-z-image-turbo/game-views/top-down/a4a44159-3db6-40c0-9688-b684925825a0.png) |
+| 🌳 오브젝트 | ![](../../../outputs/comfyui-z-image-turbo/game-views/top-down/c416a92b-4dcc-403d-b0eb-3ffa144e574c.png) |
+| 🖼️ 대화창 초상화 | ![](../../../outputs/comfyui-z-image-turbo/game-views/top-down/63126a30-5556-4eb9-a94f-cd6424674702.png) |
+| 🌄 배경 | ![](../../../outputs/comfyui-z-image-turbo/game-views/top-down/31094d9f-07af-43dd-9148-50a924edabe9.png) |
 
 Prompts:
 
@@ -34,11 +34,11 @@ Prompts:
 
 | 에셋 | 미리보기 |
 |------|---------|
-| 🟩 타일 | ![](../../../outputs/comfyui-z-image-turbo/reference-images/582331b0-b943-4c7a-a86c-97c3f629a89d.png) |
-| 🚶 캐릭터 | ![](../../../outputs/comfyui-z-image-turbo/reference-images/577e0d18-41e7-434d-9a13-3552b70afd70.png) |
-| 🕯️ 오브젝트 | ![](../../../outputs/comfyui-z-image-turbo/reference-images/62e8f899-976a-465c-97b2-5aa9b24caa08.png) |
-| 🖼️ 대화창 초상화 | ![](../../../outputs/comfyui-z-image-turbo/reference-images/f1ae7ffb-1609-4bc3-8309-60db70b06691.png) |
-| 🌄 배경 | ![](../../../outputs/comfyui-z-image-turbo/reference-images/224c2501-135b-4a5e-94b2-f70b5af55ca4.png) |
+| 🟩 타일 | ![](../../../outputs/comfyui-z-image-turbo/game-views/top-down/582331b0-b943-4c7a-a86c-97c3f629a89d.png) |
+| 🚶 캐릭터 | ![](../../../outputs/comfyui-z-image-turbo/game-views/top-down/577e0d18-41e7-434d-9a13-3552b70afd70.png) |
+| 🕯️ 오브젝트 | ![](../../../outputs/comfyui-z-image-turbo/game-views/top-down/62e8f899-976a-465c-97b2-5aa9b24caa08.png) |
+| 🖼️ 대화창 초상화 | ![](../../../outputs/comfyui-z-image-turbo/game-views/top-down/f1ae7ffb-1609-4bc3-8309-60db70b06691.png) |
+| 🌄 배경 | ![](../../../outputs/comfyui-z-image-turbo/game-views/top-down/224c2501-135b-4a5e-94b2-f70b5af55ca4.png) |
 
 Prompts:
 
@@ -55,11 +55,11 @@ Prompts:
 
 | 에셋 | 미리보기 |
 |------|---------|
-| 🟩 타일 | ![](../../../outputs/comfyui-z-image-turbo/reference-images/98e8f61c-729b-4e7f-a45b-e1048d618f88.png) |
-| 🚶 캐릭터 | ![](../../../outputs/comfyui-z-image-turbo/reference-images/70c39cde-31aa-4bb3-8574-727e7c539f4c.png) |
-| ❄️ 오브젝트 | ![](../../../outputs/comfyui-z-image-turbo/reference-images/dbef55e1-5635-4551-a379-4452a690a2a3.png) |
-| 🖼️ 대화창 초상화 | ![](../../../outputs/comfyui-z-image-turbo/reference-images/37c1241e-b6e0-4883-a9dd-35d24d6e15cb.png) |
-| 🌄 배경 | ![](../../../outputs/comfyui-z-image-turbo/reference-images/4d306728-bb50-4805-97cb-03eaf82177d1.png) |
+| 🟩 타일 | ![](../../../outputs/comfyui-z-image-turbo/game-views/top-down/98e8f61c-729b-4e7f-a45b-e1048d618f88.png) |
+| 🚶 캐릭터 | ![](../../../outputs/comfyui-z-image-turbo/game-views/top-down/70c39cde-31aa-4bb3-8574-727e7c539f4c.png) |
+| ❄️ 오브젝트 | ![](../../../outputs/comfyui-z-image-turbo/game-views/top-down/dbef55e1-5635-4551-a379-4452a690a2a3.png) |
+| 🖼️ 대화창 초상화 | ![](../../../outputs/comfyui-z-image-turbo/game-views/top-down/37c1241e-b6e0-4883-a9dd-35d24d6e15cb.png) |
+| 🌄 배경 | ![](../../../outputs/comfyui-z-image-turbo/game-views/top-down/4d306728-bb50-4805-97cb-03eaf82177d1.png) |
 
 Prompts:
 

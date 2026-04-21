@@ -7,20 +7,20 @@ Resolution: 512×512 | Reference workflow: z-image-turbo
 ---
 
 ### 🛒 상인 (Merchant)
-![Merchant](../../outputs/comfyui-z-image-turbo/reference-images/381a5eeb-ef8b-4803-a0d5-d15cf28021fa.png)
-- **URL:** ../../outputs/comfyui-z-image-turbo/reference-images/381a5eeb-ef8b-4803-a0d5-d15cf28021fa.png
+![Merchant](../../outputs/comfyui-z-image-turbo/npcs/381a5eeb-ef8b-4803-a0d5-d15cf28021fa.png)
+- **URL:** ../../outputs/comfyui-z-image-turbo/npcs/381a5eeb-ef8b-4803-a0d5-d15cf28021fa.png
 - **포즈:** 대기 / 대화 / 거래
 - **Prompt:** Merchant NPC sprite sheet, classic JRPG 2D pixel art, traveling merchant with satchel and goods, idle talk trade poses, retro 16-bit pixel art, friendly village character
 
 ### 🧙 마법사 (Wizard)
-![Wizard](../../outputs/comfyui-z-image-turbo/reference-images/fc587b30-48e8-41bf-9b6c-9ab764ba3911.png)
-- **URL:** ../../outputs/comfyui-z-image-turbo/reference-images/fc587b30-48e8-41bf-9b6c-9ab764ba3911.png
+![Wizard](../../outputs/comfyui-z-image-turbo/npcs/fc587b30-48e8-41bf-9b6c-9ab764ba3911.png)
+- **URL:** ../../outputs/comfyui-z-image-turbo/npcs/fc587b30-48e8-41bf-9b6c-9ab764ba3911.png
 - **포즈:** 대기 / 대화 / 시전
 - **Prompt:** Wizard NPC sprite sheet, classic JRPG 2D pixel art, old mage with robe staff and glowing magic, idle talk cast spell poses, retro 16-bit pixel art
 
 ### ⚔️ 기사 (Knight)
-![Knight](../../outputs/comfyui-z-image-turbo/reference-images/0ba53516-2e15-4916-a747-f1e65c7c4fc6.png)
-- **URL:** ../../outputs/comfyui-z-image-turbo/reference-images/0ba53516-2e15-4916-a747-f1e65c7c4fc6.png
+![Knight](../../outputs/comfyui-z-image-turbo/npcs/0ba53516-2e15-4916-a747-f1e65c7c4fc6.png)
+- **URL:** ../../outputs/comfyui-z-image-turbo/npcs/0ba53516-2e15-4916-a747-f1e65c7c4fc6.png
 - **포즈:** 대기 / 경례 / 대화
 - **Prompt:** Knight guard NPC sprite sheet, classic JRPG 2D pixel art, armored castle knight with sword and cape, idle salute talk poses, retro 16-bit pixel art
 
@@ -28,9 +28,9 @@ Resolution: 512×512 | Reference workflow: z-image-turbo
 
 | NPC | 미리보기 |
 |-----|---------|
-| 🛒 상인 | ![](../../outputs/comfyui-z-image-turbo/reference-images/381a5eeb-ef8b-4803-a0d5-d15cf28021fa.png) |
-| 🧙 마법사 | ![](../../outputs/comfyui-z-image-turbo/reference-images/fc587b30-48e8-41bf-9b6c-9ab764ba3911.png) |
-| ⚔️ 기사 | ![](../../outputs/comfyui-z-image-turbo/reference-images/0ba53516-2e15-4916-a747-f1e65c7c4fc6.png) |
+| 🛒 상인 | ![](../../outputs/comfyui-z-image-turbo/npcs/381a5eeb-ef8b-4803-a0d5-d15cf28021fa.png) |
+| 🧙 마법사 | ![](../../outputs/comfyui-z-image-turbo/npcs/fc587b30-48e8-41bf-9b6c-9ab764ba3911.png) |
+| ⚔️ 기사 | ![](../../outputs/comfyui-z-image-turbo/npcs/0ba53516-2e15-4916-a747-f1e65c7c4fc6.png) |
 
 ← [목차로 돌아가기](../README.md)
 ---

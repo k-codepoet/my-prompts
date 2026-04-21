@@ -65,7 +65,7 @@ thick decorative botanical border,
 retro RPG game HUD style, flat layout,
 clear corner pieces and edge tiles visible, 512x512
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/43117e0c-8ebb-46ee-8e0f-b0a7434292c3.png  
+결과: ../../outputs/comfyui-z-image-turbo/guides/43117e0c-8ebb-46ee-8e0f-b0a7434292c3.png  
 **어울리는 용도:** 자연/숲 테마, 아이템 설명창, 퀘스트 UI
 
 ---
@@ -79,7 +79,7 @@ thick decorative floral border,
 retro RPG game HUD style, flat layout,
 clear corner pieces and edge tiles visible, pastel colors, 512x512
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/b1673f37-1501-4c0e-9fdb-7b11ed71e67b.png  
+결과: ../../outputs/comfyui-z-image-turbo/guides/b1673f37-1501-4c0e-9fdb-7b11ed71e67b.png  
 **어울리는 용도:** 봄/낭만 테마, 대화창, 캐릭터 소개 UI
 
 ---
@@ -93,7 +93,7 @@ thick decorative wood frame border,
 retro RPG game HUD style, flat layout,
 clear corner pieces and edge tiles, rustic earthy colors, 512x512
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/3a31a245-9490-4eb9-ba05-59d450aa363e.png  
+결과: ../../outputs/comfyui-z-image-turbo/guides/3a31a245-9490-4eb9-ba05-59d450aa363e.png  
 **어울리는 용도:** 마을/선술집 테마, 인벤토리 창, 상점 UI
 
 ---
@@ -107,7 +107,7 @@ thick decorative stone wall border,
 retro RPG game HUD dungeon style, flat layout,
 clear corner pieces and edge tiles, medieval gray tones, 512x512
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/229c94a9-61ae-404b-8bd0-ece3fe03fa27.png  
+결과: ../../outputs/comfyui-z-image-turbo/guides/229c94a9-61ae-404b-8bd0-ece3fe03fa27.png  
 **어울리는 용도:** 던전/성 테마, 스탯 창, 보스전 UI
 
 ---
@@ -121,7 +121,7 @@ thick decorative sandy border,
 retro RPG game HUD desert style, flat layout,
 clear corner pieces and edge tiles, warm sandy golden tones, 512x512
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/0852a63f-fa69-4b15-a751-6d8d22574623.png  
+결과: ../../outputs/comfyui-z-image-turbo/guides/0852a63f-fa69-4b15-a751-6d8d22574623.png  
 **어울리는 용도:** 사막/해변 테마, 지도 UI, 탐험 일지
 
 ---

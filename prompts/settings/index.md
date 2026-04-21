@@ -7,8 +7,8 @@ Reference workflow: z-image-turbo (ComfyUI)
 ---
 
 ### ⚙️ 설정 패널 (Gear Machinery Settings)
-![Settings Panel](../../outputs/comfyui-z-image-turbo/reference-images/6c7b1eb8-e4e5-475d-8879-30a70a48a749.png)
-- **URL:** ../../outputs/comfyui-z-image-turbo/reference-images/6c7b1eb8-e4e5-475d-8879-30a70a48a749.png
+![Settings Panel](../../outputs/comfyui-z-image-turbo/settings/6c7b1eb8-e4e5-475d-8879-30a70a48a749.png)
+- **URL:** ../../outputs/comfyui-z-image-turbo/settings/6c7b1eb8-e4e5-475d-8879-30a70a48a749.png
 - **해상도:** 512×512
 - **테마:** 기어/기계 (Gear & Machinery)
 - **구성:** 슬라이더 바 행, 토글 스위치 자리, 섹션 구분선, 코너 기어 장식

@@ -57,7 +57,7 @@ heroic pose flying, retro 16-bit pixel art, vibrant colors,
 detailed pixel shading, game sprite style, clean pixel edges,
 nostalgic arcade game aesthetic
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/0ef596ae-825e-4df5-bd36-7a648d0f9b69.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/0ef596ae-825e-4df5-bd36-7a648d0f9b69.png
 
 ### 예시 2 — Batman
 ```
@@ -66,7 +66,7 @@ brooding heroic pose, retro 16-bit pixel art, dark color palette,
 detailed pixel shading, game sprite style, clean pixel edges,
 nostalgic arcade game aesthetic
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/51005de2-6857-471f-9b20-03c8a3ce12eb.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/51005de2-6857-471f-9b20-03c8a3ce12eb.png
 
 ### 예시 3 — Monkey D. Luffy (원작 캐릭터)
 ```
@@ -75,7 +75,7 @@ red vest straw hat pirate, signature grin and stretched rubber arm pose,
 retro 16-bit pixel art, vibrant colors, detailed pixel shading,
 game sprite style, clean pixel edges, nostalgic arcade game aesthetic
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/8b408094-878e-4fb7-962c-397d42402697.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/8b408094-878e-4fb7-962c-397d42402697.png
 
 ### 예시 4 — Rei Ayanami (에반게리온)
 ```
@@ -85,7 +85,7 @@ short blue hair red eyes, retro 16-bit pixel art, pale color palette,
 detailed pixel shading, game sprite style, clean pixel edges,
 nostalgic arcade game aesthetic
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/7c6277f6-1e39-45c1-9ef1-ec152c34d6c6.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/7c6277f6-1e39-45c1-9ef1-ec152c34d6c6.png
 
 ---
 

@@ -37,7 +37,7 @@ rounded pixel art end caps on both sides,
 retro RPG game HUD style, 9-slice sliceable bar design,
 red crimson tones, 512x128 resolution, flat layout
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/e7e32374-fc3d-48d5-b8fd-19dd960a02c0.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/e7e32374-fc3d-48d5-b8fd-19dd960a02c0.png
 
 ---
 
@@ -78,7 +78,7 @@ outer wooden frame border,
 retro RPG game HUD style, flat layout,
 warm brown earthy tones, clear grid cells visible, 512x512 resolution
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/204d0edd-3f6c-4f00-a9b3-681a2a9a3867.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/204d0edd-3f6c-4f00-a9b3-681a2a9a3867.png
 
 ---
 
@@ -110,7 +110,7 @@ arrow indicator at bottom for next dialogue,
 retro RPG game dialogue HUD style, flat layout,
 warm parchment cream tones, 512x256 resolution
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/968c84c0-f9e0-4e98-841a-6379497587ef.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/968c84c0-f9e0-4e98-841a-6379497587ef.png
 
 ---
 
@@ -143,7 +143,7 @@ crown and star decorations,
 retro RPG game HUD style, flat layout,
 rich gold purple royal tones, 512x512 resolution
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/1592f906-05b6-4220-83d5-0e6f34b6a16e.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/1592f906-05b6-4220-83d5-0e6f34b6a16e.png
 
 ---
 
@@ -174,7 +174,7 @@ section divider lines,
 retro RPG game HUD style, flat layout,
 dark iron metallic blue gray tones, 512x512 resolution
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/6c7b1eb8-e4e5-475d-8879-30a70a48a749.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/6c7b1eb8-e4e5-475d-8879-30a70a48a749.png
 
 ---
 

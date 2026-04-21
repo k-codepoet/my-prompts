@@ -9,11 +9,11 @@ Resolution: 512×512 | Reference workflow: z-image-turbo (ComfyUI)
 
 | 테마 | 미리보기 |
 |------|---------|
-| 🌿 식물 / 덩굴 | ![](../../outputs/comfyui-z-image-turbo/reference-images/43117e0c-8ebb-46ee-8e0f-b0a7434292c3.png) |
-| 🌸 꽃 / 벚꽃 | ![](../../outputs/comfyui-z-image-turbo/reference-images/b1673f37-1501-4c0e-9fdb-7b11ed71e67b.png) |
-| 🪵 나무 / 목재 | ![](../../outputs/comfyui-z-image-turbo/reference-images/3a31a245-9490-4eb9-ba05-59d450aa363e.png) |
-| 🪨 돌 / 석재 | ![](../../outputs/comfyui-z-image-turbo/reference-images/229c94a9-61ae-404b-8bd0-ece3fe03fa27.png) |
-| 🏜️ 모래 / 사막 | ![](../../outputs/comfyui-z-image-turbo/reference-images/0852a63f-fa69-4b15-a751-6d8d22574623.png) |
+| 🌿 식물 / 덩굴 | ![](../../outputs/comfyui-z-image-turbo/ui-panels/43117e0c-8ebb-46ee-8e0f-b0a7434292c3.png) |
+| 🌸 꽃 / 벚꽃 | ![](../../outputs/comfyui-z-image-turbo/ui-panels/b1673f37-1501-4c0e-9fdb-7b11ed71e67b.png) |
+| 🪵 나무 / 목재 | ![](../../outputs/comfyui-z-image-turbo/ui-panels/3a31a245-9490-4eb9-ba05-59d450aa363e.png) |
+| 🪨 돌 / 석재 | ![](../../outputs/comfyui-z-image-turbo/ui-panels/229c94a9-61ae-404b-8bd0-ece3fe03fa27.png) |
+| 🏜️ 모래 / 사막 | ![](../../outputs/comfyui-z-image-turbo/ui-panels/0852a63f-fa69-4b15-a751-6d8d22574623.png) |
 
 Prompt template:
 
@@ -24,28 +24,28 @@ Prompt template:
 ## 신규 테마 5종
 
 ### ❄️ 얼음 (Ice & Snow)
-![Ice Panel](../../outputs/comfyui-z-image-turbo/reference-images/283be3c0-57e8-49fc-afa3-a544214b239a.png)
-- **URL:** ../../outputs/comfyui-z-image-turbo/reference-images/283be3c0-57e8-49fc-afa3-a544214b239a.png
+![Ice Panel](../../outputs/comfyui-z-image-turbo/ui-panels/283be3c0-57e8-49fc-afa3-a544214b239a.png)
+- **URL:** ../../outputs/comfyui-z-image-turbo/ui-panels/283be3c0-57e8-49fc-afa3-a544214b239a.png
 - **Prompt:** 2D pixel art game UI panel, 9-slice border-image style, ice and snow theme, ice crystals and snowflakes decorating all four corners and edges, empty clean pale blue center area for content, thick decorative frozen border, retro RPG game HUD style, flat layout, clear corner pieces and edge tiles visible, cool blue white tones, 512x512
 
 ### 🔥 화염 (Fire & Flame)
-![Fire Panel](../../outputs/comfyui-z-image-turbo/reference-images/6dffb55d-d40e-4e0e-8fc7-5a672a5fcecb.png)
-- **URL:** ../../outputs/comfyui-z-image-turbo/reference-images/6dffb55d-d40e-4e0e-8fc7-5a672a5fcecb.png
+![Fire Panel](../../outputs/comfyui-z-image-turbo/ui-panels/6dffb55d-d40e-4e0e-8fc7-5a672a5fcecb.png)
+- **URL:** ../../outputs/comfyui-z-image-turbo/ui-panels/6dffb55d-d40e-4e0e-8fc7-5a672a5fcecb.png
 - **Prompt:** 2D pixel art game UI panel, 9-slice border-image style, fire and flame theme, flames and embers decorating all four corners and edges, empty clean warm cream center area for content, thick decorative blazing border, retro RPG game HUD style, flat layout, clear corner pieces and edge tiles visible, hot red orange tones, 512x512
 
 ### ⚡ 마법 (Magic & Arcane)
-![Magic Panel](../../outputs/comfyui-z-image-turbo/reference-images/1d2553ae-2bbd-4585-ade6-6d039a89151e.png)
-- **URL:** ../../outputs/comfyui-z-image-turbo/reference-images/1d2553ae-2bbd-4585-ade6-6d039a89151e.png
+![Magic Panel](../../outputs/comfyui-z-image-turbo/ui-panels/1d2553ae-2bbd-4585-ade6-6d039a89151e.png)
+- **URL:** ../../outputs/comfyui-z-image-turbo/ui-panels/1d2553ae-2bbd-4585-ade6-6d039a89151e.png
 - **Prompt:** 2D pixel art game UI panel, 9-slice border-image style, magic and arcane theme, arcane runes and lightning bolts decorating all four corners and edges, empty clean pale center area for content, thick decorative mystical border, retro RPG game HUD style, flat layout, clear corner pieces and edge tiles visible, electric purple blue tones, 512x512
 
 ### 🌊 바다 (Ocean & Sea)
-![Ocean Panel](../../outputs/comfyui-z-image-turbo/reference-images/e50f16f9-66e3-483c-b0fa-be727709163f.png)
-- **URL:** ../../outputs/comfyui-z-image-turbo/reference-images/e50f16f9-66e3-483c-b0fa-be727709163f.png
+![Ocean Panel](../../outputs/comfyui-z-image-turbo/ui-panels/e50f16f9-66e3-483c-b0fa-be727709163f.png)
+- **URL:** ../../outputs/comfyui-z-image-turbo/ui-panels/e50f16f9-66e3-483c-b0fa-be727709163f.png
 - **Prompt:** 2D pixel art game UI panel, 9-slice border-image style, ocean and sea theme, waves coral and seashells decorating all four corners and edges, empty clean light aqua center area for content, thick decorative ocean border, retro RPG game HUD style, flat layout, clear corner pieces and edge tiles visible, deep blue aqua tones, 512x512
 
 ### 👑 왕실 (Royal & Gold)
-![Royal Panel](../../outputs/comfyui-z-image-turbo/reference-images/8b01723e-93ae-4683-b2f9-277a0f443b3a.png)
-- **URL:** ../../outputs/comfyui-z-image-turbo/reference-images/8b01723e-93ae-4683-b2f9-277a0f443b3a.png
+![Royal Panel](../../outputs/comfyui-z-image-turbo/ui-panels/8b01723e-93ae-4683-b2f9-277a0f443b3a.png)
+- **URL:** ../../outputs/comfyui-z-image-turbo/ui-panels/8b01723e-93ae-4683-b2f9-277a0f443b3a.png
 - **Prompt:** 2D pixel art game UI panel, 9-slice border-image style, royal gold theme, ornate filigree and crown motifs decorating all four corners and edges, empty clean ivory center area for content, thick decorative royal border, retro RPG game HUD style, flat layout, clear corner pieces and edge tiles visible, rich gold purple tones, 512x512
 
 ← [목차로 돌아가기](../README.md)

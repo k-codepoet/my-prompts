@@ -57,7 +57,7 @@ empty clean center area for text label,
 retro RPG game HUD style, flat layout,
 clear 9-slice sliceable design, botanical green tones, 512x256 resolution
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/82a7d504-c3dc-45f7-8e09-001cd0254e10.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/82a7d504-c3dc-45f7-8e09-001cd0254e10.png
 
 ### 🌸 꽃 / 벚꽃 — Normal
 ```
@@ -68,7 +68,7 @@ empty clean pastel center area for text label,
 retro RPG game HUD style, flat layout,
 clear 9-slice sliceable design, pastel floral tones, 512x256 resolution
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/9b0e5cf4-c1b7-4066-a4e0-dc957cc4a8f3.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/9b0e5cf4-c1b7-4066-a4e0-dc957cc4a8f3.png
 
 ### 🪵 나무 / 목재 — Normal
 ```
@@ -79,7 +79,7 @@ empty clean beige center area for text label,
 retro RPG game HUD style, flat layout,
 clear 9-slice sliceable design, rustic earthy brown tones, 512x256 resolution
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/6b0a2b47-498b-4009-81eb-f66819170f74.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/6b0a2b47-498b-4009-81eb-f66819170f74.png
 
 ### 🪨 돌 / 석재 — Normal
 ```
@@ -90,7 +90,7 @@ empty clean light gray center area for text label,
 retro RPG dungeon HUD style, flat layout,
 clear 9-slice sliceable design, medieval gray tones, 512x256 resolution
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/71ca124b-5531-4916-b93e-04d549fcbc62.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/71ca124b-5531-4916-b93e-04d549fcbc62.png
 
 ### 🏜️ 모래 / 사막 — Normal
 ```
@@ -101,7 +101,7 @@ empty clean warm beige center area for text label,
 retro RPG desert HUD style, flat layout,
 clear 9-slice sliceable design, warm sandy golden tones, 512x256 resolution
 ```
-결과: ../../outputs/comfyui-z-image-turbo/reference-images/593bc05e-8e94-4709-8677-2de20f224c50.png
+결과: ../../outputs/comfyui-z-image-turbo/guides/593bc05e-8e94-4709-8677-2de20f224c50.png
 
 ---
 

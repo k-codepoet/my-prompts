@@ -26,3 +26,4 @@
 - [`leaderboard/`](./leaderboard/)
 - [`settings/`](./settings/)
 - [`items/`](./items/)
+- [`guides/`](./guides/)
