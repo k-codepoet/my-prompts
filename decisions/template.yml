@@ -1,0 +1,36 @@
+# decisions/template.yml — Type A/B/C 결정 템플릿
+# 사용:
+#   cp decisions/template.yml decisions/open/D-<YYYYMMDD>-<seq>.yml
+# 채워야 할 필드는 <...> 로 표기.
+
+id: D-<YYYYMMDD>-<seq>          # 예: D-20260429-001
+type: A | B | C                  # A=Go/No-Go, B=A vs B(/C), C=비전·목표·불변 영향
+asked_at: <ISO 8601>
+deadline: null                   # 마감 (선택)
+gen: <N>                         # 현재 generation (current.md 와 일치)
+cycle: cy-<NNN>                  # 현재 사이클
+parent_goal: G-<...>             # constitution.md 의 G-* ID 중 하나
+title: <한 줄 요약>
+
+# Type A — Go/No-Go
+# Type B — 옵션 두 개 이상 + 추천 (사용자 무시 가능)
+# Type C — 비전·목표·불변·시드·조직 추가/제거 등. 사람만 응답.
+options:
+  - id: a
+    summary: <한 줄>
+    cost: <간단 추정 — 시간/복잡도/리스크>
+    supporters: []                # 지지한 역할 IDs (orgs/<id>.md 의 id)
+    objectors: []                 # 반대 역할 IDs + 트립와이어 코드
+  - id: b
+    summary: <한 줄>
+    cost: <...>
+    supporters: []
+    objectors: []
+
+recommended: null                  # orchestrator 추천 (옵션 id) — 사람 무시 가능
+trace: <auto>                      # generations/gen-N/cycles/cy-NNN/decision-traces/D-<id>.md
+
+response:
+  decided_at: null                 # 사용자 응답 시각
+  picked: null                     # 선택한 옵션 id
+  notes: null                      # 자유 서술 (사용자가 남긴 코멘트)

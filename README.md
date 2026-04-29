@@ -1,10 +1,15 @@
 # my-prompts
 
-게임 개발과 글쓰기를 위한 프롬프트 · 워크플로우 카탈로그.
-세계관(worldbuilding) 을 공유 1차 산출물로 두고, 거기서 게임과 글로 분기.
+상상력을 사랑하는 사람들이 빠져들 만한 **가상 세계** 를 만들고, 그 세계에서 게임 · 웹툰 · 영화 · 소설 · 이미지 · 우표 등 다양한 콘텐츠를 파생시키는 카탈로그.
+한 시드 → 여러 세대 → 한 세계 → 다양한 product. 시스템은 *자가 생성·세대 진화* 하며 수렴할 때까지 돈다.
 
-> 비전·역할·결정 프로토콜은 [`CHARTER.md`](./CHARTER.md)
-> 폴더 레이아웃 명세는 [`STRUCTURE.md`](./STRUCTURE.md)
+> 진입점:
+> - [`constitution.md`](./constitution.md) — 비전·목표·불변·진화 규칙·수렴 기준 (불변층)
+> - [`seed.md`](./seed.md) — 인셉션 키워드 (사람 1 회 입력)
+> - [`CHARTER.md`](./CHARTER.md) — 운영 플레이북 (결정 프로토콜·자율 실행 모델)
+> - [`BOOTSTRAP.md`](./BOOTSTRAP.md) — cron tick 1 회 동작 명세
+> - [`STRUCTURE.md`](./STRUCTURE.md) — 폴더 레이아웃 (5 층)
+> - [`current.md`](./current.md) — 활성 gen·cycle·tick 라이브 포인터
 
 ## 레이아웃
 
@@ -27,13 +32,14 @@ docs/              # 메타 (컨벤션·스키마)
 
 ## 현재 상태
 
-- ✅ Charter / Structure 합의안 작성
-- ✅ 폴더 골격 이동 (이 커밋)
-- ⬜ Manual vertical slice 1 회 통과 ← *다음*
-- ⬜ Population (도메인 카테고리 채움)
-- ⬜ Automation (my-life pursuit-worker 등록)
+- ✅ Layer 1·2·3 문서 완비 (constitution / seed / charter / bootstrap / structure)
+- ✅ Layer 4·5 골격 (`generations/gen-001/`, `decisions/`, `current.md`, prompts/outputs 5 도메인)
+- ⬜ **Seed 봉인** — `seed.md` ① 채우기 ← *다음 (사람)*
+- ⬜ gen-001 조직 제안 (Type C 결정)
+- ⬜ Manual vertical slice → my-life 회고
+- ⬜ Cron 자동화 (Iron Law: Manual 통과 후)
 
-자동화 진입은 my-life Iron Law (Manual-first 게이트) 를 따른다 — vertical slice 수동 통과 전까지 워커·cron 위임 금지.
+자동화 진입은 my-life Iron Law (Manual-first 게이트) 를 따른다 — `workflows/vertical-slice.md` 수동 통과 전까지 cron 등록 금지.
 
 ## 규약
 

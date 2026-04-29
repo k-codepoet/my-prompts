@@ -25,24 +25,52 @@
         └─────────┘   └────────────┘   └──────────┘
 ```
 
-## 최상위 레이아웃
+## 최상위 레이아웃 — 5 층
 
 ```
-prompts/        # 재사용 가능한 단일 프롬프트
-  worldbuilding/  # 공유 — 세계관 1차 산출물 (게임·글 양쪽이 소비)
-  design/         # 게임 기획
-  art/            # 시각 에셋 (현재 prompts/* 가 여기로 이동 예정)
-  code/           # 구현
-  writing/        # 글쓰기 (소설·시나리오·기사·에세이)
-workflows/      # 다단계 파이프라인 (자동화 단위)
-outputs/        # 산출물 — 도메인별로 모양이 달라 분리
-  worldbuilding/  # 세계관 bible (마크다운 + 지도/관계도 이미지)
-  art/            # 이미지 (모델별, 현재 outputs/* 그대로)
-  design/         # 게임 디자인 문서
-  code/           # 코드 스니펫·프로토타입
-  writing/        # 원고 (장·씬·전체)
-docs/           # 메타 (컨벤션, 스키마)
+# Layer 1: 불변층
+constitution.md            # 비전·G-*·불변·진화 규칙·수렴 기준 (사람만 변경)
+
+# Layer 2: 인셉션
+seed.md                    # 한 줄 키워드 + 사용자 의도. 봉인 후 system 의 유일 입력.
+
+# Layer 3: 운영 플레이북 (gen 마다 진화 가능)
+CHARTER.md                 # 운영 룰: 결정 프로토콜, 자율 실행 모델
+BOOTSTRAP.md               # cron tick 1 회 동작 명세
+STRUCTURE.md               # 본 문서
+
+# Layer 4: 활성 상태
+current.md                 # gen·cycle·tick·활성 결정 ID 라이브 포인터
+decisions/                 # 사용자 채널 — 결론만 (얕고 행동가능)
+  template.yml             # 결정 템플릿
+  open/                    # 응답 대기
+  closed/                  # 응답 완료
+generations/               # 세대별 진화 — 모든 tick·발언·결정 추적 누적
+  gen-001/
+    orgs/<org>.md          # 이 세대의 조직 charter
+    cycles/cy-NNN/
+      ticks/tick-NNN.md    # cron tick 활동 로그
+      arguments/<role>-r<round>.md
+      decision-traces/D-<id>.md
+    artifacts/             # 시도물 (실패 포함)
+    review.md              # 세대 마감 — KPI · 수렴 점수
+    transition.md          # 다음 gen 변화 (조직·룰)
+  gen-002/...
+
+# Layer 5: 콘텐츠 카탈로그 (gen 을 넘어 재사용)
+prompts/                   # 단일 프롬프트
+  worldbuilding/           # 공유 — 세계 1차 산출물
+  design/                  # 게임 기획
+  art/                     # 시각 에셋
+  code/                    # 구현
+  writing/                 # 글쓰기
+workflows/                 # 다단계 파이프라인
+outputs/                   # 세대를 넘어 살아남은 정전 (frontmatter: converged_at_gen: N)
+  worldbuilding/, art/, design/, code/, writing/
+docs/                      # 메타 (컨벤션·스키마)
 ```
+
+> Layer 1·2 는 사람이 변경, Layer 3 는 gen 진화 가능, Layer 4 는 system 만 갱신, Layer 5 는 system 이 채우고 사람이 사용.
 
 ---
 
@@ -167,15 +195,20 @@ last_used: <ISO date | null>
 
 ## 진행 단계
 
+진행 단계의 단일 진실은 [`CHARTER.md`](./CHARTER.md) §9. 본 절은 *구조* 관점의 요약.
+
 | # | 단계 | 상태 |
 |---|------|------|
-| 1 | **Doc-only** — Charter + Structure 합의안 | ✅ 완료 |
-| 2 | **Skeleton migration** — 폴더 재배치 + 빈 도메인 골격 + workflow 스텁 4 개 | ✅ 완료 |
-| 3 | **Manual vertical slice** — `workflows/vertical-slice.md` 1 회 손통과, `my-life/logs/manual-runs/` 에 기록 | 진행 예정 |
-| 4 | **Population** — 각 도메인 카테고리 점진 채움 (3 의 발견사항 우선 반영) | 대기 |
-| 5 | **Automation** — my-life pursuit-worker 에 워크플로우 등록 | 대기 |
+| 1 | Doc-only 합의 (constitution + charter + structure + bootstrap) | ✅ 완료 |
+| 2 | Skeleton (5 층 골격, prompts/outputs 재배치, generations/gen-001/ + decisions/ 인프라) | ✅ 완료 |
+| 3 | Seed 봉인 — `seed.md` ① 채움 + `sealed: true` | 대기 (사람) |
+| 4 | gen-001 조직 제안 (Type C 결정) | 대기 |
+| 5 | Manual vertical slice (`workflows/vertical-slice.md`) → my-life 회고 | 대기 |
+| 6 | Cron 자동화 등록 — Manual 통과 후 (Iron Law) | 대기 |
+| 7 | gen 전환 / 수렴 | 장기 |
 
-> ⛔ 단계 3을 건너뛰고 5로 갈 수 없음. (my-life `AGENTS.md` Iron Law — Manual-first 게이트는 *루프 자동화* 에 적용. 골격 이동은 게이트 밖.)
+> ⛔ 단계 5 통과 전엔 단계 6 진입 불가 (my-life `AGENTS.md` Iron Law).
+> 단계 3 미수행 시 모든 tick 이 *seed waiting* 으로 종료 (BOOTSTRAP §0).
 
 ---
 

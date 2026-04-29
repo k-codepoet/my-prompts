@@ -1,7 +1,8 @@
-# my-prompts Charter
+# my-prompts Charter — 운영 플레이북
 
-> 본 문서는 **불변층**. 변경 시 진행 중 모든 작업을 일시 중단하고 R&R·결정 큐를 전수 검토.
-> 운영 레이아웃은 [`STRUCTURE.md`](./STRUCTURE.md), 자동화 게이트는 my-life `AGENTS.md`.
+> **불변층은 [`constitution.md`](./constitution.md)** (비전·목표·불변·진화 규칙·수렴 기준).
+> 본 문서는 *gen 마다 진화 가능* 한 운영 플레이북. 변경은 진화 규칙 §자동/사람합의 분류에 따른다.
+> 인셉션은 [`seed.md`](./seed.md), 폴더 명세는 [`STRUCTURE.md`](./STRUCTURE.md), tick 동작은 [`BOOTSTRAP.md`](./BOOTSTRAP.md).
 
 ---
 
@@ -14,39 +15,34 @@
 
 ## 1. 개념 (Concept)
 
-- 정체: **prompts (단일) + workflows (다단계) + outputs (산출물)** 카탈로그.
-- 1차 산출물은 **세계관 bible** — 게임도 글도 이를 참조해서 분기.
-- 한 세계관에서 여러 게임 / 여러 원고가 파생되는 *one world, many outlets* 구조.
+- 정체: **prompts (단일) + workflows (다단계) + outputs (산출물) + 세대별 진화 (generations)**.
+- 1차 산출물은 **세계 bible** — 게임 · 웹툰 · 영화 · 소설 · 이미지 · 우표 등 *모든 product 의 단일 진실*.
+- 한 시드 (`seed.md`) → 여러 세대 (`generations/gen-N/`) → 한 세계 → 다양한 product. *one seed, one world, many outlets*.
 
 ## 2. 방향 (Direction)
 
-- **Worldbuilding-first** — 세계가 콘텐츠보다 먼저.
-- **Dual outlet** — 게임(design · art · code) 과 글(writing) 두 갈래만 1차 지원.
-- **Role council** — 영역 전문가들이 자기 도메인을 강하게 주장하고, 충돌은 명시적으로 표면화.
-- **Decision-driven autonomy** — 시스템은 자율적으로 돌고, 사람의 개입은 *결정 큐* 형태로만.
+- **Worldbuilding-first** — 세계가 콘텐츠보다 먼저 (constitution §비전).
+- **Multi-outlet** — 게임·웹툰·영화·소설·이미지·우표 등 형식은 시스템이 제안 가능 (Type B 결정).
+- **Self-evolving organism** — 조직 · 룰 · 워크플로우 모두 gen 간 진화. 진화 규칙은 constitution §진화규칙.
+- **Decision-driven autonomy** — 시스템은 자율, 사람 개입은 *결정 큐* 로만. 유형은 §6 Decision Protocol.
 
-## 3. 비전 (Vision)
+## 3. 비전 · 목표
 
-> 내가 시드(세계관 한 줄, 톤, 장르)와 비전만 주면, 시스템이 세계 bible을 깊이 키우고
-> 거기서 게임 vertical slice 한 개와 단편 한 편을 자동으로 도출한다.
-> 내 일은 **비전 조정**과 **결정 큐 처리**(주당 5건 이내) 뿐.
+> 비전과 목표 정의는 [`constitution.md`](./constitution.md) §비전 · §목표.
+> CHARTER 는 그 목표를 어떻게 *운영하는가* 만 다룬다.
 
-## 4. 목표 (Goals — 측정 가능)
-
-| ID | 목표 | 완료 기준 |
-|----|------|-----------|
-| `G-WB-1` | 첫 세계관 bible v1.0 | `outputs/worldbuilding/<world>/` 에 세계·지형·지역·인물·관계·오브젝트·아이템·연대기 8 개 핵심 문서 채움 |
-| `G-GAME-1` | 그 세계관 기반 게임 vertical slice | 30초 플레이 가능 빌드 + 1쪽 GDD + 에셋 1세트 |
-| `G-WRITE-1` | 그 세계관 기반 단편 1편 | 5,000–10,000자, 발행 가능 상태 |
-| `G-ORCH-1` | 오케스트레이터 1차 가동 | 위 세 G를 사람 결정 ≤ 10건으로 도달 |
-| `G-LOOP-1` | 두 번째 세계관·게임·글 사이클 | G-1들의 비용 30% 감소 (재사용 검증) |
+현재 활성 G-* 는 `generations/gen-N/review.md` 의 점수표에서 추적.
 
 ---
 
-## 5. 역할 정의 (R&R)
+## 5. 역할 정의 (gen-001 초기 시드 패턴)
+
+> ⚠️ 본 절의 6 역할은 **gen-001 의 초기 시드 패턴 제안**일 뿐.
+> 시스템은 시드(`seed.md`)를 읽고 7±2 개 조직을 *다르게* 제안할 수 있다 (Type C 결정).
+> 이후 gen 마다 추가 · 병합 · 제거 가능 (constitution §진화규칙).
+> 실제 활성 조직은 `generations/gen-N/orgs/<org>.md` 에 위치.
 
 각 역할은 자기 도메인의 *챔피언*. 다른 역할이 자기 영역을 침범하거나 약화시키면 **명시적으로 반대 발언**한다.
-역할은 시스템 프롬프트로 페르소나화되어 `prompts/roles/<role>.md` 에 저장 (단계 3에서 작성).
 
 ### 5.1 Loremaster — 세계관 관리자
 - **영역**: `prompts/worldbuilding/`, `outputs/worldbuilding/`
@@ -193,21 +189,24 @@ recommended: null   # 오케스트레이터가 한 안을 추천하면 채움
 
 | # | 단계 | 산출 | 상태 |
 |---|------|------|------|
-| 1 | Charter 합의 | 이 문서 (role 정의 / 결정 프로토콜에 사람 OK) | **진행 중** |
-| 2 | Manual vertical slice | 한 세계관 + 한 게임을 손으로 끝까지 통과, `my-life/logs/manual-runs/` 기록 | 대기 |
-| 3 | Role 페르소나 프롬프트 작성 | `prompts/roles/<role>.md` 7개 | 대기 |
-| 4 | Orchestrator 1차 | my-life pursuit-worker 위 단순 조정 시뮬레이션 | 대기 |
-| 5 | 결정 큐 가동 | `decisions/open/` 첫 항목 발생 | 대기 |
-| 6 | 두 번째 사이클 | `G-LOOP-1` — 재사용성 검증 | 대기 |
+| 1 | Constitution + Charter + Bootstrap 합의 | 이 문서 + `constitution.md` + `BOOTSTRAP.md` + `STRUCTURE.md` | ✅ 완료 |
+| 2 | Seed 봉인 | `seed.md` 의 ① 채움 + `sealed: true` | 대기 (사람) |
+| 3 | gen-001 조직 제안 | system 이 시드 읽고 `generations/gen-001/orgs/<org>.md` 7±2 제안 → Type C 결정 | 대기 |
+| 4 | Manual vertical slice | `workflows/vertical-slice.md` 1 회 손통과, `my-life/logs/manual-runs/` 회고 | 대기 |
+| 5 | gen-001 첫 사이클 (수동) | tick 1~N 을 사람이 직접 BOOTSTRAP 따라 실행 | 대기 |
+| 6 | Cron 자동화 | Manual vertical slice 통과 후에만 my-life cron 등록 | 대기 (Iron Law) |
+| 7 | gen 전환 | `transition.md` 발의 → 조직 진화 → gen-002 시작 | 대기 |
+| 8 | 수렴 | `G-CONVERGE-1` 충족 → 시스템 정지 | 장기 |
 
-> 단계 2 미통과 시 단계 3 이후 진입 불가 (my-life Iron Law).
+> 단계 2 미수행 시 모든 tick 이 sanity check 에서 *seed waiting* 으로 종료.
+> 단계 4 미통과 시 단계 6 진입 불가 (my-life `AGENTS.md` Iron Law).
 
 ---
 
 ## 10. 보류 결정 (사람 입력 필요)
 
-- **첫 세계관 시드** — 장르 · 시대 · 톤 · 1줄 컨셉.
-- **첫 게임의 장르·뷰** — top-down dodger / side-view runner / clicker / etc.
-- **첫 단편의 길이·시점** — 5k vs 10k자, 1인칭 vs 3인칭.
-- **결정 큐 N (게이팅 한계)** — 초안 5. 너무 막히면 7.
+- **Inception keyword** — `seed.md` ① . 시스템 시작의 유일한 입력.
+- **결정 큐 게이팅 N** — 초안 5. 너무 막히면 7. (constitution invariant 와 무관, 진화 규칙으로 조정 가능)
 - **Critic 발동 시점** — 모든 산출물 vs 마일스톤만 (초기 비용 차이 큼).
+- **첫 product 형태 우선순위** — 게임 vertical slice / 단편 / 이미지 세트 중 어느 것을 G-PRODUCT-1 의 첫 표적으로?
+- **gen 전환 임계** — 두 사이클 연속 Δ < 0.05 가 적절한가, 아니면 더 길게/짧게?
