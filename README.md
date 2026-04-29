@@ -1,50 +1,42 @@
-# Prompt Library
+# my-prompts
 
-프롬프트는 한 곳에서 관리하고, 모델별 결과물은 별도로 저장하는 구조입니다.
+게임 개발과 글쓰기를 위한 프롬프트 · 워크플로우 카탈로그.
+세계관(worldbuilding) 을 공유 1차 산출물로 두고, 거기서 게임과 글로 분기.
 
-## Source of Truth
+> 비전·역할·결정 프로토콜은 [`CHARTER.md`](./CHARTER.md)
+> 폴더 레이아웃 명세는 [`STRUCTURE.md`](./STRUCTURE.md)
 
-- [`prompts/`](./prompts/README.md): 공용 프롬프트 소스
-- 같은 프롬프트를 여러 모델에 반복 적용하는 기준점
-- 추후 벤치마크나 회귀 비교 시 변경 없이 재사용
-- 모델별 튜닝 프롬프트를 여기서 따로 분기하지 않음
+## 레이아웃
 
-## Outputs
-
-- [`outputs/`](./outputs/README.md): 모델별 생성 결과물 저장소
-- 현재 정리된 모델:
-  - [`outputs/gpt-image-1.5/`](./outputs/gpt-image-1.5/README.md)
-  - [`outputs/comfyui-z-image-turbo/`](./outputs/comfyui-z-image-turbo/README.md)
-- 새 모델 추가 시 동일한 `prompts/`를 입력으로 사용하고 `outputs/<model>/`만 추가
-
-## Structure
-
-```text
-my-prompts/
-├── README.md
-├── prompts/
-│   ├── README.md
-│   ├── game-views/
-│   ├── characters/
-│   ├── enemies/
-│   ├── npcs/
-│   ├── ui-panels/
-│   ├── buttons/
-│   ├── status-bars/
-│   ├── inventory/
-│   ├── dialog/
-│   ├── leaderboard/
-│   ├── settings/
-│   ├── items/
-│   └── guides/
-└── outputs/
-    ├── README.md
-    ├── comfyui-z-image-turbo/
-    └── gpt-image-1.5/
+```
+prompts/
+  worldbuilding/   # 공유 — 세계·지형·지역·인물·관계·오브젝트·아이템·연대기
+  design/          # 게임 기획 — concept / mechanics / levels / narrative / balancing
+  art/             # 시각 에셋 (기존 prompts/* 가 여기로 이동됨)
+  code/            # 구현 — architecture / systems / integration / review
+  writing/         # 글쓰기 — structure / scenes / dialogue / voice
+workflows/         # 다단계 파이프라인 (자동화 단위)
+outputs/
+  art/             # 모델별 이미지 (기존 outputs/<model>/ 가 여기로 이동됨)
+  worldbuilding/   # 세계 bible
+  design/          # GDD
+  code/            # 코드/프로토타입
+  writing/         # 원고
+docs/              # 메타 (컨벤션·스키마)
 ```
 
-## Rules
+## 현재 상태
 
-- 프롬프트는 모델별로 복제하지 않음
-- 결과물만 모델별 폴더에 저장
-- 새 모델 테스트 시 `prompts/`는 그대로 두고 `outputs/<model>/`만 추가
+- ✅ Charter / Structure 합의안 작성
+- ✅ 폴더 골격 이동 (이 커밋)
+- ⬜ Manual vertical slice 1 회 통과 ← *다음*
+- ⬜ Population (도메인 카테고리 채움)
+- ⬜ Automation (my-life pursuit-worker 등록)
+
+자동화 진입은 my-life Iron Law (Manual-first 게이트) 를 따른다 — vertical slice 수동 통과 전까지 워커·cron 위임 금지.
+
+## 규약
+
+- `prompts/` 는 모델 비종속. 모델별 튜닝은 분기하지 않음.
+- 결과물은 `outputs/<domain>/<model-or-game-id>/...` 로만 저장.
+- 새 모델 추가는 `outputs/art/<model>/` 만 추가 (소스는 그대로 재사용).

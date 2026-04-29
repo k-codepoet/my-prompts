@@ -169,13 +169,13 @@ last_used: <ISO date | null>
 
 | # | 단계 | 상태 |
 |---|------|------|
-| 1 | **Doc-only** — 이 문서가 합의안 | 진행 중 |
-| 2 | **Manual run** — `vertical-slice.md` 1회 손으로 통과, `my-life/logs/manual-runs/` 에 기록 | 대기 |
-| 3 | **Migration** — 폴더 재배치 + README/링크 업데이트 (단계 2 통과 후) | 대기 |
-| 4 | **Population** — `design/`, `code/` 카테고리 점진 채움 | 대기 |
+| 1 | **Doc-only** — Charter + Structure 합의안 | ✅ 완료 |
+| 2 | **Skeleton migration** — 폴더 재배치 + 빈 도메인 골격 + workflow 스텁 4 개 | ✅ 완료 |
+| 3 | **Manual vertical slice** — `workflows/vertical-slice.md` 1 회 손통과, `my-life/logs/manual-runs/` 에 기록 | 진행 예정 |
+| 4 | **Population** — 각 도메인 카테고리 점진 채움 (3 의 발견사항 우선 반영) | 대기 |
 | 5 | **Automation** — my-life pursuit-worker 에 워크플로우 등록 | 대기 |
 
-> ⛔ 단계 2를 건너뛰고 3 이후로 갈 수 없음. (my-life `AGENTS.md` Iron Law)
+> ⛔ 단계 3을 건너뛰고 5로 갈 수 없음. (my-life `AGENTS.md` Iron Law — Manual-first 게이트는 *루프 자동화* 에 적용. 골격 이동은 게이트 밖.)
 
 ---
 
