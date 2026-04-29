@@ -16,8 +16,9 @@
 ## 1. 개념 (Concept)
 
 - 정체: **prompts (단일) + workflows (다단계) + outputs (산출물) + 세대별 진화 (generations)**.
-- 1차 산출물은 **세계 bible** — 게임 · 웹툰 · 영화 · 소설 · 이미지 · 우표 등 *모든 product 의 단일 진실*.
-- 한 시드 (`seed.md`) → 여러 세대 (`generations/gen-N/`) → 한 세계 → 다양한 product. *one seed, one world, many outlets*.
+- **매니페스토 → 세계 → 콘텐츠** 위계. 작가 매니페스토 (`seed.md §②`) 가 *모든 산출물의 영혼*. 매니페스토 정렬은 invariant #1.
+- 1차 산출물은 **세계 bible** — 매니페스토를 캐릭터·지형·역사로 변주한 *모든 product 의 단일 진실*.
+- 한 시드 (`seed.md`) → 여러 세대 (`generations/gen-N/`) → 한 세계 → 다양한 product. *one seed, one world, many outlets, one message*.
 
 ## 2. 방향 (Direction)
 
