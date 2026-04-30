@@ -1,0 +1,23 @@
+# Slack 알림 설정 — 사용자가 state/slack-config.yml 로 복사 후 채움.
+# state/slack-config.yml 은 .gitignore 에 의해 커밋되지 않는다.
+
+# 실제 webhook URL 은 여기 적지 말고 state/slack-config.yml (gitignore 됨) 에만 적기.
+# 형식: https://hooks.slack.com/services/<TEAM_ID>/<CHANNEL_ID>/<TOKEN>
+webhook_url: https://hooks.slack.com/services/REPLACE_WITH_YOUR_WEBHOOK
+
+# 채널·이모지 같은 디테일은 webhook 자체에 박혀 있을 수 있음.
+# 필요하면 메시지 prefix 지정.
+prefix: "[my-prompts]"
+
+# 특정 트리거 끄고 싶으면 false.
+triggers:
+  decision_opened: true     # 새 D-* 발의
+  decision_overdue: true    # deadline 초과
+  invariant_breach: true    # constitution invariant 위반
+  cycle_complete: true      # 사이클 마감 (review.md 작성)
+  gen_transition: true      # transition.md 발의 (Type C)
+  convergence: true         # G-CONVERGE-1 충족
+  budget_warn: true         # 사용량 70%
+  budget_pause: true        # 사용량 90% → 시스템 OFF
+  system_toggle: true       # 사람의 on/off
+  tick_failure: false       # tick 실패 (디버그용 — 기본 off)

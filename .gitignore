@@ -1,0 +1,17 @@
+# Logs from cron-driven scripts
+logs/*
+!logs/.gitkeep
+
+# Local state — user copies from *.example
+state/budget.yml
+state/slack-config.yml
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor noise
+.DS_Store
+*.swp
+*.swo

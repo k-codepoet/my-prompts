@@ -190,14 +190,15 @@ recommended: null   # 오케스트레이터가 한 안을 추천하면 채움
 
 | # | 단계 | 산출 | 상태 |
 |---|------|------|------|
-| 1 | Constitution + Charter + Bootstrap 합의 | 이 문서 + `constitution.md` + `BOOTSTRAP.md` + `STRUCTURE.md` | ✅ 완료 |
-| 2 | Seed 봉인 | `seed.md` 의 ① 채움 + `sealed: true` | 대기 (사람) |
-| 3 | gen-001 조직 제안 | system 이 시드 읽고 `generations/gen-001/orgs/<org>.md` 7±2 제안 → Type C 결정 | 대기 |
-| 4 | Manual vertical slice | `workflows/vertical-slice.md` 1 회 손통과, `my-life/logs/manual-runs/` 회고 | 대기 |
-| 5 | gen-001 첫 사이클 (수동) | tick 1~N 을 사람이 직접 BOOTSTRAP 따라 실행 | 대기 |
-| 6 | Cron 자동화 | Manual vertical slice 통과 후에만 my-life cron 등록 | 대기 (Iron Law) |
-| 7 | gen 전환 | `transition.md` 발의 → 조직 진화 → gen-002 시작 | 대기 |
-| 8 | 수렴 | `G-CONVERGE-1` 충족 → 시스템 정지 | 장기 |
+| 1 | Constitution + Charter + Bootstrap 합의 | `constitution.md` + `CHARTER.md` + `BOOTSTRAP.md` + `STRUCTURE.md` | ✅ 완료 |
+| 2 | 자동화 인프라 (Phase 1 — *등록 없이*) | `scripts/{tick,usage-budget,slack-notify,system-toggle,cron-diff}.sh`, `state/*.example`, `BOOTSTRAP.cron.example`, `docs/{slack-triggers,cron-operations}.md` | ✅ 완료 |
+| 3 | Seed 봉인 | `seed.md` 의 ① 채움 + `sealed: true`, `current.md.gen=1` | 대기 (사람) |
+| 4 | gen-001 조직 제안 | system 이 시드 읽고 `generations/gen-001/orgs/<org>.md` 7±2 제안 → Type C 결정 | 대기 |
+| 5 | Manual vertical slice | `workflows/vertical-slice.md` 1 회 손통과, `my-life/logs/manual-runs/` 회고 | 대기 |
+| 6 | gen-001 첫 사이클 (수동) | tick 1~N 을 사람이 직접 BOOTSTRAP 따라 실행 | 대기 |
+| 7 | Cron 등록 (Phase 2) | `BOOTSTRAP.cron.example` 적용. Iron Law 통과 후에만 | 대기 |
+| 8 | gen 전환 | `transition.md` 발의 → 조직 진화 → gen-002 시작 | 대기 |
+| 9 | 수렴 | `G-CONVERGE-1` 충족 → 시스템 정지 | 장기 |
 
 > 단계 2 미수행 시 모든 tick 이 sanity check 에서 *seed waiting* 으로 종료.
 > 단계 4 미통과 시 단계 6 진입 불가 (my-life `AGENTS.md` Iron Law).
