@@ -1,0 +1,84 @@
+id: D-20260501-002
+type: B                                 # 두 옵션 + 추천. cy-001 운영 차원, constitution 영향 0.
+asked_at: 2026-05-01T19:15:00+00:00
+deadline:                               # 사용자 페이스. 미응답 시 implementer 는 엔진 비독립 task 진행.
+gen: 1
+cycle: cy-001
+parent_goal: G-PRODUCT-1                # 첫 vertical slice 인프라 결정.
+title: "g-the-map-walker 엔진 선택 — Web vs Godot (Unity 는 트립와이어로 후보 제거)"
+
+description: |
+  charter §첫 task #1 (implementer) 결과. cost/value 표는
+  outputs/code/g-the-map-walker/engine-choice.md 에 v0 발행.
+
+  세 후보 (Web / Godot / Unity) 중 Unity 는 implementer charter §트립와이어 #1
+  (비용/가치 비대칭 — 5 배 싸게 동등 효과) 발화로 후보 제거. 남은 두 후보 중
+  결정은 *cold-reader 배포 마찰 (Web 우세) vs 네이티브 진출 여지 (Godot 우세)*
+  의 가치 판단 — 사용자 / orchestrator 차원 결정.
+
+  본 결정은 cy-001 이후의 모든 g-the-map-walker vertical slice 인프라를 결정.
+  Type B 인 이유: 두 옵션 모두 charter 챔피언 영역 안에서 통과 (Type A 아님),
+  비전·시드·G-* 영향 0 (Type C 아님).
+
+options:
+  - id: web
+    summary: "Web (Pixi.js + 커스텀 WebGL2 fragment shader, Vite + TypeScript)"
+    cost: |
+      셋업 0.5 일. 1 일 vertical slice budget 안에 §1 한 줄 빌드 도달.
+      OSS 풀 스택 (MIT). 라이센스/계정 0. cold-reader 배포 = URL 1 개.
+      셰이더 디버그 ergonomics 가 Godot 인스펙터보다 약간 약함 (1 차 약점).
+    supporters: [implementer]
+    objectors: []                       # 본 라운드 미발화
+    fits_champions: |
+      - implementer §실현 가능성: 1 일 budget 여유.
+      - implementer §코드 단순성: GLSL 1 파일 = 한 책임. HTML 1 + JS 2–3 모듈.
+      - implementer §빌드 성공: vite build → URL 1 개. critic r2 cold-reader
+        시뮬레이션 *링크 한 번 클릭* 으로 즉시 가능.
+      - implementer §자립 (1 차 매니페스토): OSS 전체.
+
+  - id: godot
+    summary: "Godot 4 (GDScript + GDShader, HTML5 + 네이티브 export)"
+    cost: |
+      셋업 1 일 (1 일 budget 타이트). 에디터 학습 시간 가산 시 budget 초과 가능.
+      OSS 풀 스택 (MIT). 라이센스/계정 0. HTML5 export 5–15 MB 로딩 (Web 대비
+      cold-reader 마찰 5–10x). 네이티브 + Web 둘 다 export — cy-002+ 모바일/콘솔
+      진출 시 결 일치.
+    supporters: []                      # 본 라운드 implementer 추천 후보 아님
+    objectors: []
+    fits_champions: |
+      - implementer §실현 가능성: 1 일 budget 타이트.
+      - implementer §코드 단순성: 노드 그래프 + GDScript. 도구가 더 풍부, 구조는
+        Web 보다 약간 무거움.
+      - implementer §빌드 성공: HTML5 export 마찰 + 네이티브 export 별도.
+      - implementer §자립: OSS 전체. Web 과 동률.
+
+recommended: web
+recommended_reason: |
+  cost/value 표 (engine-choice.md §3) 매트릭스 합계 Web 10/10 vs Godot 7.5/10.
+  결정적 축은 C4 (cold-reader 배포 마찰) — Web 의 URL 1 개 배포가 critic r2 의
+  vertical slice 가중치 평가 *진입 장벽* 입력 + my-life Iron Law manual-run 게이트
+  의 *손에 닿기까지의 마찰 최소화* 두 자리 모두 결 일치.
+
+  단 다음 한 가지 가치 판단은 사용자/orchestrator 차원:
+  cy-002+ 의 vertical slice 가 *모바일 / 콘솔 / 네이티브 데스크탑* 진출을 1 차
+  표적으로 삼으면 Godot 가 결 일치. cy-001 의 결로는 Web 이 5x 결 일치.
+
+response_schema:
+  - key: picked
+    label: "엔진 선택"
+    type: radio
+    options_ref: options
+    default_from: recommended
+    required: true
+
+  - key: notes
+    label: "노트 (자유 코멘트 — 스택 세부 변경 / 배포 표적 / 추가 제약)"
+    type: textarea
+    required: false
+
+trace: generations/gen-001/cycles/cy-001/decision-traces/D-20260501-002.md
+
+response:
+  decided_at: '2026-05-01T17:11:18+00:00'
+  picked: web
+  notes:
