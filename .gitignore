@@ -2,9 +2,10 @@
 logs/*
 !logs/.gitkeep
 
-# Local state — user copies from *.example
+# Local state — user copies from *.example, or scripts populate
 state/budget.yml
 state/slack-config.yml
+state/slack-app.yml
 
 # Local secrets
 .env

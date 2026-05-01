@@ -1,0 +1,39 @@
+display_information:
+  name: my-prompts
+  description: Manifesto-aligned self-evolving content catalog (HITL)
+  long_description: |
+    Surfaces decisions from the my-prompts system to a human-in-the-loop
+    via slash commands and interactive blocks. Responses go back into
+    decisions/<state>/D-*.yml as ground truth — Slack is one of multiple
+    UI surfaces, never the source of truth.
+    Repo: github.com/k-codepoet/my-prompts
+  background_color: "#0d1117"
+
+features:
+  bot_user:
+    display_name: my-prompts
+    always_online: true
+
+  slash_commands:
+    - command: /myprompts
+      description: my-prompts decision queue and system control
+      usage_hint: "list | decide D-id key=value... | pause [reason] | resume | status"
+      should_escape: false
+
+oauth_config:
+  scopes:
+    bot:
+      - chat:write
+      - chat:write.public
+      - commands
+      - app_mentions:read
+
+settings:
+  event_subscriptions:
+    bot_events:
+      - app_mention
+  interactivity:
+    is_enabled: true
+  org_deploy_enabled: false
+  socket_mode_enabled: true
+  token_rotation_enabled: false

@@ -1,0 +1,20 @@
+# state/slack-app.yml — Slack App credentials and IDs.
+# 자동 생성: scripts/slack-app-sync.sh 가 manifest 동기화 시 채움 + 갱신.
+# 수동 보강: 사용자가 Slack UI 에서 install 후 bot_token / app_token 추가.
+# 본 파일 (.example 아님) 은 .gitignore 에 의해 커밋되지 않음.
+
+# === sync 가 채우는 필드 ===
+app_id: A0XXXXXXXXX
+refresh_token: xoxe-xxxxxxxxxxxx              # 매 sync 때 회전
+signing_secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+verification_token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+client_id: 1234567890.1234567890
+client_secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# === 사용자가 추가하는 필드 (Slack UI 에서 발급) ===
+# Install 후 OAuth & Permissions → Bot User OAuth Token
+bot_token: xoxb-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxx
+
+# Settings → Basic Information → App-Level Tokens → Generate Token
+# Scope: connections:write
+app_token: xapp-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
