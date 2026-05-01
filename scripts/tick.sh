@@ -109,11 +109,19 @@ my-prompts orchestrator tick.
 Read \`current.md\`, \`constitution.md\`, \`seed.md\`, and \`BOOTSTRAP.md\`.
 Then execute exactly one tick following BOOTSTRAP §tick steps 0–5.
 
+BOOTSTRAP §1 (사용자 응답 통합) 자동화:
+- decisions/open/ 의 yml 중 response.decided_at 박힌 것이 있으면 직접 처리 말고
+  scripts/apply-decisions.sh --apply <D-id> 를 호출. 그 스크립트가 trace append /
+  closed/ 이동 / current.md 갱신 / Slack notify 까지 다 함.
+
 Constraints:
 - Do not modify constitution.md, seed.md, CHARTER.md, STRUCTURE.md, BOOTSTRAP.md.
 - Active gen folder is generations/gen-N where N=current.md.gen.
 - Append to ticks/, arguments/, decision-traces/ within that gen only.
-- If a Type C decision is needed, write decisions/open/D-<YYYYMMDD>-<seq>.yml from template.yml.
+- If a Type C (or any) decision needs to be opened, write decisions/open/D-<YYYYMMDD>-<seq>.yml
+  from template.yml. **Immediately after writing**, call:
+      scripts/slack-notify.sh decision_opened "🟡 Decision needed: <D-id>" "<short body with type, options summary, recommended pick, trace path>"
+  This is mandatory — without it the human won't know a new HITL item exists.
 - Keep this tick under \$$MAX_BUDGET_USD.
 - Final user-facing summary: write a single line to stdout starting with TICK_SUMMARY:.
 EOF

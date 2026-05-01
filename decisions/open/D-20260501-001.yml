@@ -1,7 +1,7 @@
 id: D-20260501-001
 type: C                                 # 비전·시드·조직 영향 — 사람만 응답.
 asked_at: 2026-05-01T14:32:45+00:00
-deadline: null                          # 급할 것 없음. 사용자 페이스.
+deadline:                               # 급할 것 없음. 사용자 페이스.
 gen: 1
 cycle: cy-001
 parent_goal: G-WORLD-1                  # 첫 세계 bible 의 출발점.
@@ -165,6 +165,32 @@ recommended:
     lore 가 manifesto 보다 앞설 위험.
 
 # ───────────────────────────────────────────────────────────
+# Response schema — Slack 모달 / 외부 UI 가 응답 폼을 그릴 때 참조.
+# 각 항목은 response.<key> 한 칸을 채운다. 봇은 이 스키마를 보고
+# 라디오 / 텍스트 / 멀티라인 등을 동적으로 만든다.
+# ───────────────────────────────────────────────────────────
+response_schema:
+  - key: orgs_pattern_picked
+    label: "조직 패턴"
+    type: radio                            # 옵션 중 1 택
+    options_ref: options_orgs              # 옵션을 같은 yml 의 어떤 배열에서 끌어올지
+    default_from: recommended.orgs_pattern
+    required: true
+
+  - key: world_picked
+    label: "첫 가상 세계"
+    type: radio_or_text                    # 라디오 1 택 OR 직접 작성 한 줄
+    options_ref: options_world
+    default_from: recommended.world_pick
+    freeform_label: "직접 작성한 한 줄 — 비우면 위 라디오 선택 사용"
+    required: true
+
+  - key: notes
+    label: "노트 (자유 코멘트 · 수정 요청 · 추가 제안)"
+    type: textarea
+    required: false
+
+# ───────────────────────────────────────────────────────────
 # Trace
 # ───────────────────────────────────────────────────────────
 trace: generations/gen-001/cycles/cy-001/decision-traces/D-20260501-001.md
@@ -173,7 +199,7 @@ trace: generations/gen-001/cycles/cy-001/decision-traces/D-20260501-001.md
 # Response — 사용자가 채움
 # ───────────────────────────────────────────────────────────
 response:
-  decided_at: null
-  orgs_pattern_picked: null              # A | B | A_modified
-  world_picked: null                     # 1 | 2 | 3 | "<직접 작성한 한 줄>"
-  notes: null                            # 자유 텍스트
+  decided_at: '2026-05-01T15:55:29+00:00'
+  orgs_pattern_picked: A                 # A | B | A_modified
+  world_picked: 2                        # 1 | 2 | 3 | "<직접 작성한 한 줄>"
+  notes:                                 # 자유 텍스트

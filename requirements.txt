@@ -1,2 +1,3 @@
 slack_bolt>=1.18.0
 PyYAML>=6.0
+ruamel.yaml>=0.18                       # round-trip YAML — 주석·블록스칼라 보존
