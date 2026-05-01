@@ -155,7 +155,16 @@ def cmd_list(respond):
     ]
 
     for path in files:
-        d = read_yaml(path)
+        try:
+            d = read_yaml(path)
+        except Exception as e:
+            blocks.append({
+                "type": "section",
+                "text": {"type": "mrkdwn",
+                         "text": f"⚠️ `{Path(path).name}` 파싱 실패: `{type(e).__name__}` — yml 직접 확인 필요"},
+            })
+            blocks.append({"type": "divider"})
+            continue
         did = d.get("id", Path(path).stem)
         dtype = d.get("type", "?")
         title = truncate(d.get("title", "(no title)"), 200)
