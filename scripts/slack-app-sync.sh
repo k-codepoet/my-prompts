@@ -63,7 +63,8 @@ if not access:
     access = res["token"]
     state["refresh_token"] = res["refresh_token"]
 
-manifest = MANIFEST.read_text()
+# Slack 의 manifest API 가 raw YAML 을 거부하는 경우가 있음 → JSON 으로 직렬화해서 전송.
+manifest = json.dumps(yaml.safe_load(MANIFEST.read_text()), ensure_ascii=False)
 app_id = state.get("app_id")
 
 endpoint = "apps.manifest.update" if app_id else "apps.manifest.create"
