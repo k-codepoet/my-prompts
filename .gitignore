@@ -20,6 +20,9 @@ state/slack-app.yml
 *.swp
 *.swo
 
-# Claude Code runtime
-.claude/
+# Claude Code runtime — 공유할 것 (settings.json, hooks/) 제외 ignore
+.claude/*
+!.claude/settings.json
+!.claude/hooks/
+.claude/settings.local.json
 state/.last-role

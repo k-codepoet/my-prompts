@@ -179,3 +179,7 @@ with open(tl_path, 'w') as f:
     f.write('\n'.join(out))
 print(f'timeline appended: {category} | {title}')
 PY
+
+# 알림은 .claude/hooks/post-image-gen.sh 가 *생성 직후* 자동 처리.
+# 본 스크립트는 repo 적재 책임만 — 중복 알림 안 보냄.
+echo "saved → $REL_DEST"

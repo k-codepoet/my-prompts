@@ -141,22 +141,22 @@ Constraints:
 
 이미지 생성 프로토콜 (모든 모드 공통):
 - 산출물 이해를 돕는 삽화가 필요하면 \`mcp__my-genai__generate_image\` 호출.
-- **provider=comfyui (default), workflow="z-image-turbo"**. \`aspect_ratio\` 파라미터는
-  OpenRouter 전용이라 ComfyUI 에서는 무시됨 → 반드시 \`width\` + \`height\` 로 지정.
-- z-image-turbo 가 안정 처리하는 비율 3 종 (sweet spot 2-5MP):
-    | 의도   | aspect | width × height |
-    |--------|--------|----------------|
-    | square | 1:1    | 1024 × 1024    |
-    | landscape (16:9) | 16:9 | 1344 × 768  |
-    | portrait  (9:16) | 9:16 | 768 × 1344  |
-  이 3 종 외 비율은 사용 금지 (왜곡 위험).
-- 호출 결과의 URL 을 절대 외부에 두지 말고, 즉시 \`scripts/save-image.sh\` 로 흡수:
+- **provider=comfyui (default), workflow="z-image-turbo"**. \`aspect_ratio\` 는 ComfyUI 에서
+  무시 → 반드시 \`width\` + \`height\` 로 지정.
+- 지원 비율 3 종 (sweet spot 2-5MP, 그 외 금지):
+    | 의도              | width × height |
+    |-------------------|----------------|
+    | square (1:1)      | 1024 × 1024    |
+    | landscape (16:9)  | 1344 × 768     |
+    | portrait  (9:16)  | 768 × 1344     |
+- *생성 직후*: \`.claude/hooks/post-image-gen.sh\` 가 자동으로 Slack 알림 발사 (사용자 즉시 봄).
+  너는 별도 알림 안 해도 됨.
+- *적재*: 반드시 \`scripts/save-image.sh\` 로 repo 안에 다운로드 + meta + timeline append:
     scripts/save-image.sh "<url>" "outputs/worldbuilding/<world>/illustrations/<slug>.png" \\
       --caption "<한 줄>" --prompt "<원본 prompt>" \\
       --source-artifact "<참조 md>" --source-section "<섹션>" \\
       --category illustration --creator "tick:<your-id>"
 - 카테고리: illustration / location / character / event 중 적절한 것.
-- 이미지는 sidecar .meta.yml 과 outputs/timeline.md 에 자동 기록됨.
 EOF
     ;;
   role)
@@ -175,19 +175,17 @@ Constraints:
 - Final summary: TICK_SUMMARY: line.
 
 이미지 생성 프로토콜 (필요 시):
-- 자기 도메인의 이해 보강에 삽화가 도움되면 \`mcp__my-genai__generate_image\` 호출.
-- **provider=comfyui, workflow="z-image-turbo"**. \`aspect_ratio\` 는 ComfyUI 에서 무시됨
-  → 반드시 \`width\` + \`height\` 로 지정. 지원 3 종 (이 외 비율 금지):
-    1:1 square     → 1024×1024
-    16:9 landscape → 1344×768
-    9:16 portrait  → 768×1344
-- 결과 URL 은 즉시 \`scripts/save-image.sh\` 로 repo 안에 적재 (외부 URL 만 두지 말 것):
+- 도메인 이해 보강에 삽화가 도움되면 \`mcp__my-genai__generate_image\` 호출.
+- **provider=comfyui, workflow="z-image-turbo"**. \`aspect_ratio\` 는 무시됨 → \`width\`+\`height\`.
+  지원 3 종 (이 외 금지): 1024×1024 / 1344×768 / 768×1344.
+- *생성 직후* Slack 알림은 \`.claude/hooks/post-image-gen.sh\` 가 자동 발사. 별도 호출 X.
+- *적재*는 반드시 \`scripts/save-image.sh\` 로:
     scripts/save-image.sh "<url>" "outputs/worldbuilding/<world>/<category>/<slug>.png" \\
       --caption "<한 줄>" --prompt "<원본 prompt>" \\
       --source-artifact "<your argument or 참조 md>" \\
       --category illustration --creator "tick:$ROLE"
-- art-director 는 본 프로토콜의 *주된 사용자*. 다른 조직도 자기 영역 시각화 필요 시 사용 가능
-  하나, art-director 의 톤·매너 가이드와 충돌 시 art-director 의 의견이 우선.
+- art-director 는 본 프로토콜의 *주된 사용자*. 다른 조직도 자기 영역 시각화 가능하나,
+  톤·매너 충돌 시 art-director 의견 우선.
 EOF
     ;;
   role-rotate)
