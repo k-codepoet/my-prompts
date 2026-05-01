@@ -9,6 +9,11 @@ webhook_url: https://hooks.slack.com/services/REPLACE_WITH_YOUR_WEBHOOK
 # 필요하면 메시지 prefix 지정.
 prefix: "[my-prompts]"
 
+# 이미지 인라인 업로드 채널 ID — slack-upload-image.sh 가 사용.
+# Slack 에서 채널 우클릭 → View channel details → 하단의 Channel ID (Cxxxxxxxx 형식).
+# 이거 없으면 hook 이 webhook + 링크 fallback 으로 전환.
+image_channel: ""
+
 # 특정 트리거 끄고 싶으면 false.
 triggers:
   decision_opened: true     # 새 D-* 발의

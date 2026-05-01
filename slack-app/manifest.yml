@@ -27,6 +27,8 @@ oauth_config:
       - chat:write.public
       - commands
       - app_mentions:read
+      - files:write              # 이미지 base64 업로드 (files.uploadV2)
+      - channels:read            # 채널 ID 조회 (#my-prompts → C...)
 
 settings:
   event_subscriptions:

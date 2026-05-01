@@ -51,18 +51,33 @@ if [ ! -x "$NOTIFY" ]; then
   exit 0
 fi
 
-# 본문 빌드
-{
-  echo "*프롬프트*"
-  echo '```'
-  echo "$PROMPT" | head -c 700
-  echo
-  echo '```'
-  [ -n "$WIDTH" ] && [ -n "$HEIGHT" ] && [ "$WIDTH" != "null" ] && echo "*크기*: ${WIDTH}×${HEIGHT}"
-  [ -n "$WORKFLOW" ] && [ "$WORKFLOW" != "null" ] && echo "*워크플로우*: \`$WORKFLOW\`"
-  [ -n "$PROVIDER" ] && [ "$PROVIDER" != "null" ] && echo "*Provider*: \`$PROVIDER\`"
-  echo "_생성 직후 — 조직이 \`save-image.sh\` 로 repo 에 적재할 예정 (캡션·카테고리 추가됨)._"
-} | "$NOTIFY" --image-url "$URL" image_generated "🎨 이미지 생성" 2>/dev/null \
-  || echo "[post-image-gen] slack 알림 실패 (계속 진행)" >&2
+# 본문 (text comment) 빌드 — 업로드의 initial_comment 와 webhook fallback 양쪽에 사용
+COMMENT=$(cat <<EOF
+🎨 *이미지 생성*
+
+*프롬프트*
+\`\`\`
+$(echo "$PROMPT" | head -c 700)
+\`\`\`
+$([ -n "$WIDTH" ] && [ -n "$HEIGHT" ] && [ "$WIDTH" != "null" ] && echo "*크기*: ${WIDTH}×${HEIGHT}")
+$([ -n "$WORKFLOW" ] && [ "$WORKFLOW" != "null" ] && echo "*워크플로우*: \`$WORKFLOW\`")
+$([ -n "$PROVIDER" ] && [ "$PROVIDER" != "null" ] && echo "*Provider*: \`$PROVIDER\`")
+
+원본: <$URL|🔗 GenAI 서버에서 보기>
+_생성 직후 — 조직이 \`save-image.sh\` 로 repo 적재 예정._
+EOF
+)
+
+# 1차 시도: bot_token + files.uploadV2 로 채널에 인라인 업로드 (사용자 요청)
+UPLOAD_OK=0
+if "$ROOT/scripts/slack-upload-image.sh" "$URL" "🎨 이미지 (z-image-turbo)" "$COMMENT" 2>/dev/null; then
+  UPLOAD_OK=1
+fi
+
+# Fallback: scope/채널 미설정 시 webhook + 링크
+if [ "$UPLOAD_OK" -ne 1 ]; then
+  echo "$COMMENT" | "$NOTIFY" --image-url "$URL" image_generated "🎨 이미지 생성" 2>/dev/null \
+    || echo "[post-image-gen] slack 양쪽 다 실패 (계속 진행)" >&2
+fi
 
 exit 0
