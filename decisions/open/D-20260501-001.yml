@@ -1,0 +1,179 @@
+id: D-20260501-001
+type: C                                 # 비전·시드·조직 영향 — 사람만 응답.
+asked_at: 2026-05-01T14:32:45+00:00
+deadline: null                          # 급할 것 없음. 사용자 페이스.
+gen: 1
+cycle: cy-001
+parent_goal: G-WORLD-1                  # 첫 세계 bible 의 출발점.
+title: "gen-001 조직 7 패턴 + 첫 가상 세계 후보 3 안 묶음"
+
+description: |
+  시드 봉인 직후 BOOTSTRAP.md §⑦ 에 따라 발의.
+  본 결정은 두 묶음을 한 번에 다룬다 (조직 + 세계). 둘은 상호 의존적이라
+  분리하면 *어느 조직이 어느 세계를 챔피언하는가* 가 모호해짐.
+
+  사용자는 다음 세 항목에 응답:
+    1. orgs_pattern_picked  → A | B | A_modified
+    2. world_picked         → 1 | 2 | 3 | "직접 작성한 한 줄"
+    3. notes                → 자유 코멘트 (수정 요청 · 추가 조직 제안 · 변경 사항)
+
+# ───────────────────────────────────────────────────────────
+# 옵션 묶음 1 — 조직 패턴 (orgs)
+# ───────────────────────────────────────────────────────────
+options_orgs:
+  - id: A
+    title: "CHARTER §5 충실 + Voice Keeper 추가 (7 조직)"
+    summary: |
+      CHARTER 의 6 시드 역할(Loremaster · Designer · Implementer · Art Director ·
+      Writer · Critic)에 Voice Keeper 1 명을 추가한 7 인 평의회.
+      Voice Keeper 는 invariant #1 (매니페스토 정렬) 의 *전담 챔피언* — 다른
+      모든 조직이 자기 영역에 몰두할 때 매니페스토 §② 와 어긋나지 않는지 본다.
+    members:
+      - id: loremaster
+        domain: prompts/worldbuilding/, outputs/worldbuilding/
+        champions: 세계 일관성, 시대·자연법칙·문화·지명·관계의 정합성
+      - id: designer
+        domain: prompts/design/, workflows/wf-design-*
+        champions: 플레이어 경험 · 코어 루프 · 재미
+      - id: implementer
+        domain: prompts/code/, outputs/code/
+        champions: 실현 가능성 · 코드 단순성 · 빌드 성공
+      - id: art-director
+        domain: prompts/art/, outputs/art/
+        champions: 시각 일관성 · 톤 앤 매너 · 식별성
+      - id: writer
+        domain: prompts/writing/, outputs/writing/
+        champions: 서사 일관성 · 캐릭터 보이스 · 테마
+      - id: critic
+        domain: 모든 산출물의 첫 5 분 평가
+        champions: 진입 장벽 · 즉답 가능성 · 외부 시선
+      - id: voice-keeper                                # NEW
+        domain: 매니페스토 정렬 감사 (invariant #1 전담)
+        champions: 작가 코퍼스 인용 정확성 · 세 축(나/가족/업) 균형 · 핵심어 메타포 명시성
+    cost: |
+      각 조직마다 charter 1 페이지 작성 필요 (총 7 쪽). voice-keeper 는 신규
+      이므로 정렬 감사 룰을 0 부터 정의해야 함.
+    fits_seed: 세 축 (나/가족/업) 의 *나* 챔피언으로 voice-keeper 가 자연스럽게 매핑.
+
+  - id: B
+    title: "고객-공급자 거울 패턴 (8 조직)"
+    summary: |
+      시드 구절(*나라는 고객 → 만족시키는 여정*) 의 이중성을 조직 구조로 직접
+      체화. **Customer (나) ↔ Supplier (만족시키는 자)** 두 진영을
+      각 도메인 안에 거울처럼 배치.
+    members:
+      - id: lore-customer
+        champions: 세계관에 대해 *원하는 무엇* (요구)
+      - id: lore-supplier
+        champions: 그 요구를 구체적으로 *공급* (충족 시도)
+      - id: form-customer                              # game/writing/visual 통합 customer
+        champions: product 형태에 대한 *원하는 무엇*
+      - id: form-supplier-game                         # designer + implementer 통합
+      - id: form-supplier-writing                      # writer
+      - id: form-supplier-art                          # art-director
+      - id: critic
+      - id: voice-keeper
+    cost: |
+      더 강력한 메타포 — 시드 자체가 조직 구조에 박힘. 단점: 도메인 관리 단위가
+      *2 배수 거울* 이라 충돌 빈도 ↑, charter 도 8 쪽 작성 필요. 첫 cycle 학습 곡선
+      가파름.
+    fits_seed: 시드 구절을 *직접 형상화*. 단, 검증 안 된 패턴이라 실패 시 큰 재작업.
+
+  - id: A_modified
+    title: "A 기반 + 사용자 수정 (자유)"
+    summary: |
+      옵션 A 를 받되 사용자가 자유 텍스트로 추가 · 제거 · 변경 지시.
+      `notes` 필드에 변경 내용 적으면 그대로 반영하여 charter 작성.
+
+# ───────────────────────────────────────────────────────────
+# 옵션 묶음 2 — 첫 가상 세계 후보 (world)
+# ───────────────────────────────────────────────────────────
+options_world:
+  - id: 1
+    title: "고객 길드 (The Self-Client Guild)"
+    one_line: "모든 사람은 자기 자신을 단 한 명의 고객으로 모시는 길드원이다."
+    pitch: |
+      세계의 모든 마법·기술·자원은 *자기 자신을 만족시킨 증거* 를 연료로 작동한다.
+      자기에게 진심이지 않은 자는 빛을 잃고, 외부 평판만 좇는 자는 점차 투명해진다.
+      길드 본부 *자기 자신* (회원 1 명짜리) 부터 *천 명* (도시) 까지 규모가 다양하다.
+      주인공은 한 번도 자기 길드에 청구서를 보낸 적 없는 사람 — 즉, 자기에게
+      서비스 받아 본 적 없는 사람.
+    benchmark_alignment: 주토피아 (시스템이 캐릭터로) + 파이널판타지 (의지가 별처럼 남는다)
+    manifesto_keywords: [자립, 진심, 시간이 곧 나, 방향]
+    invariant_traps: |
+      - "자기만족" 이 자기중심·이기심으로 변질되지 않게 — 길드원 간 도움이 *길드 통화* 가 되어야 함 (연대 보존)
+      - 외부 평가를 *전부* 거부하면 critic 의 진입 장벽 트립와이어와 충돌 — 외부 시선은 거울이지 적이 아님
+    derivation_examples:
+      - 게임: "고객 길드 — 자기에게 보내는 첫 청구서" 30초 vertical slice (인디 RPG)
+      - 단편: 길드원이 자기 자신과 처음 만나는 새벽
+      - 이미지: 자기에게 빛이 번지는 길드 카드 6 종 세트
+
+  - id: 2
+    title: "여정 자체가 지도 (The Map is the Journey)"
+    one_line: "각자의 지도는 그가 걸어 온 길 자체. 가지 않은 곳은 존재하지 않는다."
+    pitch: |
+      세계는 한 장의 거대한 *백지*. 사람이 걸으면 길이 그려지고, 멈추면 자라지
+      않으며, 돌아가지 않으면 잊혀진다. *자기 객체화* (자기를 고객으로 보기) 는
+      자기 지도를 *볼 수 있는* 거의 유일한 능력. 보지 못하는 자는 자기 지도 위에
+      살면서도 길을 잃은 채 헤맨다. 주인공은 어느 날 *남의 지도가 자기 지도와
+      겹쳐* 있는 자국을 발견한다 — 동행자.
+    benchmark_alignment: 반지전쟁 (걷는 자가 만든다) + 해리포터 (보이지 않던 길)
+    manifesto_keywords: [움직임, 방향, 시간이 곧 나, 연대]
+    invariant_traps: |
+      - 메타픽션이 너무 추상적 → critic 트립 (첫 5 분에 이해 불가)
+      - "안 움직이면 잊혀진다" 가 강박이 되면 매니페스토의 *축복* 결을 배반 (살아가는 자체가 축복)
+    derivation_examples:
+      - 게임: 걷는 만큼 맵이 그려지는 산책 시뮬레이터 + 다른 플레이어 지도와 겹침 발견
+      - 단편: 처음으로 자기 지도를 본 새벽의 1 인칭
+      - 우표 시리즈: 6 명의 6 개 지도 — 각자의 첫 길
+
+  - id: 3
+    title: "진심 측정기 (The Sincerity Index)"
+    one_line: "모든 약속·말·결정은 측정 가능한 진심도를 가진다. 자기에게 향한 진심도가 가장 강력한 통화다."
+    pitch: |
+      AI 가 진심을 0..1 로 측정하는 사회. 외부 진심도는 *공공 기록* 이지만,
+      *자기에게 향한 진심도* 는 측정자 본인만이 본다. 이걸 위조하려는
+      자기 학습 데이터 시장이 암시장이 된다. 주인공은 자기 진심도를 *진짜*
+      높이는 방법을 찾는 자 — 게임이론의 *generous tit-for-tat* 이 폭발적
+      이점이 되는 사회를 발견.
+    benchmark_alignment: 아이언맨 (책임은 천재가 아니라 선택) + 주토피아 (편견은 시스템에서, 개인이 시스템을 흔든다)
+    manifesto_keywords: [진심, 자립, 연대]
+    invariant_traps: |
+      - 측정이 곧 환원 → "측정 안 되는 진심" 의 가치 절하 위험. matter:문학적 미스터리로 다뤄야 함
+      - SF 무게가 너무 강하면 lore 가 manifesto 보다 앞섬 (본말전도) — Loremaster 와 voice-keeper 가 균형 잡아야
+    derivation_examples:
+      - 게임: "Sincerity Index" — 자기 결정마다 진심도 측정되는 RPG (1 시간 vertical slice)
+      - 단편: 진심도가 0.99 인 사람이 처음 0.5 의 위로를 마주칠 때
+      - 이미지: 6 명의 진심도 카드 (게임 UI 풍)
+
+# ───────────────────────────────────────────────────────────
+# 추천 (orchestrator) — 사람이 무시 가능
+# ───────────────────────────────────────────────────────────
+recommended:
+  orgs_pattern: A
+  reason_orgs: |
+    B 는 시드 형상화 매력적이지만 첫 사이클 학습 곡선이 가파르다 (Iron Law 정신:
+    검증 안 된 워크플로우 자동화 금지 → 검증 안 된 *조직 구조* 도 처음엔 보수적).
+    A 가 manual vertical-slice 첫 표적으로 안전하고, gen-002 에서 transition.md
+    로 B 변형 시도 가능.
+  world_pick: 1
+  reason_world: |
+    "고객 길드" 가 시드 구절을 *직접* 메타포화 — 환원 가능성 최고 (invariant #1).
+    벤치마크의 주토피아·FF 결과 호환되며, vertical slice 30 초 빌드 후보가 즉시
+    상상 가능 ("자기에게 보내는 첫 청구서").
+    후보 2 (지도) 는 시적이나 추상도 높음, 후보 3 (진심 측정기) 는 SF 깊이 좋으나
+    lore 가 manifesto 보다 앞설 위험.
+
+# ───────────────────────────────────────────────────────────
+# Trace
+# ───────────────────────────────────────────────────────────
+trace: generations/gen-001/cycles/cy-001/decision-traces/D-20260501-001.md
+
+# ───────────────────────────────────────────────────────────
+# Response — 사용자가 채움
+# ───────────────────────────────────────────────────────────
+response:
+  decided_at: null
+  orgs_pattern_picked: null              # A | B | A_modified
+  world_picked: null                     # 1 | 2 | 3 | "<직접 작성한 한 줄>"
+  notes: null                            # 자유 텍스트
