@@ -1,10 +1,10 @@
 ---
 gen: 1                     # 현재 generation.
 cycle: cy-001              # 첫 사이클.
-tick: 002                  # round-1 task 발행.
+tick: 003                  # round-2 진척 모니터링 (1/7).
 active_decisions: []
 paused: false
-last_updated: '2026-05-01T16:42:00+00:00'
+last_updated: '2026-05-01T17:32:00+00:00'
 ---
 
 # Current State (live pointer)
@@ -17,9 +17,10 @@ last_updated: '2026-05-01T16:42:00+00:00'
 - `seed.md` (봉인됨, 2026-05-01 — 인셉션 구절: *"인생이란 나라는 고객을 최고로 만족시키기 위한 여정"*)
 - `generations/gen-001/orgs/*.md` (7 조직 charter — 패턴 A 채택)
 - `outputs/worldbuilding/the-map-is-the-journey/bible-v0.1.md` (활성 세계 v0.1 — 매니페스토 정렬 점수 측정 대기)
-- `generations/gen-001/cycles/cy-001/` (활성 — round 1 task 발행 완료, round 2 산출물 대기)
+- `outputs/art/the-map-is-the-journey/visual-bible-v0.1.md` (시각 바이블 v0.1 — art-director r1 산출, 앵커: `illustrations/key-visual-blank-page-dawn.png`)
+- `generations/gen-001/cycles/cy-001/` (활성 — round-2 진척 1/7)
 
-## 다음 동작 후보 (cy-001 round 2)
+## 다음 동작 후보 (cy-001 round 2 — 진척 1/7)
 
 각 조직이 round-1 task 의 산출물을 다음 tick 들에서 채운다 (`arguments/orchestrator-r1.md` 매트릭스 참조):
 
@@ -27,7 +28,7 @@ last_updated: '2026-05-01T16:42:00+00:00'
 - **voice-keeper**: 정렬 감사 룰 v0 → 직후 bible 정렬 점수 산정
 - **loremaster**: bible v0.2 보강 (자기 객체화 메타포 추가)
 - **writer**: 인물 시트 v0 (3 인)
-- **art-director**: 시각 바이블 v0.1
+- ~~**art-director**: 시각 바이블 v0.1~~ ✅ 도착 (`outputs/art/the-map-is-the-journey/visual-bible-v0.1.md`)
 - **designer**: g-the-map-walker concept.md
 - **implementer**: 엔진 선택 cost/value 표 (godot/unity/web) — 결과 미정 시 Type B 발의
 
@@ -48,3 +49,5 @@ last_updated: '2026-05-01T16:42:00+00:00'
 | 2026-05-01T15:55:29 | D-20260501-001 응답 | orgs 패턴 A · 세계 #2 the-map-is-the-journey |
 | 2026-05-01T16:26:17 | D-20260501-001 적용 | 7 조직 charter + bible v0.1 발행 |
 | 2026-05-01T16:42:00 | tick-002 | cy-001 round-1: 7 조직에 task 발행 |
+| 2026-05-01T17:10:00 | art-director r1 | 시각 바이블 v0.1 도착 (앵커 일러 1 장 포함) |
+| 2026-05-01T17:32:00 | tick-003 | cy-001 round-2 진척 1/7 (checker 관측) |
