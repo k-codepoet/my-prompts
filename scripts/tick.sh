@@ -68,6 +68,20 @@ ymls = [p for p in glob.glob(os.path.join(open_dir, "D-*.yml"))]
 if len(ymls) >= N:
     print(f"blocked:queue_full({len(ymls)}>={N})"); sys.exit(0)
 
+# 3.5) Type C (전략·비전·시드 영향) 미응답 자동 정지 (사용자 정책: 2 번)
+#      응답 박힌 Type C 는 통과 — 다음 checker 가 apply-decisions 로 처리하게.
+type_c_pending = []
+for p in ymls:
+    try:
+        with open(p) as f:
+            d = yaml.safe_load(f) or {}
+    except Exception:
+        continue
+    if d.get("type") == "C" and not (d.get("response") or {}).get("decided_at"):
+        type_c_pending.append(os.path.basename(p)[:-4])
+if type_c_pending:
+    print(f"blocked:type_c_pending({','.join(type_c_pending)})"); sys.exit(0)
+
 # 4) gen 활성?
 gen = cur.get("gen")
 if gen is None:

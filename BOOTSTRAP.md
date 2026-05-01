@@ -26,6 +26,7 @@
 ### 0. Sanity check (모든 tick 공통)
 - `current.paused == true` → 즉시 종료, tick 로그 없음.
 - `len(decisions/open/) >= N` (현재 N=5) → 즉시 종료 + tick 로그 "blocked: queue full".
+- **`open/D-*.yml` 중 type=C 이면서 `response.decided_at` 미응답인 것 1 개라도 있으면 → "blocked:type_c_pending" 로 종료.** Type A/B 는 부분 자율 허용 (lane 안에서 진행), Type C (비전·시드·G-*·조직 구조 영향) 만 무거운 결정으로 분류해 사용자 응답까지 전체 정지. 응답 박힌 Type C 는 통과 → 같은 tick 또는 다음 tick 의 checker 가 apply-decisions 로 흡수.
 - `seed.sealed == false` 또는 `current.gen == null` → "seed waiting" 로그 후 종료.
 - `constitution` 위반 가능성 감지 (직전 tick 결과) → 발견 사항을 `decisions/open/` 에 Type C 발의 후 종료.
 
