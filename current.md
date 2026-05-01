@@ -1,10 +1,10 @@
 ---
 gen: 1                     # 현재 generation.
 cycle: cy-001              # 첫 사이클.
-tick: null                 # tick-NNN. 첫 manual tick 진행 중.
-active_decisions: [D-20260501-001]
+tick:                      # tick-NNN. 첫 manual tick 진행 중.
+active_decisions: []
 paused: false
-last_updated: 2026-05-01T14:32:45+00:00
+last_updated: '2026-05-01T16:26:17+00:00'
 ---
 
 # Current State (live pointer)

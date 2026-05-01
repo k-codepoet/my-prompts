@@ -19,3 +19,6 @@ state/slack-app.yml
 .DS_Store
 *.swp
 *.swo
+
+# Claude Code runtime
+.claude/
