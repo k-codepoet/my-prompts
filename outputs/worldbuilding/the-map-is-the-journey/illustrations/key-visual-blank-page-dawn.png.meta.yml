@@ -1,0 +1,30 @@
+id: key-visual-blank-page-dawn
+world: the-map-is-the-journey
+category: world-key-visual
+caption: |
+  핵심 메타포 #1 "백지의 새벽" — 모든 사람은 태어날 때 한 장의 비어 있는
+  종이를 받는다. 그 종이는 그의 *세계 그 자체*. 그림은 한 사람이 자기 백지의
+  여명에 서 있고 — 뒤로는 진심으로 걸은 발자국이 또렷이 박혀 있고, 앞은
+  아직 비어 있는 흰 종이.
+created_at: '2026-05-01T16:31:00+00:00'
+creator: human-test                          # 첫 테스트 — 사람이 직접 prompt
+provider: comfyui                            # MCP my-genai → ComfyUI z-image-turbo
+workflow: z-image-turbo
+size: 1024x1024
+aspect_ratio: '16:9'                         # 요청은 16:9 였지만 워크플로우가 1:1 로 출력 (나중에 비율 처리 점검)
+source_artifact: outputs/worldbuilding/the-map-is-the-journey/bible-v0.1.md
+source_section: "## 핵심 메타포 #1 — 백지의 새벽"
+prompt: |
+  A single small human figure standing alone on a vast white parchment landscape at dawn.
+  Behind the figure, a faint trail of dark earth footprints stretches back into morning mist,
+  deep and clear near the figure but fading to nothing in the distance. Ahead — pure empty
+  white paper, untouched, radiant with first light. The horizon is soft and unmarked.
+  Ethereal, contemplative, painterly. The world IS the parchment — soft fiber texture
+  visible. Cinematic wide composition, gentle warm dawn glow on the white surface,
+  atmospheric depth, sense of beginning and of the journey itself drawing the map.
+  Style: ink-and-watercolor concept art, evocative, restrained palette of warm whites,
+  soft amber dawn, deep earth-brown footprints. No text, no UI elements.
+negative_prompt: |
+  text, words, letters, ui, watermark, logo, multiple figures, crowd, modern objects,
+  vehicles, buildings, harsh contrast, grimdark, low quality, blurry, distorted anatomy
+genai_origin_url: https://genai.home.codepoet.site/outputs/2026/05/01/707da425-b8bc-497a-bf15-692d05363be9.png

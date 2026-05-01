@@ -124,6 +124,16 @@ Constraints:
   This is mandatory — without it the human won't know a new HITL item exists.
 - Keep this tick under \$$MAX_BUDGET_USD.
 - Final user-facing summary: write a single line to stdout starting with TICK_SUMMARY:.
+
+이미지 생성 프로토콜 (모든 모드 공통):
+- 산출물 이해를 돕는 삽화가 필요하면 \`mcp__my-genai__generate_image\` 호출.
+- 호출 결과의 URL 을 절대 외부에 두지 말고, 즉시 \`scripts/save-image.sh\` 로 흡수:
+    scripts/save-image.sh "<url>" "outputs/worldbuilding/<world>/illustrations/<slug>.png" \\
+      --caption "<한 줄>" --prompt "<원본 prompt>" \\
+      --source-artifact "<참조 md>" --source-section "<섹션>" \\
+      --category illustration --creator "tick:<your-id>"
+- 카테고리: illustration / location / character / event 중 적절한 것.
+- 이미지는 sidecar .meta.yml 과 outputs/timeline.md 에 자동 기록됨.
 EOF
     ;;
   role)
@@ -140,6 +150,16 @@ Constraints:
 - Do not modify constitution.md, seed.md, CHARTER.md, STRUCTURE.md, BOOTSTRAP.md.
 - Keep this tick under \$$MAX_BUDGET_USD.
 - Final summary: TICK_SUMMARY: line.
+
+이미지 생성 프로토콜 (필요 시):
+- 자기 도메인의 이해 보강에 삽화가 도움되면 \`mcp__my-genai__generate_image\` 호출.
+- 결과 URL 은 즉시 \`scripts/save-image.sh\` 로 repo 안에 적재 (외부 URL 만 두지 말 것):
+    scripts/save-image.sh "<url>" "outputs/worldbuilding/<world>/<category>/<slug>.png" \\
+      --caption "<한 줄>" --prompt "<원본 prompt>" \\
+      --source-artifact "<your argument or 참조 md>" \\
+      --category illustration --creator "tick:$ROLE"
+- art-director 는 본 프로토콜의 *주된 사용자*. 다른 조직도 자기 영역 시각화 필요 시 사용 가능
+  하나, art-director 의 톤·매너 가이드와 충돌 시 art-director 의 의견이 우선.
 EOF
     ;;
   role-rotate)
