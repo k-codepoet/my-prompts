@@ -190,15 +190,18 @@ recommended: null   # 오케스트레이터가 한 안을 추천하면 채움
 
 | # | 단계 | 산출 | 상태 |
 |---|------|------|------|
-| 1 | Constitution + Charter + Bootstrap 합의 | `constitution.md` + `CHARTER.md` + `BOOTSTRAP.md` + `STRUCTURE.md` | ✅ 완료 |
-| 2 | 자동화 인프라 (Phase 1 — *등록 없이*) | `scripts/{tick,usage-budget,slack-notify,system-toggle,cron-diff}.sh`, `state/*.example`, `BOOTSTRAP.cron.example`, `docs/{slack-triggers,cron-operations}.md` | ✅ 완료 |
-| 3 | Seed 봉인 | `seed.md` 의 ① 채움 + `sealed: true`, `current.md.gen=1` | 대기 (사람) |
-| 4 | gen-001 조직 제안 | system 이 시드 읽고 `generations/gen-001/orgs/<org>.md` 7±2 제안 → Type C 결정 | 대기 |
-| 5 | Manual vertical slice | `workflows/vertical-slice.md` 1 회 손통과, `my-life/logs/manual-runs/` 회고 | 대기 |
-| 6 | gen-001 첫 사이클 (수동) | tick 1~N 을 사람이 직접 BOOTSTRAP 따라 실행 | 대기 |
-| 7 | Cron 등록 (Phase 2) | `BOOTSTRAP.cron.example` 적용. Iron Law 통과 후에만 | 대기 |
-| 8 | gen 전환 | `transition.md` 발의 → 조직 진화 → gen-002 시작 | 대기 |
-| 9 | 수렴 | `G-CONVERGE-1` 충족 → 시스템 정지 | 장기 |
+| 1 | Constitution + Charter + Bootstrap 합의 | `constitution.md` + `CHARTER.md` + `BOOTSTRAP.md` + `STRUCTURE.md` | ✅ |
+| 2 | Phase 1 인프라 (등록 없이) | `scripts/*.sh`, `state/*.example`, `BOOTSTRAP.cron.example`, `docs/*` | ✅ |
+| 2.5 | Slack HITL 통합 | `slack-app/manifest.yml` (Slack app A0B0P69S623), `scripts/slack-bot.py` (Socket Mode), `Dockerfile` + `docker-compose.yml` (`my-prompts-slack-bot` container, `restart: unless-stopped`) | ✅ |
+| 3 | Seed 봉인 + gen-001 시동 | `seed.md` 봉인 (인셉션 구절: *"인생이란 나라는 고객을 최고로 만족시키기 위한 여정"*), `current.md.gen=1, cycle=cy-001` | ✅ |
+| 4 | 첫 결정 발의 — D-20260501-001 (Type C) | 조직 7 패턴 (A/B/A_modified) + 세계 후보 3 (고객 길드 / 여정=지도 / 진심 측정기). 추천: A + 1. `decision-traces/D-20260501-001.md` 에 도출 추적 | ✅ — **사용자 응답 대기 중** |
+| 5 | `respond.sh` + `apply-decisions.sh` + `tick.sh` 보강 | yml 응답 자동 픽업 → 후속 작업 트리거 → closed/ 이동 → trace append | ⬜ 다음 세션 |
+| 6 | Manual vertical slice — 7 조직 charter + 첫 세계 bible v0.1 | `generations/gen-001/orgs/*.md`, `outputs/worldbuilding/<world>/` | ⬜ |
+| 7 | manual-run 회고 | `my-life/logs/manual-runs/wf-vertical-slice-<date>.md` (Iron Law 통과용) | ⬜ |
+| 8 | Phase 2 cron 등록 | `BOOTSTRAP.cron.example` 적용 (Iron Law 통과 후에만) | ⬜ |
+| 9 | 첫 product 3 종 (G-PRODUCT-1) | 게임 vertical slice + 단편 + 이미지 세트 — 모두 동일 world version 참조 | ⬜ |
+| 10 | gen 전환 (gen-001 → gen-002) | `review.md` Δ < 0.05 → `transition.md` (Type C) → 조직 진화 적용 | ⬜ |
+| 11 | 수렴 | `G-CONVERGE-1` 충족 → 시스템 정지 | 장기 |
 
 > 단계 2 미수행 시 모든 tick 이 sanity check 에서 *seed waiting* 으로 종료.
 > 단계 4 미통과 시 단계 6 진입 불가 (my-life `AGENTS.md` Iron Law).
