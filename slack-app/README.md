@@ -59,3 +59,31 @@ scripts/slack-app-sync.sh
     -d "app_id=<app_id>"
   ```
 - 동기화 실패 시 stderr 에 Slack API 에러 본문 출력됨.
+
+## 봇 운영 (docker compose)
+
+repo 루트의 `docker-compose.yml` 이 봇을 영구 동작시킨다.
+
+```bash
+# 시작 (백그라운드)
+docker compose up -d
+
+# 로그 (실시간)
+docker compose logs -f slack-bot
+
+# 상태
+docker compose ps
+
+# 정지
+docker compose stop slack-bot
+docker compose down            # 컨테이너 제거 (이미지·볼륨 유지)
+
+# 코드·manifest 변경 후 재기동
+docker compose restart slack-bot
+
+# Dockerfile/requirements.txt 변경 시 이미지 재빌드
+docker compose build slack-bot && docker compose up -d
+```
+
+`restart: unless-stopped` 정책이라 봇이 죽으면 docker 가 자동 재기동.
+호스트 재부팅 후엔 docker daemon 시작과 함께 봇도 자동 시작.

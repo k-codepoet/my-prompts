@@ -1,0 +1,20 @@
+services:
+  slack-bot:
+    build: .
+    image: my-prompts:latest
+    container_name: my-prompts-slack-bot
+    restart: unless-stopped
+    working_dir: /app
+    volumes:
+      - ./:/app                       # repo 전체 bind mount (state, decisions, scripts 모두 컨테이너 안에서 읽기·쓰기)
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: ["python", "/app/scripts/slack-bot.py"]
+    # Socket Mode 라 외부 포트 노출 불필요 — 모든 통신은 outbound websocket.
+    # logs 는 logs/slack-bot.log 가 아닌 docker logs 로 (compose 가 stdout 캡처).
+    healthcheck:
+      test: ["CMD", "python", "-c", "import socket; s=socket.create_connection(('slack.com',443),5); s.close()"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
