@@ -19,6 +19,7 @@
 | 2026-05-01T16:21:42 | world-bible | *여정 자체가 지도* — Bible v0.1 | `outputs/worldbuilding/the-map-is-the-journey/bible-v0.1.md` | apply-decisions D-001 |
 | 2026-05-01T16:30:01 | tick | 첫 자동 cron tick (checker) — `$3` budget cap | `logs/cron.log` | cron `*/10` |
 | 2026-05-01T16:31:00 | illustration | World key visual #1 "백지의 새벽" | `outputs/worldbuilding/the-map-is-the-journey/illustrations/key-visual-blank-page-dawn.png` | 사람 (genai 테스트) |
+| 2026-05-01T17:10:00 | visual-bible | *여정 자체가 지도* — Visual Bible v0.1 (팔레트 3 톤+자국빛, 실루엣, 재료감, 트립와이어) | `outputs/art/the-map-is-the-journey/visual-bible-v0.1.md` | art-director r1 (cy-001) |
 
 ---
 
@@ -29,6 +30,7 @@
 - `tick` — cron 또는 수동 tick 1 회 (요약만, 세부는 `ticks/tick-NNN.md`)
 - `org-charter` — `generations/gen-N/orgs/<id>.md` 작성·갱신
 - `world-bible` — `outputs/worldbuilding/<world>/bible-v*.md`
+- `visual-bible` — `outputs/art/<world>/visual-bible-v*.md` (art-director 의 시각 결 박음)
 - `illustration` — 이미지 (`illustrations/`)
 - `location` — 지명·지역 산출 (`outputs/worldbuilding/<world>/locations/<slug>/`)
 - `character` — 인물 (`outputs/worldbuilding/<world>/characters/<slug>/`)

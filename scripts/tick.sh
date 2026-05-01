@@ -127,6 +127,15 @@ Constraints:
 
 이미지 생성 프로토콜 (모든 모드 공통):
 - 산출물 이해를 돕는 삽화가 필요하면 \`mcp__my-genai__generate_image\` 호출.
+- **provider=comfyui (default), workflow="z-image-turbo"**. \`aspect_ratio\` 파라미터는
+  OpenRouter 전용이라 ComfyUI 에서는 무시됨 → 반드시 \`width\` + \`height\` 로 지정.
+- z-image-turbo 가 안정 처리하는 비율 3 종 (sweet spot 2-5MP):
+    | 의도   | aspect | width × height |
+    |--------|--------|----------------|
+    | square | 1:1    | 1024 × 1024    |
+    | landscape (16:9) | 16:9 | 1344 × 768  |
+    | portrait  (9:16) | 9:16 | 768 × 1344  |
+  이 3 종 외 비율은 사용 금지 (왜곡 위험).
 - 호출 결과의 URL 을 절대 외부에 두지 말고, 즉시 \`scripts/save-image.sh\` 로 흡수:
     scripts/save-image.sh "<url>" "outputs/worldbuilding/<world>/illustrations/<slug>.png" \\
       --caption "<한 줄>" --prompt "<원본 prompt>" \\
@@ -153,6 +162,11 @@ Constraints:
 
 이미지 생성 프로토콜 (필요 시):
 - 자기 도메인의 이해 보강에 삽화가 도움되면 \`mcp__my-genai__generate_image\` 호출.
+- **provider=comfyui, workflow="z-image-turbo"**. \`aspect_ratio\` 는 ComfyUI 에서 무시됨
+  → 반드시 \`width\` + \`height\` 로 지정. 지원 3 종 (이 외 비율 금지):
+    1:1 square     → 1024×1024
+    16:9 landscape → 1344×768
+    9:16 portrait  → 768×1344
 - 결과 URL 은 즉시 \`scripts/save-image.sh\` 로 repo 안에 적재 (외부 URL 만 두지 말 것):
     scripts/save-image.sh "<url>" "outputs/worldbuilding/<world>/<category>/<slug>.png" \\
       --caption "<한 줄>" --prompt "<원본 prompt>" \\

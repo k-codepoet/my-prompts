@@ -10,8 +10,12 @@ created_at: '2026-05-01T16:31:00+00:00'
 creator: human-test                          # 첫 테스트 — 사람이 직접 prompt
 provider: comfyui                            # MCP my-genai → ComfyUI z-image-turbo
 workflow: z-image-turbo
-size: 1024x1024
-aspect_ratio: '16:9'                         # 요청은 16:9 였지만 워크플로우가 1:1 로 출력 (나중에 비율 처리 점검)
+size: 1344x768
+aspect_ratio: '16:9'
+genai_origin_url_v2: https://genai.home.codepoet.site/outputs/2026/05/01/63272679-5cae-4463-a60b-4477cc16132d.png   # 정상 16:9 재생성본
+note: |
+  v1 (1024x1024 1:1) 은 aspect_ratio 파라미터가 ComfyUI provider 에서 무시되어 default
+  로 떨어진 것. v2 부터 width/height 명시 (16:9 → 1344x768) 로 정상 출력.
 source_artifact: outputs/worldbuilding/the-map-is-the-journey/bible-v0.1.md
 source_section: "## 핵심 메타포 #1 — 백지의 새벽"
 prompt: |

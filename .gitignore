@@ -22,3 +22,4 @@ state/slack-app.yml
 
 # Claude Code runtime
 .claude/
+state/.last-role
