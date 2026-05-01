@@ -1,0 +1,28 @@
+# systemd user unit for my-prompts Slack bot.
+# 설치:
+#   mkdir -p ~/.config/systemd/user
+#   cp slack-app/slack-bot.service ~/.config/systemd/user/
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now slack-bot
+#   systemctl --user status slack-bot
+#   journalctl --user -u slack-bot -f
+#
+# 재시작이 부팅 후에도 유지되려면:
+#   loginctl enable-linger choigawoon
+
+[Unit]
+Description=my-prompts Slack HITL bot (Socket Mode)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/choigawoon/k-codepoet/my-prompts
+ExecStart=/home/choigawoon/k-codepoet/my-prompts/.venv/bin/python /home/choigawoon/k-codepoet/my-prompts/scripts/slack-bot.py
+Restart=on-failure
+RestartSec=10
+StandardOutput=append:/home/choigawoon/k-codepoet/my-prompts/logs/slack-bot.log
+StandardError=append:/home/choigawoon/k-codepoet/my-prompts/logs/slack-bot.log
+
+[Install]
+WantedBy=default.target
