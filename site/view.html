@@ -26,9 +26,19 @@
   code, pre { font-family: var(--mono); font-size: 0.92em; }
   pre { background: #f0ebde; padding: 12px 14px; border-left: 3px solid var(--line); overflow-x: auto; }
 
-  .topbar { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .topbar { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: center; }
   .topbar a { color: var(--muted); }
   .topbar .crumb { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+  .topbar .right { display: flex; gap: 12px; align-items: center; }
+  .toggle-btn { font-family: var(--mono); font-size: 11px; color: var(--muted); background: transparent; border: 1px solid var(--line); padding: 3px 8px; cursor: pointer; border-radius: 2px; }
+  .toggle-btn:hover { color: var(--accent); border-color: var(--accent); }
+  .toggle-btn.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .meta-banner { background: #f0ebde; border-left: 3px solid var(--muted); padding: 8px 14px; margin: 16px 0; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .meta-banner.hidden { display: none; }
+  #debug-section { display: none; }
+  #debug-section.shown { display: block; }
+  .section-divider { margin: 32px 0 0; padding-top: 16px; border-top: 2px dashed var(--line); }
+  .section-divider .label { font-family: var(--mono); font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
 
   article h1 { font-size: 28px; margin: 24px 0 8px; }
   article h2 { font-size: 22px; margin: 28px 0 8px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
@@ -55,9 +65,19 @@
 <div class="wrap">
   <div class="topbar">
     <span class="crumb"><a href="/">← my-prompts</a> / <span id="crumb"></span></span>
-    <span><a id="raw-link" href="" target="_blank">raw ↗</a></span>
+    <div class="right">
+      <button id="debug-toggle" class="toggle-btn" onclick="toggleDebug()">🔧 디버그 보기</button>
+      <a id="raw-link" href="" target="_blank">raw ↗</a>
+    </div>
+  </div>
+  <div class="meta-banner hidden" id="meta-banner">
+    이 글에는 시스템 내부 메타 (frontmatter, audit 자기 검사, 진화 룰 후보 등) 가 숨겨져 있습니다. 우상단 <code>🔧 디버그 보기</code> 로 전체 펼침.
   </div>
   <article id="content">로딩…</article>
+  <article id="debug-section">
+    <div class="section-divider"><span class="label">— DEBUG: 시스템 내부 메타 —</span></div>
+    <div id="debug-content"></div>
+  </article>
   <footer><span id="meta"></span></footer>
 </div>
 
@@ -73,6 +93,49 @@ function stripFrontmatter(text) {
   const rawFm = text.slice(3, end);
   const body = text.slice(end + 4).replace(/^\n+/, "");
   return { fm: rawFm, body };
+}
+
+// reader/debug 분리 — body 안에서 첫 번째 "내부 섹션" 마커를 찾아 그 앞을 reader 부분으로.
+// 카논 마커 우선순위:
+//   1. ## 메타 (cold reader 는 본 § 안 읽어도 됨)   ← 명시적 마커
+//   2. cold reader 라는 표현이 들어간 ## 헤딩
+//   3. ## 메타 — 또는 ## §메타 패턴
+//   4. ## 트립와이어 자기 검사 / ## 트립 자기 검사 / ## 도메인 위반 검토 / ## v0 → v0+ 보강 큐
+function splitReaderDebug(body) {
+  const lines = body.split("\n");
+  const internalHeadings = [
+    /^##\s+메타\s*\(.*cold reader.*\)/i,
+    /^##\s+.*cold reader.*안.*읽/i,
+    /^##\s+메타\b/,
+    /^##\s+§?메타\b/,
+    /^##\s+트립\s*와이어?\s*자기?\s*검사/,
+    /^##\s+도메인\s+위반/,
+    /^##\s+v0\s*[→\-]\s*v0\+\s*보강/,
+    /^##\s+§?\d+\.\s*진화\s*룰\s*후보/,
+  ];
+  for (let i = 0; i < lines.length; i++) {
+    if (internalHeadings.some(re => re.test(lines[i]))) {
+      const reader = lines.slice(0, i).join("\n").replace(/\n+$/, "");
+      const debug = lines.slice(i).join("\n");
+      return { reader, debug, splitAt: i };
+    }
+  }
+  return { reader: body, debug: "", splitAt: -1 };
+}
+
+function toggleDebug() {
+  const sec = document.getElementById("debug-section");
+  const btn = document.getElementById("debug-toggle");
+  const banner = document.getElementById("meta-banner");
+  const fmBlock = document.getElementById("frontmatter-block");
+  const open = !sec.classList.contains("shown");
+  sec.classList.toggle("shown", open);
+  btn.classList.toggle("active", open);
+  btn.textContent = open ? "📖 reader 보기" : "🔧 디버그 보기";
+  if (banner) banner.classList.toggle("hidden", open);
+  if (fmBlock) fmBlock.style.display = open ? "block" : "none";
+  // remember preference
+  try { localStorage.setItem("view-debug", open ? "1" : "0"); } catch (e) {}
 }
 
 async function main() {
@@ -101,21 +164,49 @@ async function main() {
   const isYaml = path.endsWith(".yml") || path.endsWith(".yaml");
   const isMd = path.endsWith(".md");
 
-  let html = "";
+  let readerHtml = "";
+  let debugHtml = "";
+  let hasDebug = false;
   if (isYaml) {
-    html = `<pre class="yaml">${escapeHtml(text)}</pre>`;
+    debugHtml = `<pre class="yaml">${escapeHtml(text)}</pre>`;
+    readerHtml = `<div style="color:var(--muted);font-family:var(--mono);font-size:13px">YAML 파일 — 디버그 보기로 전환하세요.</div>`;
+    hasDebug = true;
   } else if (isMd) {
-    const { fm, body } = stripFrontmatter(text);
-    if (fm) {
-      html += `<details><summary>frontmatter</summary><pre class="yaml">${escapeHtml(fm)}</pre></details>`;
-    }
     marked.setOptions({ breaks: false, gfm: true });
-    html += marked.parse(body);
+    const { fm, body } = stripFrontmatter(text);
+    const { reader, debug, splitAt } = splitReaderDebug(body);
+    readerHtml = marked.parse(reader || "_(reader 부분 비어있음)_");
+    if (fm) {
+      const fmBlock = `<div id="frontmatter-block" style="display:none"><details open><summary>frontmatter</summary><pre class="yaml">${escapeHtml(fm)}</pre></details></div>`;
+      debugHtml += fmBlock;
+    }
+    if (debug) {
+      debugHtml += marked.parse(debug);
+      hasDebug = true;
+    } else if (fm) {
+      hasDebug = true;
+    }
   } else {
-    html = `<pre>${escapeHtml(text)}</pre>`;
+    readerHtml = `<pre>${escapeHtml(text)}</pre>`;
   }
-  document.getElementById("content").innerHTML = html;
+  document.getElementById("content").innerHTML = readerHtml;
+  document.getElementById("debug-content").innerHTML = debugHtml;
   document.getElementById("meta").textContent = `${path} · ${text.length.toLocaleString()} bytes`;
+
+  // 토글 버튼 노출 / 숨김 + 배너
+  const btn = document.getElementById("debug-toggle");
+  const banner = document.getElementById("meta-banner");
+  if (!hasDebug) {
+    btn.style.display = "none";
+    banner.classList.add("hidden");
+  } else {
+    btn.style.display = "inline-block";
+    banner.classList.remove("hidden");
+    // 사용자 선호 복원
+    let pref = "0";
+    try { pref = localStorage.getItem("view-debug") || "0"; } catch (e) {}
+    if (pref === "1") toggleDebug();
+  }
 }
 
 main().catch(e => {

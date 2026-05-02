@@ -104,3 +104,47 @@ references:
 | 둘 다 통과해야 | G-WORLD-1 진입 장벽 게이트 통과 | (좌동) |
 
 > 두 룰은 *독립 측정*. critic 통과해도 voice-keeper 미통과 가능 (잘 전달됐지만 매니페스토와 어긋남) — 그 반대도 가능.
+
+---
+
+## 7. human-readability gate (writing 카테고리 한정, 2026-05-02 신설)
+
+> 본 §은 사용자 직접 발의 (`human-readability-principle-v0.md`) 의 측정 측 박음.
+> critic 의 *전달* (5분 즉답률) 과 voice-keeper 의 *정렬* (매니페스토 박힘) 사이에
+> 누락된 한 자리 — *독자가 첫 한 문단에서 사람·상황·감정을 잡을 수 있는가* — 를 채운다.
+
+**적용 대상**: `outputs/writing/**/*.md` 의 **reader portion** (`## 메타 (cold reader 는 본 § 안 읽어도 됨)` 마커 *전*).
+**적용 면제**: 메타 섹션 / 시스템 내부 사고 / frontmatter / tick 로그 / 결정 yaml / arguments / worldbuilding 사양 표.
+
+### 7-1. 5 항목 측정표
+
+| # | 항목 | 통과 기준 | 측정법 | 가중치 |
+|---|------|----------|--------|--------|
+| **1** | 첫 한 문단의 사람·상황·감정 셋 | 누가 (이름 또는 명확한 지시어) + 언제·어디서·무엇을 했는가 + 감정/신체 반응 — 3 자리 모두 박힘 | reader portion 첫 문단 grep | 0..1 |
+| **2** | 첫 페이지 명명된 감정 | "안심", "겁", "떨림", "외로움", "고마움" 등 일상 감정 단어 ≥ 1 자리 | 첫 ~500자 안 감정어 사전 매칭 | 0..1 |
+| **3** | 메타포 밀도 ≤ 30% | 세계 메타포 단어 (자국 / 결 / 손바닥 / 새벽 / 흙 / 자국빛 / 옆자리 / 묻음) 가 전체 문장의 30% 이하 | reader portion 문장 단위 / 메타포어 사전 매칭 비율 | 0..1 (≤30%=1, 30~50%=0.5, >50%=0) |
+| **4** | 메타포는 일상 장면 위에 박힘 | 모든 메타포 문장이 직전 1~2 문장 안에 *사람 행동 + 물건 + 신체 감각* 을 깔고 있다 | 각 메타포 문장 검사 → 직전 2 문장 일상 단서 ≥ 1 자리 | 0..1 (전체 메타포 문장 중 통과 비율) |
+| **5** | 요약 가능성 | reader portion 전체를 *대학 1학년 문학 동아리 학생* 이 한 문단으로 요약 가능 — 핵심 사건 + 핵심 감정 두 자리만 남기면 됨 | (수동/cold reader 측정) writer self-check 또는 critic r-N image 모드에서 작성 | 0..1 |
+
+**산출물 단위 점수 산정**:
+- §7 점수 = 5 항목 평균 × 5 = 0..5
+- **PASS** 임계 = ≥ 4.0 / 5 (= 평균 ≥ 0.8) *그리고* 항목 1·3 둘 다 ≥ 0.6 (첫 문단 + 메타포 밀도는 dealbreaker)
+- 1~2 항 미통과 (점수 3~4) = **조건부** → writer 보강 task 1 회 자동 발행
+- 3+ 항 미통과 (점수 < 3) = **FAIL** → writer 재작성 표적
+
+### 7-2. critic-r2 가짜 통과 패턴 (정식 박음 1 호)
+
+critic-r2 cy-002 가 paired-dawns-v0 / sideseat-dawn-v0 / forbidden-dialogue-v0 모두 *5/5 × 3 = 15/15 첫 5분 즉답 통과* 로 점수. 사용자 직접 읽음 후 *감정 표면 흐림* 진단 → critic 의 cold-read 페르소나 baseline 이 *읽었나* 만 측정, *감정이 잡혔나* 미측정.
+
+**해소**: critic 차터 §cold-read protocol 에 §7 5 항목 측정 의무 추가 자리. critic-r3 부터는 5분 즉답률 + §7 5 항목 둘 다 측정.
+
+### 7-3. 첫 적용 표적 (cy-002 r3 큐 1 위)
+
+- `paired-dawns-v0.md` → `paired-dawns-v0.1.md` 재작성 (writer r3 cy-002, §7 5/5 PASS 임계)
+- `forbidden-dialogue-v0.md` / `sideseat-dawn-v0.md` 는 *기존 baseline* 보관 (재작성 강제 0, 본 룰 적용 사례 학습용)
+- 이후 모든 신규 단편: 발행 직전 §7 self-check + voice-keeper r-N 측정
+
+### 7-4. 발화 형식
+
+- "이 단편의 reader portion 은 §7-1 항목 N 미통과 (점수 X/5). human-readability gate FAIL — writer 재작성 표적."
+- "이 단편의 reader portion 은 §7-2 critic 가짜 통과 패턴 적중. critic r-N 재측정 필요."

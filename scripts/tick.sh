@@ -251,6 +251,8 @@ if [[ "$STATUS" == "ok" ]]; then
   # publishing surface (prompt.codepoet.site) 자동 갱신 — manifest.json 재생성.
   # nginx + 클라이언트 렌더러가 이걸 읽어 네비게이션을 즉시 갱신.
   "$ROOT/scripts/generate-site-manifest.sh" >>"$LOG" 2>&1 || true
+  # 신규 단편 박혔으면 슬랙에 reader portion 만 첨부 (메타 / audit 자기 검사 제외).
+  "$ROOT/scripts/notify-new-writing.sh" >>"$LOG" 2>&1 || true
 else
   log "ERROR — see $CLAUDE_OUT (last 20 lines logged)"
   tail -20 "$CLAUDE_OUT" >> "$LOG"

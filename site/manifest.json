@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-02T10:03:59.371761+00:00",
+  "generated_at": "2026-05-02T10:18:37.281238+00:00",
   "root_docs": [
     {
       "path": "current.md",
       "title": "Current State (live pointer)",
       "version": null,
-      "mtime": 1777716228,
-      "size": 106482
+      "mtime": 1777717099,
+      "size": 117240
     },
     {
       "path": "seed.md",
@@ -118,11 +118,18 @@
     ],
     "world": [
       {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.4.md",
+        "title": "여정 자체가 지도 (The Map is the Journey) — Bible v0.4",
+        "version": "v0.4",
+        "mtime": 1777716713,
+        "size": 13851
+      },
+      {
         "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.5.md",
         "title": "여정 자체가 지도 (The Map is the Journey) — Bible v0.5",
         "version": "v0.5",
-        "mtime": 1777710197,
-        "size": 14634
+        "mtime": 1777716704,
+        "size": 14982
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/chronicle-v1.md",
@@ -137,13 +144,6 @@
         "version": "v0",
         "mtime": 1777709981,
         "size": 14854
-      },
-      {
-        "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.4.md",
-        "title": "여정 자체가 지도 (The Map is the Journey) — Bible v0.4",
-        "version": "v0.4",
-        "mtime": 1777705927,
-        "size": 13598
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/regions-v0.md",
@@ -282,6 +282,20 @@
       }
     ],
     "alignment": [
+      {
+        "path": "outputs/alignment/the-map-is-the-journey/cy-002-r2-roundup-v0.md",
+        "title": "cy-002 r2 묶음 마감 정렬 측정 (3 자리 부수 + 누적 평균 갱신)",
+        "version": null,
+        "mtime": 1777716762,
+        "size": 16181
+      },
+      {
+        "path": "outputs/alignment/the-map-is-the-journey/human-readability-principle-v0.md",
+        "title": "사람-가독성 원칙 v0 — 장면+감정 우선, 메타포는 그 위에",
+        "version": "v0",
+        "mtime": 1777716745,
+        "size": 9804
+      },
       {
         "path": "outputs/alignment/the-map-is-the-journey/bible-v0.5-score.md",
         "title": "Bible v0.5 — 매니페스토 정렬 점수 (cy-002 r3 + 룰 A3 자가 적용 3 호 + 룰 B1 도입 사례 1 호)",
@@ -741,6 +755,34 @@
     ],
     "ticks": [
       {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-065.md",
+        "title": "tick-065",
+        "version": null,
+        "mtime": 1777717079,
+        "size": 8720
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-064.md",
+        "title": "Tick cy-002/064 — voice-keeper r4 (cy-002 r2 묶음 audit-only + 누적 e 0.93+ 도달 + 충돌 회피 30 호)",
+        "version": null,
+        "mtime": 1777716953,
+        "size": 6097
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-063.md",
+        "title": "Tick cy-002/063 — role (loremaster r4 cy-002 thin patch — post-supersede 포인터 stale 직접 처치)",
+        "version": null,
+        "mtime": 1777716873,
+        "size": 13106
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-062.md",
+        "title": "Tick cy-002/062 — role (critic r3 cy-002 — image 매체 외부 시선 통과 자리 1 호 박음)",
+        "version": null,
+        "mtime": 1777716411,
+        "size": 10228
+      },
+      {
         "path": "generations/gen-001/cycles/cy-002/ticks/tick-061.md",
         "title": "Tick cy-002/061 — loremaster r3 (consistency-audit + drift 후보 1 호 신규 발의)",
         "version": null,
@@ -1170,6 +1212,20 @@
     ],
     "arguments": [
       {
+        "path": "generations/gen-001/cycles/cy-002/arguments/voice-keeper-r4.md",
+        "title": "voice-keeper r4 cy-002 — r2 묶음 마감 audit + 누적 e 0.93+ 도달",
+        "version": null,
+        "mtime": 1777716895,
+        "size": 7440
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/loremaster-r4.md",
+        "title": "loremaster r4 — cy-002 thin patch (post-supersede 포인터 stale 직접 처치)",
+        "version": null,
+        "mtime": 1777716786,
+        "size": 8949
+      },
+      {
         "path": "generations/gen-001/cycles/cy-002/arguments/critic-r3.md",
         "title": "critic r3 cy-002 — 우표 §17.7 + §17.8 image 측 cold-read",
         "version": null,
@@ -1541,13 +1597,13 @@
     "writings": 6,
     "world": 12,
     "art": 11,
-    "alignment": 8,
+    "alignment": 10,
     "design": 6,
     "critique": 4,
     "code-docs": 41,
     "decisions": 5,
-    "ticks": 61,
-    "arguments": 47,
+    "ticks": 65,
+    "arguments": 49,
     "decision-traces": 5,
     "illustrations": 3
   }
