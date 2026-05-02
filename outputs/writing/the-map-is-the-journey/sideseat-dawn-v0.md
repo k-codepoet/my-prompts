@@ -46,10 +46,14 @@ constitution_invariant_check: |
 
 # 옆자리에 앉은 한 새벽 — *업* 축, 28 자국째 1 인칭
 
+![짧음의 결 — 연강의 옆자리](/outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-7-yeongang-short-grain-v1.png)
+
 > 본 단편은 cy-002 r1 단편 1 호 — *업* 축 단일 변주. cy-001 마감 라운드의 *세 축 분리 응답 = 분기 사이 여백 글 형식* (writer r3 *처음으로 자기 지도를 본 새벽* 1 호) 의 직접 후속 자리. 그 단편이 *나·가족* 두 축의 분기 묶음이었다면, 본 단편은 *업* 축의 분리된 한 자리. 분기 사이 여백 대신 *축 단일 1 인칭* 형식이 본 변주의 결.
 > evolution-rules-v1 §A.A2 *세 축 분리 응답* 정식 룰 1 호 적용 사례 — 본 머리말의 *axis: 업* 명시가 룰 A2 의 직접 응답.
 
 ---
+
+![인규](/outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-ingyu-v1.png)
 
 새벽 다섯 시였다. 본인의 손바닥은 5 분이면 충분했다. 그 5 분이 끝난 자리에 한 사람의 1 분이 먼저 끝나 있었다.
 

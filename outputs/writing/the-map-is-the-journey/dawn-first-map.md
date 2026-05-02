@@ -40,6 +40,8 @@ constitution_invariant_check: |
 
 # 처음으로 자기 지도를 본 새벽 — 세 사람의 같은 시각
 
+![손금 새벽 — 해온의 첫 자리](/outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png)
+
 > 본 단편은 한 새벽의 같은 시각, 세 사람이 각자의 종이 위에서 *처음으로 자기 지도를 본* 짧은 1 인칭 셋. 해온 / 나림 / 유경 — *나* 축 두 변주 + *가족* 축 한 변주. 분기 사이의 공백은 *합쳐짐 아닌 겹쳐짐* (bible v0.3 §2.3) 의 형식적 응답.
 
 ---
@@ -60,6 +62,8 @@ constitution_invariant_check: |
 
 ## 2. 나림 — *6 자국째 해를 거슬러 다시 펼치는 한 새벽*
 
+![나림](/outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-narim-v1.png)
+
 새벽 다섯 시. 손바닥을 펼지 말지를 두고 30 분을 누워 있었다.
 
 8 자국째 해의 그 새벽을 한 번 보고 다시 보지 않았다. 보았던 자국이 무서워서가 아니라, 한 번 본 자국 위에 다음 자국을 박는 일이 그때의 본인에게는 너무 큰 일로 느껴져서였다. 그래서 그 새벽 이후로 본인은 박물관을 걸었다. 다른 사람들의 종이의 자국 색조 12 종을 외우면서, 본인의 종이는 안 펴 두었다.
@@ -73,6 +77,8 @@ constitution_invariant_check: |
 ---
 
 ## 3. 유경 — *35 자국째 해, 종이의 절반이 다른 색조인 한 새벽*
+
+![유경](/outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v2.png)
 
 새벽 다섯 시 십오 분. 아이의 방에서 작은 호흡 소리가 고르게 들렸다. 25 자국째 해 부터 듣던 그 호흡이 이제는 본인의 손바닥을 펼 수 있을 만큼 깊고 고르다.
 

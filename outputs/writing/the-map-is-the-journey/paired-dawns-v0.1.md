@@ -60,12 +60,16 @@ constitution_invariant_check: |
 
 # 옆에 잇닿은 두 새벽 v0.1 — *가족* / *연대* 두 변주 묶음 (사람-가독성 적용)
 
+![나란히 두 새벽](/outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-8-huijae-side-by-side-dawns-v1.png)
+
 > 본 v0.1 은 paired-dawns-v0.md 의 *human-readability-principle-v0 적용 재작성*. 사용자 직접 발의 (2026-05-02) → writer r3 cy-002 큐 1 위 박음. 메타포 우선 → 사람·상황·감정 우선 + 메타포 위로 얹힘.
 > 두 단편의 사실·인물·시간 좌표 = bible v0.5 + character-relations-v0 직접 보존 (v0 와 동일). 표면 톤만 사람-가독성 임계로 내림.
 
 ---
 
 ## 1. 연강 — 잇닿은 자국 (60+ 자국째, *가족* 축 변주)
+
+![연강](/outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yeongang-v1.png)
 
 연강은 오래 앉아 있지 않았다. 산 정상 가장자리의 벤치에 가서 1분쯤 앉아 있다 일어서는 게 그의 60년 된 습관이었다. 옆에 누군가가 와 앉으면 그는 자기 일어설 시간을 천천히 늘렸다. 5분이 보통이었고, 어떤 날에는 30분이었다. 옆 사람이 일어설 때 한 박자 정도 마음이 가벼워 보이는 때가 있었다. 그 가벼움이 보이는 날들이 그의 60년 안에서 가장 따뜻한 아침들이었다.
 
@@ -90,6 +94,8 @@ constitution_invariant_check: |
 ---
 
 ## 2. 유리 — 옆에 앉은 첫 새벽 (8 자국째, *연대* 변주)
+
+![유리](/outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yuri-v1.png)
 
 오늘 처음으로 엄마가 아닌 다른 사람 옆에 앉아 봤다. 자라라는 아이. 자라는 나보다 한 살 어리고, 자기 손바닥을 어제 처음 폈다고 했다. 처음이라는 게 약간 무서운 일이라는 걸 나는 알고 있었다. 나도 일곱 살 때엔 비슷한 떨림이 있었다.
 

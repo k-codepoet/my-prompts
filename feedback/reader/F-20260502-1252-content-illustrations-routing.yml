@@ -1,0 +1,33 @@
+id: F-20260502-1252-content-illustrations-routing
+created_at: '2026-05-02T12:52:00+00:00'
+source: chat:user
+reader_role: R0
+artifact: outputs/writing/the-map-is-the-journey/**/*.md
+verdict: fail
+status: open
+target_orgs: [writer, art-director, implementer]
+notes: |
+  랜딩 페이지 (publishing surface) 에서는 인물 카드와 회차 카드에 삽화가 보인다.
+  그런데 카드 클릭해서 본문 (/view.html?path=...) 으로 들어가면 삽화가 거의 안 보인다.
+  본문 안에도 적절한 자리에 삽화가 박혀 있어야 한다.
+
+  본 사이클 (cy-003) 에서 직접 처치 1차 박음:
+  - implementer: site/view.html 의 marked 결과 후처리로 상대경로 img[src] 를 md 파일 기준 절대경로로 보정 (resolveRelativeRefs).
+  - writer: 회차 3 자리 (dawn-first-map / sideseat-dawn-v0 / paired-dawns-v0.1) 본문에 hero + 인물 이미지 직접 박음.
+    경로는 root-anchored `/outputs/...` 형식으로 통일.
+  - 인물 시트 8 자리는 기존 `## 일러스트 갤러리` 섹션 그대로 두되 view.html 보정으로 즉시 노출.
+
+  다음 회차/인물 박을 때 (cy-003+) 작가 조직과 art-director 조직이 이어 받아야 할 룰:
+  1. (writer) 회차 본문 작성 시 reader 섹션에 hero `episode_thumb` 1 자리 + 분기/POV 별 인물 이미지 ≥ 1 자리 박음 의무.
+  2. (writer) 본문 안 모든 이미지 src 는 root-anchored `/outputs/...` 절대경로 (상대경로 ../ 금지).
+  3. (art-director) 회차/인물 박힘 짝마다 적합한 stamp 또는 character-sheet 1 자리 명시 — frontmatter `episode_thumb` + 본문 ≥ 1 자리.
+  4. (loremaster) 인물 md frontmatter 의 `illustrations:` 배열을 본문 갤러리 표와 자동 일치하도록 룰화 (post-supersede 포인터 stale 처치 그물에 추가 후보).
+
+  본 피드백은 *각 조직이 자기 도메인 부분만 책임지고 잇따른 박음에서 위 룰을 지키는지* 가 핵심.
+  즉 writer 가 episode 새로 박을 때 hero/인물 이미지 빼먹으면 critic R0 fail.
+must_fix:
+  - writer: 신규 회차 박힘 시 본문 hero (episode_thumb) + POV 인물 이미지 ≥ 1 자리 (root-anchored).
+  - art-director: writer 새 회차 박음 짝에 부합하는 stamp/character-sheet 1 자리 + frontmatter `episode_thumb` 명시 짝.
+  - implementer: publishing surface (view.html) 가 본문 안 상대경로 img 도 깨지지 않게 유지 (regression 방지).
+  - loremaster: 인물 md frontmatter `illustrations:` 와 본문 갤러리 표 일치 룰 발의 자리.
+  - critic: cold-read 시 본문 안 이미지 0 자리면 *외부 첫 5 분 진입* 측정에서 가산 점수 차감.

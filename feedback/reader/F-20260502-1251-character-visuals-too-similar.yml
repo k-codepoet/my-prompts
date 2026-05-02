@@ -1,0 +1,22 @@
+id: F-20260502-1251-character-visuals-too-similar
+created_at: '2026-05-02T12:51:02+00:00'
+source: chat:user
+reader_role: R0
+artifact: outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-*.png
+verdict: fail
+status: open
+notes: |
+  해온, 정해, 희재가 너무 닮았다.
+  세 인물은 서로의 성격과 주관에 따라 외형적인 차이가 분명해야 한다.
+  얼굴, 실루엣, 자세, 표정, 머리 모양, 옷의 형태와 색감에서 한눈에 구분되어야 한다.
+must_fix:
+  - 해온, 정해, 희재의 character sheet 와 이후 삽화에서 동일한 얼굴형/머리/표정/실루엣을 반복하지 말 것.
+  - 각 인물의 성격과 주관이 외형에 드러나도록 visual differentiator 를 최소 3 개씩 명시할 것.
+  - art-director 는 재생성 전에 세 인물의 silhouette / pose / face / clothing / palette 차이를 표로 먼저 박을 것.
+  - writer 는 인물 묘사에서 서로 다른 몸짓, 시선, 말하기 전 태도, 옷 입는 습관을 분리할 것.
+  - critic 또는 voice-keeper 는 세 인물을 이름 없이 봐도 구분 가능한지 R0 관점으로 재검수할 것.
+applies_to:
+  - art-director
+  - writer
+  - critic
+  - voice-keeper

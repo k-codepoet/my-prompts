@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-02T12:45:25.689701+00:00",
+  "generated_at": "2026-05-02T12:54:42.728150+00:00",
   "root_docs": [
     {
       "path": "current.md",
       "title": "Current State (live pointer)",
       "version": null,
-      "mtime": 1777725855,
-      "size": 163202
+      "mtime": 1777726472,
+      "size": 165326
     },
     {
       "path": "seed.md",
@@ -204,6 +204,75 @@
   "categories": {
     "writings": [
       {
+        "path": "outputs/writing/the-map-is-the-journey/episode-04-no-asking-direction.md",
+        "title": "방향을 묻지 않는다는 것 — 정해의 한 통화",
+        "version": "v0",
+        "mtime": 1777726472,
+        "size": 12189,
+        "artifact": "short-story",
+        "world": "the-map-is-the-journey@v0.6",
+        "series_id": "the-map-is-the-journey",
+        "series_title": "여정 자체가 지도",
+        "episode_no": "4",
+        "episode_title": "방향을 묻지 않는다는 것",
+        "episode_summary": "매일 같은 방향을 향하는 27세 정해가 누나의 한 통화를 받고, 펴는 사람과 안 펴는 사람이 같은 식탁에 앉을 수 있을지를 처음으로 생각해 보는 단편.",
+        "episode_characters": "정해, 누나(미명명)",
+        "episode_status": "candidate",
+        "reader_first_status": "candidate"
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/paired-dawns-v0.1.md",
+        "title": "옆에 잇닿은 두 새벽 v0.1 (사람-가독성 적용 — 연강 *가족* / 유리 *연대*)",
+        "version": "v0.1",
+        "mtime": 1777726469,
+        "size": 24431,
+        "artifact": "short-story-pair",
+        "world": "the-map-is-the-journey@v0.5",
+        "series_id": "the-map-is-the-journey",
+        "series_title": "여정 자체가 지도",
+        "episode_no": "3",
+        "episode_title": "옆에 잇닿은 두 새벽",
+        "episode_summary": "연강과 유리의 시간을 나란히 두고, 누군가의 손을 잡지 않는 일이 어떻게 응원이 되는지 보여 주는 두 편.",
+        "episode_characters": "연강, 유리",
+        "episode_thumb": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-8-huijae-side-by-side-dawns-v1.png",
+        "episode_status": "published"
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/sideseat-dawn-v0.md",
+        "title": "옆자리에 앉은 한 새벽",
+        "version": "v0",
+        "mtime": 1777726451,
+        "size": 22350,
+        "artifact": "short-story",
+        "world": "the-map-is-the-journey@v0.4",
+        "series_id": "the-map-is-the-journey",
+        "series_title": "여정 자체가 지도",
+        "episode_no": "2",
+        "episode_title": "옆자리에 앉은 한 새벽",
+        "episode_summary": "인규가 연강 옆에 앉아, 답을 주는 일보다 기다리는 일이 더 어렵다는 것을 배우는 봄.",
+        "episode_characters": "인규, 연강",
+        "episode_thumb": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-7-yeongang-short-grain-v1.png",
+        "episode_status": "published",
+        "axis": "업 (Rule A2 정식 머리말 박음 — 본 단편은 *업* 축 단일 변주)"
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/dawn-first-map.md",
+        "title": "처음으로 자기 지도를 본 새벽",
+        "version": "v0",
+        "mtime": 1777726439,
+        "size": 15562,
+        "artifact": "short-story",
+        "world_id": "the-map-is-the-journey",
+        "series_id": "the-map-is-the-journey",
+        "series_title": "여정 자체가 지도",
+        "episode_no": "1",
+        "episode_title": "처음으로 자기 지도를 본 새벽",
+        "episode_summary": "해온, 나림, 유경이 같은 새벽에 각자의 두려움과 변화를 처음 확인하는 이야기.",
+        "episode_characters": "해온, 나림, 유경",
+        "episode_thumb": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png",
+        "episode_status": "published"
+      },
+      {
         "path": "outputs/writing/the-map-is-the-journey/characters/yugyeong.md",
         "title": "유경 (柳敬) — *한 아이가 자기 종이 위를 가장 많이 걸은 사람*",
         "version": "v0",
@@ -306,58 +375,6 @@
         "character_hangul": "해온",
         "character_hanja": "海溫",
         "axis": "나"
-      },
-      {
-        "path": "outputs/writing/the-map-is-the-journey/sideseat-dawn-v0.md",
-        "title": "옆자리에 앉은 한 새벽",
-        "version": "v0",
-        "mtime": 1777725118,
-        "size": 22107,
-        "artifact": "short-story",
-        "world": "the-map-is-the-journey@v0.4",
-        "series_id": "the-map-is-the-journey",
-        "series_title": "여정 자체가 지도",
-        "episode_no": "2",
-        "episode_title": "옆자리에 앉은 한 새벽",
-        "episode_summary": "인규가 연강 옆에 앉아, 답을 주는 일보다 기다리는 일이 더 어렵다는 것을 배우는 봄.",
-        "episode_characters": "인규, 연강",
-        "episode_thumb": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-7-yeongang-short-grain-v1.png",
-        "episode_status": "published",
-        "axis": "업 (Rule A2 정식 머리말 박음 — 본 단편은 *업* 축 단일 변주)"
-      },
-      {
-        "path": "outputs/writing/the-map-is-the-journey/paired-dawns-v0.1.md",
-        "title": "옆에 잇닿은 두 새벽 v0.1 (사람-가독성 적용 — 연강 *가족* / 유리 *연대*)",
-        "version": "v0.1",
-        "mtime": 1777725118,
-        "size": 24097,
-        "artifact": "short-story-pair",
-        "world": "the-map-is-the-journey@v0.5",
-        "series_id": "the-map-is-the-journey",
-        "series_title": "여정 자체가 지도",
-        "episode_no": "3",
-        "episode_title": "옆에 잇닿은 두 새벽",
-        "episode_summary": "연강과 유리의 시간을 나란히 두고, 누군가의 손을 잡지 않는 일이 어떻게 응원이 되는지 보여 주는 두 편.",
-        "episode_characters": "연강, 유리",
-        "episode_thumb": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-8-huijae-side-by-side-dawns-v1.png",
-        "episode_status": "published"
-      },
-      {
-        "path": "outputs/writing/the-map-is-the-journey/dawn-first-map.md",
-        "title": "처음으로 자기 지도를 본 새벽",
-        "version": "v0",
-        "mtime": 1777725118,
-        "size": 15214,
-        "artifact": "short-story",
-        "world_id": "the-map-is-the-journey",
-        "series_id": "the-map-is-the-journey",
-        "series_title": "여정 자체가 지도",
-        "episode_no": "1",
-        "episode_title": "처음으로 자기 지도를 본 새벽",
-        "episode_summary": "해온, 나림, 유경이 같은 새벽에 각자의 두려움과 변화를 처음 확인하는 이야기.",
-        "episode_characters": "해온, 나림, 유경",
-        "episode_thumb": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png",
-        "episode_status": "published"
       },
       {
         "path": "outputs/writing/the-map-is-the-journey/series-index-v0.md",
@@ -1205,6 +1222,13 @@
     ],
     "ticks": [
       {
+        "path": "generations/gen-001/cycles/cy-003/ticks/tick-014.md",
+        "title": "Tick cy-003/014 — writer r2",
+        "version": null,
+        "mtime": 1777726472,
+        "size": 1957
+      },
+      {
         "path": "generations/gen-001/cycles/cy-003/ticks/tick-013.md",
         "title": "Tick cy-003/013 — role (voice-keeper r2 cy-003)",
         "version": null,
@@ -1823,6 +1847,13 @@
     ],
     "arguments": [
       {
+        "path": "generations/gen-001/cycles/cy-003/arguments/writer-r2.md",
+        "title": "writer r2 cy-003",
+        "version": null,
+        "mtime": 1777726472,
+        "size": 1425
+      },
+      {
         "path": "generations/gen-001/cycles/cy-003/arguments/voice-keeper-r2.md",
         "title": "voice-keeper r2 cy-003",
         "version": null,
@@ -2345,7 +2376,7 @@
     ]
   },
   "stats": {
-    "writings": 17,
+    "writings": 18,
     "world": 15,
     "art": 13,
     "alignment": 14,
@@ -2353,8 +2384,8 @@
     "critique": 6,
     "code-docs": 41,
     "decisions": 6,
-    "ticks": 88,
-    "arguments": 65,
+    "ticks": 89,
+    "arguments": 66,
     "decision-traces": 5,
     "illustrations": 13
   }

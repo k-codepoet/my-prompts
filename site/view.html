@@ -123,6 +123,25 @@ function splitReaderDebug(body) {
   return { reader: body, debug: "", splitAt: -1 };
 }
 
+// marked 결과 본문의 상대경로 img/a 를 md 파일 기준으로 절대경로 보정.
+// view.html 은 root 에 있어 상대경로가 root 기준으로 풀려 깨짐 (예: 인물 md 의 ../../../worldbuilding/...).
+function resolveRelativeRefs(html, mdPath) {
+  const dir = mdPath.slice(0, mdPath.lastIndexOf("/") + 1); // "/outputs/writing/.../characters/"
+  const tmp = document.createElement("div");
+  tmp.innerHTML = html;
+  const fix = (el, attr) => {
+    const v = el.getAttribute(attr);
+    if (!v) return;
+    if (/^(?:[a-z]+:|\/\/|#|\/)/i.test(v)) return; // absolute / scheme / fragment / anchor 만은 패스
+    try {
+      const u = new URL(v, "http://_local" + dir);
+      el.setAttribute(attr, u.pathname + u.search + u.hash);
+    } catch (e) { /* leave as-is */ }
+  };
+  tmp.querySelectorAll("img[src]").forEach(el => fix(el, "src"));
+  return tmp.innerHTML;
+}
+
 function toggleDebug() {
   const sec = document.getElementById("debug-section");
   const btn = document.getElementById("debug-toggle");
@@ -189,6 +208,10 @@ async function main() {
   } else {
     readerHtml = `<pre>${escapeHtml(text)}</pre>`;
   }
+  // 본문 안 상대경로 img 보정 (md 파일 기준)
+  const mdAbsPath = "/" + path;
+  readerHtml = resolveRelativeRefs(readerHtml, mdAbsPath);
+  debugHtml = resolveRelativeRefs(debugHtml, mdAbsPath);
   document.getElementById("content").innerHTML = readerHtml;
   document.getElementById("debug-content").innerHTML = debugHtml;
   document.getElementById("meta").textContent = `${path} · ${text.length.toLocaleString()} bytes`;

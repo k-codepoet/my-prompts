@@ -1,0 +1,37 @@
+id: F-20260502-1252-serial-stalled-at-3
+created_at: '2026-05-02T12:52:00+00:00'
+source: chat:user
+reader_role: R0
+artifact: outputs/writing/the-map-is-the-journey/episode-*.md
+verdict: fail
+status: open
+target_orgs: [writer, orchestrator]
+notes: |
+  연재물이 1·2·3 회까지만 published 된 채 멈춰 있다.
+  사용자가 랜딩에서 확인 — 4 회 이후 자동으로 새 회차가 안 써지고 있다.
+
+  진단:
+  - cy-003 task-queue-r1.md 의 writer r1 에 *연재 continuation override* (episode_no:4 부터 다음 번호) 명시는 박혀 있다.
+  - 그러나 이게 (e) 항목에 묻혀 있고 (a) character-sheets 8/8 + (b) voice-signature 가 우선이라
+    writer 가 8 인물 시트 작성에만 매달려 회차 진척이 0.
+  - 실제 cy-003 r1 arguments 폴더에 `writer-r1.md` argument 파일이 없다 — writer 산출이 인물 md 로만 박히고 trace 누락.
+  - role-rotate 가 7 조직 .md 알파벳 라운드로빈 → frozen designer 와 scope 축소 art-director/implementer 도 동일 슬롯 받음.
+    writer 차례가 7 틱 중 1 회.
+
+  처치 (writer 다음 틱부터):
+  - **다음 writer tick = episode_no:4 작성 우선**. character-sheets 8/8 은 이미 도달.
+  - 신규 회차 파일명: `outputs/writing/the-map-is-the-journey/episode-04-<slug>.md`.
+  - frontmatter 필수: `series_id: the-map-is-the-journey`, `episode_no: 4`, `episode_title`, `episode_summary`,
+    `episode_thumb` (root-anchored `outputs/worldbuilding/.../illustrations/<file>.png`), `episode_status: candidate`.
+  - 본문: hero (episode_thumb) + POV 인물 이미지 ≥ 1 자리 박음 의무 (F-20260502-1252-content-illustrations-routing 룰 참조).
+  - critic / voice-keeper r1 cold-read 통과 후 `episode_status: published` 격상.
+
+  처치 (orchestrator 다음 checker tick):
+  - cy-003 r1 안 writer 산출 trace gap 처치 — 인물 md 8 자리 작성을 writer-r1.md 에 후행 ack.
+  - role-rotate 의 frozen/scope-reduced 조직 빈 슬롯이 활성 조직 (writer/loremaster/voice-keeper/critic) 차례를 줄이는 문제는
+    `state/.last-role` 다음 회전 룰에 *frozen 건너뛰기* 옵션 발의 후보 (Type B 후보).
+must_fix:
+  - writer: 다음 tick = episode_no:4 신규 회차 작성. 인물 시트 추가 작업보다 우선.
+  - writer: 본문에 hero + POV 인물 이미지 박음 의무 (F-20260502-1252-content-illustrations-routing 룰).
+  - orchestrator: writer 인물 md 8 자리 작성을 cy-003 r1 writer-r1.md 에 후행 ack 박음.
+  - orchestrator: role-rotate frozen 조직 건너뛰기 룰 발의 (Type B 후보) — 활성 조직 차례 회복.

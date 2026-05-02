@@ -179,11 +179,22 @@ Reader-facing writing override:
 - For any task that creates, rewrites, evaluates, publishes, or routes \`outputs/writing/**/*.md\`,
   read \`prompts/writing/reader-first-standard.md\` first.
 - Also scan \`feedback/reader/\` for open R0 feedback. User feedback overrides automated PASS.
+- For character visual work or character descriptions, open R0 feedback in \`feedback/reader/\`
+  also applies. In particular, visual similarity feedback must be handled before
+  generating or approving character sheets.
 - Do not mark reader-facing writing PASS unless R0/R1/R2 gates and toxic-term budget pass.
 - Do not reward worldbuilding terms as emotional shorthand in reader-facing prose.
 - For the active serial, new story files must include series frontmatter
   (\`series_id: the-map-is-the-journey\`, \`episode_no\`, \`episode_title\`, \`episode_summary\`).
   Compute the next episode number from existing frontmatter; do not edit \`site/index.html\` per episode.
+
+User-flagged routing (feedback/reader/*.yml — target_orgs):
+- Every tick MUST scan \`feedback/reader/*.yml\` with \`status: open\` and inspect the \`target_orgs:\` array.
+- For each open R0 feedback whose target_orgs intersects the active orgs of this tick,
+  surface it in your tick output and ack/process it before any default round task.
+- The orchestrator (checker mode) is responsible for routing — for each open feedback,
+  list which target_orgs have ack'd in TICK_SUMMARY. If a target org has not picked up its
+  responsibility within 3 of its own ticks, surface it explicitly and consider opening a Type B decision.
 
 BOOTSTRAP §1 (사용자 응답 통합) 자동화:
 - decisions/open/ 의 yml 중 response.decided_at 박힌 것이 있으면 직접 처리 말고
@@ -194,6 +205,9 @@ Constraints:
 - Do not modify constitution.md, seed.md, CHARTER.md, STRUCTURE.md, BOOTSTRAP.md.
 - Active gen folder is generations/gen-N where N=current.md.gen.
 - Append to ticks/, arguments/, decision-traces/ within that gen only.
+- Timestamp discipline: this tick process started at $TS UTC. Use \`date -Iseconds\`
+  or this value for frontmatter, tick logs, and current.md rows. Do not invent
+  timestamps later than the current wall clock.
 - If a Type C (or any) decision needs to be opened, write decisions/open/D-<YYYYMMDD>-<seq>.yml
   from template.yml. **Immediately after writing**, call:
       scripts/slack-notify.sh decision_opened "🟡 Decision needed: <D-id>" "<short body with type, options summary, recommended pick, trace path>"
@@ -234,15 +248,29 @@ Reader-facing writing override:
 - If your task touches \`outputs/writing/**/*.md\`, writing critique, writing alignment, reader notification,
   or writing task queues, read \`prompts/writing/reader-first-standard.md\` first.
 - Scan \`feedback/reader/\` for target-specific and \`general\` R0 feedback.
+- If your task touches character visuals, character sheets, or character descriptions,
+  scan \`feedback/reader/\` for open R0 visual/character feedback before acting.
 - Open R0 fail feedback blocks PASS; produce a candidate rewrite or fail critique instead.
 - First 500 chars of reader-facing prose must contain zero toxic world terms listed in the standard.
 - If creating the next serial episode, compute \`episode_no = max(existing series episode_no) + 1\`
   and write exactly one new \`outputs/writing/the-map-is-the-journey/episode-NN-*.md\` file.
   The publishing surface will render it from manifest metadata.
+- Episode body MUST embed at least one hero image (matching \`episode_thumb\`) and ≥ 1 POV character
+  illustration in the reader section, using root-anchored paths (\`/outputs/...\`, no \`../\`).
+  This applies to the writer/art-director pair; critic R0 cold-read fails if body has 0 images.
+
+User-flagged routing (feedback/reader/*.yml — target_orgs):
+- Every tick MUST list every open R0 yml in \`feedback/reader/\` whose \`target_orgs:\` array contains \`$ROLE\`.
+- If any matches, processing the highest-impact one takes priority over the default round task this tick.
+- Acknowledge the feedback id in your argument file frontmatter (e.g. \`acks_feedback: [F-...]\`)
+  and explain in TICK_SUMMARY which target_orgs item you advanced.
 
 Constraints:
 - Do not act outside your domain (other roles will object via trip-wires).
 - Do not modify constitution.md, seed.md, CHARTER.md, STRUCTURE.md, BOOTSTRAP.md.
+- Timestamp discipline: this tick process started at $TS UTC. Use \`date -Iseconds\`
+  or this value for frontmatter, tick logs, and current.md rows. Do not invent
+  timestamps later than the current wall clock.
 - Keep this tick under \$$MAX_BUDGET_USD.
 - Final summary: TICK_SUMMARY: line.
 
@@ -292,6 +320,14 @@ Same protocol as --mode role for $ROLE.
 Read your charter at generations/gen-N/orgs/$ROLE.md and act in-domain only.
 If the task touches reader-facing writing or writing critique, read prompts/writing/reader-first-standard.md
 and feedback/reader/ before acting. R0 user feedback overrides automated PASS.
+If the task touches character visuals, character sheets, or character descriptions, scan feedback/reader/
+for open R0 visual/character feedback before acting.
+User-flagged routing — list every open feedback/reader/*.yml whose target_orgs array contains \`$ROLE\`;
+processing the highest-impact match takes priority over the default round task this tick.
+Acknowledge the feedback id (\`acks_feedback: [F-...]\`) in your argument file frontmatter and
+in TICK_SUMMARY note which target_orgs item you advanced.
+Timestamp discipline: this tick process started at $TS UTC. Use \`date -Iseconds\` or this value;
+do not invent timestamps later than the current wall clock.
 TICK_SUMMARY: line at end. Cap \$$MAX_BUDGET_USD.
 EOF
     ;;
