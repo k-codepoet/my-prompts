@@ -1,10 +1,10 @@
 ---
 gen: 1
 cycle: cy-001
-tick: 27
+tick: 28
 active_decisions: []
 paused: false
-last_updated: '2026-05-02T05:04:01+00:00'
+last_updated: '2026-05-02T06:15:00+00:00'
 ---
 
 # Current State (live pointer)
@@ -26,6 +26,7 @@ last_updated: '2026-05-02T05:04:01+00:00'
 - `outputs/worldbuilding/the-map-is-the-journey/terrain-v0.md` (loremaster r2 — 5 종의 산, *진심·방향* 두 축, *큰 비* 자기 트립)
 - `outputs/worldbuilding/the-map-is-the-journey/chronicle-v0.md` (loremaster r2 — 5 사건 골격, *N 자국째* 단위)
 - `outputs/worldbuilding/the-map-is-the-journey/forbidden-language-v0.md` (loremaster r2 — 언어 단위 자기 트립 그물, audit-rules-v0 와 보완 관계 — *6 호 산출 연속 grep 통과* 검증)
+- `outputs/worldbuilding/the-map-is-the-journey/character-relations-v0.md` (**loremaster r4 마감 라운드 산출 — voice-keeper r3 §A.2.e *완전 해소의 한 자리* + critic r3 5:00 cold reader 1 호 *인규는 어디에 있나?* 두 자리 동시 응답**. 8 자 인물 관계도 = 5 known (해온/정해/나림/유경/인규) + 3 신규 박음 (**연강/희재/유리**) + terrain × chronicle 좌표 + 5 칸 매트릭스. *세 축 부재* 임계 5/1/1 → **5/2/2 격상**. character-sheets-axis-v0 §메타 *겹침 그물 4 자리* 직접 흡수 + 4 신규 인물 자리 박음. forbidden-language §1~§8 grep 통과 12 호 + 매니페스토 7 키워드 본문 직접 인용 0 + 트립 0 + 영역 위반 0)
 
 ### 시각
 - `outputs/art/the-map-is-the-journey/visual-bible-v0.3.md` (시각 바이블 v0.3 — **art-director r3 마감 라운드 산출 — D-003 picked=game 직접 의존**. v0.2 골격 위 §11.6 유경 / §11.7 인규 hex 정착 + §5.4.4 함께 걸은 자리 / §5.4.5 옆자리 받음 신설 컷 + §12.2 권력 두 비극 시각 분리 + §17 6 장 우표 컨셉 시트 + §18 concept 시각 박자 검수 + §19 writer 단편 시각 박자 흡수 + §13 walk-trace-spec §M3/§M4/§M5 검수. **10 자리 다른 조직 r2/r3 산출 흡수 (마감 라운드 최대) + charter §첫 task #1+#2+#3 *3 자리* 완전 박음 4 호 사례**. self-check 통과 + 트립 0 + forbidden-language §1~§8 grep 통과 9 호 + 매니페스토 7 키워드 본문 직접 인용 0)
@@ -52,6 +53,7 @@ last_updated: '2026-05-02T05:04:01+00:00'
 - `outputs/code/g-the-map-walker/walk-trace-spec-v0.md` (implementer r1 — supersedes by v0+)
 - `outputs/code/g-the-map-walker/manual-run-checklist-v0+.md` (implementer r2 산출 — 5 항 → 7 항. §6 옆자리 받음 + §7 함께 걸은 자리 신규)
 - `outputs/code/g-the-map-walker/manual-run-checklist-v0.md` (implementer r1 — supersedes by v0+)
+- `outputs/design/g-the-map-walker/concept-diagrams-v0.md` (**designer r3+ patch 산출 (tick-027) — critic r3 §4 인계 *ASCII → 시각 도식 1 자리 보강* 직접 응답**. Mermaid 5 다이어그램 (코어 루프 / 30 초 시퀀스 / 5 분 gantt / M4·M5 상태 / 페일 매핑) + concept v0.1 §2·§3·§4·§7·§9 1:1 시각화 + supersede 0 companion artifact. cold reader 부담 ≤ 0.5 단계 격하 자리)
 
 ### 글
 - `outputs/writing/the-map-is-the-journey/dawn-first-map.md` (**writer r3 마감 라운드 산출 — D-003 분리 응답 자리 + charter §첫 task #1 1 호 박음**. 단편 v0 ~2380 자, 1 인칭 3 분기 = 해온 (겹쳐짐) / 나림 (받음) / 유경 (나란함) — bible v0.3 §2.3 *연대 3 변주* 1:1 글 매체 시연 1 호 사례. 매니페스토 7 키워드 본문 직접 인용 0 + forbidden-language §1~§8 grep 적중 0 (8 호). 7 자리 다른 조직 r2/r3 산출 흡수 = *조직 r3 흡수 표준 3 호 사례 = cy-002 정식 룰 임계 도달*. *세 축 분리 응답 = 분기 사이 여백 글 형식* 1 호 신규 발의 — 인규 *업* 축은 cy-002 *옆자리에 앉은 한 새벽* 단편으로 분리)
@@ -188,3 +190,5 @@ last_updated: '2026-05-02T05:04:01+00:00'
 | 2026-05-02T04:43:00 | tick-024 | observation/preparation — 사이클 건전성 5 자리 재검증 통과 + 다음 role 큐 우선순위 박음 (critic r3 > loremaster r4 > implementer r3 > orchestrator r2). 신규 role 산출 0 + 신규 결정 0 + drift 0. **observation tick 1 호 신규 사례 (3 종 모드 = role / finalize-only / observation 박음) + D + B+ 짝 11 호 + 결정 게이트 15 호**. |
 | 2026-05-02T05:05:00 | tick-025 | critic r3 (마감 라운드 5 호) — bible-v0.3-first-5min.md 산출 (4 자리 cold-read 묶음). bible v0.3 6/6 강 유지 + concept v0.1 6/6 + dawn-first-map 6/6 + visual-bible §17 6 우표 6/6 = **24/24**. **G-WORLD-1 게이트 *2 차 통과 선언* + 완전 통과 두 측 동시 박음 1 호 + character-sheets ④ 기쁨 5/6→6/6 격상 + 세 축 정착 7 도구 일치 격상 + 연대 글·시각 3 호 도달 (cy-002 정식 룰 임계) + cold reader 7 질문 4 매체 그물 응답 1 호 + charter 첫 task 5 호 + 조직 r3 흡수 5 호** = 11 자리 진화 룰 강화. role-only 박음 (body 분리). |
 | 2026-05-02T05:35:00 | tick-026 | finalize-only — drift 9 호 회복 (tick-025 wrote 표 *frontmatter+1 행 박음* claim 거짓 — *role-only 의 D 단독 안전핀 부족* 패턴). current.md frontmatter tick=24→26 + last_updated + body 동기 5 자리 (분석/정렬 critic r3 행 + 사이클 상태 5/7 도착 + critic r3 ✅ + 변경 이력 tick-025/026 + 진화 룰 후보 12 자리 추가). **D + B+ 짝 13 호 + 결정 게이트 17 호 + role+finalize 분리 9 호 + D 단독 부족 4 호 + *role-only frontmatter atomic 박음 의무 + B+ 검증* 신규 룰 후보**. cy-001 마감 라운드 5/7 도착 + 잔여 2 자리. |
+| 2026-05-02T05:55:00 | tick-027 | role (designer r3+ patch — critic r3 §4 인계 직접 응답) — concept-diagrams-v0.md 산출 (Mermaid 5 다이어그램 + concept v0.1 §2·§3·§4·§7·§9 1:1 시각화 + supersede 0 companion artifact). **조직 간 인계 → 차기 role tick 직접 응답 = 라운드 마감 임계 1 호 신규 + companion artifact 패턴 1 호 신규 + forbidden grep 11 호 + 세 축 정착 8 도구 격상 + D + B+ 짝 14 호 (drift 9 호 회복 직후 재초과 강화) + 결정 게이트 18 호** = 6 자리 진화 룰 임계 강화. 트립 0 + 영역 위반 0 + 자기 검증 6/6. (body 동기는 tick-028 합본 회복 — *tick-027 body 누락 합본 회복 1 호 신규* 자리.) |
+| 2026-05-02T06:15:00 | tick-028 | role (loremaster r4 — 마감 라운드 6 호 / cy-001 후반 task 큐 2 호) — character-relations-v0.md 산출 (8 자 인물 관계도 = 5 known + 3 신규 [연강/희재/유리] + terrain × chronicle 좌표 + 5 칸 매트릭스). **세계 본체 안 가족·업 축 인물 직접 박음 1 호 = 5/1/1 → 5/2/2 격상 + voice-keeper r3 §A.2.e + critic r3 5:00 cold reader 두 자리 동시 응답 + 9 도구 교차 검증 격상 + charter 첫 task 6 호 + 조직 r3/r4 흡수 표준 6 호 + vertical slice 마감 라운드 흡수 5 호 (정식 룰 임계 재재초과) + 트립 감쇠 4 라운드 연속 + forbidden grep 12 호 + D + B+ 짝 15 호 + 결정 게이트 19 호 + role+finalize 합본 4 호 + tick-027 body 누락 합본 회복 1 호 신규** = 8 자리 진화 룰 임계 강화. 트립 0 + 영역 위반 0 + 자기 검증 6/6. cy-001 마감 라운드 6/7 + 잔여 1 자리 (implementer r3 retroactive finalize). |
