@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-02T12:38:46.251064+00:00",
+  "generated_at": "2026-05-02T12:41:41.955957+00:00",
   "root_docs": [
     {
       "path": "current.md",
       "title": "Current State (live pointer)",
       "version": null,
-      "mtime": 1777725292,
+      "mtime": 1777725693,
       "size": 157962
     },
     {
@@ -541,6 +541,15 @@
     ],
     "art": [
       {
+        "path": "outputs/art/the-map-is-the-journey/tone-lock-v0.md",
+        "title": "Tone & Manner Lock — visual-bible v0.4 baseline (cy-003 r2)",
+        "version": "v0",
+        "mtime": 1777725680,
+        "size": 4783,
+        "artifact": "tone-and-manner-lock",
+        "world_id": "the-map-is-the-journey"
+      },
+      {
         "path": "outputs/art/the-map-is-the-journey/visual-bible-v0.3.md",
         "title": "시각 바이블 v0.3 — *가족·업 인물 hex 정착 + concept v0.1 시각 박자 검수 + writer r3 단편 흡수 + 권력 두 비극 시각 분리 + 6 장 우표 컨셉 시트*",
         "version": "v0.3",
@@ -639,6 +648,14 @@
       }
     ],
     "alignment": [
+      {
+        "path": "outputs/alignment/the-map-is-the-journey/cy-003-r1-reader-first-recheck.md",
+        "title": "cy-003 r1 reader-first 재감사 + chronicle v1.1 정렬 quick-audit",
+        "version": "v0",
+        "mtime": 1777725539,
+        "size": 10367,
+        "artifact": "cy-003-r1-reader-first-recheck"
+      },
       {
         "path": "outputs/alignment/the-map-is-the-journey/human-readability-principle-v0.md",
         "title": "사람-가독성 원칙 v0 — 장면+감정 우선, 메타포는 그 위에",
@@ -1187,6 +1204,13 @@
       }
     ],
     "ticks": [
+      {
+        "path": "generations/gen-001/cycles/cy-003/ticks/tick-013.md",
+        "title": "Tick cy-003/013 — role (voice-keeper r2 cy-003)",
+        "version": null,
+        "mtime": 1777725671,
+        "size": 12102
+      },
       {
         "path": "generations/gen-001/cycles/cy-003/ticks/tick-012.md",
         "title": "Tick cy-003/012 — role (loremaster r2 cy-003 — chronicle-v1.1 thin-bump + audit-only 묶음)",
@@ -1799,6 +1823,13 @@
     ],
     "arguments": [
       {
+        "path": "generations/gen-001/cycles/cy-003/arguments/voice-keeper-r2.md",
+        "title": "voice-keeper r2 cy-003",
+        "version": null,
+        "mtime": 1777725581,
+        "size": 5789
+      },
+      {
         "path": "generations/gen-001/cycles/cy-003/arguments/loremaster-r2.md",
         "title": "loremaster r2 cy-003 — chronicle-v1.1 thin-bump + cy-003 r1 audit-only 묶음",
         "version": null,
@@ -2316,14 +2347,14 @@
   "stats": {
     "writings": 17,
     "world": 15,
-    "art": 12,
-    "alignment": 13,
+    "art": 13,
+    "alignment": 14,
     "design": 6,
     "critique": 6,
     "code-docs": 41,
     "decisions": 6,
-    "ticks": 87,
-    "arguments": 64,
+    "ticks": 88,
+    "arguments": 65,
     "decision-traces": 5,
     "illustrations": 13
   }

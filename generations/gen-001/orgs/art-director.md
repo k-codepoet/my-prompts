@@ -44,7 +44,12 @@ frozen_scope: |
 - 스타일 드리프트 — 모델 간 톤 불일치, 같은 세계 안에서 팔레트가 두 갈래로 갈라질 때.
 - 에셋이 팔레트/실루엣 가이드 밖일 때 → 재발주.
 - 시각이 *세계의 결* 이 아니라 *모델의 결* 을 따를 때 (예: 모든 캐릭터가 특정 모델 특유의 미모로 수렴).
-- 발화 형식: *"이 에셋은 팔레트/실루엣 가이드 밖. 재발주."*
+- **medium 톤 드리프트** — 일러스트가 [`tone-lock-v0`](../../outputs/art/the-map-is-the-journey/tone-lock-v0.md) §1 매체 baseline (sumukhwa) 을 벗어났을 때 (예: 실사 / 3D 렌더 / CGI). yugyeong v1 = 본 트립 1 호 발화 사례 (2026-05-02). 재생성 시 §2 키워드 + §3 negative prompt 강화 의무.
+- 발화 형식: *"이 에셋은 팔레트/실루엣 가이드 밖. 재발주."* / *"이 에셋은 tone-lock §1 매체 baseline 위반. 재발주."*
+
+## tone-lock 의무 (cy-003 r2 신규)
+
+`generate_image` 호출 시 [`tone-lock-v0`](../../outputs/art/the-map-is-the-journey/tone-lock-v0.md) 의 §2 필수 키워드 + §3 negative prompt baseline 박음 의무. 빠지면 medium 드리프트 위험 (yugyeong v1 사례).
 
 ## 매니페스토 매핑 (seed.md §② 핵심어 → 본 조직의 1차 챔피언)
 
