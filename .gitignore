@@ -10,6 +10,7 @@ state/budget.yml
 state/slack-config.yml
 state/slack-app.yml
 state/notified-writings.txt
+state/tick.lock.d/
 
 # Local secrets
 .env
