@@ -248,6 +248,9 @@ if [[ "$STATUS" == "ok" ]]; then
   log "done — $SUMMARY"
   # 비용은 응답에서 정확히 못 뽑으므로 per_tick_usd 를 보수적으로 누적 (최악의 경우).
   "$ROOT/scripts/usage-budget.sh" add "$MAX_BUDGET_USD" all >>"$LOG" 2>&1 || true
+  # publishing surface (prompt.codepoet.site) 자동 갱신 — manifest.json 재생성.
+  # nginx + 클라이언트 렌더러가 이걸 읽어 네비게이션을 즉시 갱신.
+  "$ROOT/scripts/generate-site-manifest.sh" >>"$LOG" 2>&1 || true
 else
   log "ERROR — see $CLAUDE_OUT (last 20 lines logged)"
   tail -20 "$CLAUDE_OUT" >> "$LOG"

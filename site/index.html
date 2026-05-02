@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>my-prompts — publishing surface</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><text y=%2213%22 font-size=%2214%22>📜</text></svg>">
+<style>
+  :root {
+    --bg: #f7f4ee;
+    --fg: #2b251c;
+    --muted: #7a715f;
+    --line: #e3dccd;
+    --accent: #5C4A36;
+    --warn: #a04f2a;
+    --mono: ui-monospace, "SF Mono", Menlo, Monaco, "Cascadia Code", "Roboto Mono", monospace;
+    --serif: "Iowan Old Style", "Apple Garamond", Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+  body { font-family: var(--serif); font-size: 17px; line-height: 1.6; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+  a:hover { color: var(--warn); border-bottom-style: solid; }
+  code, pre, kbd { font-family: var(--mono); font-size: 0.92em; }
+  pre { background: #f0ebde; padding: 12px 14px; border-left: 3px solid var(--line); overflow-x: auto; }
+
+  .wrap { max-width: 980px; margin: 0 auto; padding: 40px 24px 80px; }
+
+  header h1 { font-size: 14px; font-family: var(--mono); color: var(--muted); margin: 0 0 8px; letter-spacing: 0.04em; text-transform: uppercase; }
+  header blockquote {
+    margin: 12px 0 28px;
+    padding: 0;
+    font-size: 22px;
+    line-height: 1.45;
+    font-style: italic;
+    color: var(--fg);
+    border: none;
+  }
+  header .sub { color: var(--muted); font-family: var(--mono); font-size: 12px; margin-top: -16px; }
+
+  .meta { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-bottom: 32px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+  .meta a { color: var(--muted); }
+
+  section.cat {
+    margin: 28px 0;
+    padding: 16px 0;
+    border-top: 1px solid var(--line);
+  }
+  section.cat:first-of-type { border-top: none; }
+  section.cat h2 {
+    font-family: var(--mono);
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--accent);
+    letter-spacing: 0.06em;
+    margin: 0 0 12px;
+    cursor: pointer;
+    user-select: none;
+  }
+  section.cat h2 .count { color: var(--muted); margin-left: 8px; font-weight: normal; }
+  section.cat h2 .arrow { display: inline-block; width: 12px; color: var(--muted); transition: transform 0.15s; }
+  section.cat.collapsed h2 .arrow { transform: rotate(-90deg); }
+  section.cat.collapsed ul { display: none; }
+
+  ul.files { list-style: none; padding: 0; margin: 0; }
+  ul.files li { padding: 4px 0; display: flex; gap: 12px; align-items: baseline; }
+  ul.files li .title { flex: 1; }
+  ul.files li .ver { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+  ul.files li .when { font-family: var(--mono); font-size: 11px; color: var(--muted); min-width: 110px; text-align: right; }
+
+  .pin { background: #f0ebde; padding: 14px 16px; border-left: 3px solid var(--accent); margin: 20px 0; font-family: var(--mono); font-size: 13px; }
+  .pin a { font-weight: bold; }
+
+  .games { display: flex; gap: 12px; flex-wrap: wrap; margin: 12px 0; }
+  .games a {
+    display: inline-block;
+    padding: 10px 16px;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    font-family: var(--mono);
+    font-size: 13px;
+    border-radius: 2px;
+  }
+  .games a:hover { background: var(--warn); border: none; }
+
+  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 11px; color: var(--muted); }
+
+  /* viewer page (view.html) styling re-uses these rules */
+  article.md { padding-top: 8px; }
+  article.md h1 { font-size: 28px; margin: 24px 0 8px; }
+  article.md h2 { font-size: 22px; margin: 28px 0 8px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+  article.md h3 { font-size: 18px; margin: 20px 0 4px; color: var(--accent); }
+  article.md table { border-collapse: collapse; margin: 12px 0; }
+  article.md th, article.md td { border: 1px solid var(--line); padding: 6px 10px; }
+  article.md th { background: #f0ebde; }
+  article.md hr { border: none; border-top: 1px solid var(--line); margin: 24px 0; }
+  article.md blockquote { border-left: 3px solid var(--line); padding: 4px 14px; color: var(--muted); margin: 12px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>my-prompts · publishing surface</h1>
+    <blockquote>
+      "인생이란 나라는 고객을 최고로 만족시키기 위한 여정"
+    </blockquote>
+    <div class="sub">— Inception Seed, sealed 2026-05-01</div>
+  </header>
+
+  <div class="meta">
+    자율 루프(7 조직 + critic)가 박는 모든 산출물의 publishing surface.
+    매 tick마다 <code>manifest.json</code>이 자동 갱신되어 즉시 노출됩니다.
+    <span id="manifest-meta"></span>
+  </div>
+
+  <div class="pin">
+    <strong>🎮 활성 프로토타입</strong>
+    <div class="games" id="games"></div>
+  </div>
+
+  <main id="categories"></main>
+
+  <footer>
+    <span id="footer-stat"></span> ·
+    Source: <a href="https://github.com/k-codepoet/my-prompts">github.com/k-codepoet/my-prompts</a>
+  </footer>
+</div>
+
+<script>
+const CAT_LABELS = {
+  writings: { ko: "글", emoji: "📖", note: "단편·대화" },
+  world: { ko: "세계", emoji: "🌏", note: "바이블·지역·연대기·인물" },
+  art: { ko: "시각", emoji: "🎨", note: "시각 바이블·팔레트·우표" },
+  design: { ko: "디자인", emoji: "🎚", note: "프로토타입 사양·실패 모드" },
+  alignment: { ko: "정렬", emoji: "🎯", note: "voice-keeper 채점" },
+  critique: { ko: "비평", emoji: "🔍", note: "critic 라운드" },
+  "code-docs": { ko: "코드 문서", emoji: "📐", note: "엔진 선택·체크리스트·런 로그" },
+  decisions: { ko: "결정", emoji: "⚖️", note: "Type A/B/C 결정 기록" },
+  ticks: { ko: "Tick 로그", emoji: "🌀", note: "사이클 진행 자국" },
+  arguments: { ko: "조직 산출", emoji: "💬", note: "각 조직의 라운드별 산출" },
+  "decision-traces": { ko: "결정 트레이스", emoji: "📎", note: "사람이 응답한 결정의 후속 흔적" },
+};
+const CAT_ORDER = [
+  "writings", "world", "art", "design",
+  "alignment", "critique", "code-docs",
+  "decisions", "decision-traces", "arguments", "ticks",
+];
+const COLLAPSE_BY_DEFAULT = new Set(["arguments", "ticks", "decision-traces"]);
+
+function fmtTime(epoch) {
+  const d = new Date(epoch * 1000);
+  const now = new Date();
+  const diff = (now - d) / 1000;
+  if (diff < 60) return "방금";
+  if (diff < 3600) return `${Math.floor(diff/60)}분 전`;
+  if (diff < 86400) return `${Math.floor(diff/3600)}시간 전`;
+  if (diff < 86400*7) return `${Math.floor(diff/86400)}일 전`;
+  return d.toISOString().slice(0, 10);
+}
+
+function viewerUrl(path) {
+  return `/view.html?path=${encodeURIComponent(path)}`;
+}
+
+function renderCategory(key, items) {
+  const lab = CAT_LABELS[key] || { ko: key, emoji: "·", note: "" };
+  if (!items || items.length === 0) return "";
+  const collapsed = COLLAPSE_BY_DEFAULT.has(key) ? " collapsed" : "";
+  let lis = items.map(f => `
+    <li>
+      <span class="title"><a href="${viewerUrl(f.path)}">${escapeHtml(f.title || f.path)}</a></span>
+      ${f.version ? `<span class="ver">${escapeHtml(f.version)}</span>` : ""}
+      <span class="when">${fmtTime(f.mtime)}</span>
+    </li>`).join("");
+  return `<section class="cat${collapsed}" data-key="${key}">
+    <h2><span class="arrow">▾</span> ${lab.emoji} ${lab.ko} <span class="count">${items.length} · ${lab.note}</span></h2>
+    <ul class="files">${lis}</ul>
+  </section>`;
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
+async function main() {
+  const r = await fetch("/manifest.json", { cache: "no-store" });
+  const m = await r.json();
+
+  // games
+  const gs = m.prototypes || [];
+  document.getElementById("games").innerHTML = gs.length
+    ? gs.map(g => `<a href="${g.url}">▶ ${escapeHtml(g.name)}</a>`).join("")
+    : '<span style="color:var(--muted);font-family:var(--mono);font-size:13px">아직 빌드된 프로토타입 없음</span>';
+
+  // categories
+  const html = CAT_ORDER.map(k => renderCategory(k, m.categories[k] || [])).join("");
+  document.getElementById("categories").innerHTML = html;
+
+  // collapse toggles
+  document.querySelectorAll("section.cat h2").forEach(h => {
+    h.addEventListener("click", () => h.parentElement.classList.toggle("collapsed"));
+  });
+
+  // meta
+  const total = Object.values(m.categories).reduce((a, v) => a + v.length, 0);
+  document.getElementById("manifest-meta").textContent =
+    ` 현재 ${total}개 산출물 · 마지막 갱신 ${fmtTime(Math.floor(new Date(m.generated_at).getTime() / 1000))}`;
+  document.getElementById("footer-stat").textContent =
+    `manifest @ ${m.generated_at}`;
+}
+
+main().catch(e => {
+  document.getElementById("categories").innerHTML =
+    `<div style="color:var(--warn);font-family:var(--mono)">manifest.json 로딩 실패: ${e}</div>`;
+});
+</script>
+</body>
+</html>

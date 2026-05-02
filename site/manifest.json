@@ -1,0 +1,1477 @@
+{
+  "generated_at": "2026-05-02T09:56:10.865646+00:00",
+  "root_docs": [
+    {
+      "path": "current.md",
+      "title": "Current State (live pointer)",
+      "version": null,
+      "mtime": 1777715768,
+      "size": 101836
+    },
+    {
+      "path": "seed.md",
+      "title": "Inception Seed",
+      "version": null,
+      "mtime": 1777645985,
+      "size": 7857
+    },
+    {
+      "path": "BOOTSTRAP.md",
+      "title": "Bootstrap — Cron Tick 1 회 동작 명세",
+      "version": null,
+      "mtime": 1777653897,
+      "size": 4413
+    }
+  ],
+  "prototypes": [
+    {
+      "name": "g-the-map-walker",
+      "url": "/games/g-the-map-walker/",
+      "mtime": 1777715185
+    }
+  ],
+  "categories": {
+    "writings": [
+      {
+        "path": "outputs/writing/the-map-is-the-journey/paired-dawns-v0.md",
+        "title": "옆에 잇닿은 두 새벽 (연강 *가족* / 유리 *연대*)",
+        "version": "v0",
+        "mtime": 1777711295,
+        "size": 28242
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/forbidden-dialogue-v0.md",
+        "title": "여정 자체가 지도 — 금지 대사 사전 v0 (인물 대사 단위 그물)",
+        "version": "v0",
+        "mtime": 1777709246,
+        "size": 32807
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/sideseat-dawn-v0.md",
+        "title": "옆자리에 앉은 한 새벽",
+        "version": "v0",
+        "mtime": 1777707003,
+        "size": 21669
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/dawn-first-map.md",
+        "title": "처음으로 자기 지도를 본 새벽",
+        "version": "v0",
+        "mtime": 1777692489,
+        "size": 14766
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/character-sheets-axis-v0.md",
+        "title": "여정 자체가 지도 — 인물 시트 *축 보강* v0 (2 인 추가)",
+        "version": "v0",
+        "mtime": 1777657293,
+        "size": 18907
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/character-sheets-v0.md",
+        "title": "여정 자체가 지도 — 인물 시트 v0 (3 인)",
+        "version": "v0",
+        "mtime": 1777655923,
+        "size": 12733
+      }
+    ],
+    "world": [
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.5.md",
+        "title": "여정 자체가 지도 (The Map is the Journey) — Bible v0.5",
+        "version": "v0.5",
+        "mtime": 1777710197,
+        "size": 14634
+      },
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/chronicle-v1.md",
+        "title": "연대기 v1 — 일곱 사건",
+        "version": "v1",
+        "mtime": 1777710071,
+        "size": 10832
+      },
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/objects-items-v0.md",
+        "title": "오브젝트 / 아이템 v0 — 일곱 사물",
+        "version": "v0",
+        "mtime": 1777709981,
+        "size": 14854
+      },
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.4.md",
+        "title": "여정 자체가 지도 (The Map is the Journey) — Bible v0.4",
+        "version": "v0.4",
+        "mtime": 1777705927,
+        "size": 13598
+      },
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/regions-v0.md",
+        "title": "지역 v0 — 다섯 종이의 자리",
+        "version": "v0",
+        "mtime": 1777705795,
+        "size": 17356
+      },
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/character-relations-v0.md",
+        "title": "여정 자체가 지도 — 인물 관계도 v0 (8 자)",
+        "version": "v0",
+        "mtime": 1777697810,
+        "size": 28366
+      },
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.3.md",
+        "title": "여정 자체가 지도 (The Map is the Journey) — Bible v0.3",
+        "version": "v0.3",
+        "mtime": 1777660269,
+        "size": 29356
+      },
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/forbidden-language-v0.md",
+        "title": "금지 표현 사전 v0 — *본 세계가 말하지 않는 것*",
+        "version": "v0",
+        "mtime": 1777655958,
+        "size": 7688
+      },
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/chronicle-v0.md",
+        "title": "연대기 v0 — 다섯 사건",
+        "version": "v0",
+        "mtime": 1777655887,
+        "size": 5964
+      },
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/terrain-v0.md",
+        "title": "지형 v0 — 다섯 종의 산",
+        "version": "v0",
+        "mtime": 1777655835,
+        "size": 6638
+      },
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.2.md",
+        "title": "여정 자체가 지도 (The Map is the Journey) — Bible v0.2",
+        "version": "v0.2",
+        "mtime": 1777655074,
+        "size": 19004
+      },
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.1.md",
+        "title": "여정 자체가 지도 (The Map is the Journey) — Bible v0.1",
+        "version": "v0.1",
+        "mtime": 1777652770,
+        "size": 9811
+      }
+    ],
+    "art": [
+      {
+        "path": "outputs/art/the-map-is-the-journey/stamps-extension-v0.md",
+        "title": "시각 바이블 §17 확장 v0 — 우표 §17.7 연강 + §17.8 희재 컨셉 시트 박음",
+        "version": null,
+        "mtime": 1777711875,
+        "size": 21682
+      },
+      {
+        "path": "outputs/art/the-map-is-the-journey/palette-patch-v0.md",
+        "title": "시각 바이블 v0.3 → v0.4 팔레트 patch — 자국빛 3 색조 미세 분리 + 3 신규 인물 hex 정착 (연강 / 희재 / 유리)",
+        "version": null,
+        "mtime": 1777707331,
+        "size": 20787
+      },
+      {
+        "path": "outputs/art/the-map-is-the-journey/r4-readiness-note-v0.md",
+        "title": "r4 Readiness Note v0 — *visual-bible v0.4 전 입력 정리* (디자인 박음 0)",
+        "version": "v0",
+        "mtime": 1777700412,
+        "size": 13760
+      },
+      {
+        "path": "outputs/art/the-map-is-the-journey/visual-bible-v0.3.md",
+        "title": "시각 바이블 v0.3 — *가족·업 인물 hex 정착 + concept v0.1 시각 박자 검수 + writer r3 단편 흡수 + 권력 두 비극 시각 분리 + 6 장 우표 컨셉 시트*",
+        "version": "v0.3",
+        "mtime": 1777695979,
+        "size": 64604
+      },
+      {
+        "path": "outputs/art/the-map-is-the-journey/visual-bible-v0.2.md",
+        "title": "시각 바이블 v0.2 — *쉼의 자리 · 손금 새벽 · 화살표 자국* 박음",
+        "version": "v0.2",
+        "mtime": 1777658048,
+        "size": 37312
+      },
+      {
+        "path": "outputs/art/the-map-is-the-journey/visual-bible-v0.1.md",
+        "title": "시각 바이블 v0.1 — 여정 자체가 지도",
+        "version": "v0.1",
+        "mtime": 1777653525,
+        "size": 13180
+      },
+      {
+        "path": "outputs/art/README.md",
+        "title": "Outputs",
+        "version": null,
+        "mtime": 1777476003,
+        "size": 649
+      },
+      {
+        "path": "outputs/art/comfyui-z-image-turbo/README.md",
+        "title": "ComfyUI z-image-turbo Outputs",
+        "version": null,
+        "mtime": 1777476003,
+        "size": 715
+      },
+      {
+        "path": "outputs/art/gpt-image-1.5/README.md",
+        "title": "GPT Image 1.5 Outputs",
+        "version": null,
+        "mtime": 1777476003,
+        "size": 762
+      },
+      {
+        "path": "outputs/art/gpt-image-1.5/manifest.md",
+        "title": "gpt-image-1.5 Manifest",
+        "version": null,
+        "mtime": 1777476003,
+        "size": 2340
+      },
+      {
+        "path": "outputs/art/gpt-image-1.5/guides/README.md",
+        "title": "Guides",
+        "version": null,
+        "mtime": 1777476003,
+        "size": 159
+      }
+    ],
+    "alignment": [
+      {
+        "path": "outputs/alignment/the-map-is-the-journey/bible-v0.5-score.md",
+        "title": "Bible v0.5 — 매니페스토 정렬 점수 (cy-002 r3 + 룰 A3 자가 적용 3 호 + 룰 B1 도입 사례 1 호)",
+        "version": null,
+        "mtime": 1777710678,
+        "size": 27550
+      },
+      {
+        "path": "outputs/alignment/the-map-is-the-journey/forbidden-dialogue-v0-audit.md",
+        "title": "Forbidden-Dialogue v0 — 매니페스토 정렬 감사 (cy-002 r2 + 룰 B4 도입 사례 1 호 + 분류 결정 박음)",
+        "version": null,
+        "mtime": 1777709151,
+        "size": 20850
+      },
+      {
+        "path": "outputs/alignment/the-map-is-the-journey/bible-v0.4-score.md",
+        "title": "Bible v0.4 — 매니페스토 정렬 점수 (cy-002 r1 + 룰 A3 정식 1 호 적용)",
+        "version": null,
+        "mtime": 1777706410,
+        "size": 20262
+      },
+      {
+        "path": "outputs/alignment/the-map-is-the-journey/closing-round-axis-recheck-v0.md",
+        "title": "Bible v0.3 e-항 격상 + 마감 라운드 6 자리 정렬 audit (voice-keeper r4 — cy-001 마감 라운드 종결 시점)",
+        "version": null,
+        "mtime": 1777699272,
+        "size": 19763
+      },
+      {
+        "path": "outputs/alignment/three-axis-dashboard-v0.md",
+        "title": "세 축 균형 대시보드 v0 (cy-001 round 3 종결 시점)",
+        "version": "v0",
+        "mtime": 1777678863,
+        "size": 10990
+      },
+      {
+        "path": "outputs/alignment/the-map-is-the-journey/bible-v0.3-score.md",
+        "title": "Bible v0.3 — 매니페스토 정렬 점수 v0 (3 차 측정 + 5 자리 e 항 재측정 + *연대* 재측정)",
+        "version": null,
+        "mtime": 1777678774,
+        "size": 21145
+      },
+      {
+        "path": "outputs/alignment/the-map-is-the-journey/bible-v0.2-score.md",
+        "title": "Bible v0.2 — 매니페스토 정렬 점수 v0 (재측정)",
+        "version": null,
+        "mtime": 1777656572,
+        "size": 16629
+      },
+      {
+        "path": "outputs/alignment/the-map-is-the-journey/bible-v0.1-score.md",
+        "title": "Bible v0.1 — 매니페스토 정렬 점수 v0",
+        "version": null,
+        "mtime": 1777654408,
+        "size": 8308
+      }
+    ],
+    "design": [
+      {
+        "path": "outputs/design/g-the-map-walker/fail-modes-v0+.md",
+        "title": "g-the-map-walker — 페일 모드 카탈로그 v0+",
+        "version": "v0+",
+        "mtime": 1777708757,
+        "size": 16053
+      },
+      {
+        "path": "outputs/design/g-the-map-walker/concept-diagrams-v0.md",
+        "title": "g-the-map-walker — Concept Diagrams v0 (concept v0.1 시각 도식 보강)",
+        "version": "v0",
+        "mtime": 1777697528,
+        "size": 21344
+      },
+      {
+        "path": "outputs/design/g-the-map-walker/concept-v0.1.md",
+        "title": "g-the-map-walker — Concept v0.1 (vertical slice 표적 lock + 세 축 진입 + 마감 라운드 산출)",
+        "version": "v0.1",
+        "mtime": 1777688717,
+        "size": 26924
+      },
+      {
+        "path": "outputs/design/g-the-map-walker/mechanics-v0+.md",
+        "title": "g-the-map-walker — Mechanics v0+ (옆자리 + 함께 걸은 자리, 5분 세션)",
+        "version": "v0+",
+        "mtime": 1777659090,
+        "size": 22142
+      },
+      {
+        "path": "outputs/design/g-the-map-walker/fail-modes-v0.md",
+        "title": "g-the-map-walker — 페일 모드 카탈로그 v0",
+        "version": "v0",
+        "mtime": 1777654760,
+        "size": 7495
+      },
+      {
+        "path": "outputs/design/g-the-map-walker/concept.md",
+        "title": "g-the-map-walker — Concept v0",
+        "version": "v0",
+        "mtime": 1777654696,
+        "size": 12525
+      }
+    ],
+    "critique": [
+      {
+        "path": "outputs/critique/the-map-is-the-journey/bible-v0.3-first-5min.md",
+        "title": "Bible v0.3 + 마감 라운드 3 자리 — 첫 5 분 cold-read 묶음 (critic r3)",
+        "version": null,
+        "mtime": 1777696845,
+        "size": 28422
+      },
+      {
+        "path": "outputs/critique/the-map-is-the-journey/bible-v0.2-first-5min.md",
+        "title": "Bible v0.2 — 첫 5 분 재측정 + character-sheets cold-read 시뮬",
+        "version": null,
+        "mtime": 1777657905,
+        "size": 25672
+      },
+      {
+        "path": "outputs/critique/the-map-is-the-journey/bible-v0.1-first-5min.md",
+        "title": "Bible v0.1 — 첫 5 분 critique",
+        "version": null,
+        "mtime": 1777654083,
+        "size": 12466
+      }
+    ],
+    "code-docs": [
+      {
+        "path": "outputs/code/g-the-map-walker/manual-run-log-20260502-002.md",
+        "title": "manual-run-log 20260502-002 (implementer r1 cy-002 — *instrumentation 박음 + 인터랙티브 round 절차*)",
+        "version": null,
+        "mtime": 1777715349,
+        "size": 10835
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/manual-run-log-20260502-001.md",
+        "title": "manual-run-log 20260502-001 (implementer r3 — *spec 자리 + 빌드 자리* 박음)",
+        "version": null,
+        "mtime": 1777698137,
+        "size": 10618
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/pixi.js/README.md",
+        "title": "PixiJS ⚡️",
+        "version": null,
+        "mtime": 1777698022,
+        "size": 4217
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/vite/README.md",
+        "title": "vite ⚡",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 1152
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/vite/LICENSE.md",
+        "title": "Vite core license",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 115630
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/typescript/README.md",
+        "title": "TypeScript",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 2842
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/typescript/SECURITY.md",
+        "title": "SECURITY",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 2656
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/tinyglobby/README.md",
+        "title": "tinyglobby",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 932
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/ismobilejs/README.md",
+        "title": "isMobile",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 8136
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/ismobilejs/CONTRIBUTORS.md",
+        "title": "CONTRIBUTORS",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 832
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/parse-svg-path/Readme.md",
+        "title": "parse-svg-path",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 887
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/eventemitter3/README.md",
+        "title": "EventEmitter3",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 3085
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/nanoid/README.md",
+        "title": "Nano ID",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 1552
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/js-binary-schema-parser/README.md",
+        "title": "js Binary Schema Parser",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 3558
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/esbuild/README.md",
+        "title": "esbuild",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 175
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/esbuild/LICENSE.md",
+        "title": "LICENSE",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 1069
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/picocolors/README.md",
+        "title": "picocolors",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 622
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/picomatch/README.md",
+        "title": ".makeRe star (*)",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 28332
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/source-map-js/README.md",
+        "title": "Source Map JS",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 26040
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/tiny-lru/README.md",
+        "title": "🚀 Tiny LRU",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 16444
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/earcut/README.md",
+        "title": "README",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 5632
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/postcss/README.md",
+        "title": "PostCSS",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 1156
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/fdir/README.md",
+        "title": "README",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 3851
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/rollup/README.md",
+        "title": "compile to a <script> containing a self-executing function",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 9999
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/rollup/LICENSE.md",
+        "title": "Rollup core license",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 35231
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/gifuct-js/README.md",
+        "title": "gifuct-js",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 5549
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/@webgpu/types/README.md",
+        "title": "Typescript Type Definitions for WebGPU",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 4635
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/@rollup/rollup-linux-x64-gnu/README.md",
+        "title": "`@rollup/rollup-linux-x64-gnu`",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 95
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/@xmldom/xmldom/SECURITY.md",
+        "title": "Security Policy",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 3989
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/@xmldom/xmldom/CHANGELOG.md",
+        "title": "Changelog",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 25802
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/@xmldom/xmldom/readme.md",
+        "title": "@xmldom/xmldom",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 12680
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/@esbuild/linux-x64/README.md",
+        "title": "esbuild",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 141
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/@pixi/colord/README.md",
+        "title": "README",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 38375
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/@types/estree/README.md",
+        "title": "Installation",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 458
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/prototype/node_modules/@types/earcut/README.md",
+        "title": "Installation",
+        "version": null,
+        "mtime": 1777698021,
+        "size": 2998
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/vertical-slice-charter-v0.md",
+        "title": "cy-001 Vertical Slice 1호 Charter — *the-map-walker* (Game)",
+        "version": "v0",
+        "mtime": 1777680845,
+        "size": 16973
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/manual-run-checklist-v0+.md",
+        "title": "manual-run 체크리스트 v0+",
+        "version": "v0+",
+        "mtime": 1777659653,
+        "size": 9926
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/walk-trace-spec-v0+.md",
+        "title": "walk-trace 시스템 — 1 페이지 사양 (v0+)",
+        "version": "v0+",
+        "mtime": 1777659575,
+        "size": 19447
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/manual-run-checklist-v0.md",
+        "title": "manual-run 체크리스트 v0",
+        "version": "v0",
+        "mtime": 1777655637,
+        "size": 6150
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/walk-trace-spec-v0.md",
+        "title": "walk-trace 시스템 — 1 페이지 사양 (v0)",
+        "version": "v0",
+        "mtime": 1777655587,
+        "size": 8424
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/engine-choice.md",
+        "title": "g-the-map-walker — Engine Choice (cost/value v0)",
+        "version": "v0",
+        "mtime": 1777655356,
+        "size": 14754
+      }
+    ],
+    "decisions": [
+      {
+        "path": "decisions/closed/D-20260502-002.yml",
+        "title": "D-20260502-002",
+        "version": null,
+        "mtime": 1777704804,
+        "size": 4881
+      },
+      {
+        "path": "decisions/closed/D-20260502-001.yml",
+        "title": "D-20260502-001",
+        "version": null,
+        "mtime": 1777703801,
+        "size": 9500
+      },
+      {
+        "path": "decisions/closed/D-20260501-003.yml",
+        "title": "D-20260501-003",
+        "version": null,
+        "mtime": 1777678036,
+        "size": 8191
+      },
+      {
+        "path": "decisions/closed/D-20260501-002.yml",
+        "title": "D-20260501-002",
+        "version": null,
+        "mtime": 1777655478,
+        "size": 4118
+      },
+      {
+        "path": "decisions/closed/D-20260501-001.yml",
+        "title": "───────────────────────────────────────────────────────────",
+        "version": null,
+        "mtime": 1777650929,
+        "size": 13267
+      }
+    ],
+    "ticks": [
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-059.md",
+        "title": "tick-059",
+        "version": null,
+        "mtime": 1777715676,
+        "size": 9830
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-058.md",
+        "title": "Tick cy-002/058 — role (implementer — r3 cy-002 thin patch = #4 cold-reader 외부 측정 1:1 수용 + A5 자가 적용 보류 baseline)",
+        "version": null,
+        "mtime": 1777715567,
+        "size": 17645
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-057.md",
+        "title": "Tick cy-002/057 — finalize-only orphan-ack (orchestrator — critic-r2 + stamps-extension + tick-056 frontmatter 3 자리 동시 회복)",
+        "version": null,
+        "mtime": 1777715162,
+        "size": 9974
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-056.md",
+        "title": "Tick cy-002/056 — role (designer — r5 cy-002 thin patch 1 호 = A4 자가 적용 1 호 baseline + concept v0.2 r6 이월)",
+        "version": null,
+        "mtime": 1777714881,
+        "size": 15574
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-055.md",
+        "title": "Tick cy-002/055 — finalize-only (orchestrator — tick-052/053/054 frontmatter+body 동기 drift 23 호 회복 합본)",
+        "version": null,
+        "mtime": 1777711992,
+        "size": 16779
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-054.md",
+        "title": "Tick cy-002/054 — role+finalize 합본 (art-director r2 cy-002 — F9 처치 박음 + §17 6 우표 hex 정합 spec + tick-053 writer r2 body drift 회복)",
+        "version": null,
+        "mtime": 1777711820,
+        "size": 17543
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-053.md",
+        "title": "Tick cy-002/053 — role+finalize 합본 (writer r2 cy-002 — 단편 묶음 박음 + tick-052 body drift 회복)",
+        "version": null,
+        "mtime": 1777711531,
+        "size": 16760
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-052.md",
+        "title": "Tick cy-002/052 — role (voice-keeper r3 — bible v0.5 정렬 측정 + 룰 A3 자가 적용 3 호 + 룰 B1 도입 사례 1 호)",
+        "version": null,
+        "mtime": 1777711039,
+        "size": 15233
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-051.md",
+        "title": "Tick cy-002/051 — finalize-only orphan-ack (orchestrator — loremaster r2 4 자리 묶음 ack + drift 20 호 회복 + 8 핵심 문서 도달 박음)",
+        "version": null,
+        "mtime": 1777710422,
+        "size": 18950
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-050.md",
+        "title": "Tick cy-002/050 — finalize-only orphan-ack (orchestrator — voice-keeper r2 + orchestrator r2 두 자리 동시 ack + drift 19 호 회복)",
+        "version": null,
+        "mtime": 1777709874,
+        "size": 15802
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-049.md",
+        "title": "Tick cy-002/049 — role (implementer r2 cy-002 — F8 처치 박음: cold reader 자리 vs 운영자 자리 분리 표지 = HUD operator-only gate)",
+        "version": null,
+        "mtime": 1777709466,
+        "size": 17125
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-048.md",
+        "title": "Tick cy-002/048 — role (designer r4+ cy-002 thin patch — fail-modes-v0+ F8 / F9 catalog 박음 + 3 단계 자리 분리 박음 1 호)",
+        "version": null,
+        "mtime": 1777709102,
+        "size": 15363
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-047.md",
+        "title": "Tick cy-002/047 — finalize-only orphan-ack (drift 18 호 회복 — tick-046 role 의 wrote 표 current.md body 동기 부분 거짓 회복 + cy-002 r1 7/7 narrative 정합 박음 + post-write Read 검증 mode 무관 룰 후보 1 호 신규 발의)",
+        "version": null,
+        "mtime": 1777708633,
+        "size": 16463
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-046.md",
+        "title": "Tick cy-002/046 — role (critic r1 cy-002 — prototype 첫 자국 ≤ 60 s cold-read 5 인 시뮬 + 룰 A7 정식 1 호 + cy-002 r1 묶음 종결 7/7)",
+        "version": null,
+        "mtime": 1777708451,
+        "size": 16455
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-045.md",
+        "title": "Tick cy-002/045 — finalize-only orphan-ack (drift 17 호 회복 합본 + cy-002 r1 진입 6/7 박음 + frontmatter premature stop 1 호 + 합본 B+ 미적용 1 호 신규 발의)",
+        "version": null,
+        "mtime": 1777708015,
+        "size": 17976
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-044.md",
+        "title": "Tick cy-002/044 — role+finalize 합본 (art-director r1 cy-002 — palette-patch-v0.md 박음 + 룰 A6 정식 1 호 + 동시 자리 박음 회복 1 호)",
+        "version": null,
+        "mtime": 1777707724,
+        "size": 8947
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-043.md",
+        "title": "Tick cy-002/043 — writer r1 (인규 *업* 변주 1 편 + 룰 A2 정식 1 호 적용)",
+        "version": null,
+        "mtime": 1777707349,
+        "size": 9891
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-042.md",
+        "title": "Tick cy-002/042 — finalize-only (drift 16 호 회복 + D-20260502-002 종결 ack 4 자리 완성 + stale read 안전핀 신규 발의)",
+        "version": null,
+        "mtime": 1777706806,
+        "size": 15544
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-041.md",
+        "title": "Tick cy-002/041 — voice-keeper r1 (bible v0.4 정렬 측정 + 룰 A3 정식 1 호 적용)",
+        "version": null,
+        "mtime": 1777706615,
+        "size": 17765
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-040.md",
+        "title": "Tick cy-002/040 — loremaster r1 (regions-v0 orphan-ack + arguments 박음 + current.md 동기)",
+        "version": null,
+        "mtime": 1777706088,
+        "size": 15772
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-039.md",
+        "title": "Tick cy-002/039 — implementer r1 (manual-run-log-002 인터랙티브 round *시작* + HUD instrumentation)",
+        "version": null,
+        "mtime": 1777705303,
+        "size": 18260
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-038.md",
+        "title": "Tick cy-002/001 — orchestrator r1 (cy-002 진입 자리 + D-001 apply ack + D-002 발의 누락 회복)",
+        "version": null,
+        "mtime": 1777705073,
+        "size": 19417
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-037.md",
+        "title": "Tick 036 — designer r4 (cy-002 r1+r2 묶음 — facing_history N=8 검수 + STEP_DISTANCE_RATIO 가드 박음)",
+        "version": null,
+        "mtime": 1777704728,
+        "size": 15990
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-036.md",
+        "title": "Tick 036 — apply (D-20260502-001 picked=ambitious) + cy-001 → cy-002 진입 박음",
+        "version": null,
+        "mtime": 1777704649,
+        "size": 14056
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-035.md",
+        "title": "Tick 035 — critic r4 (cy-001 외부 자리 cold-read 인계 + cy-002 진입 자리 결정 yaml 외부 시선 부속)",
+        "version": null,
+        "mtime": 1777704121,
+        "size": 15446
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-034.md",
+        "title": "Tick 034 — orchestrator r3 (cy-002 transition Type C 결정 발의)",
+        "version": null,
+        "mtime": 1777700667,
+        "size": 12242
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-033.md",
+        "title": "Tick 033 — writer r4 (charter §첫 task #3 정식 사전화)",
+        "version": null,
+        "mtime": 1777700249,
+        "size": 8224
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-032.md",
+        "title": "Tick 032 — finalize-only (drift 13 호 회복 + writer r4 orphan ack 박음)",
+        "version": null,
+        "mtime": 1777700099,
+        "size": 12770
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-031.md",
+        "title": "Tick 031 — role+finalize 합본 (orchestrator r2 cycle close review + voice-keeper r4 drift 12 호 회복)",
+        "version": null,
+        "mtime": 1777699868,
+        "size": 13576
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-030.md",
+        "title": "Tick 030 — voice-keeper r4 (cy-001 마감 라운드 정렬 측 측정 마감 + finalize 합본)",
+        "version": null,
+        "mtime": 1777699380,
+        "size": 15292
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-029.md",
+        "title": "Tick 029 — finalize-only (retroactive implementer r3 sync + tick-027/028 body-sync drift 회복 합본)",
+        "version": null,
+        "mtime": 1777698816,
+        "size": 15538
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-028.md",
+        "title": "Tick 028 — role (loremaster r4 — 마감 라운드 6 호 / cy-001 후반 task 큐 2 호)",
+        "version": null,
+        "mtime": 1777698560,
+        "size": 17139
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-027.md",
+        "title": "Tick 027 — role (designer r3+ patch, critic r3 §4 인계 직접 응답)",
+        "version": null,
+        "mtime": 1777697810,
+        "size": 12020
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-026.md",
+        "title": "Tick 026 — finalize-only (drift 9 호 회복)",
+        "version": null,
+        "mtime": 1777697310,
+        "size": 8494
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-025.md",
+        "title": "Tick 025 — critic r3 (마감 라운드 5 호, 4 자리 cold-read 묶음)",
+        "version": null,
+        "mtime": 1777697123,
+        "size": 9294
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-024.md",
+        "title": "Tick 024 — observation/preparation (사이클 건전성 확인 + 다음 role 큐 정렬, 신규 산출 0)",
+        "version": null,
+        "mtime": 1777696697,
+        "size": 9635
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-023.md",
+        "title": "Tick 023 — finalize-only (drift 8 호 회복)",
+        "version": null,
+        "mtime": 1777696335,
+        "size": 8437
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-022.md",
+        "title": "Tick 022 — art-director r3 (마감 라운드, charter §첫 task #1+#2+#3 완전 박음 + D-003 picked=game 직접 의존)",
+        "version": null,
+        "mtime": 1777696200,
+        "size": 16254
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-021.md",
+        "title": "Tick 021 — writer r3 (마감 라운드, charter §첫 task #1 직접 응답 + vertical-slice-charter §7.2 #4 채택)",
+        "version": null,
+        "mtime": 1777692796,
+        "size": 21746
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-020.md",
+        "title": "Tick 020 — designer r3 (마감 라운드, D-003 picked=game 직접 의존, concept v0 → v0.1 격상)",
+        "version": null,
+        "mtime": 1777688935,
+        "size": 19701
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-019.md",
+        "title": "Tick 019 — orchestrator (finalize-only, D-20260501-003 응답 흡수 후 ledger 동기)",
+        "version": null,
+        "mtime": 1777681566,
+        "size": 21981
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-018.md",
+        "title": "Tick 018 — voice-keeper r3 (bible v0.3 정렬 측정 + 5 자리 e 항 재측정 + 대시보드 v0 정식)",
+        "version": null,
+        "mtime": 1777679089,
+        "size": 20836
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-017.md",
+        "title": "Tick 017 — loremaster r3 (bible v0.3 통합)",
+        "version": null,
+        "mtime": 1777660579,
+        "size": 20856
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-016.md",
+        "title": "Tick 016 — implementer r2 (walk-trace-spec v0+ + manual-run-checklist v0+)",
+        "version": null,
+        "mtime": 1777659867,
+        "size": 17794
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-015.md",
+        "title": "Tick 015 — designer r2 (mechanics v0+ + 5분 시퀀스 + F6/F7)",
+        "version": null,
+        "mtime": 1777659311,
+        "size": 15303
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-014.md",
+        "title": "Tick 014 — current.md finalize (drift 6 호 회복)",
+        "version": null,
+        "mtime": 1777658601,
+        "size": 11829
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-013.md",
+        "title": "Tick 013 — critic r2 도착 + Type B 발의 (D-20260501-003)",
+        "version": null,
+        "mtime": 1777658013,
+        "size": 12961
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-012.md",
+        "title": "Tick 012 — writer r2 (가족 / 업 축 인물 시트)",
+        "version": null,
+        "mtime": 1777657551,
+        "size": 17190
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-011.md",
+        "title": "Tick 011 — voice-keeper r2 ledger 흡수 (drift 5 호 회복)",
+        "version": null,
+        "mtime": 1777656875,
+        "size": 13823
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-010.md",
+        "title": "Tick 010 — current.md body finalize (drift 4 호 회복)",
+        "version": null,
+        "mtime": 1777656380,
+        "size": 10379
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-009.md",
+        "title": "Tick 009 — cy-001 round-2 종결: writer r1 + 다중 드리프트 sweep",
+        "version": null,
+        "mtime": 1777656231,
+        "size": 10670
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-008.md",
+        "title": "Tick 008 — cy-001 round-2 implementer r1 + tick-007 finalize",
+        "version": null,
+        "mtime": 1777655867,
+        "size": 10981
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-007.md",
+        "title": "Tick 007 — cy-001 round-2 loremaster r1 + tick-006 finalize",
+        "version": null,
+        "mtime": 1777655355,
+        "size": 10668
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-006.md",
+        "title": "Tick 006 — cy-001 round-2 designer r1",
+        "version": null,
+        "mtime": 1777654879,
+        "size": 8309
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-005.md",
+        "title": "Tick 005 — cy-001 round-2 voice-keeper r1",
+        "version": null,
+        "mtime": 1777654500,
+        "size": 6412
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-004.md",
+        "title": "Tick 004 — cy-001 round-2 critic r1",
+        "version": null,
+        "mtime": 1777654148,
+        "size": 4905
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-003.md",
+        "title": "Tick 003 — cy-001 round-2 진척 모니터링 (orchestrator)",
+        "version": null,
+        "mtime": 1777653697,
+        "size": 4240
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-002.md",
+        "title": "Tick 002 — cy-001 round-1 task 발행",
+        "version": null,
+        "mtime": 1777653148,
+        "size": 3715
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/ticks/tick-001.md",
+        "title": "Tick 001 — Manual Bootstrap",
+        "version": null,
+        "mtime": 1777646190,
+        "size": 2095
+      }
+    ],
+    "arguments": [
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/art-director-r3-image.md",
+        "title": "art-director r3 image 측 — §17.7 + §17.8 실측 image 2 장 박음",
+        "version": null,
+        "mtime": 1777715767,
+        "size": 11117
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/implementer-r3.md",
+        "title": "implementer r3 (cy-002 thin patch) — A5 정식 자가 적용 보류 baseline + #4 외부 측정 1:1 수용",
+        "version": null,
+        "mtime": 1777715444,
+        "size": 12063
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/designer-r5.md",
+        "title": "designer r5 — A4 정식 룰 자가 적용 1 호 baseline + concept v0.2 r6 이월 박음 (cy-002 r2 묶음 종결 후 thin patch)",
+        "version": null,
+        "mtime": 1777714760,
+        "size": 13999
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/critic-r2.md",
+        "title": "critic r2 (cy-002) — 단편 +3 + F9 처치 회복 + 8 우표 spec cold-read 5 인 시뮬",
+        "version": null,
+        "mtime": 1777712459,
+        "size": 32522
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/art-director-r3.md",
+        "title": "art-director r3 (cy-002) — §17.7~§17.8 우표 컨셉 spec 박음 + r2 orphan ack 합본",
+        "version": null,
+        "mtime": 1777711994,
+        "size": 13847
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/art-director-r2.md",
+        "title": "art-director r2 (cy-002) — F9 처치 박음 + §17 6 우표 hex 정합 spec + B1 도입 사례 2 호",
+        "version": null,
+        "mtime": 1777711514,
+        "size": 21632
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/writer-r2.md",
+        "title": "writer r2 (cy-002) — 연강 *가족* + 유리 *연대* 두 단편 묶음",
+        "version": null,
+        "mtime": 1777711408,
+        "size": 4109
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/voice-keeper-r3.md",
+        "title": "voice-keeper r3 (cy-002) — bible v0.5 정렬 측정 + 룰 A3 자가 적용 3 호 + 룰 B1 도입 사례 1 호",
+        "version": null,
+        "mtime": 1777710771,
+        "size": 10986
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/loremaster-r2.md",
+        "title": "loremaster r2 cy-002 — bible v0.5 발행 + 8 핵심 문서 도달",
+        "version": null,
+        "mtime": 1777710260,
+        "size": 7187
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/orchestrator-r2.md",
+        "title": "orchestrator r2 (cy-002) — A8 baseline + B3 가중치 + r2 묶음 dispatch",
+        "version": null,
+        "mtime": 1777709562,
+        "size": 11143
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/implementer-r2.md",
+        "title": "implementer r2 (cy-002) — F8 처치: cold reader 자리 vs 운영자 자리 분리 표지 박음",
+        "version": null,
+        "mtime": 1777709339,
+        "size": 8555
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/voice-keeper-r2.md",
+        "title": "voice-keeper r2 (cy-002) — forbidden-dialogue-v0 audit + 룰 B4 도입 사례 1 호 + 분류 결정 박음",
+        "version": null,
+        "mtime": 1777709230,
+        "size": 9761
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/designer-r4+.md",
+        "title": "designer r4+ — cy-002 r1 종결 후 fail-modes-v0+ thin patch (F8 / F9 catalog 박음)",
+        "version": null,
+        "mtime": 1777708833,
+        "size": 9902
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/critic-r1.md",
+        "title": "critic r1 (cy-002) — prototype 첫 자국 ≤ 60 s cold-read 5 인 시뮬",
+        "version": null,
+        "mtime": 1777708167,
+        "size": 18769
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/art-director-r1.md",
+        "title": "art-director r1 (cy-002) — 챔피언 발화 + 트립 자기 검사 + r2 인계",
+        "version": null,
+        "mtime": 1777707416,
+        "size": 10103
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/writer-r1.md",
+        "title": "writer r1 cy-002 — 인규 *업* 변주 1 편 + 룰 A2 정식 1 호 적용",
+        "version": null,
+        "mtime": 1777707083,
+        "size": 9832
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/voice-keeper-r1.md",
+        "title": "voice-keeper r1 (cy-002) — 챔피언 발화 + 트립 자기 검사 + r2 인계",
+        "version": null,
+        "mtime": 1777706480,
+        "size": 8578
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/loremaster-r1.md",
+        "title": "loremaster r1 (cy-002) — 지역 v0 박음 ack",
+        "version": null,
+        "mtime": 1777706055,
+        "size": 5593
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/implementer-r1.md",
+        "title": "implementer r1 (cy-002) — manual-run-log-002 인터랙티브 round *시작*",
+        "version": null,
+        "mtime": 1777705358,
+        "size": 5430
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/designer-r4.md",
+        "title": "designer r4 — facing_history N=8 검수 + STEP_DISTANCE_RATIO 가드 박음 (cy-002 r1+r2 묶음)",
+        "version": null,
+        "mtime": 1777704605,
+        "size": 13570
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/critic-r4.md",
+        "title": "Forbidden-Dialogue v0 — 첫 5 분 cold-read (조직 내부 도구 진입 시뮬, critic r4)",
+        "version": null,
+        "mtime": 1777704013,
+        "size": 18011
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/orchestrator-r2.md",
+        "title": "Orchestrator — Round 2 발언 (cy-001 cycle close 검토)",
+        "version": null,
+        "mtime": 1777699717,
+        "size": 8155
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/implementer-r3.md",
+        "title": "implementer r3 — 1 차 prototype 빌드 + manual-run 1 차 측정",
+        "version": null,
+        "mtime": 1777698207,
+        "size": 6674
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/loremaster-r4.md",
+        "title": "loremaster r4 — 인물 관계도 v0 (8 자) 발언",
+        "version": null,
+        "mtime": 1777697883,
+        "size": 5152
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/designer-r3+.md",
+        "title": "Designer r3+ — concept-diagrams v0 발언 (마감 라운드 patch, critic r3 §4 인계 직접 응답)",
+        "version": null,
+        "mtime": 1777697715,
+        "size": 5853
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/critic-r3.md",
+        "title": "critic r3 발언",
+        "version": null,
+        "mtime": 1777696902,
+        "size": 5469
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/art-director-r3.md",
+        "title": "art-director r3 발언 (마감 라운드, charter §첫 task #1+#2+#3 완전 박음 + concept v0.1 시각 박자 검수 + writer r3 단편 흡수 + 권력 두 비극 시각 분리)",
+        "version": null,
+        "mtime": 1777696076,
+        "size": 9863
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/writer-r3.md",
+        "title": "Writer — Round 3 마감 라운드 발언 (cy-001)",
+        "version": null,
+        "mtime": 1777692637,
+        "size": 15987
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/designer-r3.md",
+        "title": "Designer r3 — concept v0.1 발언 (마감 라운드, D-003 picked=game 직접 응답)",
+        "version": null,
+        "mtime": 1777688787,
+        "size": 8001
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/voice-keeper-r3.md",
+        "title": "voice-keeper r3 — bible v0.3 정렬 측정 + 5 자리 e 항 재측정 + 세 축 균형 대시보드 v0 정식",
+        "version": null,
+        "mtime": 1777678930,
+        "size": 7680
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/loremaster-r3.md",
+        "title": "Loremaster — Round 3 발언 (cy-001)",
+        "version": null,
+        "mtime": 1777660420,
+        "size": 16844
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/implementer-r2.md",
+        "title": "Implementer — Round 2 발언 (cy-001)",
+        "version": null,
+        "mtime": 1777659733,
+        "size": 9444
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/art-director-r2.md",
+        "title": "art-director r2 — 시각 바이블 v0.2 induction (drift 7 호 짝 회복)",
+        "version": null,
+        "mtime": 1777659476,
+        "size": 10259
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/designer-r2.md",
+        "title": "Designer — Round 2 발언 (cy-001)",
+        "version": null,
+        "mtime": 1777659185,
+        "size": 8498
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/critic-r2.md",
+        "title": "critic — Round 2 발언 (cy-001)",
+        "version": null,
+        "mtime": 1777657894,
+        "size": 10742
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/writer-r2.md",
+        "title": "Writer — Round 2 발언 (cy-001)",
+        "version": null,
+        "mtime": 1777657424,
+        "size": 14445
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/voice-keeper-r2.md",
+        "title": "Voice-keeper — Round 2 발언 (cy-001)",
+        "version": null,
+        "mtime": 1777656791,
+        "size": 10807
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/loremaster-r2.md",
+        "title": "Loremaster — Round 2 발언 (cy-001)",
+        "version": null,
+        "mtime": 1777656385,
+        "size": 11245
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/writer-r1.md",
+        "title": "Writer — Round 1 발언 (cy-001)",
+        "version": null,
+        "mtime": 1777656003,
+        "size": 9297
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/implementer-r1.md",
+        "title": "Implementer — Round 1 발언 (cy-001)",
+        "version": null,
+        "mtime": 1777655675,
+        "size": 9682
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/loremaster-r1.md",
+        "title": "Loremaster — Round 1 발언 (cy-001)",
+        "version": null,
+        "mtime": 1777655265,
+        "size": 10279
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/designer-r1.md",
+        "title": "Designer — Round 1 발언 (cy-001)",
+        "version": null,
+        "mtime": 1777654814,
+        "size": 5853
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/voice-keeper-r1.md",
+        "title": "voice-keeper — Round 1 발언",
+        "version": null,
+        "mtime": 1777654449,
+        "size": 4608
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/critic-r1.md",
+        "title": "critic — Round 1 발언",
+        "version": null,
+        "mtime": 1777654112,
+        "size": 3333
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/arguments/orchestrator-r1.md",
+        "title": "Orchestrator — Round 1 발언 (cy-001 첫 task 발행)",
+        "version": null,
+        "mtime": 1777653119,
+        "size": 4359
+      }
+    ],
+    "decision-traces": [
+      {
+        "path": "generations/gen-001/cycles/cy-002/decision-traces/D-20260502-002.md",
+        "title": "D-20260502-002 — 이미지 vertical slice 분리/통합 (Type B)",
+        "version": null,
+        "mtime": 1777705486,
+        "size": 3976
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/decision-traces/D-20260502-001.md",
+        "title": "Decision Trace — D-20260502-001",
+        "version": null,
+        "mtime": 1777704363,
+        "size": 8885
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/decision-traces/D-20260501-003.md",
+        "title": "cy-001 vertical slice 1 종 표적 — 게임 vs 이미지 vs 단편",
+        "version": null,
+        "mtime": 1777680853,
+        "size": 4381
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/decision-traces/D-20260501-002.md",
+        "title": "D-20260501-002 — 엔진 선택 (Web vs Godot)",
+        "version": null,
+        "mtime": 1777655518,
+        "size": 3657
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-001/decision-traces/D-20260501-001.md",
+        "title": "Decision Trace — D-20260501-001",
+        "version": null,
+        "mtime": 1777652777,
+        "size": 7836
+      }
+    ]
+  },
+  "stats": {
+    "writings": 6,
+    "world": 12,
+    "art": 11,
+    "alignment": 8,
+    "design": 6,
+    "critique": 3,
+    "code-docs": 41,
+    "decisions": 5,
+    "ticks": 59,
+    "arguments": 45,
+    "decision-traces": 5
+  }
+}

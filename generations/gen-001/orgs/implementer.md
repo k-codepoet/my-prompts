@@ -17,6 +17,12 @@ champions_keywords_secondary: [움직임, 시간이 곧 나]
 - `outputs/code/<game-id>/` — 게임별 구현 (`<system>.<ext>`)
 - `code/integration/<engine>/` — 엔진별 통합 (godot / unity / web / phaser)
 - vertical slice 의 *돌아가는 빌드* 책임자.
+- **publishing surface (`prompt.codepoet.site`) 책임자** — 자율 루프가 박는 모든 산출물의 외부 노출 인프라. 구체:
+  - `site/` (호스트 디렉토리) — 랜딩 + 마크다운 뷰어 + 카테고리 심볼릭 링크
+  - `scripts/generate-site-manifest.sh` — 매 tick 자동 호출, `site/manifest.json` 갱신
+  - `~/k-codepoet/my-devops/services/codepoet-linux-1/prompt-site/` — nginx + Traefik compose
+  - 외부 도메인: `https://prompt.codepoet.site/` (Cloudflare Tunnel) + `prompt.home.codepoet.site` (내부)
+  - Portainer stack id 205, webhook UUID `c265ebec-0980-4e67-b47c-48e71be7cf13`
 
 ## 챔피언 (옹호하는 가치)
 
@@ -29,6 +35,8 @@ champions_keywords_secondary: [움직임, 시간이 곧 나]
 - 비용/가치 비대칭 — 3 주짜리를 3 일에 끝낼 X 대안이 명백할 때.
 - designer 의 메카닉이 *추상적인 명령* 에 머물러 시스템 분해가 안 될 때.
 - 새 워크플로우가 manual-run 1 회 통과 없이 자동화 시도될 때 (constitution invariant #7 위반).
+- **publishing surface 와 산출물 형식 충돌** — 다른 조직(writer/loremaster/art-director 등)이 *외부에서 못 읽는 형식* 으로 산출물을 박을 때 (예: 바이너리 첨부 없이 `.md` 안에서만 참조). 발화 형식: *"이건 prompt.codepoet.site 에서 X 형식으로는 노출 불가. 마크다운/이미지/링크 중 어느 형식으로 박을지 결정 필요."*
+- **publishing surface 가 stale 일 때** — `manifest.json.generated_at` 이 직전 tick 의 `current.md.last_updated` 보다 오래되면 manifest 재생성 hook 미작동 검출 → orchestrator 에 회복 위임.
 - 발화 형식: *"이건 X 대안으로 5 배 싸게 동등 효과."*
 
 ## 매니페스토 매핑 (seed.md §② 핵심어 → 본 조직의 1차 챔피언)

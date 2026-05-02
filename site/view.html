@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>view — my-prompts</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><text y=%2213%22 font-size=%2214%22>📜</text></svg>">
+<link rel="stylesheet" href="/index-styles.css" onerror="this.remove()">
+<style>
+  :root {
+    --bg: #f7f4ee;
+    --fg: #2b251c;
+    --muted: #7a715f;
+    --line: #e3dccd;
+    --accent: #5C4A36;
+    --warn: #a04f2a;
+    --mono: ui-monospace, "SF Mono", Menlo, Monaco, "Cascadia Code", "Roboto Mono", monospace;
+    --serif: "Iowan Old Style", "Apple Garamond", Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+  body { font-family: var(--serif); font-size: 17px; line-height: 1.7; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 28px 24px 80px; }
+  a { color: var(--accent); }
+  a:hover { color: var(--warn); }
+  code, pre { font-family: var(--mono); font-size: 0.92em; }
+  pre { background: #f0ebde; padding: 12px 14px; border-left: 3px solid var(--line); overflow-x: auto; }
+
+  .topbar { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .topbar a { color: var(--muted); }
+  .topbar .crumb { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+
+  article h1 { font-size: 28px; margin: 24px 0 8px; }
+  article h2 { font-size: 22px; margin: 28px 0 8px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+  article h3 { font-size: 18px; margin: 20px 0 4px; color: var(--accent); }
+  article h4 { font-size: 16px; margin: 16px 0 4px; color: var(--accent); }
+  article table { border-collapse: collapse; margin: 12px 0; max-width: 100%; display: block; overflow-x: auto; }
+  article th, article td { border: 1px solid var(--line); padding: 6px 10px; }
+  article th { background: #f0ebde; }
+  article hr { border: none; border-top: 1px solid var(--line); margin: 24px 0; }
+  article blockquote { border-left: 3px solid var(--line); padding: 4px 14px; color: var(--muted); margin: 12px 0; font-style: italic; }
+  article ul, article ol { padding-left: 1.5em; }
+  article li { margin: 4px 0; }
+  article img { max-width: 100%; height: auto; }
+  article details { margin: 12px 0; }
+  article details summary { cursor: pointer; font-family: var(--mono); font-size: 13px; color: var(--accent); }
+
+  .yaml { background: #f0ebde; padding: 14px 16px; border-left: 3px solid var(--accent); white-space: pre-wrap; font-family: var(--mono); font-size: 13px; line-height: 1.5; overflow-x: auto; }
+
+  footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 11px; color: var(--muted); }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/marked@13.0.0/marked.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <span class="crumb"><a href="/">← my-prompts</a> / <span id="crumb"></span></span>
+    <span><a id="raw-link" href="" target="_blank">raw ↗</a></span>
+  </div>
+  <article id="content">로딩…</article>
+  <footer><span id="meta"></span></footer>
+</div>
+
+<script>
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
+function stripFrontmatter(text) {
+  if (!text.startsWith("---")) return { fm: null, body: text };
+  const end = text.indexOf("\n---", 3);
+  if (end < 0) return { fm: null, body: text };
+  const rawFm = text.slice(3, end);
+  const body = text.slice(end + 4).replace(/^\n+/, "");
+  return { fm: rawFm, body };
+}
+
+async function main() {
+  const params = new URLSearchParams(location.search);
+  const path = params.get("path");
+  if (!path) {
+    document.getElementById("content").textContent = "path 파라미터가 없습니다.";
+    return;
+  }
+  // 보안: 절대경로/.. 금지
+  if (path.startsWith("/") || path.includes("..")) {
+    document.getElementById("content").textContent = "잘못된 경로.";
+    return;
+  }
+  document.getElementById("crumb").textContent = path;
+  document.getElementById("raw-link").href = "/" + path;
+  document.title = path.split("/").pop() + " — my-prompts";
+
+  const r = await fetch("/" + path, { cache: "no-store" });
+  if (!r.ok) {
+    document.getElementById("content").innerHTML =
+      `<div style="color:var(--warn);font-family:var(--mono)">${r.status} — ${path} 로딩 실패</div>`;
+    return;
+  }
+  const text = await r.text();
+  const isYaml = path.endsWith(".yml") || path.endsWith(".yaml");
+  const isMd = path.endsWith(".md");
+
+  let html = "";
+  if (isYaml) {
+    html = `<pre class="yaml">${escapeHtml(text)}</pre>`;
+  } else if (isMd) {
+    const { fm, body } = stripFrontmatter(text);
+    if (fm) {
+      html += `<details><summary>frontmatter</summary><pre class="yaml">${escapeHtml(fm)}</pre></details>`;
+    }
+    marked.setOptions({ breaks: false, gfm: true });
+    html += marked.parse(body);
+  } else {
+    html = `<pre>${escapeHtml(text)}</pre>`;
+  }
+  document.getElementById("content").innerHTML = html;
+  document.getElementById("meta").textContent = `${path} · ${text.length.toLocaleString()} bytes`;
+}
+
+main().catch(e => {
+  document.getElementById("content").innerHTML =
+    `<div style="color:var(--warn);font-family:var(--mono)">렌더 실패: ${e}</div>`;
+});
+</script>
+</body>
+</html>
