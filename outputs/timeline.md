@@ -23,6 +23,8 @@
 | 2026-05-02T09:52:06+00:00 | illustration | 우표 §17.7 — 연강 *짧음의 결*. 옆자리가 비어 있는 자리에서, 자국 600 결의 첫 자리를 본인도 모르는 한 새벽. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-7-yeongang-short-grain-v1.png` | tick:cy-002/058 (art-director r3 image) |
 | 2026-05-02T09:52:11+00:00 | illustration | 우표 §17.8 — 희재 *나란히 두 새벽*. 묻지 않은 채 같은 길을 두 번 걸은 두 자국, 시간차 1 일 ~ 1 주, 두 색조가 합쳐지지 않고 옆에 박힌 한 새벽. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-8-huijae-side-by-side-dawns-v1.png` | tick:cy-002/058 (art-director r3 image) |
 | 2026-05-02T11:13:18+00:00 | illustration | 우표 §17.1 — 해온 *손금 새벽*. 14 자국째 해 부터 매일 새벽, 한 사람의 손바닥 위에 자기 지도가 잠시 비친 한 컷. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png` | tick:cy-002/074 (art-director r5 image) |
+| 2026-05-02T11:25:00+00:00 | alignment | stamp-17-1 *손금 새벽* image 정렬 audit (PASS 조건부 → 풀 단위 격상 / 자립·시간이 곧 나 1.0 / 연대 0=영역 의도 / 4 단계 격상 패턴 1 호) | `outputs/alignment/the-map-is-the-journey/stamp-17-1-haeon-palm-line-dawn-audit.md` | tick:cy-002/075 (voice-keeper r6 image-spec-alignment-audit, cy-003 transition 후 cy-002 carry-over) |
+| 2026-05-02T11:36:00+00:00 | illustration | 우표 §17.2 — 정해 *발끝 한 방향*. 27 자국째, 무릎 높이에서 본 한 사람의 맨발과 같은 방향으로 놓인 5 점의 옅은 자국, 멀리 큰 산. 자국빛 0%. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-2-jeonghae-toes-one-direction-v1.png` | tick:cy-003/004 (art-director r1 image) |
 
 ---
 

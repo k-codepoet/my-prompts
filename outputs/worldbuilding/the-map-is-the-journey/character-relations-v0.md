@@ -30,6 +30,8 @@ constitution_invariant_check: |
 
 # 여정 자체가 지도 — 인물 관계도 v0 (8 자)
 
+> **Superseded by v0.1 (2026-05-03, cy-003 r1)** — 본 v0 는 cy-001 마감 라운드 *세 축 정착 5/2/2 격상* baseline 자리로 보존. 활성 baseline = [character-relations-v0.1.md](./character-relations-v0.1.md) (5/3/3 격상 + 다축 박음 룰 + chronicle-v0 → v1 보정 thin-extension). 신규 산출물은 v0.1 참조 박음 의무.
+
 > 본 v0 는 *세계 본체 안의 가족·업 축 인물 직접 박음* 자리.
 > voice-keeper r3 §A.2.e *완전 해소의 한 자리* 응답 + critic r3 5:00 cold reader 1 호 질문 *인규는 어디에 있나?* 의 인접 응답 (단편 측 응답은 cy-002 r1 writer 위임).
 > 5 인 known (해온 / 정해 / 나림 / 유경 / 인규) + 3 인 신규 박음 (**연강 / 희재 / 유리**) = 8 자 그물.

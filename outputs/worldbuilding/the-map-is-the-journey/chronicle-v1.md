@@ -32,6 +32,8 @@ constitution_invariant_check: |
 
 # 연대기 v1 — 일곱 사건
 
+> **§0 Superseded by chronicle-v1.1.md** (2026-05-03, cy-003 r2 — 사건 4.1 인스턴스 풀 + 사건 4.2 세대 단위 시간차 동행 신설). 본 v1 = thin-bump source baseline. 본문 0 변경 보존.
+
 > 본 v1 = chronicle v0 의 5 사건 (첫 종이의 새벽 / 첫 손금 새벽 / 큰 비 / 겹친 자국 첫 발견 / 지도-스승의 침묵) 위에 *2 사건 추가* — 사건 6 *후회의 새벽* (개인 단위) + 사건 7 *흉내본 시대* (사회 단위). v0 5 사건 본문 0 변경.
 
 ---

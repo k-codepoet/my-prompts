@@ -32,7 +32,7 @@ constitution_invariant_check: |
 
 # 여정 자체가 지도 (The Map is the Journey) — Bible v0.5
 
-> **현재 baseline** — 본 v0.5 가 the-map-is-the-journey 활성 baseline (2026-05-02, cy-002 r2 도달). 모든 cy-002 r2+ 산출물 (writer / art-director / designer / implementer / voice-keeper / critic) 의 단일 진실 참조 자리. 외부 cold reader 진입 자리 = 본 v0.5. 이전 v0.1~v0.4 는 보존 (수퍼시드 체인 박음).
+> **Superseded by v0.6 (2026-05-03, cy-003 r1)** — 본 v0.5 는 cy-002 r2 *8 핵심 문서 도달* baseline 자리로 보존. 활성 baseline = [bible-v0.6.md](./bible-v0.6.md) (인물 8 자리 절 + 축 매핑 다축 박음 룰 thin-patch). 신규 산출물은 v0.6 참조 박음 의무.
 
 > 본 v0.5 는 v0.4 (5 지역 박음) 위에 *오브젝트/아이템 7 사물* + *연대기 v1 (사건 6/7 추가)* 박음. cy-002 r2 (loremaster) 산출 — **8 핵심 문서 도달** 의 자리. 골격 (§1~§7) 은 v0.3·v0.4 그대로 유지 + §6.3 신설 (오브젝트/아이템) + §10 신설 (연대기 v1 흡수) + §11 신설 (8 핵심 문서 도달 박음) + §9.1 *축복* / *연대* 행 강화 + §9.8 신설 (7 사건 × 5 지역 + 7 사물 × 7 키워드 정합 표).
 

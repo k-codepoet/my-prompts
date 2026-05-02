@@ -84,6 +84,35 @@
   }
   .games a:hover { background: var(--warn); border: none; }
 
+  /* series — 연재물 hero */
+  section.series { margin: 28px 0 36px; padding: 24px 0; border-top: 2px solid var(--accent); border-bottom: 1px solid var(--line); }
+  section.series .series-h { font-family: var(--mono); font-size: 14px; text-transform: uppercase; color: var(--accent); letter-spacing: 0.06em; margin: 0 0 12px; }
+  section.series .series-quote { font-style: italic; color: var(--fg); margin: 0 0 6px; font-size: 17px; line-height: 1.5; }
+  section.series .series-intro { color: var(--muted); margin: 0 0 24px; font-size: 14px; line-height: 1.6; }
+  section.series h3.sub { font-family: var(--mono); font-size: 12px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.06em; margin: 24px 0 12px; }
+  section.series .episodes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 12px 0 24px; }
+  .ep-card { display: block; padding: 16px; background: #f0ebde; border-left: 3px solid var(--accent); text-decoration: none; border-bottom: none; }
+  .ep-card:hover { background: #ebe2cc; border-bottom: none; }
+  .ep-card .ep-thumb { display: block; width: calc(100% + 32px); height: 140px; object-fit: cover; margin: -16px -16px 12px; background: #1a1612; }
+  .ep-card .ep-thumb-empty { display: flex; width: calc(100% + 32px); height: 140px; margin: -16px -16px 12px; background: linear-gradient(135deg, #f0ebde 0%, #e3dccd 100%); align-items: center; justify-content: center; color: var(--muted); font-family: var(--mono); font-size: 11px; }
+  .ep-card .ep-num { font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: 0.04em; }
+  .ep-card .ep-title { font-family: var(--serif); font-size: 17px; margin: 4px 0 8px; color: var(--fg); font-weight: 600; }
+  .ep-card .ep-desc { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.5; }
+  section.series .characters { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin: 0 0 16px; }
+  .ch-card { display: block; padding: 10px 12px; background: var(--bg); border: 1px solid var(--line); text-decoration: none; border-bottom: none; }
+  .ch-card:hover { border-color: var(--accent); border-bottom: 1px solid var(--accent); }
+  .ch-card .ch-head { display: flex; gap: 6px; align-items: baseline; flex-wrap: wrap; }
+  .ch-card .ch-axis { display: inline-block; padding: 1px 6px; background: var(--accent); color: var(--bg); font-family: var(--mono); font-size: 10px; border-radius: 2px; }
+  .ch-card .ch-name { font-family: var(--serif); font-size: 15px; color: var(--fg); font-weight: 600; }
+  .ch-card .ch-age { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+  .ch-card .ch-line { font-size: 12px; color: var(--muted); margin: 6px 0 0; line-height: 1.4; }
+  section.series .ix-link { font-family: var(--mono); font-size: 13px; color: var(--accent); margin: 8px 0 0; }
+
+  /* appendix banner — categories 부록 격하 */
+  .appendix-banner { margin: 36px 0 8px; padding: 16px 0 8px; border-top: 1px dashed var(--line); }
+  .appendix-label { font-family: var(--mono); font-size: 13px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.06em; margin: 0 0 4px; }
+  .appendix-note { font-family: var(--mono); font-size: 11px; color: var(--muted); margin: 0 0 12px; }
+
   /* illustrations gallery */
   .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; margin: 16px 0; }
   .gallery figure { margin: 0; background: #f0ebde; border: 1px solid var(--line); display: flex; flex-direction: column; }
@@ -138,11 +167,81 @@
     <div class="games" id="games"></div>
   </div>
 
+  <section class="series" id="series-section">
+    <h2 class="series-h">📖 연재물 — 여정 자체가 지도</h2>
+    <p class="series-quote">"세상의 모든 사람은 새벽에 백지 한 장을 받는다."</p>
+    <p class="series-intro">8 자가 살아가는 결의 단편 묶음. 손바닥을 펴면 자기 지도가 잠시 비친다 — <em>손금 새벽</em>.</p>
+
+    <h3 class="sub">읽기 순서 — 회차 3 호</h3>
+    <div class="episodes">
+      <a class="ep-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/dawn-first-map.md">
+        <img class="ep-thumb" src="/outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png" alt="회차 1 — 손금 새벽">
+        <span class="ep-num">회차 1</span>
+        <div class="ep-title">처음으로 자기 지도를 본 새벽</div>
+        <p class="ep-desc">해온 / 나림 / 유경 — 같은 새벽, 다른 세 자리의 1 인칭 3 분기. ~2380 자.</p>
+      </a>
+      <a class="ep-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/sideseat-dawn-v0.md">
+        <img class="ep-thumb" src="/outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-7-yeongang-short-grain-v1.png" alt="회차 2 — 짧음의 결">
+        <span class="ep-num">회차 2</span>
+        <div class="ep-title">옆자리에 앉은 한 새벽</div>
+        <p class="ep-desc">인규 28 자국째, 연강과의 첫 만남. 14 년 전의 봄. ~2150 자.</p>
+      </a>
+      <a class="ep-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/paired-dawns-v0.1.md">
+        <img class="ep-thumb" src="/outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-8-huijae-side-by-side-dawns-v1.png" alt="회차 3 — 나란히 두 새벽">
+        <span class="ep-num">회차 3</span>
+        <div class="ep-title">옆에 잇닿은 두 새벽</div>
+        <p class="ep-desc">연강 60+ / 유리 8 — 60 자국째 차이의 시간차 동행. 두 단편 묶음. ~3100 자.</p>
+      </a>
+    </div>
+
+    <h3 class="sub">등장 인물 — 8 자 (5/2/2 = 나/가족/업)</h3>
+    <div class="characters">
+      <a class="ch-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/characters/haeon.md">
+        <div class="ch-head"><span class="ch-axis">나</span><span class="ch-name">해온</span><span class="ch-age">海溫 · 27</span></div>
+        <p class="ch-line">매일 새벽 30 분, 14 자국째 부터 한 번도 안 빠뜨림</p>
+      </a>
+      <a class="ch-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/characters/jeonghae.md">
+        <div class="ch-head"><span class="ch-axis">나</span><span class="ch-name">정해</span><span class="ch-age">正解 · 27</span></div>
+        <p class="ch-line">한 번도 안 폄, 발끝의 방향이 매일 같은 곳</p>
+      </a>
+      <a class="ch-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/characters/narim.md">
+        <div class="ch-head"><span class="ch-axis">나</span><span class="ch-name">나림</span><span class="ch-age">那林 · 26</span></div>
+        <p class="ch-line">8 자국째 한 번 보고 6 년 멈춤, 12 색조 박물관</p>
+      </a>
+      <a class="ch-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/characters/yugyeong.md">
+        <div class="ch-head"><span class="ch-axis">가족</span><span class="ch-name">유경</span><span class="ch-age">柳敬 · 38</span></div>
+        <p class="ch-line">아이 새벽 같이 봄, 35 자국째 다시 시작</p>
+      </a>
+      <a class="ch-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/characters/ingyu.md">
+        <div class="ch-head"><span class="ch-axis">업</span><span class="ch-name">인규</span><span class="ch-age">仁圭 · 42</span></div>
+        <p class="ch-line">28 자국째 부터 옆에 앉기 14 년, 200 명 자국</p>
+      </a>
+      <a class="ch-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/characters/yeongang.md">
+        <div class="ch-head"><span class="ch-axis">업</span><span class="ch-name">연강</span><span class="ch-age">連岡 · 60+</span></div>
+        <p class="ch-line">60 년 옆에 앉아 줌, 짧음의 결 (1 분 새벽)</p>
+      </a>
+      <a class="ch-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/characters/huijae.md">
+        <div class="ch-head"><span class="ch-axis">나</span><span class="ch-name">희재</span><span class="ch-age">熙在 · 27</span></div>
+        <p class="ch-line">평생 안 폄, 정해와 두 번 같은 길 (시간차 1 일–1 주)</p>
+      </a>
+      <a class="ch-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/characters/yuri.md">
+        <div class="ch-head"><span class="ch-axis">가족</span><span class="ch-name">유리</span><span class="ch-age">柳里 · 8</span></div>
+        <p class="ch-line">7 자국째 어머니 도움 없이 자기 손금 단독 시작</p>
+      </a>
+    </div>
+
+    <p class="ix-link"><a href="/view.html?path=outputs/writing/the-map-is-the-journey/series-index-v0.md">전체 시리즈 인덱스 + 시간선 ↗</a></p>
+  </section>
+
   <section class="cat" id="illustrations-section">
     <h2><span class="arrow">▾</span> 🖼 일러스트 <span class="count" id="ill-count"></span></h2>
     <div class="gallery" id="gallery"></div>
   </section>
 
+  <div class="appendix-banner">
+    <h2 class="appendix-label">📚 작가 부수 자료 — 시리즈 외 산출물</h2>
+    <p class="appendix-note">본 자료는 작가가 박는 세계 진화 / 시스템 기록. 독자에게는 부수 자료. 클릭해서 펼쳐 보세요.</p>
+  </div>
   <main id="categories"></main>
 
   <footer>
@@ -179,7 +278,7 @@ const CAT_ORDER = [
   "alignment", "critique",
   "decisions", "decision-traces", "arguments", "ticks",
 ];
-const COLLAPSE_BY_DEFAULT = new Set(["arguments", "ticks", "decision-traces"]);
+const COLLAPSE_BY_DEFAULT = new Set(["writings", "world", "art", "design", "alignment", "critique", "code-docs", "decisions", "decision-traces", "arguments", "ticks"]);
 
 function fmtTime(epoch) {
   const d = new Date(epoch * 1000);

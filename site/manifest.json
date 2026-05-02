@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-02T11:15:09.968515+00:00",
+  "generated_at": "2026-05-02T12:16:09.048435+00:00",
   "root_docs": [
     {
       "path": "current.md",
       "title": "Current State (live pointer)",
       "version": null,
-      "mtime": 1777720431,
-      "size": 141824
+      "mtime": 1777724156,
+      "size": 157274
     },
     {
       "path": "seed.md",
@@ -31,6 +31,19 @@
     }
   ],
   "illustrations": [
+    {
+      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-2-jeonghae-toes-one-direction-v1.png",
+      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-2-jeonghae-toes-one-direction-v1.png.meta.yml",
+      "title": "stamp-17-2-jeonghae-toes-one-direction-v1",
+      "caption": "우표 §17.2 — 정해 *발끝 한 방향*. 27 자국째, 무릎 높이에서 본 한 사람의 맨발과 같은 방향으로 놓인 5 점의 옅은 자국, 멀리 큰 산. 자국빛 0%.",
+      "category": "illustration",
+      "creator": "tick:cy-003/004 (art-director r1 image)",
+      "source_artifact": "outputs/art/the-map-is-the-journey/visual-bible-v0.4.md",
+      "source_section": "§17.2 *발끝 한 방향*",
+      "size": "1024x1024",
+      "mtime": 1777721807,
+      "bytes": 1297269
+    },
     {
       "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png",
       "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png.meta.yml",
@@ -87,6 +100,69 @@
   "categories": {
     "writings": [
       {
+        "path": "outputs/writing/the-map-is-the-journey/characters/yuri.md",
+        "title": "유리 (柳里) — *어머니 손을 안 잡고 자기 손금을 처음 펴 본 8 살*",
+        "version": "v0",
+        "mtime": 1777723995,
+        "size": 7907
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/characters/huijae.md",
+        "title": "희재 (熙在) — *묻지 않은 채 같은 길을 두 번 걸은 사람*",
+        "version": "v0",
+        "mtime": 1777723936,
+        "size": 7531
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/characters/yeongang.md",
+        "title": "연강 (連岡) — *옆에 앉는 사람의 60 년*",
+        "version": "v0",
+        "mtime": 1777723883,
+        "size": 7460
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/characters/ingyu.md",
+        "title": "인규 (仁圭) — *옆에 앉는 사람*",
+        "version": "v0",
+        "mtime": 1777723827,
+        "size": 6907
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/characters/yugyeong.md",
+        "title": "유경 (柳敬) — *한 아이가 자기 종이 위를 가장 많이 걸은 사람*",
+        "version": "v0",
+        "mtime": 1777723777,
+        "size": 6244
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/characters/narim.md",
+        "title": "나림 (那林) — *한 번 보고 도망친 자*",
+        "version": "v0",
+        "mtime": 1777723719,
+        "size": 5721
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/characters/jeonghae.md",
+        "title": "정해 (正解) — *손금 새벽을 한 번도 안 한 자*",
+        "version": "v0",
+        "mtime": 1777723711,
+        "size": 5936
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/characters/haeon.md",
+        "title": "해온 (海溫) — *손금 새벽을 매일 하는 자*",
+        "version": "v0",
+        "mtime": 1777723703,
+        "size": 5501
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/character-sheets-extended-v0.md",
+        "title": "여정 자체가 지도 — 인물 시트 *3 신규* 박음 v0 (연강 / 희재 / 유리)",
+        "version": "v0",
+        "mtime": 1777721458,
+        "size": 32039
+      },
+      {
         "path": "outputs/writing/the-map-is-the-journey/paired-dawns-v0.1.md",
         "title": "옆에 잇닿은 두 새벽 v0.1 (사람-가독성 적용 — 연강 *가족* / 유리 *연대*)",
         "version": "v0.1",
@@ -138,18 +214,39 @@
     ],
     "world": [
       {
-        "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.4.md",
-        "title": "여정 자체가 지도 (The Map is the Journey) — Bible v0.4",
-        "version": "v0.4",
-        "mtime": 1777716713,
-        "size": 13851
+        "path": "outputs/worldbuilding/the-map-is-the-journey/character-relations-v0.md",
+        "title": "여정 자체가 지도 — 인물 관계도 v0 (8 자)",
+        "version": "v0",
+        "mtime": 1777723910,
+        "size": 28718
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.5.md",
         "title": "여정 자체가 지도 (The Map is the Journey) — Bible v0.5",
         "version": "v0.5",
-        "mtime": 1777716704,
-        "size": 14982
+        "mtime": 1777723899,
+        "size": 14926
+      },
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.6.md",
+        "title": "여정 자체가 지도 — 세계 바이블 v0.6 (인물 절 baseline 박음)",
+        "version": "v0.6",
+        "mtime": 1777723503,
+        "size": 9774
+      },
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/character-relations-v0.1.md",
+        "title": "인물 관계도 v0.1 — 5/3/3 다축 박음 + chronicle 번호 보정 (thin extension)",
+        "version": "v0.1",
+        "mtime": 1777723418,
+        "size": 10920
+      },
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.4.md",
+        "title": "여정 자체가 지도 (The Map is the Journey) — Bible v0.4",
+        "version": "v0.4",
+        "mtime": 1777716713,
+        "size": 13851
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/chronicle-v1.md",
@@ -171,13 +268,6 @@
         "version": "v0",
         "mtime": 1777705795,
         "size": 17356
-      },
-      {
-        "path": "outputs/worldbuilding/the-map-is-the-journey/character-relations-v0.md",
-        "title": "여정 자체가 지도 — 인물 관계도 v0 (8 자)",
-        "version": "v0",
-        "mtime": 1777697810,
-        "size": 28366
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.3.md",
@@ -310,6 +400,20 @@
     ],
     "alignment": [
       {
+        "path": "outputs/alignment/the-map-is-the-journey/character-sheets-extended-v0-audit.md",
+        "title": "character-sheets-extended-v0 정렬 감사 + §7 cold-measurement",
+        "version": "v0",
+        "mtime": 1777722295,
+        "size": 14662
+      },
+      {
+        "path": "outputs/alignment/the-map-is-the-journey/stamp-17-1-haeon-palm-line-dawn-audit.md",
+        "title": "stamp-17-1 *손금 새벽* 정렬 audit (voice-keeper r6 cy-002)",
+        "version": "v0",
+        "mtime": 1777720749,
+        "size": 8597
+      },
+      {
         "path": "outputs/alignment/the-map-is-the-journey/paired-dawns-v0.1-audit.md",
         "title": "voice-keeper r5 cy-002 — paired-dawns-v0.1 §7 cold + 정렬 재측정 + visual-bible v0.4 e-항 baseline",
         "version": null,
@@ -432,6 +536,13 @@
       }
     ],
     "critique": [
+      {
+        "path": "outputs/critique/the-map-is-the-journey/character-sheets-extended-v0-first-5min.md",
+        "title": "character-sheets-extended-v0 첫 5 분 cold-read (3 인 시트 × 5 인 페르소나)",
+        "version": null,
+        "mtime": 1777722806,
+        "size": 12873
+      },
       {
         "path": "outputs/critique/the-map-is-the-journey/paired-dawns-v0.1-first-5min.md",
         "title": "critic r5 cy-002 cold-read — paired-dawns-v0.1 첫 5 분 (Cold-read protocol 첫 정식 적용 1 호 사례)",
@@ -802,6 +913,90 @@
       }
     ],
     "ticks": [
+      {
+        "path": "generations/gen-001/cycles/cy-003/ticks/tick-011.md",
+        "title": "Tick cy-003/011 — finalize-only orphan-ack (orchestrator: tick-009 + tick-010 후속 B+ 짝 의무 처치 + drift 27 호 회복 합본)",
+        "version": null,
+        "mtime": 1777724133,
+        "size": 9394
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-003/ticks/tick-010.md",
+        "title": "Tick cy-003/010 — implementer r1 publishing surface thin-bump (outputs/timeline.md 표 정합 회복 + stamp-17-2 entry 박음)",
+        "version": null,
+        "mtime": 1777724012,
+        "size": 8748
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-003/ticks/tick-009.md",
+        "title": "Tick cy-003/009 — loremaster r1 cy-003 (bible v0.6 본체 + character-relations v0.1 부속 묶음 1 호 박음)",
+        "version": null,
+        "mtime": 1777723677,
+        "size": 12090
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-003/ticks/tick-008.md",
+        "title": "Tick cy-003/008 — designer 영역 freeze 자가 흡수 (role-noop 1 호 사례 박음)",
+        "version": null,
+        "mtime": 1777723102,
+        "size": 9043
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-003/ticks/tick-007.md",
+        "title": "Tick cy-003/007 — critic r1 cy-003 cold-read (character-sheets-extended-v0)",
+        "version": null,
+        "mtime": 1777722912,
+        "size": 9904
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-003/ticks/tick-006.md",
+        "title": "Tick cy-003/006 — voice-keeper r1 cy-003 audit + drift 28 호 회복 (role+finalize-only 합본)",
+        "version": null,
+        "mtime": 1777722406,
+        "size": 11431
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-003/ticks/tick-005.md",
+        "title": "Tick cy-003/005 — art-director r1 cy-003 (§17.2 정해 *발끝 한 방향* 실측 image 1 호 박음 — scope reduced 자리 첫 자국)",
+        "version": null,
+        "mtime": 1777722016,
+        "size": 9998
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-003/ticks/tick-004.md",
+        "title": "Tick cy-003/004 — orchestrator r2 cy-003 (task-queue-r1.md 박음 + cron tick-003 writer r1 ack 합본)",
+        "version": null,
+        "mtime": 1777721780,
+        "size": 11373
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-003/ticks/tick-003.md",
+        "title": "Tick cy-003/003 — writer r1 cy-003 (character-sheets 5/8 → 8/8 도달 + voice-signature × 3 박음 1 호 사례 신규)",
+        "version": null,
+        "mtime": 1777721602,
+        "size": 10013
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-003/ticks/tick-002.md",
+        "title": "Tick cy-003/002 — orchestrator r1 cy-003 (cy-002 review.md baseline 박음 1 호 사례 신규)",
+        "version": null,
+        "mtime": 1777721066,
+        "size": 7067
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-075.md",
+        "title": "Tick cy-002/075 — voice-keeper r6 (image-spec-alignment-audit 1 호 사례 박음)",
+        "version": null,
+        "mtime": 1777720858,
+        "size": 7989
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-074.md",
+        "title": "Tick cy-002/074 — art-director r5 image (partial 1 of 6 baseline + budget-cap 부분 박음 mode 1 호 사례 신규)",
+        "version": null,
+        "mtime": 1777720520,
+        "size": 7506
+      },
       {
         "path": "generations/gen-001/cycles/cy-003/ticks/tick-001.md",
         "title": "tick-001",
@@ -1323,6 +1518,41 @@
     ],
     "arguments": [
       {
+        "path": "generations/gen-001/cycles/cy-003/arguments/implementer-r1.md",
+        "title": "implementer r1 cy-003 — outputs/timeline.md 정합 회복 + stamp-17-2 entry 박음 (publishing surface 보강)",
+        "version": null,
+        "mtime": 1777723826,
+        "size": 10639
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-003/arguments/loremaster-r1.md",
+        "title": "loremaster r1 cy-003 — bible v0.6 본체 + character-relations v0.1 부속 묶음 (thin-patch + thin-extension)",
+        "version": null,
+        "mtime": 1777723583,
+        "size": 9250
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-003/arguments/critic-r1.md",
+        "title": "critic r1 cy-003",
+        "version": null,
+        "mtime": 1777722837,
+        "size": 3898
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-003/arguments/voice-keeper-r1.md",
+        "title": "voice-keeper r1 cy-003",
+        "version": null,
+        "mtime": 1777722319,
+        "size": 3008
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/voice-keeper-r6.md",
+        "title": "voice-keeper r6 cy-002 — image-spec-alignment-audit 1 호 (stamp-17-1)",
+        "version": null,
+        "mtime": 1777720806,
+        "size": 8298
+      },
+      {
         "path": "generations/gen-001/cycles/cy-002/arguments/art-director-r5.md",
         "title": "art-director r5 cy-002 — §17.1 baseline image 1 장 박음 (partial, z-image-turbo)",
         "version": null,
@@ -1768,17 +1998,17 @@
     ]
   },
   "stats": {
-    "writings": 7,
-    "world": 12,
+    "writings": 16,
+    "world": 14,
     "art": 12,
-    "alignment": 11,
+    "alignment": 13,
     "design": 6,
-    "critique": 5,
+    "critique": 6,
     "code-docs": 41,
     "decisions": 6,
-    "ticks": 74,
-    "arguments": 58,
+    "ticks": 86,
+    "arguments": 63,
     "decision-traces": 5,
-    "illustrations": 4
+    "illustrations": 5
   }
 }
