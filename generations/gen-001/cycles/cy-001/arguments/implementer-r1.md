@@ -15,10 +15,14 @@ input_artifacts:
   - generations/gen-001/cycles/cy-001/arguments/designer-r1.md
 output_artifacts:
   - outputs/code/g-the-map-walker/engine-choice.md
-  - decisions/open/D-20260501-002.yml
+  - decisions/closed/D-20260501-002.yml
   - generations/gen-001/cycles/cy-001/decision-traces/D-20260501-002.md
+  - outputs/code/g-the-map-walker/walk-trace-spec-v0.md
+  - outputs/code/g-the-map-walker/manual-run-checklist-v0.md
 trip_wires_fired: [cost-value-asymmetry-vs-unity]
 domain_violations: []
+decisions_proposed: [D-20260501-002]
+decisions_absorbed_in_same_tick: [D-20260501-002]
 ---
 
 # Implementer — Round 1 발언 (cy-001)
@@ -64,17 +68,28 @@ charter §트립와이어 3 종 자기 검사:
 
 결정 큐 1/5 (constitution invariant 미위반).
 
+## 같은 tick 응답 흡수 — D-20260501-002 (picked: web)
+
+본 라운드 발의 직후 D-20260501-002 가 같은 tick 안에서 사용자 응답 흡수 (`picked: web`, default 채택). BOOTSTRAP §1 *사용자 응답 통합* 룰 따라 결정 파일을 `decisions/open/` → `decisions/closed/` 이동, 트레이스에 응답 + 적용 로그 append. 결정 큐 1/5 → 0/5.
+
+응답 흡수로 charter §첫 task #2 + #3 가속 — 엔진 비독립 fallback 트랙 건너뛰고 다음 두 산출 본 라운드 안에서 발행:
+
+1. **walk-trace 시스템 1 페이지 사양** (charter §첫 task #2) — `outputs/code/g-the-map-walker/walk-trace-spec-v0.md`
+   - 입력 3 종 (step / companion_traces / tick) / 상태 7 필드 / 출력 4 절 (Pixi Container 트리 + 입력 응답 + 멈춤 광휘 + 동행 자국 시드)
+   - cluster 매칭 룰 (좌표 hash 금지) + hex 매핑 표 + 자국빛 면적 룰 (1–3%, 첫 자국 5–8%, 멈춤 1%) 직접 박음
+   - 의존성 3 종 (pixi.js / vite / typescript, 모두 MIT — 자립 챔피언 정합)
+   - v2 미룸 6 항 (멀티 / 봇 / 계정 / 저장 / 다국어 / 레벨 다수 / 스토어) 명시
+
+2. **manual-run 체크리스트** (charter §첫 task #3) — `outputs/code/g-the-map-walker/manual-run-checklist-v0.md`
+   - 5 항 객관 임계 (부팅 ≤ 60 s / 30 s 안 ③ 노드 도달 / 5 분 충돌 0 / cold-reader 마찰 ≤ 60 s / 자국빛 면적 1–3% 룰)
+   - 통과 선언 형식 (manual-run-log YAML 스키마) + 미통과 시 인계 룰
+   - constitution invariant #7 (manual-run 1 회 통과 우선) 1 차 게이트 자리
+
 ## 다음 발언 후보 (implementer r2)
 
-D-20260501-002 응답 후:
-1. **walk-trace 시스템 1 페이지 사양** (charter §첫 task #2) — 입력·상태·출력만. 비동기 동행 자국 매칭 = cluster (좌표 hash 금지). 멀티플레이 동기화·계정·저장은 v2 미룸 명시.
-2. **manual-run 체크리스트** (charter §첫 task #3) — 5 항 (30 초 부팅 / 30 초 안에 ③ 노드 도달 / 충돌 0 / 빌드 1 분 안에 cold-reader 손에 / 자국빛 면적 1–3% 룰 통과). my-life Iron Law 준수.
-3. **1 차 prototype 빌드** — 위 사양 + 체크리스트 통과 후. critic r2 vertical slice 가중치 평가 직접 입력.
-
-D-20260501-002 미응답 (사용자 페이스) 시 — 엔진 비독립 task:
-- F2 cluster 매칭 의사코드 (Web/Godot 양쪽 호환)
-- F3 셰이더 1 패스 의사코드 (GLSL pseudocode — GDShader 변환 1:1)
-- F4 8s 멈춤 검출 + 광휘 spawn 로직 의사코드
+1. **1 차 prototype 빌드** — `outputs/code/g-the-map-walker/src/` (Vite + Pixi.js + TypeScript). walk-trace-spec-v0 직접 구현. 부팅 가능한 첫 빌드.
+2. **manual-run 1 회 실행 + log 발행** — 5 항 측정 결과를 `manual-run-log-<YYYYMMDD>-001.md` 에 박음. 통과 시 *vertical slice 자동화 게이트 해제* 선언.
+3. **셰이더 1 패스 의사코드 → GLSL 실코드** — fail-modes §F3 의 hex 폭 + 광휘 1–3% 룰의 art-director 협업 후 *값* 확정 흡수.
 
 ## 협업 인계
 
