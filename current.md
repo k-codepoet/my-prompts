@@ -1,10 +1,15 @@
 ---
 gen: 1
-cycle: cy-002
-tick: 74
+cycle: cy-003
+tick: 1
 active_decisions: []
-paused: true
-last_updated: '2026-05-02T11:15:32+00:00'
+paused: false
+last_updated: '2026-05-02T22:40:00+00:00'
+prev_cycle: cy-002 (마감 라운드 진입 임계 도달, r2 9/9 + r3 진행, cy-002 review.md 박음 미완 — 본 transition 자리에서 보류)
+focus: writing (3 pillar 심화 = 세계관 / 인물 / 글)
+frozen_orgs: [designer]
+scope_reduced_orgs: [implementer (publishing surface 한정), art-director (단편 일러스트 한정)]
+active_orgs: [orchestrator, loremaster, writer, voice-keeper, critic]
 ---
 
 # Current State (live pointer)
