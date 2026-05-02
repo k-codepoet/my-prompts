@@ -22,6 +22,7 @@
 | 2026-05-01T17:10:00 | visual-bible | *여정 자체가 지도* — Visual Bible v0.1 (팔레트 3 톤+자국빛, 실루엣, 재료감, 트립와이어) | `outputs/art/the-map-is-the-journey/visual-bible-v0.1.md` | art-director r1 (cy-001) |
 | 2026-05-02T09:52:06+00:00 | illustration | 우표 §17.7 — 연강 *짧음의 결*. 옆자리가 비어 있는 자리에서, 자국 600 결의 첫 자리를 본인도 모르는 한 새벽. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-7-yeongang-short-grain-v1.png` | tick:cy-002/058 (art-director r3 image) |
 | 2026-05-02T09:52:11+00:00 | illustration | 우표 §17.8 — 희재 *나란히 두 새벽*. 묻지 않은 채 같은 길을 두 번 걸은 두 자국, 시간차 1 일 ~ 1 주, 두 색조가 합쳐지지 않고 옆에 박힌 한 새벽. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-8-huijae-side-by-side-dawns-v1.png` | tick:cy-002/058 (art-director r3 image) |
+| 2026-05-02T11:13:18+00:00 | illustration | 우표 §17.1 — 해온 *손금 새벽*. 14 자국째 해 부터 매일 새벽, 한 사람의 손바닥 위에 자기 지도가 잠시 비친 한 컷. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png` | tick:cy-002/074 (art-director r5 image) |
 
 ---
 

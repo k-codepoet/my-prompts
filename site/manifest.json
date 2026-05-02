@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-02T10:52:58.719319+00:00",
+  "generated_at": "2026-05-02T11:15:09.968515+00:00",
   "root_docs": [
     {
       "path": "current.md",
       "title": "Current State (live pointer)",
       "version": null,
-      "mtime": 1777719147,
-      "size": 135339
+      "mtime": 1777720431,
+      "size": 141824
     },
     {
       "path": "seed.md",
@@ -31,6 +31,19 @@
     }
   ],
   "illustrations": [
+    {
+      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png",
+      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png.meta.yml",
+      "title": "stamp-17-1-haeon-palm-line-dawn-v1",
+      "caption": "우표 §17.1 — 해온 *손금 새벽*. 14 자국째 해 부터 매일 새벽, 한 사람의 손바닥 위에 자기 지도가 잠시 비친 한 컷.",
+      "category": "illustration",
+      "creator": "tick:cy-002/074 (art-director r5 image)",
+      "source_artifact": "outputs/art/the-map-is-the-journey/visual-bible-v0.3.md",
+      "source_section": "§17.1 *손금 새벽*",
+      "size": "1024x1024",
+      "mtime": 1777720398,
+      "bytes": 1142731
+    },
     {
       "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-8-huijae-side-by-side-dawns-v1.png",
       "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-8-huijae-side-by-side-dawns-v1.png.meta.yml",
@@ -297,6 +310,13 @@
     ],
     "alignment": [
       {
+        "path": "outputs/alignment/the-map-is-the-journey/paired-dawns-v0.1-audit.md",
+        "title": "voice-keeper r5 cy-002 — paired-dawns-v0.1 §7 cold + 정렬 재측정 + visual-bible v0.4 e-항 baseline",
+        "version": null,
+        "mtime": 1777719296,
+        "size": 16736
+      },
+      {
         "path": "outputs/alignment/the-map-is-the-journey/cy-002-r2-roundup-v0.md",
         "title": "cy-002 r2 묶음 마감 정렬 측정 (3 자리 부수 + 누적 평균 갱신)",
         "version": null,
@@ -449,6 +469,20 @@
       }
     ],
     "code-docs": [
+      {
+        "path": "outputs/code/g-the-map-walker/manual-run-checklist-v0.md",
+        "title": "manual-run 체크리스트 v0",
+        "version": "v0",
+        "mtime": 1777719760,
+        "size": 6917
+      },
+      {
+        "path": "outputs/code/g-the-map-walker/walk-trace-spec-v0.md",
+        "title": "walk-trace 시스템 — 1 페이지 사양 (v0)",
+        "version": "v0",
+        "mtime": 1777719759,
+        "size": 9103
+      },
       {
         "path": "outputs/code/g-the-map-walker/manual-run-log-20260502-002.md",
         "title": "manual-run-log 20260502-002 (implementer r1 cy-002 — *instrumentation 박음 + 인터랙티브 round 절차*)",
@@ -716,20 +750,6 @@
         "size": 19447
       },
       {
-        "path": "outputs/code/g-the-map-walker/manual-run-checklist-v0.md",
-        "title": "manual-run 체크리스트 v0",
-        "version": "v0",
-        "mtime": 1777655637,
-        "size": 6150
-      },
-      {
-        "path": "outputs/code/g-the-map-walker/walk-trace-spec-v0.md",
-        "title": "walk-trace 시스템 — 1 페이지 사양 (v0)",
-        "version": "v0",
-        "mtime": 1777655587,
-        "size": 8424
-      },
-      {
         "path": "outputs/code/g-the-map-walker/engine-choice.md",
         "title": "g-the-map-walker — Engine Choice (cost/value v0)",
         "version": "v0",
@@ -738,6 +758,13 @@
       }
     ],
     "decisions": [
+      {
+        "path": "decisions/closed/D-20260502-003.yml",
+        "title": "D-20260502-003",
+        "version": null,
+        "mtime": 1777720264,
+        "size": 6272
+      },
       {
         "path": "decisions/closed/D-20260502-002.yml",
         "title": "D-20260502-002",
@@ -775,6 +802,27 @@
       }
     ],
     "ticks": [
+      {
+        "path": "generations/gen-001/cycles/cy-003/ticks/tick-001.md",
+        "title": "tick-001",
+        "version": null,
+        "mtime": 1777720484,
+        "size": 9780
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-073.md",
+        "title": "Tick cy-002/073 — finalize-only orphan-ack (drift 27 호 회복 + tick-071/-072 두 자리 동시 ack 합본 + cy-002 마감 라운드 11 자리 누적 박음)",
+        "version": null,
+        "mtime": 1777719803,
+        "size": 10335
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-072.md",
+        "title": "Tick cy-002/072 — voice-keeper r5 cy-002 cold-measurement (§7 두 측 동시 4.75 + visual-bible v0.4 e 1.0 도달)",
+        "version": null,
+        "mtime": 1777719525,
+        "size": 8607
+      },
       {
         "path": "generations/gen-001/cycles/cy-002/ticks/tick-071.md",
         "title": "Tick cy-002/071 — role (designer r5+ cy-002 thin-patch, post-supersede 포인터 stale 처치 designer 측 1 호 사례)",
@@ -1275,6 +1323,34 @@
     ],
     "arguments": [
       {
+        "path": "generations/gen-001/cycles/cy-002/arguments/art-director-r5.md",
+        "title": "art-director r5 cy-002 — §17.1 baseline image 1 장 박음 (partial, z-image-turbo)",
+        "version": null,
+        "mtime": 1777720468,
+        "size": 7143
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/loremaster-r5.md",
+        "title": "loremaster r5 (cy-002) — 마감 라운드 신규 산출물 4 자리 lore 정합 audit + chronicle-v1.1 / character-relations-v0.1 박음 자리 4 후보 발의",
+        "version": null,
+        "mtime": 1777720400,
+        "size": 24331
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/implementer-r3+.md",
+        "title": "implementer r3+ — post-supersede 포인터 stale 처치 implementer 측 1 호 사례 (cy-002 마감 라운드 후속 thin-patch = 4 도구 교차 검증 도달)",
+        "version": null,
+        "mtime": 1777719761,
+        "size": 17974
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/voice-keeper-r5.md",
+        "title": "voice-keeper r5 cy-002 — §7 cold 측정 voice-keeper 측 1 호 + visual-bible v0.4 e-항 baseline",
+        "version": null,
+        "mtime": 1777719357,
+        "size": 8286
+      },
+      {
         "path": "generations/gen-001/cycles/cy-002/arguments/designer-r5+.md",
         "title": "designer r5+ — post-supersede 포인터 stale 처치 designer 측 1 호 사례 (cy-002 마감 라운드 후속 thin-patch)",
         "version": null,
@@ -1695,14 +1771,14 @@
     "writings": 7,
     "world": 12,
     "art": 12,
-    "alignment": 10,
+    "alignment": 11,
     "design": 6,
     "critique": 5,
     "code-docs": 41,
-    "decisions": 5,
-    "ticks": 71,
-    "arguments": 54,
+    "decisions": 6,
+    "ticks": 74,
+    "arguments": 58,
     "decision-traces": 5,
-    "illustrations": 3
+    "illustrations": 4
   }
 }

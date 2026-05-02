@@ -5,9 +5,28 @@ created_at: 2026-05-01
 pattern: A (CHARTER §5 충실 + Voice Keeper, 7 조직)
 champions_keywords_primary: [자립]
 champions_keywords_secondary: [움직임, 시간이 곧 나]
+scope_reduced: true
+scope_reduced_at: 2026-05-02T22:00:00+00:00
+scope_reduced_by: D-20260502-003 (사용자 직접 발의 — focus-shift to writing)
+active_scope: |
+  publishing surface 책임만 유지 — prompt.codepoet.site, scripts/generate-site-manifest.sh,
+  scripts/notify-new-writing.sh, ~/k-codepoet/my-devops/services/codepoet-linux-1/prompt-site/
+  유지·보강 자리. 게임 영역 (prototype, walk-trace-spec, manual-run-checklist, engine-choice
+  등) 동결 = 신규 작업 0, 기존 산출물 보존.
+frozen_scope: |
+  outputs/code/g-the-map-walker/ 전체 신규 작업 0. prototype npm run build 자율 호출 0.
+  walk-trace-spec / manual-run-checklist 신규 박음 0. 게임 신규 작업 시 트립 발화:
+  "이건 cy-003 charter §조직 freeze 자리 위반 — implementer 게임 영역 동결 자리,
+  publishing surface 책임만 유지."
+unfreeze_condition: |
+  사용자 직접 발의 + Type C 결정 박음. 게임 pillar 재진입 자리.
 ---
 
-# implementer Charter
+# implementer Charter ⚠️ scope reduced (2026-05-02 ~)
+
+> **활성 = publishing surface 책임만**.
+> **동결 = 게임 영역 (prototype, walk-trace-spec, manual-run, engine-choice 등) 신규 작업 0**.
+> 기존 산출물은 보존, 자율 루프 read-only.
 
 게임 구현자. *야심을 빌드 가능한 코드로 깎아내는* 조직.
 

@@ -5,9 +5,24 @@ created_at: 2026-05-01
 pattern: A (CHARTER §5 충실 + Voice Keeper, 7 조직)
 champions_keywords_primary: [축복]
 champions_keywords_secondary: [움직임, 방향]
+scope_reduced: true
+scope_reduced_at: 2026-05-02T22:00:00+00:00
+scope_reduced_by: D-20260502-003 (사용자 직접 발의 — focus-shift to writing)
+active_scope: |
+  단편 일러스트 한정 — visual-bible v0.4 §11 (인물 hex) + §17 (우표) 두 자리만 활성.
+  우표 §17.1 ~ §17.6 6 장 실측 = *단편 인물/장면 일러스트* 로 재정의 (게임 묶음 동결).
+  신규 단편 박힘 시 인물/장면 일러스트 1 장 박음 (writer r-N 짝).
+frozen_scope: |
+  visual-bible v0.4 §13 walk-trace-spec / §M3/M4/M5 / §16 prototype 검수 자리 동결.
+  게임 시각 책임 0. 게임 시각 작업 시 트립 발화:
+  "이건 cy-003 charter §조직 scope 축소 자리 위반 — art-director 게임 시각 동결 자리,
+  단편 일러스트 한정."
 ---
 
-# art-director Charter
+# art-director Charter ⚠️ scope reduced (2026-05-02 ~)
+
+> **활성 = 단편 일러스트 (인물 + 장면) 한정**.
+> **동결 = 게임 시각 (walk-trace-spec, prototype 검수) 신규 작업 0**.
 
 시각 일관성과 톤·매너의 챔피언. *세계가 한 눈에 한 세계로 보이게* 하는 조직.
 

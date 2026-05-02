@@ -1,0 +1,91 @@
+id: D-20260502-003
+type: C                                 # G-* 표적 변경 + designer/implementer charter freeze + art-director scope 축소 = constitution §진화 규칙 §사람 합의 필요 직접 영향.
+asked_at: 2026-05-02T22:00:00+00:00
+deadline:                               # 사용자 직접 발의 + 즉시 응답 = open 단계 0 자리 = closed 직접 박음.
+gen: 1
+cycle: cy-002                           # 발의 시점은 cy-002 r3 묶음 진행 중. 응답 적용 시점에 cy-003 charter 박음 + cycle 갱신.
+parent_goal: G-WORLD-1                  # 글 pillar 심화 = G-WORLD-1 (세계관) + G-CHAR-1 (인물, 신규) + G-WRITING-1 (글, 신규) 3 자리 활성.
+title: "focus-shift to writing — game pillar freeze + 3 pillar (세계관/인물/글) 심화 진입 + cy-003 charter 박음"
+
+description: |
+  사용자 직접 발의 (2026-05-02 KST):
+
+  > "우선 현재 시스템이 완결성을 가지는지 체크 필요. 게임부분은 제외하는게
+  > 좋아보임. 지금은 글쓰기에 집중하는게 좋아보여. 글을 쓰기 위해 세계관,
+  > 인물, 글 이 부분을 더 심화하는 구조로"
+
+  완결성 체크 결과 = ✓ 통과: 세계관 → 인물 → 글 체인은 게임 빼도 자체
+  완결. bible v0.5 (8 핵심 문서 도달) + character-relations v0 (8 인물) +
+  단편 5 편 (paired-dawns v0/v0.1 포함) + voice-keeper §1~§6 정렬 + §7
+  human-readability gate + critic 5 분 cold-read = 4 측 동시 통과 게이트.
+
+  사용자 정정 1:1 흡수 후 진행:
+  - 게임 작업 멈추기 (designer / implementer 게임 영역 freeze)
+  - 시각 일러스트는 글에 들어가는 그림만 (art-director scope 축소)
+  - 새 표적 = 3 pillar 심화 (G-WORLD-1 + G-CHAR-1 신규 + G-WRITING-1 신규)
+  - 이미 박힌 게임 산출물 보존 (지움 0, *얼리는 것* 만)
+
+options:
+  - id: focus-writing
+    summary: "글 pillar 심화 — designer / implementer charter freeze + art-director scope 축소 (writing illustration 한정) + cy-003 charter 박음 (G-WORLD-1 + G-CHAR-1 신규 + G-WRITING-1 신규)"
+    cost: |
+      cy-003 = ~30-40 tick 예측 (4 활성 조직 = orchestrator + loremaster +
+      writer + voice-keeper + critic + art-director 축소 자리). designer /
+      implementer 게임 영역 freeze (publishing surface 책임은 implementer
+      유지). 게임 산출물 보존, 신규 게임 작업 0.
+
+      신규 G-* 표적:
+        G-WORLD-1   0.80+ → 1.0 (bible v0.6+, 인물 8 자리 본문 + 사건 8 자리 본문 + 자기 트립 그물)
+        G-CHAR-1    신규 → 0.7 (character-sheets 8/8 도달 + voice-signature × 인물)
+        G-WRITING-1 신규 → 0.7 (단편 +5 박음 + 다양한 축/길이/시점, human-readability §7 5/5 PASS)
+        G-PRODUCT-1 동결 (현재 0.65 baseline 보존)
+        G-LOOP-1    그대로 측정
+        G-AUTONOMY-1 그대로 (≤10 결정/gen)
+    supporters: [user, orchestrator, voice-keeper, loremaster, writer, critic, art-director]
+    objectors: []                       # designer / implementer 는 freeze 자리 = objector 자리 인접하지만 사용자 명시 발의로 영역 보전 자리 X.
+    fits_champions: |
+      - user: 직접 발의 + 정정 1:1 흡수 = A10 자가 적용 사례 2 호.
+      - orchestrator: cy-002 마감 라운드 진입 임계 도달 자리에서 자연스럽게 cy-003 transition 박음.
+      - voice-keeper: §7 human-readability gate 1 차 적용 사례 누적 자리 보전 + §1~§6 정렬 측정 깊이 진척.
+      - loremaster: bible v0.6+ 박음 + 인물 8 자리 본문 박음 = G-WORLD-1 + G-CHAR-1 두 표적 동시 진척.
+      - writer: 단편 +5 박음 = G-WRITING-1 1 차 가중 충족 자리 + voice-signature × 인물 박음.
+      - critic: cold-read protocol 갱신 (§7 5 항목 측정 의무 추가) = critic-r3+ 진입 자리.
+      - art-director: 우표 §17.7 + §17.8 baseline 위 *단편 일러스트* 로 재정의 (게임 묶음 동결).
+
+  - id: continue
+    summary: "현재 charter 유지 — cy-002 마감 + cy-003 도 동일 4 pillar (게임 + 글 병행)"
+    cost: |
+      cy-003 = ~40-50 tick (cy-002 동일 페이스). 7 조직 모두 활성. designer
+      / implementer 게임 영역 진척. *사용자 발의 무시* 자리 = A10 자가 적용
+      반례 = invariant 인접 자리.
+    supporters: [designer, implementer]   # 자기 영역 보전 챔피언
+    objectors: [user, voice-keeper, writer]  # user 직접 발의 무시 = invariant 인접 자리
+    fits_champions: |
+      - designer §즉답: 게임 메카닉 깊이 진척 자리 보전.
+      - implementer §자립: prototype + publishing surface 둘 다 깊이 진척.
+      - 단점: 사용자 직접 발의 무시 = invariant 인접 자리 (사람 응답 자리 = 진화 룰 §A 1 호 사례 박음 자리).
+
+  - id: hybrid
+    summary: "hybrid 진입 — 글 pillar 우선 (writer / loremaster / voice-keeper r1+) + 게임 pillar 유지 (designer / implementer thin patch 만)"
+    cost: |
+      cy-003 = ~35-40 tick. 6 조직 활성 (orchestrator + voice-keeper +
+      loremaster + writer + critic + art-director) + 2 조직 유지 분량
+      축소 (designer / implementer thin patch 자리만). *완전 freeze 0 +
+      thin patch 유지 1* 자리.
+    supporters: [orchestrator, art-director]
+    objectors: [user]                    # 사용자 명시 *게임부분은 제외* 정정 → hybrid 는 정정 부분 흡수.
+    fits_champions: |
+      - art-director: 게임 시각 + 글 시각 두 자리 모두 보전.
+      - 단점: 사용자 직접 발의 *제외* 정정 부분 흡수 = invariant 인접 자리.
+
+recommended: focus-writing             # 사용자 직접 발의 = orchestrator 추천 자동 = focus-writing.
+trace: generations/gen-001/cycles/cy-003/decision-traces/D-20260502-003.md  # cy-003 진입 시 박음 (orchestrator 자리)
+
+response:
+  decided_at: 2026-05-02T22:00:00+00:00
+  picked: focus-writing
+  notes: |
+    사용자 직접 발의 + 즉시 응답.
+    "응 너가 말한대로 하자."
+    1+2+3 모두 default = focus-writing + designer/implementer freeze + 우표 §17 6 장 단편 일러스트 재정의.
+    open 단계 0 자리 = closed 직접 박음 (사용자 발의 + 사용자 응답 동시).

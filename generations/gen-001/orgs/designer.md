@@ -5,9 +5,19 @@ created_at: 2026-05-01
 pattern: A (CHARTER §5 충실 + Voice Keeper, 7 조직)
 champions_keywords_primary: [움직임]
 champions_keywords_secondary: [시간이 곧 나, 진심]
+frozen: true
+frozen_at: 2026-05-02T22:00:00+00:00
+frozen_by: D-20260502-003 (사용자 직접 발의 — focus-shift to writing)
+frozen_scope: |
+  cy-003 진입 자리 부터 designer 신규 산출물 0. 기존 산출물 (concept-v0.1, mechanics-v0+,
+  fail-modes-v0+, concept-diagrams-v0) 보존 0 작업. 게임 신규 작업 시 트립 발화:
+  "이건 cy-003 charter §조직 freeze 자리 위반 — designer 영역 동결 자리."
+unfreeze_condition: |
+  사용자 직접 발의 + Type C 결정 박음. 게임 pillar 재진입 자리 = 신규 사이클 charter
+  G-PRODUCT-1 활성 표적 박음 자리.
 ---
 
-# designer Charter
+# designer Charter ⚠️ FROZEN (2026-05-02 ~)
 
 게임 디자이너. *플레이어가 재미있게 매니페스토를 체험하는가* 를 책임지는 조직.
 
