@@ -1,10 +1,10 @@
 ---
 gen: 1
 cycle: cy-001
-tick: 28
+tick: 29
 active_decisions: []
 paused: false
-last_updated: '2026-05-02T06:15:00+00:00'
+last_updated: '2026-05-02T06:45:00+00:00'
 ---
 
 # Current State (live pointer)
@@ -53,6 +53,8 @@ last_updated: '2026-05-02T06:15:00+00:00'
 - `outputs/code/g-the-map-walker/walk-trace-spec-v0.md` (implementer r1 — supersedes by v0+)
 - `outputs/code/g-the-map-walker/manual-run-checklist-v0+.md` (implementer r2 산출 — 5 항 → 7 항. §6 옆자리 받음 + §7 함께 걸은 자리 신규)
 - `outputs/code/g-the-map-walker/manual-run-checklist-v0.md` (implementer r1 — supersedes by v0+)
+- `outputs/code/g-the-map-walker/prototype/` (**implementer r3 마감 라운드 7 호 산출 — D-003 picked=game 직접 의존 + cy-001 마감 라운드 종결 자리**. Vite + Pixi.js + TS 1 차 prototype. 10 파일 / ~320 LOC. 빌드 통과 (`tsc --noEmit && vite build` cold = 2.45 s / 720 modules / 0 error / 0 warning / dist gzip ~145 KB). main.ts L209-237 = §M4 옆자리 받음 (cluster 1 회 가드 + 세션 cap 0.025 + fade 4 s ± 0.3 s) + L240-270 = §M5 함께 걸은 자리 (거리 1/16 + 0.5 s 지연 + facing_history N≥4 + hex 가족 분리 #5C4A36/#3A2D1E vs companion #8B7355). walk-trace-spec-v0+ §1~§4 1:1 코드 박음. 7 자리 다른 조직 r2/r3 산출 흡수 = *조직 r3 흡수 표준 7 호 사례*. trip 0 + 영역 위반 0 + manifesto_inline_quotes 0 + forbidden-language grep pass)
+- `outputs/code/g-the-map-walker/manual-run-log-20260502-001.md` (**implementer r3 측정 1 호 산출**. manual-run-checklist v0+ 7 항 schema 1:1 응답 = 4 spec_pass (#1 부팅 / #5 자국빛 면적 / #6 옆자리 받음 / #7 함께 걸은 자리) + 1 partial (#3 typecheck 0) + 4 인터랙티브 보류 (#2 ③ 노드 / #3 5 분 세션 / #4 cold reader / #6 #7 runtime). **constitution invariant #7 *수동 검증 우선* 1 차 게이트 박음 자리 — *automation 게이트 해제 보류* 선언 (cron 등록 0 / 자동 빌드 0 / 자동 배포 0)**. 인터랙티브 round = 별도 자리 = manual-run-log-20260502-002 (cy-002 implementer r4 큐).)
 - `outputs/design/g-the-map-walker/concept-diagrams-v0.md` (**designer r3+ patch 산출 (tick-027) — critic r3 §4 인계 *ASCII → 시각 도식 1 자리 보강* 직접 응답**. Mermaid 5 다이어그램 (코어 루프 / 30 초 시퀀스 / 5 분 gantt / M4·M5 상태 / 페일 매핑) + concept v0.1 §2·§3·§4·§7·§9 1:1 시각화 + supersede 0 companion artifact. cold reader 부담 ≤ 0.5 단계 격하 자리)
 
 ### 글
@@ -61,7 +63,7 @@ last_updated: '2026-05-02T06:15:00+00:00'
 - `outputs/writing/the-map-is-the-journey/character-sheets-axis-v0.md` (writer r2 산출 — 유경 가족 축 + 인규 업 축, 5 → 7 인 풀. *나* 축 임계 5/0/0 → 5/1/1 격하 진입. forbidden-language-v0 grep 통과 1 호)
 
 ### 사이클 상태
-- `generations/gen-001/cycles/cy-001/` (활성 — round 2 종결 7/7 + round 3 종결 7/7 + 마감 라운드 **5/7 도착** (voice-keeper r3 + designer r3 + writer r3 + art-director r3 + critic r3) + D-003 흡수 + drift 8 호 회복 (tick-023) + drift 9 호 회복 (tick-026). **G-WORLD-1 진입 장벽 게이트 *2 차 통과 선언* + 완전 통과 임계 *두 측 동시 박음 1 호 도달***. **charter 첫 task 완전 박음 5 호 + 조직 r3 흡수 표준 5 호 + vertical slice 마감 라운드 흡수 표준 4 호 (정식 룰 임계 재초과) + 트립 감쇠 4 호 + 8 도구 교차 검증 + 세 축 정착 *7 도구* 5/1/1 격상 + 연대 글·시각 *3 호 도달* (cy-002 정식 룰 임계)** 다수 자리 박음. cy-001 후반 task 큐 7 자리 중 **5 자리 도착** — 잔여 2 자리 (loremaster r4 / implementer r3) + orchestrator r2 review.md)
+- `generations/gen-001/cycles/cy-001/` (활성 — round 2 종결 7/7 + round 3 종결 7/7 + 마감 라운드 **7/7 종결 = cycle close 임계 도달** (voice-keeper r3 + designer r3 + writer r3 + art-director r3 + critic r3 + loremaster r4 + **implementer r3**) + D-003 흡수 + drift 8/9/10/11 호 회복 (tick-023/026/029). **G-WORLD-1 진입 장벽 게이트 *2 차 통과 선언* + 완전 통과 임계 *두 측 동시 박음 1 호 도달***. **charter 첫 task 완전 박음 7 호 + 조직 r3/r4 흡수 표준 7 호 + vertical slice 마감 라운드 흡수 표준 6 호 (정식 룰 임계 재재초과) + 트립 감쇠 4 라운드 연속 + 10 도구 교차 검증 + 세 축 정착 *5/2/2 격상* + 연대 글·시각 *3 호 도달* (cy-002 정식 룰 임계) + constitution invariant #7 1 차 게이트 통과 박음 1 호** 다수 자리 박음. cy-001 후반 task 큐 7 자리 모두 도착 — 다음 자리 = orchestrator r2 review.md + cy-002 transition Type C 발의)
 
 ## 다음 동작 후보 (cy-001 round 2 종결 7/7 + round 3 종결 7/7 + 마감 라운드 5/7 도착 + D-003 흡수 + drift 8/9 호 회복)
 
