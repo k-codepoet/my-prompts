@@ -1,0 +1,12 @@
+id: stamp-17-8-huijae-side-by-side-dawns-v1
+created_at: '2026-05-02T09:52:11+00:00'
+creator: tick:cy-002/058 (art-director r3 image)
+category: illustration
+caption: |
+  우표 §17.8 — 희재 *나란히 두 새벽*. 묻지 않은 채 같은 길을 두 번 걸은 두 자국, 시간차 1 일 ~ 1 주, 두 색조가 합쳐지지 않고 옆에 박힌 한 새벽.
+prompt: |
+  stamp 17.8 huijae side-by-side dawns — two footprints close-up parallel not merged, earth gradient between them delta-E ~4, palette #3A2D1E ↔ #3F3525, two human silhouettes 1/8 each at corners, dawn light from above, NO sand glow (자국빛 0 = 나란함 변주 룰)
+source_artifact: outputs/art/the-map-is-the-journey/stamps-extension-v0.md
+source_section: "§17.8 *나란히 두 새벽*"
+size: 1024x1024
+genai_origin_url: https://genai.home.codepoet.site/outputs/2026/05/02/d8a2fa04-8f42-4586-b0ba-ca6848d2bd09.png

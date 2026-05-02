@@ -245,30 +245,24 @@ def build_list_blocks(files):
                     elements.append(button_for(did, oid, f"{oid}: {summary}"))
                 blocks.append({"type": "actions", "elements": elements})
             elif dtype == "C":
-                if d.get("response_schema"):
-                    blocks.append({
-                        "type": "actions",
-                        "elements": [{
-                            "type": "button",
-                            "text": {"type": "plain_text", "text": "✏️ 응답"},
-                            "action_id": f"respond_modal_{did}",
-                            "value": json.dumps({"id": did}),
-                            "style": "primary",
-                        }],
-                    })
-                    blocks.append({
-                        "type": "context",
-                        "elements": [{"type": "mrkdwn",
-                                      "text": ("또는 `/myprompts decide " + did +
-                                               " key=value ...` · repo 의 yml 직접 편집.")}],
-                    })
-                else:
-                    blocks.append({
-                        "type": "context",
-                        "elements": [{"type": "mrkdwn",
-                                      "text": ("Type C — 다중 필드. `/myprompts decide " + did +
-                                               " key=value ...` 로 응답하거나, repo 의 yml 직접 편집.")}],
-                    })
+                # Type C 는 response_schema 박혀있든 없든 modal 진입 자리 항상 박음.
+                # schema 없으면 build_modal_blocks 가 derive_schema 로 picked + notes 자동 합성.
+                blocks.append({
+                    "type": "actions",
+                    "elements": [{
+                        "type": "button",
+                        "text": {"type": "plain_text", "text": "✏️ 응답"},
+                        "action_id": f"respond_modal_{did}",
+                        "value": json.dumps({"id": did}),
+                        "style": "primary",
+                    }],
+                })
+                blocks.append({
+                    "type": "context",
+                    "elements": [{"type": "mrkdwn",
+                                  "text": ("또는 `/myprompts decide " + did +
+                                           " key=value ...` · repo 의 yml 직접 편집.")}],
+                })
 
         blocks.append({"type": "divider"})
 
@@ -413,23 +407,29 @@ def handle_decide_button(ack, body, respond):
 # Type C modal — response_schema 기반 동적 폼
 # ──────────────────────────────────────────────────────────
 def _resolve_default(d, default_from):
-    """default_from: 'recommended.orgs_pattern' → d['recommended']['orgs_pattern']."""
-    if not default_from or "." not in default_from:
+    """default_from 해석:
+      - 'recommended.orgs_pattern' → d['recommended']['orgs_pattern']  (중첩)
+      - 'recommended'              → d['recommended']                  (top-level scalar)
+    """
+    if not default_from:
         return None
-    head, tail = default_from.split(".", 1)
-    return (d.get(head) or {}).get(tail)
+    if "." in default_from:
+        head, tail = default_from.split(".", 1)
+        return (d.get(head) or {}).get(tail)
+    return d.get(default_from)
 
 
 def _radio_options(d, options_ref):
-    """options_<x> 배열을 Slack option blocks 로 변환. (id, title) 사용."""
+    """options_<x> 배열을 Slack option blocks 로 변환.
+    옵션은 보통 `summary` 만 박힘 (title 은 거의 없음) → summary fallback."""
     items = d.get(options_ref) or []
     out = []
     for it in items:
         oid = it.get("id")
         if oid is None:
             continue
-        title = it.get("title", "")
-        text = f"{oid}: {title}".strip()
+        title = it.get("title") or it.get("summary") or ""
+        text = f"{oid}: {title}".strip().rstrip(":").strip()
         if len(text) > 75:                                # plain_text 75 char limit
             text = text[:74] + "…"
         out.append({
@@ -439,8 +439,35 @@ def _radio_options(d, options_ref):
     return out
 
 
+def derive_schema(d):
+    """response_schema 가 박혀있지 않으면 options 기반으로 표준 스키마 자동 생성.
+    Type B/C 의 *대부분 자리* 가 picked (라디오) + notes (자유 메모) 패턴이라 굳이
+    매 yml 마다 schema 박을 필요 없음. 명시적으로 박힌 schema 가 있으면 그쪽 우선.
+    """
+    schema = d.get("response_schema")
+    if schema:
+        return list(schema)
+    derived = []
+    if d.get("options"):
+        derived.append({
+            "key": "picked",
+            "label": "옵션 선택",
+            "type": "radio",
+            "options_ref": "options",
+            "default_from": "recommended",
+            "required": True,
+        })
+    derived.append({
+        "key": "notes",
+        "label": "노트 (자유 — 표적 변경 / 추가 제약 / 후속 인계 / 추천 우회 사유)",
+        "type": "textarea",
+        "required": False,
+    })
+    return derived
+
+
 def build_modal_blocks(d):
-    schema = d.get("response_schema") or []
+    schema = derive_schema(d)
     blocks = [
         {"type": "section",
          "text": {"type": "mrkdwn",
@@ -567,7 +594,7 @@ def handle_respond_submission(ack, body, view, client):
         ack(response_action="errors", errors={"_": f"yml 파싱 실패: {e}"})
         return
 
-    schema = d.get("response_schema") or []
+    schema = derive_schema(d)
     state_values = view["state"]["values"]
     update = {}
     errors = {}

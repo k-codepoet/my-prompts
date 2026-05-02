@@ -33,8 +33,21 @@ const ARROW_TO_DEG: Record<string, number> = {
 
 async function bootstrap() {
   const mount = document.getElementById('app')!;
+  const hud = document.getElementById('hud');
   const handles = await initApp(mount);
   const startedAt = performance.now();
+
+  let operatorMode = new URLSearchParams(window.location.search).get('op') === '1';
+  if (hud !== null) hud.classList.toggle('op-on', operatorMode);
+
+  let consoleErrorCount = 0;
+  const _origError = console.error.bind(console);
+  console.error = (...args: unknown[]) => { consoleErrorCount += 1; _origError(...args); };
+
+  let fpsFrames = 0;
+  let fpsLastSampleAt = startedAt;
+  let fpsAvg = 0;
+  let hudLastUpdate = 0;
 
   const initialPos: Pos = {
     x: handles.paperWidth * 0.5,
@@ -89,6 +102,9 @@ async function bootstrap() {
     if (e.key in ARROW_TO_DEG) {
       e.preventDefault();
       applyStep(performance.now(), ARROW_TO_DEG[e.key]);
+    } else if (e.key === '`') {
+      operatorMode = !operatorMode;
+      if (hud !== null) hud.classList.toggle('op-on', operatorMode);
     }
   });
   window.addEventListener('pointerdown', (e) => {
@@ -103,6 +119,24 @@ async function bootstrap() {
 
   handles.app.ticker.add(() => {
     const now = performance.now();
+
+    fpsFrames += 1;
+    if (now - fpsLastSampleAt >= 1000) {
+      fpsAvg = (fpsFrames * 1000) / (now - fpsLastSampleAt);
+      fpsFrames = 0;
+      fpsLastSampleAt = now;
+    }
+    if (hud !== null && operatorMode && now - hudLastUpdate >= 250) {
+      const sec = ((now - state.session_started_at) / 1000).toFixed(0);
+      const carry = state.received_glow_carry.toFixed(4);
+      const recv = state.companion_clusters.filter(c => c.last_received_at !== null).length;
+      hud.textContent =
+        `t=${sec}s  fps=${fpsAvg.toFixed(0)}  err=${consoleErrorCount}\n` +
+        `traces  player=${state.player_traces.length}  companion=${state.companion_traces.length}\n` +
+        `received  carry=${carry}  cluster=${recv}/${state.companion_clusters.length}\n` +
+        `pending  side=${sidePending.length}  fades=${fades.length}`;
+      hudLastUpdate = now;
+    }
 
     // O3 멈춤 검출.
     if (state.first_step_done && state.idle_glow === null) {
@@ -144,6 +178,10 @@ async function bootstrap() {
       cluster_received: state.companion_clusters.filter(c => c.last_received_at !== null).length,
       first_step_done: state.first_step_done,
       session_seconds: ((performance.now() - state.session_started_at) / 1000).toFixed(1),
+      fps_avg: Number(fpsAvg.toFixed(1)),
+      console_error_count: consoleErrorCount,
+      side_pending: sidePending.length,
+      fades_active: fades.length,
     }),
     forceStep: (deg = 0) => applyStep(performance.now(), deg),
     boot_ms: performance.now() - startedAt,

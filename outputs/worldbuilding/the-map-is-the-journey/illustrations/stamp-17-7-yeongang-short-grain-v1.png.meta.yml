@@ -1,0 +1,12 @@
+id: stamp-17-7-yeongang-short-grain-v1
+created_at: '2026-05-02T09:52:06+00:00'
+creator: tick:cy-002/058 (art-director r3 image)
+category: illustration
+caption: |
+  우표 §17.7 — 연강 *짧음의 결*. 옆자리가 비어 있는 자리에서, 자국 600 결의 첫 자리를 본인도 모르는 한 새벽.
+prompt: |
+  stamp 17.7 yeongang short-grain — quarter-side profile of aged man, empty seat beside him (intentional vacancy), paper edge with 600-footprint texture, dawn light from upper-left, palette #5A4A35 / #C8995A ≤0.3% / #F5EFE3 / #E8D9B8
+source_artifact: outputs/art/the-map-is-the-journey/stamps-extension-v0.md
+source_section: "§17.7 *짧음의 결*"
+size: 1024x1024
+genai_origin_url: https://genai.home.codepoet.site/outputs/2026/05/02/48bdecd2-5616-485a-aa3a-87c124cebeef.png

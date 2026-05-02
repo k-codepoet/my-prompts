@@ -1,0 +1,140 @@
+id: D-20260502-001
+type: C                                 # 조직 charter / 진화 룰 / G-* 측정 룰 = constitution §진화 규칙 §사람 합의 필요 직접 영향.
+asked_at: 2026-05-02T08:30:00+00:00
+deadline:                               # 사용자 페이스. 미응답 시 cy-002 진입 보류 (BOOTSTRAP §0 type_c_pending 게이트).
+gen: 1
+cycle: cy-001                           # 발의 시점은 cy-001 종결 직후. 응답 적용 시점에 cy-002 charter 박음 + cycle 갱신.
+parent_goal: G-LOOP-1                   # cy-002 = 두 번째 product 사이클 진입 자리 = G-LOOP-1 첫 측정 자리.
+title: "cy-002 transition — charter 박음 + 진화 룰 정식 박음 + 7 조직 r1 task 큐 + writer r4 forbidden-dialogue-v0 분류"
+
+description: |
+  cy-001 cycle close 임계 도달 (마감 라운드 7/7 종결 + 정렬 측 측정 마감 +
+  cycle close review.md 박음 + drift 13 호 회복) 직후 발의. 본 결정 = cy-002
+  진입의 *4 자리 묶음* Type C:
+
+    (a) cy-002 charter 박음 — 목적 (G-* 진척 표적), 조직 구성 유지/변경,
+        사이클 길이 예측, 신규 결정 예측.
+    (b) 진화 룰 정식 박음 — review.md §4.1 9 자리 (재재초과 강화) 정식 룰
+        진입 + §4.2 6 자리 (도달) 도입 자리.
+    (c) 7 조직 r1 task 큐 — review.md §5.2 7 자리.
+    (d) writer r4 forbidden-dialogue-v0.md (cy-001 마감 라운드 7/7 종결
+        후 박음, *cy-001 후반 task 큐 외부 자리* = orphan ack, tick-032)
+        의 cy-001 vs cy-002 분류 — voice-keeper r4 audit 후 정식 흡수 결정.
+
+  본 결정은 *조직 추가·병합·제거 0* + *역할 책임 영역 큰 변경 0* + *G-*
+  목표·수렴 기준 미수정* + *불변 룰 미수정* + *시드 미변경* — 그러나 *진화
+  룰 정식 박음* 은 *조직 charter 의 표준 룰 추가* = constitution §진화 규칙
+  §사람 합의 필요 §"메타데이터 스키마 호환 깨지는 변경" 인접 자리 → 안전
+  자리에서 Type C 박음.
+
+  G-* baseline (review.md §2):
+    G-WORLD-1   = 0.56  (정렬 9.59 + critic 24/24 + 8 문서 중 6 박음, 두 gen 안정 미충족)
+    G-PRODUCT-1 = 0.30  (게임 prototype + 단편 1 + 이미지 컨셉 시트, 인터랙티브 보류 가중)
+    G-LOOP-1    = 0.00  (cy-002 미시작)
+    G-AUTONOMY-1= 0.85  (결정 큐 3 ≤ 10)
+    G-CONVERGE-1= 0.00  (1 gen 만)
+    전체        = min = 0.00
+
+  cy-002 진척 표적 (review.md §5.1):
+    G-WORLD-1   0.56 → 0.80+ (지역 + 오브젝트/아이템 2 자리 박음 = 8 핵심 문서 도달)
+    G-PRODUCT-1 0.30 → 0.65+ (vertical slice 인터랙티브 round 통과 + 단편 +2 + 이미지 실측)
+    G-LOOP-1    0.00 → 첫 측정 자리 도달
+
+options:
+  - id: standard
+    summary: "표준 진입 — review.md §5 그대로 박음 (charter 유지 + 진화 룰 9+6 정식/도입 + 7 조직 r1 task + forbidden-dialogue-v0 cy-002 흡수)"
+    cost: |
+      cy-002 = ~25-30 tick 예측. 7 조직 r1 동시 진입 (분량 정상 = cy-001
+      r1 동일 페이스). 새 자리 = bible v0.4 (지역 + 오브젝트/아이템) + 단편
+      +2 + 시각 실측 6 우표 첫 1 장 + prototype 인터랙티브 round.
+    supporters: [orchestrator, voice-keeper, loremaster, writer, designer, implementer, art-director, critic]
+    objectors: []
+    fits_champions: |
+      - orchestrator: review.md baseline 직접 입력 박음 = 1:1.
+      - voice-keeper: e 항 0.95+ 격상 + bible v0.4 정렬 측정 자리 = charter §task 첫 자리 짝.
+      - loremaster: bible v0.4 = 8 핵심 문서 도달 = G-WORLD-1 1 차 가중 충족 자리.
+      - writer: 단편 +2 (인규 *업* + 연강 / 유리 *연대 변주*) = *세 축 분리 응답* 룰 cy-002 r1 정식 박음.
+      - designer: facing_history N=8 + STEP_DISTANCE_RATIO 검수 + concept v0.2 = vertical slice 깊이 진척.
+      - implementer: manual-run-log-002 인터랙티브 round → 7/7 도달 시 *automation 게이트 해제* 별도 선언 자리.
+      - art-director: 자국빛 3 색조 미세 + 3 신규 인물 hex + 6 우표 첫 1 장 실측 = G-PRODUCT-1 이미지 측 가중 박음.
+      - critic: prototype cold reader 5 인 시뮬 + URL → 첫 자국 ≤ 60 s 임계.
+
+  - id: lean
+    summary: "축약 진입 — vertical slice 깊이 우선 (game prototype 인터랙티브 round + 단편 1 자리만, bible v0.4 cy-003 으로 연기)"
+    cost: |
+      cy-002 = ~15-20 tick 예측. 4 조직 r1 진입 (designer / implementer /
+      art-director / critic — vertical slice 묶음). loremaster / writer /
+      voice-keeper r1 보류 = G-WORLD-1 진척 0.56 정체 + G-PRODUCT-1 *vertical
+      slice 깊이* 측 격상 우선.
+    supporters: [implementer, designer]
+    objectors: [loremaster, writer, voice-keeper]   # 자기 영역 r1 보류 = 영역 위반 인접 자리
+    fits_champions: |
+      - implementer §자립: prototype 인터랙티브 round 깊이 1 호 = automation 게이트 해제 자리 1 차.
+      - designer §즉답: facing_history + STEP_DISTANCE_RATIO 검수 = mechanics 안정.
+      - 단점: G-WORLD-1 정체 + 두 gen 안정 임계 추가 1 cycle 지연 (= G-CONVERGE-1 자리 추가 지연).
+      - 단점: writer / voice-keeper / loremaster 영역 보류 = *영역 챔피언십* 약화.
+
+  - id: ambitious
+    summary: "야심 진입 — bible v0.5 (지역 + 오브젝트/아이템 + 연대기 v1) + 단편 +3 + 6 우표 *전체 6 장* 실측 + prototype 인터랙티브 round + 새 vertical slice 1 종 (이미지 = 6 우표 실측 묶음 자리) Type B 발의"
+    cost: |
+      cy-002 = ~40-50 tick 예측 (cy-001 의 1.5 배). 7 조직 r1 + r2 묶음
+      자리 진입 + 신규 Type B 결정 1 건 (이미지 vertical slice 1 종 분리).
+      비용/속도 부담 큼 — *cy-002 안 두 gen 안정 임계 1 자리 박음* 자리는
+      여전히 미충족 (gen-002 진입 후 자리).
+    supporters: [art-director]   # 6 우표 전체 실측 자리
+    objectors: [orchestrator]    # 사이클 길이 1.5 배 = G-LOOP-1 비용 절감 측정 룰 자체 깨짐 인접 자리
+    fits_champions: |
+      - art-director §즉답: 6 우표 전체 = *연대* 결의 시각 1 차 시연 묶음 1 호.
+      - 단점: G-LOOP-1 의 *cy-002 비용 ≥ 30% 절감* 임계 측정 자리 자체 어려움 (기준점 = cy-001, cy-002 가 1.5 배면 절감 0).
+      - 단점: 신규 Type B 1 건 추가 = 사용자 결정 큐 부담.
+
+recommended: standard
+recommendation_reason: |
+  review.md §5 (orchestrator r2) 와 1:1. cy-001 의 *7 조직 균형 + 마감
+  라운드 7/7 종결 + 정렬 측 측정 마감* 패턴이 cy-002 진입 시점에서도 유지
+  되어야 G-LOOP-1 *비용 ≥ 30% 절감* 임계가 측정 가능 (cy-002 = ~25-30 tick
+  예측 = cy-001 ≈ 동일 페이스). lean 은 영역 챔피언십 약화 + G-WORLD-1
+  정체. ambitious 는 G-LOOP-1 측정 룰 자체와 충돌.
+
+  진화 룰 정식 박음 = §4.1 9 자리 (재재초과 강화) 모두 정식 룰 진입 +
+  §4.2 6 자리 도입 (cy-002 안 사례 누적 → 정식 룰 도달 자리). cy-002
+  charter 박음 시 7 조직 charter 모두 *§진화 룰 직접 적용* 1 호 박음
+  자리 — *charter 의 표준 룰 추가* = Type C 자리 직접 박음.
+
+  writer r4 forbidden-dialogue-v0.md 분류 = *cy-001 후반 task 큐 외부
+  자리* (orphan ack, tick-032) → cy-002 r1 voice-keeper r5 audit 1 차
+  대상 박음 → audit 통과 시 *cy-001 산출물 retroactive 흡수* 또는 *cy-002
+  산출물 정식 박음* 분류. 본 결정 §a 안에서 *cy-002 흡수* 권장 (분류
+  단순화 + cycle close baseline 변경 0 자리).
+
+trace: generations/gen-001/cycles/cy-001/decision-traces/D-20260502-001.md
+
+response:
+  decided_at: '2026-05-02T06:36:13+00:00'
+  picked: ambitious
+  notes: |
+    Slack HITL 수동 기입 경로가 막혀 사용자가 셸 자리에서 직접 박음.
+
+    recommended=standard (46/50) 대신 ambitious (37/50) 선택 — orchestrator
+    objector 자리 (G-LOOP-1 *비용 ≥ 30% 절감* 임계와 충돌) 인지 후 사용자
+    의지로 override. cy-002 = ~40-50 tick = cy-001 의 1.5 배 부담 수용.
+
+    apply 시 박을 자리 (ambitious 안):
+      (a) cy-002 charter 박음 — 7 조직 charter §진화 룰 직접 적용 1 호.
+      (b) 진화 룰 정식 박음 — review.md §4.1 9 자리 (재재초과 강화) 정식 +
+          §4.2 6 자리 (도달) 도입.
+      (c) 7 조직 r1 + r2 묶음 task 큐 — bible v0.5 (지역 + 오브젝트/아이템 +
+          연대기 v1) + 단편 +3 + 6 우표 전체 6 장 실측 + prototype 인터랙티브
+          round + 새 vertical slice 1 종 (이미지 = 6 우표 실측 묶음 자리)
+          Type B 발의.
+      (d) writer r4 forbidden-dialogue-v0.md 분류 — voice-keeper r5 audit 후
+          cy-002 r1 흡수 (분류 단순화 + cycle close baseline 변경 0).
+
+    추가 박음 자리 — G-LOOP-1 측정 룰 자체:
+      ambitious 안에서는 *cy-002 비용 ≤ cy-001 × 0.7* 임계 충족 불가 →
+      cy-002 charter 박음 시 *G-LOOP-1 측정 기준 가중치 박음* 자리 1 호 도입.
+      *동일 분량 가중 절감 ≥ 30%* 측정 자리 (review.md §4 도달 후보 인접) 를
+      cy-002 안 정식 룰 도입 자리로 박음 — 본 결정의 부수 신규 발의 자리.
+
+    추가 박음 자리 — 신규 Type B 1 건 (이미지 vertical slice 1 종 분리):
+      apply 단계에서 별도 yml 박음 자리. cy-002 r1 진입 시점 동시 발의.

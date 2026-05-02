@@ -9,14 +9,22 @@
       #app { position: fixed; inset: 0; }
       #hint {
         position: fixed; right: 12px; bottom: 8px;
-        font: 11px/1.4 system-ui, sans-serif; color: #8B7355; opacity: 0.55;
+        font: 13px/1.4 system-ui, sans-serif; color: #5C4A36; opacity: 0.7;
         pointer-events: none; user-select: none;
       }
+      #hud {
+        position: fixed; left: 12px; top: 8px;
+        font: 11px/1.5 ui-monospace, monospace; color: #5C4A36; opacity: 0.7;
+        pointer-events: none; user-select: none; white-space: pre;
+        visibility: hidden;
+      }
+      #hud.op-on { visibility: visible; }
     </style>
   </head>
   <body>
     <div id="app"></div>
     <div id="hint">방향키 또는 탭 — 한 입력 = 한 발자국</div>
+    <div id="hud"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

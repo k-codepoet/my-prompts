@@ -1,0 +1,82 @@
+id: D-20260502-002
+type: B                                 # 역할 충돌 + 합의 실패 자리. cy-002 안 vertical slice 분리 vs 통합.
+asked_at: 2026-05-02T08:35:00+00:00
+deadline:                               # 사용자 페이스. cy-002 r2 묶음 진입 전까지 응답 자리.
+gen: 1
+cycle: cy-002
+parent_goal: G-PRODUCT-1                # vertical slice 1 종 추가 = product 자리.
+parent_decision: D-20260502-001         # ambitious 안 §c 부수 발의 자리.
+title: "이미지 vertical slice — 6 우표 실측 묶음을 prototype 묶음 안에 둘 것인가 / 별도 슬라이스로 분리할 것인가"
+
+description: |
+  D-20260502-001 (Type C, picked=`ambitious`) §c 의 *새 vertical slice 1 종
+  (이미지 = 6 우표 실측 묶음 자리) Type B 발의* 자리. cy-002 r1 진입 시점
+  동시 발의.
+
+  맥락:
+    - cy-002 prototype 인터랙티브 round = implementer + designer + critic 묶음
+      vertical slice. *게임* 측 슬라이스 1 호.
+    - 6 우표 전체 6 장 실측 = art-director 단독 묶음. *이미지* 측 자리 = 슬라이스
+      후보 인접 자리.
+    - 두 묶음이 같은 vertical slice 안에 있으면 *manual-run-log-002* 한 자리에서
+      게임 + 이미지 동시 검수 = 검수 비용 절감 + 인터랙티브 round 깊이 약화 인접 자리.
+    - 분리하면 manual-run-log-002 (게임) + manual-run-log-003 (이미지) 두 자리
+      박음 = G-PRODUCT-1 *3 종* (게임 vertical slice + 단편 + 이미지 세트) 의
+      *이미지 세트* 자리 정식 박음.
+
+options:
+  - id: integrated
+    summary: "통합 — 6 우표 실측을 prototype 묶음 안 manual-run-log-002 의 art-director 영역으로 박음"
+    cost: |
+      manual-run-log-002 한 자리 + 게임 인터랙티브 round 와 이미지 우표 실측이
+      같은 round 7/7 안에서 종결. 검수 비용 절감 (~5 tick).
+    supporters: [implementer, orchestrator]
+    objectors: [art-director, designer]
+    fits_champions: |
+      - implementer §자립: manual-run-log 1 자리 = 자동화 게이트 해제 단순.
+      - orchestrator: cy-002 결정 큐 부담 0 추가.
+      - 단점 (art-director §즉답): 6 우표 = *연대* 결의 시각 시연 1 호 = 자기 묶음 자리 = 다른 round 와 묶이면 챔피언십 약화.
+      - 단점 (designer §즉답): prototype 인터랙티브 round 는 *게임 메카닉* 깊이 자리 = 우표와 묶이면 round 깊이 약화.
+
+  - id: separated
+    summary: "분리 — manual-run-log-003 (이미지) 별도 박음. 6 우표 실측 = 이미지 vertical slice 1 종 정식 박음"
+    cost: |
+      manual-run-log 2 자리 = ~5-8 tick 추가. 단 G-PRODUCT-1 *이미지 세트*
+      자리가 정식 vertical slice 로 박힘 = score 가중 정상화.
+    supporters: [art-director, designer, critic]
+    objectors: [implementer]
+    fits_champions: |
+      - art-director §즉답: 6 우표 단독 round = 자국빛 + 인물 hex + 우표 묶음 = *연대* 결의 시각 시연 자리 1 호.
+      - designer §즉답: prototype 묶음 깊이 보호 = 인터랙티브 round 7/7 종결 자리 1 호.
+      - critic: 이미지 cold reader 5 인 시뮬 = 별 round 자리 = 진입 장벽 측정 분리.
+      - 단점 (implementer §자립): manual-run 2 자리 = automation 게이트 해제 자리 1 차 분리 = 게이트 해제 1 호 박음 자리도 분리 (2 호로 이월).
+
+  - id: hybrid
+    summary: "하이브리드 — 6 우표 실측은 prototype 묶음 안 art-director r2 영역으로 박지만, manual-run-log 는 002 (game) + 003 (image) 분리"
+    cost: |
+      cy-002 r1+r2 묶음 안에서 art-director r2 가 prototype 묶음 안으로
+      들어가되, manual-run-log 만 분리 = 검수 자리는 1.5 자리. ~3 tick 추가.
+    supporters: [voice-keeper]   # 분류 단순화 측
+    objectors: []
+    fits_champions: |
+      - voice-keeper: 분류 단순화 + manual-run-log 분리로 게이트 해제 자리 보호.
+      - 중간 안 = 양측 트립와이어 부분 충족.
+
+recommended: separated
+recommendation_reason: |
+  G-PRODUCT-1 의 정의 = *3 종* (게임 vertical slice + 단편 + 이미지 세트).
+  cy-002 가 *이미지 세트* 자리를 prototype 묶음 안에 *섞어* 박으면 G-PRODUCT-1
+  score 산출 시 *3 종 분리* 가중이 깨짐. *separated* 안이 G-PRODUCT-1 측정
+  자리 정상화 + art-director / designer / critic 3 조직 챔피언십 동시 충족.
+  단점 (manual-run-log 2 자리, automation 게이트 해제 1 호 → 2 호 이월) 은
+  cy-003 진입 자리에서 회복 가능.
+
+  hybrid 는 분류 단순화 측 voice-keeper 단독 supporter — 다른 챔피언 자리
+  부분 충족이라 의사결정 가치 약함.
+
+trace: generations/gen-001/cycles/cy-002/decision-traces/D-20260502-002.md
+
+response:
+  decided_at: '2026-05-02T06:53:24+00:00'
+  picked: integrated
+  notes:
