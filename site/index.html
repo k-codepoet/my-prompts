@@ -84,6 +84,25 @@
   }
   .games a:hover { background: var(--warn); border: none; }
 
+  /* illustrations gallery */
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; margin: 16px 0; }
+  .gallery figure { margin: 0; background: #f0ebde; border: 1px solid var(--line); display: flex; flex-direction: column; }
+  .gallery figure a { border: none; display: block; }
+  .gallery figure img { width: 100%; height: 180px; object-fit: cover; display: block; background: #1a1612; }
+  .gallery figcaption { padding: 8px 10px; font-size: 13px; line-height: 1.4; }
+  .gallery figcaption .ttl { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .gallery figcaption .cap { font-size: 13px; color: var(--fg); }
+  .gallery figcaption .src { font-family: var(--mono); font-size: 10px; color: var(--muted); margin-top: 4px; }
+
+  /* image lightbox view */
+  .lightbox { position: fixed; inset: 0; background: rgba(20, 17, 12, 0.92); display: none; align-items: center; justify-content: center; z-index: 100; padding: 24px; }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 95%; max-height: 75vh; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+  .lightbox .lb-meta { position: absolute; bottom: 16px; left: 16px; right: 16px; max-width: 800px; margin: 0 auto; background: rgba(247, 244, 238, 0.95); padding: 12px 16px; font-size: 14px; line-height: 1.5; }
+  .lightbox .lb-meta .lb-cap { font-style: italic; }
+  .lightbox .lb-meta .lb-src { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-top: 6px; }
+  .lightbox .lb-close { position: absolute; top: 16px; right: 24px; color: var(--bg); font-family: var(--mono); cursor: pointer; font-size: 14px; }
+
   footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 11px; color: var(--muted); }
 
   /* viewer page (view.html) styling re-uses these rules */
@@ -119,12 +138,26 @@
     <div class="games" id="games"></div>
   </div>
 
+  <section class="cat" id="illustrations-section">
+    <h2><span class="arrow">▾</span> 🖼 일러스트 <span class="count" id="ill-count"></span></h2>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
   <main id="categories"></main>
 
   <footer>
     <span id="footer-stat"></span> ·
     Source: <a href="https://github.com/k-codepoet/my-prompts">github.com/k-codepoet/my-prompts</a>
   </footer>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <span class="lb-close" onclick="closeLightbox()">[ESC ✕]</span>
+  <img id="lb-img" src="">
+  <div class="lb-meta">
+    <div class="lb-cap" id="lb-cap"></div>
+    <div class="lb-src" id="lb-src"></div>
+  </div>
 </div>
 
 <script>
@@ -193,6 +226,29 @@ async function main() {
     ? gs.map(g => `<a href="${g.url}">▶ ${escapeHtml(g.name)}</a>`).join("")
     : '<span style="color:var(--muted);font-family:var(--mono);font-size:13px">아직 빌드된 프로토타입 없음</span>';
 
+  // illustrations
+  const ills = m.illustrations || [];
+  const ic = document.getElementById("ill-count");
+  const gal = document.getElementById("gallery");
+  if (ills.length === 0) {
+    document.getElementById("illustrations-section").style.display = "none";
+  } else {
+    ic.textContent = `${ills.length} · 자율 루프가 박은 이미지 (art-director r-N image)`;
+    gal.innerHTML = ills.map((im, i) => `
+      <figure>
+        <a href="javascript:void(0)" onclick="openLightbox(${i})">
+          <img src="/${im.path}" alt="${escapeHtml(im.title)}" loading="lazy">
+        </a>
+        <figcaption>
+          <div class="ttl">${escapeHtml(im.title)}</div>
+          <div class="cap">${escapeHtml(im.caption.replace(/\n/g, " ").slice(0, 110))}${im.caption.length > 110 ? "…" : ""}</div>
+          <div class="src">${escapeHtml(im.creator)} · ${fmtTime(im.mtime)}</div>
+        </figcaption>
+      </figure>
+    `).join("");
+    window.__ILLS = ills;
+  }
+
   // categories
   const html = CAT_ORDER.map(k => renderCategory(k, m.categories[k] || [])).join("");
   document.getElementById("categories").innerHTML = html;
@@ -213,6 +269,26 @@ async function main() {
 main().catch(e => {
   document.getElementById("categories").innerHTML =
     `<div style="color:var(--warn);font-family:var(--mono)">manifest.json 로딩 실패: ${e}</div>`;
+});
+
+// Lightbox
+function openLightbox(i) {
+  const im = (window.__ILLS || [])[i];
+  if (!im) return;
+  document.getElementById("lb-img").src = "/" + im.path;
+  document.getElementById("lb-cap").innerHTML = escapeHtml(im.caption);
+  const src = im.source_artifact
+    ? `↗ <a href="/view.html?path=${encodeURIComponent(im.source_artifact)}">${escapeHtml(im.source_artifact)}</a>${im.source_section ? " " + escapeHtml(im.source_section) : ""} · ${escapeHtml(im.creator)}`
+    : escapeHtml(im.creator);
+  document.getElementById("lb-src").innerHTML = src;
+  document.getElementById("lightbox").classList.add("open");
+}
+function closeLightbox() {
+  document.getElementById("lightbox").classList.remove("open");
+}
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeLightbox(); });
+document.getElementById("lightbox").addEventListener("click", e => {
+  if (e.target.id === "lightbox") closeLightbox();
 });
 </script>
 </body>

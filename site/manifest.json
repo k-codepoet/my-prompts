@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-02T09:56:10.865646+00:00",
+  "generated_at": "2026-05-02T10:03:59.371761+00:00",
   "root_docs": [
     {
       "path": "current.md",
       "title": "Current State (live pointer)",
       "version": null,
-      "mtime": 1777715768,
-      "size": 101836
+      "mtime": 1777716228,
+      "size": 106482
     },
     {
       "path": "seed.md",
@@ -28,6 +28,47 @@
       "name": "g-the-map-walker",
       "url": "/games/g-the-map-walker/",
       "mtime": 1777715185
+    }
+  ],
+  "illustrations": [
+    {
+      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-8-huijae-side-by-side-dawns-v1.png",
+      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-8-huijae-side-by-side-dawns-v1.png.meta.yml",
+      "title": "stamp-17-8-huijae-side-by-side-dawns-v1",
+      "caption": "우표 §17.8 — 희재 *나란히 두 새벽*. 묻지 않은 채 같은 길을 두 번 걸은 두 자국, 시간차 1 일 ~ 1 주, 두 색조가 합쳐지지 않고 옆에 박힌 한 새벽.",
+      "category": "illustration",
+      "creator": "tick:cy-002/058 (art-director r3 image)",
+      "source_artifact": "outputs/art/the-map-is-the-journey/stamps-extension-v0.md",
+      "source_section": "§17.8 *나란히 두 새벽*",
+      "size": "1024x1024",
+      "mtime": 1777715531,
+      "bytes": 1456937
+    },
+    {
+      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-7-yeongang-short-grain-v1.png",
+      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-7-yeongang-short-grain-v1.png.meta.yml",
+      "title": "stamp-17-7-yeongang-short-grain-v1",
+      "caption": "우표 §17.7 — 연강 *짧음의 결*. 옆자리가 비어 있는 자리에서, 자국 600 결의 첫 자리를 본인도 모르는 한 새벽.",
+      "category": "illustration",
+      "creator": "tick:cy-002/058 (art-director r3 image)",
+      "source_artifact": "outputs/art/the-map-is-the-journey/stamps-extension-v0.md",
+      "source_section": "§17.7 *짧음의 결*",
+      "size": "1024x1024",
+      "mtime": 1777715526,
+      "bytes": 1410422
+    },
+    {
+      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/key-visual-blank-page-dawn.png",
+      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/key-visual-blank-page-dawn.png.meta.yml",
+      "title": "key-visual-blank-page-dawn",
+      "caption": "핵심 메타포 #1 \"백지의 새벽\" — 모든 사람은 태어날 때 한 장의 비어 있는\n종이를 받는다. 그 종이는 그의 *세계 그 자체*. 그림은 한 사람이 자기 백지의\n여명에 서 있고 — 뒤로는 진심으로 걸은 발자국이 또렷이 박혀 있고, 앞은\n아직 비어 있는 흰 종이.",
+      "category": "world-key-visual",
+      "creator": "human-test                          # 첫 테스트 — 사람이 직접 prompt",
+      "source_artifact": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.1.md",
+      "source_section": "## 핵심 메타포 #1 — 백지의 새벽",
+      "size": "1344x768",
+      "mtime": 1777653562,
+      "bytes": 1106398
     }
   ],
   "categories": {
@@ -343,6 +384,13 @@
       }
     ],
     "critique": [
+      {
+        "path": "outputs/critique/the-map-is-the-journey/stamps-17-7-17-8-first-5min.md",
+        "title": "우표 §17.7 + §17.8 5 분 cold-read",
+        "version": null,
+        "mtime": 1777716190,
+        "size": 9883
+      },
       {
         "path": "outputs/critique/the-map-is-the-journey/bible-v0.3-first-5min.md",
         "title": "Bible v0.3 + 마감 라운드 3 자리 — 첫 5 분 cold-read 묶음 (critic r3)",
@@ -692,6 +740,20 @@
       }
     ],
     "ticks": [
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-061.md",
+        "title": "Tick cy-002/061 — loremaster r3 (consistency-audit + drift 후보 1 호 신규 발의)",
+        "version": null,
+        "mtime": 1777716181,
+        "size": 14558
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-060.md",
+        "title": "Tick cy-002/060 — role (art-director r3 image 측 — *spec / image 분리 자리* 1 호 자가 적용 박음 + 실측 image 2 장 발행)",
+        "version": null,
+        "mtime": 1777715935,
+        "size": 14528
+      },
       {
         "path": "generations/gen-001/cycles/cy-002/ticks/tick-059.md",
         "title": "tick-059",
@@ -1108,6 +1170,20 @@
     ],
     "arguments": [
       {
+        "path": "generations/gen-001/cycles/cy-002/arguments/critic-r3.md",
+        "title": "critic r3 cy-002 — 우표 §17.7 + §17.8 image 측 cold-read",
+        "version": null,
+        "mtime": 1777716230,
+        "size": 5729
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/loremaster-r3.md",
+        "title": "loremaster r3 (cy-002) — bible v0.5 baseline 정합 audit + post-supersede 포인터 drift 후보 박음",
+        "version": null,
+        "mtime": 1777716069,
+        "size": 10405
+      },
+      {
         "path": "generations/gen-001/cycles/cy-002/arguments/art-director-r3-image.md",
         "title": "art-director r3 image 측 — §17.7 + §17.8 실측 image 2 장 박음",
         "version": null,
@@ -1467,11 +1543,12 @@
     "art": 11,
     "alignment": 8,
     "design": 6,
-    "critique": 3,
+    "critique": 4,
     "code-docs": 41,
     "decisions": 5,
-    "ticks": 59,
-    "arguments": 45,
-    "decision-traces": 5
+    "ticks": 61,
+    "arguments": 47,
+    "decision-traces": 5,
+    "illustrations": 3
   }
 }

@@ -99,6 +99,62 @@ def collect(glob_root, pattern, suffix):
     items.sort(key=lambda x: -x["mtime"])
     return items
 
+def collect_images_with_meta():
+    """
+    *.png + 짝꿍 *.png.meta.yml 이 둘 다 있는 이미지만 수집.
+    UUID 이름의 game-asset 라이브러리(meta.yml 없음)는 자연스럽게 제외.
+    """
+    items = []
+    for p in ROOT.rglob("*.png"):
+        if p.name.startswith("."):
+            continue
+        # site/ 안 빌드 산출물(prototype/dist/)은 제외 — 이미 게임 카드로 노출
+        rel = str(p.relative_to(ROOT))
+        if rel.startswith("site/") or "/prototype/dist/" in rel or "/node_modules/" in rel:
+            continue
+        meta_path = p.parent / (p.name + ".meta.yml")
+        if not meta_path.exists():
+            continue
+        meta = {}
+        try:
+            mtext = meta_path.read_text(errors="ignore")
+            # 간단 yaml 파싱 (여러 줄 |·>는 단일 라인 모으기)
+            current_key = None
+            buf = []
+            for line in mtext.splitlines():
+                m = re.match(r"^([A-Za-z_][\w-]*):\s*(.*?)\s*$", line)
+                if m and not line.startswith(" "):
+                    if current_key:
+                        meta[current_key] = "\n".join(buf).strip()
+                        buf = []
+                    k, v = m.group(1), m.group(2)
+                    if v in ("|", ">"):
+                        current_key = k
+                    else:
+                        meta[k] = v.strip().strip("'\"")
+                        current_key = None
+                elif current_key and (line.startswith("  ") or line.startswith("\t")):
+                    buf.append(line.strip())
+            if current_key:
+                meta[current_key] = "\n".join(buf).strip()
+        except Exception:
+            pass
+        items.append({
+            "path": rel,
+            "meta_path": str(meta_path.relative_to(ROOT)),
+            "title": meta.get("id") or p.stem,
+            "caption": meta.get("caption", ""),
+            "category": meta.get("category", "illustration"),
+            "creator": meta.get("creator", ""),
+            "source_artifact": meta.get("source_artifact", ""),
+            "source_section": meta.get("source_section", ""),
+            "size": meta.get("size", ""),
+            "mtime": int(p.stat().st_mtime),
+            "bytes": p.stat().st_size,
+        })
+    items.sort(key=lambda x: -x["mtime"])
+    return items
+
 categories = {
     "writings": collect("outputs/writing", "*.md", ".md"),
     "world": collect("outputs/worldbuilding", "*.md", ".md"),
@@ -112,6 +168,8 @@ categories = {
     "arguments": collect("generations", "*.md", ".md"),  # 아래에서 ticks 빼고 좁힘
     "decision-traces": collect("generations", "D-*.md", ".md"),
 }
+
+illustrations = collect_images_with_meta()
 
 # arguments 는 generations 안에서 ticks/decision-traces 빼고
 ticks_paths = {x["path"] for x in categories["ticks"]}
@@ -144,8 +202,9 @@ manifest = {
     "generated_at": datetime.now(timezone.utc).isoformat(),
     "root_docs": root_docs,
     "prototypes": prototypes,
+    "illustrations": illustrations,
     "categories": categories,
-    "stats": {k: len(v) for k, v in categories.items()},
+    "stats": {k: len(v) for k, v in categories.items()} | {"illustrations": len(illustrations)},
 }
 
 OUT.write_text(json.dumps(manifest, ensure_ascii=False, indent=2))
