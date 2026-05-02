@@ -84,7 +84,7 @@ forbidden_language_grep_pass: true
 
 | 컷 | 자리 | 출처 |
 |-----|-----|------|
-| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v1.png) | 캐릭터 시트 — 38 자국째, 35 자국째 다시 펴는 손바닥 두 마음의 결 (회화 톤 baseline) | cy-003 r2 art-director image |
+| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v2.png) | 캐릭터 시트 — 38 자국째, 35 자국째 다시 펴는 손바닥 두 마음의 결 (회화 톤 baseline, v1 실사 드리프트 → v2 sumukhwa 정정) | cy-003 r2 art-director image |
 
 > 확장 자리 (cy-003+ 후보):
 > - *35 자국째 해 다시 펴는 첫 새벽 — 두 색조가 겹친 손바닥*

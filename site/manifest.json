@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-02T12:41:41.955957+00:00",
+  "generated_at": "2026-05-02T12:45:25.689701+00:00",
   "root_docs": [
     {
       "path": "current.md",
       "title": "Current State (live pointer)",
       "version": null,
-      "mtime": 1777725693,
-      "size": 157962
+      "mtime": 1777725855,
+      "size": 163202
     },
     {
       "path": "seed.md",
@@ -32,9 +32,9 @@
   ],
   "illustrations": [
     {
-      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v1.png",
-      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v1.png.meta.yml",
-      "title": "character-sheet-yugyeong-v1",
+      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v2.png",
+      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v2.png.meta.yml",
+      "title": "character-sheet-yugyeong-v2",
       "caption": "캐릭터 시트 — 유경 (柳敬, 38, 가족 축). 35 자국째 다시 펴는 손바닥, 두 마음의 결. (v2 sumukhwa 톤 재생성)",
       "category": "illustration",
       "creator": "writer+art-director (cy-003 r2 character-sheet image — yugyeong v2 sumukhwa retake)",
@@ -204,6 +204,19 @@
   "categories": {
     "writings": [
       {
+        "path": "outputs/writing/the-map-is-the-journey/characters/yugyeong.md",
+        "title": "유경 (柳敬) — *한 아이가 자기 종이 위를 가장 많이 걸은 사람*",
+        "version": "v0",
+        "mtime": 1777725912,
+        "size": 6502,
+        "artifact": "character-sheet",
+        "world_id": "the-map-is-the-journey",
+        "character": "yugyeong",
+        "character_hangul": "유경",
+        "character_hanja": "柳敬",
+        "axis": "가족"
+      },
+      {
         "path": "outputs/writing/the-map-is-the-journey/characters/yuri.md",
         "title": "유리 (柳里) — *어머니 손을 안 잡고 자기 손금을 처음 펴 본 8 살*",
         "version": "v0",
@@ -228,19 +241,6 @@
         "character_hangul": "인규",
         "character_hanja": "仁圭",
         "axis": "업"
-      },
-      {
-        "path": "outputs/writing/the-map-is-the-journey/characters/yugyeong.md",
-        "title": "유경 (柳敬) — *한 아이가 자기 종이 위를 가장 많이 걸은 사람*",
-        "version": "v0",
-        "mtime": 1777725163,
-        "size": 6455,
-        "artifact": "character-sheet",
-        "world_id": "the-map-is-the-journey",
-        "character": "yugyeong",
-        "character_hangul": "유경",
-        "character_hanja": "柳敬",
-        "axis": "가족"
       },
       {
         "path": "outputs/writing/the-map-is-the-journey/characters/narim.md",
