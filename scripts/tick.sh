@@ -21,8 +21,58 @@ CLAUDE_BIN="${CLAUDE_BIN:-$HOME/.local/bin/claude}"
 LOG="$ROOT/logs/cron.log"
 TS="$(date -Iseconds)"
 
-log() { echo "[$TS] [tick] $*" | tee -a "$LOG"; }
+log() {
+  local line="[$TS] [tick] $*"
+  if [[ "$(readlink -f /proc/$$/fd/1 2>/dev/null || true)" == "$LOG" ]]; then
+    echo "$line"
+  else
+    echo "$line" | tee -a "$LOG"
+  fi
+}
 fail() { log "FAIL: $*"; exit 1; }
+
+# Cron can launch checker and role-rotate close together.  A single writer at a
+# time keeps tick numbers and current.md from drifting under concurrent edits.
+LOCK_DIR="$ROOT/state/tick.lock.d"
+LOCK_PID="$LOCK_DIR/pid"
+LOCK_MODE="$LOCK_DIR/mode"
+
+cleanup_tick_lock() {
+  local owner=""
+  owner="$(cat "$LOCK_PID" 2>/dev/null || true)"
+  if [[ "$owner" == "$$" ]]; then
+    rm -rf "$LOCK_DIR"
+  fi
+}
+
+acquire_tick_lock() {
+  local owner owner_mode
+  if mkdir "$LOCK_DIR" 2>/dev/null; then
+    printf '%s\n' "$$" > "$LOCK_PID"
+    printf '%s\n' "$MODE${ROLE:+/$ROLE}" > "$LOCK_MODE"
+    trap 'cleanup_tick_lock' EXIT
+    return 0
+  fi
+
+  owner="$(cat "$LOCK_PID" 2>/dev/null || true)"
+  owner_mode="$(cat "$LOCK_MODE" 2>/dev/null || echo "unknown")"
+  if [[ "$owner" =~ ^[0-9]+$ ]] && kill -0 "$owner" 2>/dev/null; then
+    log "skip:tick_already_running(pid=$owner mode=$owner_mode, requested=$MODE${ROLE:+/$ROLE})"
+    exit 0
+  fi
+
+  log "stale_lock_recovered(owner=${owner:-unknown} mode=$owner_mode)"
+  rm -rf "$LOCK_DIR"
+  if mkdir "$LOCK_DIR" 2>/dev/null; then
+    printf '%s\n' "$$" > "$LOCK_PID"
+    printf '%s\n' "$MODE${ROLE:+/$ROLE}" > "$LOCK_MODE"
+    trap 'cleanup_tick_lock' EXIT
+    return 0
+  fi
+
+  log "skip:tick_lock_race(requested=$MODE${ROLE:+/$ROLE})"
+  exit 0
+}
 
 # ──────────────────────────────────────────────────────────
 # 인자 파싱
@@ -37,6 +87,8 @@ while [[ $# -gt 0 ]]; do
     *) fail "unknown arg: $1";;
   esac
 done
+
+acquire_tick_lock
 
 # ──────────────────────────────────────────────────────────
 # Sanity check (BOOTSTRAP §0)
@@ -113,7 +165,7 @@ MAX_BUDGET_USD="${MAX_BUDGET_USD:-$PER_TICK_USD}"
 # ──────────────────────────────────────────────────────────
 # 모드별 prompt 구성
 PROMPT_FILE="$(mktemp)"
-trap 'rm -f "$PROMPT_FILE"' EXIT
+trap 'rm -f "$PROMPT_FILE"; cleanup_tick_lock' EXIT
 
 case "$MODE" in
   checker)
@@ -250,7 +302,7 @@ esac
 # Claude 호출
 log "calling claude (mode=$MODE${ROLE:+ role=$ROLE} budget=\$$MAX_BUDGET_USD)"
 CLAUDE_OUT="$(mktemp)"
-trap 'rm -f "$PROMPT_FILE" "$CLAUDE_OUT"' EXIT
+trap 'rm -f "$PROMPT_FILE" "$CLAUDE_OUT"; cleanup_tick_lock' EXIT
 
 if "$CLAUDE_BIN" -p \
     --max-budget-usd "$MAX_BUDGET_USD" \
