@@ -1,0 +1,17 @@
+id: F-20260502-1216-general-writing-too-abstract
+created_at: '2026-05-02T12:16:00+00:00'
+source: chat:user
+reader_role: R0
+artifact: general
+verdict: fail
+status: open
+notes: |
+  현재 결과물 글이 사람이 읽을 수 없을 만큼 추상적이다.
+  손금, 손바닥, 자국 같은 표현은 사람의 공감대를 거의 가져오지 못한다.
+  실제 사용자가 쓴 글처럼 느껴지지도 않는다.
+  글쓰기 조직과 비평 조직은 이 문제를 우선 고쳐야 한다.
+must_fix:
+  - reader-facing writing 에서 세계관 단어를 감정의 본체로 쓰지 말 것.
+  - 실제 작가 코퍼스를 읽고 그 문체를 기준으로 삼을 것.
+  - critic 은 요약 가능성이나 5분 완독만으로 PASS 를 주지 말 것.
+  - 독자 역할을 R0 사용자, R1 가까운 실제 독자, R2 plain editor 로 분리할 것.

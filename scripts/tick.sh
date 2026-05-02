@@ -123,6 +123,13 @@ my-prompts orchestrator tick.
 Read \`current.md\`, \`constitution.md\`, \`seed.md\`, and \`BOOTSTRAP.md\`.
 Then execute exactly one tick following BOOTSTRAP §tick steps 0–5.
 
+Reader-facing writing override:
+- For any task that creates, rewrites, evaluates, publishes, or routes \`outputs/writing/**/*.md\`,
+  read \`prompts/writing/reader-first-standard.md\` first.
+- Also scan \`feedback/reader/\` for open R0 feedback. User feedback overrides automated PASS.
+- Do not mark reader-facing writing PASS unless R0/R1/R2 gates and toxic-term budget pass.
+- Do not reward worldbuilding terms as emotional shorthand in reader-facing prose.
+
 BOOTSTRAP §1 (사용자 응답 통합) 자동화:
 - decisions/open/ 의 yml 중 response.decided_at 박힌 것이 있으면 직접 처리 말고
   scripts/apply-decisions.sh --apply <D-id> 를 호출. 그 스크립트가 trace append /
@@ -167,6 +174,13 @@ my-prompts role tick — role: $ROLE.
 Read \`generations/gen-N/orgs/$ROLE.md\` (your charter), \`current.md\`, and \`constitution.md\`.
 Execute one task **strictly within your domain** per BOOTSTRAP §tick step 2.
 Append your argument to generations/gen-N/cycles/cy-NNN/arguments/$ROLE-r<round>.md.
+
+Reader-facing writing override:
+- If your task touches \`outputs/writing/**/*.md\`, writing critique, writing alignment, reader notification,
+  or writing task queues, read \`prompts/writing/reader-first-standard.md\` first.
+- Scan \`feedback/reader/\` for target-specific and \`general\` R0 feedback.
+- Open R0 fail feedback blocks PASS; produce a candidate rewrite or fail critique instead.
+- First 500 chars of reader-facing prose must contain zero toxic world terms listed in the standard.
 
 Constraints:
 - Do not act outside your domain (other roles will object via trip-wires).
@@ -218,6 +232,8 @@ my-prompts role tick (rotated) — role: $ROLE.
 
 Same protocol as --mode role for $ROLE.
 Read your charter at generations/gen-N/orgs/$ROLE.md and act in-domain only.
+If the task touches reader-facing writing or writing critique, read prompts/writing/reader-first-standard.md
+and feedback/reader/ before acting. R0 user feedback overrides automated PASS.
 TICK_SUMMARY: line at end. Cap \$$MAX_BUDGET_USD.
 EOF
     ;;

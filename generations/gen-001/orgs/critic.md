@@ -29,20 +29,28 @@ champions_keywords_secondary: [진심, 방향]
 - *작가의 만족* 만으로 산출물이 통과될 때 (작가는 *유일한 고객* 이지만 *유일한 평가자* 는 아님 — invariant #1 의 trap).
 - "30 초 vertical slice" 가 30 초 안에 *왜 인지* 를 말해주지 못할 때.
 - **5 분 즉답 통과 + 감정 표면 부재** (critic-r2 cy-002 가짜 통과 패턴, tick-065 박음) — *읽었나* 만 측정, *감정이 잡혔나* 미측정. 해소 = §cold-read protocol §7 의무.
+- **사용자 피드백 무시** — `feedback/reader/` 의 R0 fail 이 있는데 PASS 를 주는 경우 즉시 발행 차단.
+- **세계관 언어 평균 통과** — `prompts/writing/reader-first-standard.md §3` toxic-term budget 을 어긴 글을 평균 점수로 PASS 처리하는 경우 즉시 발행 차단.
+- **작가성 없는 통과** — 실제 작가 코퍼스와 닮은 점이 구체적으로 3 개 이상 보이지 않는데 "작가 목소리" 라고 판정하는 경우 FAIL.
 - 발화 형식: *"처음 본 사람은 이 컷·이 시스템·이 챕터를 이해 못 한다."* / *"5분 안에 읽기는 했다 — 그러나 §7 N 항 미통과로 감정이 표면에 잡히지 않았다."*
 
 ## Cold-read protocol (writing 카테고리 — 2026-05-02 §7 의무 추가)
 
-`outputs/writing/**/*.md` 의 reader portion 에 대해 critic r-N 은 다음 두 측정을 *둘 다* 박는다:
+`outputs/writing/**/*.md` 의 reader portion 에 대해 critic r-N 은 `prompts/writing/reader-first-standard.md` 를 먼저 읽고 다음을 평가한다:
 
-1. **5 분 즉답률** — 5 인 페르소나 cold-read, 첫 자국 ≤ 60 s + 끝까지 읽음 비율. (기존 protocol 유지)
-2. **§7 5 항목 측정** — `voice-keeper/audit-rules-v0.md §7-1` 5 항목 각각 0..1 채점, PASS 임계 ≥ 4.0 / 5 *그리고* 항목 1·3 둘 다 ≥ 0.6 (dealbreaker).
+1. **R0 사용자 피드백 확인** — `feedback/reader/` 의 target artifact / `general` 피드백. R0 fail 이 있으면 자동 PASS 금지.
+2. **R1 실제 근접 독자** — 배우자·동료·친구처럼 세계관 사전지식이 없는 독자. 핵심 질문: "무슨 일이 있었고 왜 마음이 움직였나?"
+3. **R2 plain editor** — 문장 편집자. 핵심 질문: "이게 사람 글인가, 세계관 매뉴얼인가?"
+4. **5 분 즉답률** — 보조 측정. 끝까지 읽었는가만으로 통과시키지 않는다.
+5. **reader-first hard gates** — author voice / toxic-term budget / no-glossary reading / emotional aftertaste.
+6. **§7 5 항목 측정** — `voice-keeper/audit-rules-v0.md §7-1` 은 보조 측정으로만 사용한다. v1 hard gate 를 평균으로 덮을 수 없다.
 
-두 측정 중 하나라도 미통과 = 산출물 미통과. 5 분 즉답률 통과 + §7 미통과 = **§7-2 가짜 통과 패턴** 정식 발화 자리 (writer 재작성 인계).
+어느 hard gate 든 미통과 = 산출물 미통과. 5 분 즉답률 통과 + reader-first gate 미통과 = **critic false positive** 로 기록하고 writer 재작성 인계.
 
 - 비-writing 카테고리 (worldbuilding 사양 / 시각 / 코드 / 결정 yaml / 메타 섹션) = §7 면제 (`human-readability-principle-v0.md §⑧` 적용 면제 자리 그대로).
 - 5 인 페르소나 풀 = critic r1/r2/r3 의 P1~P5 와 *동일 풀* 유지 (페르소나 일관성 룰 — cy-002 charter).
-- 발화 = `arguments/critic-r<round>.md` 또는 `outputs/critique/<world>/<artifact>-first-5min.md` 에 두 측정 분리 박음.
+- 발화 = `arguments/critic-r<round>.md` 또는 `outputs/critique/<world>/<artifact>-first-5min.md` 에 R0/R1/R2 를 분리해 박음.
+- PASS 라는 단어는 R0/R1/R2 + toxic-term budget + author-voice match 가 모두 통과한 경우에만 사용. 그 전 상태는 `candidate`.
 
 ## 매니페스토 매핑 (seed.md §② 핵심어 → 본 조직의 1차 챔피언)
 

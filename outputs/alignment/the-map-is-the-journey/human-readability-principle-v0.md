@@ -27,6 +27,8 @@ trigger_artifact: outputs/writing/the-map-is-the-journey/paired-dawns-v0.md (사
 
 # 사람-가독성 원칙 v0
 
+> 2026-05-02 보정: 본 v0 체크리스트는 너무 쉽게 평균 PASS 가 가능했다. reader-facing writing 의 현재 기준은 `prompts/writing/reader-first-standard.md` v1 이다. 본 문서는 문제를 처음 발견한 기록과 예시로 보존한다.
+
 > *세계관 내부 규칙은 촘촘한데, 사람이 읽었을 때 "그래서 무슨 일이 있었고, 어떤 감정이 남았는가" 가 흐릿하다.*
 > — 사용자 진단, 2026-05-02
 

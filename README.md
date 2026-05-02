@@ -10,6 +10,7 @@
 > - [`BOOTSTRAP.md`](./BOOTSTRAP.md) — cron tick 1 회 동작 명세
 > - [`STRUCTURE.md`](./STRUCTURE.md) — 폴더 레이아웃 (5 층)
 > - [`current.md`](./current.md) — 활성 gen·cycle·tick 라이브 포인터
+> - [`prompts/writing/reader-first-standard.md`](./prompts/writing/reader-first-standard.md) — reader-facing writing 최상위 기준 + 사용자 피드백 우선 규칙
 
 ## 레이아웃
 
@@ -20,6 +21,8 @@ prompts/
   art/             # 시각 에셋 (기존 prompts/* 가 여기로 이동됨)
   code/            # 구현 — architecture / systems / integration / review
   writing/         # 글쓰기 — structure / scenes / dialogue / voice
+feedback/
+  reader/          # 사용자/R0 독자 피드백 — writer/critic 이 다음 글쓰기 전에 반드시 읽음
 workflows/         # 다단계 파이프라인 (자동화 단위)
 outputs/
   art/             # 모델별 이미지 (기존 outputs/<model>/ 가 여기로 이동됨)

@@ -17,6 +17,7 @@ references:
 > 본 룰은 *정렬* 만 본다 — *전달* 은 critic, *세계 일관성* 은 loremaster.
 > "메타포로 박혔는가" 가 1 차 질문. "잘 박혔는가" 는 critic 의 일.
 > 본 룰은 *시스템 자체* 도 검수 대상 — orgs charter, decisions, ticks, prompts 도 매니페스토를 배반하지 않아야 함.
+> 2026-05-02 보정: reader-facing writing 은 `prompts/writing/reader-first-standard.md` 가 본 룰보다 우선한다. 글에서 메타포 명시성을 높이는 일이 실제 독자 공감과 작가성을 해치면 voice-keeper 는 FAIL 을 준다.
 
 ---
 
@@ -25,6 +26,7 @@ references:
 - **합산 점수 ≥ 8 / 10** *그리고* **7 키워드 모두 ≥ 0.4 / 1.0**
 - 한 키워드라도 ≤ 0.3 → **편향 트립** 발화 (해당 키워드 보강 task 발행)
 - 매니페스토 *배반* / *설교* 1 건 → 즉시 발행 차단
+- **reader-facing writing 예외**: 산출물 1 편마다 7 키워드 모두를 메타포화하라는 요구는 폐기한다. writing 에서는 사이클 누적 정렬만 본다. 개별 글은 배반/설교/작가성 훼손/세계관 언어 과적합 여부를 우선 검사한다.
 
 > 평균만 통과해도 한 키워드 약세를 가린다 — *키워드별 분리 채점* 이 본 룰의 핵심 (critic r1 권고 흡수).
 
@@ -36,7 +38,7 @@ references:
 
 | # | 항목 | 통과 기준 | 측정법 |
 |---|------|----------|--------|
-| **a** | 매니페스토 7 키워드 *메타포 명시성* | 산출물 안에서 7 키워드 각각이 *어디서 어떻게* 메타포화되었는지 1 문장으로 가리킬 수 있다 | §2 의 7 키워드 분리 채점 표 채우기. 0..1 점, 평균이 본 항목 점수. |
+| **a** | 매니페스토 7 키워드 *메타포 명시성* | 비-writing 산출물: 산출물 안에서 7 키워드 각각이 *어디서 어떻게* 메타포화되었는지 1 문장으로 가리킬 수 있다. reader-facing writing: 산출물 단위가 아니라 cycle 누적으로만 본다 | §2 의 7 키워드 분리 채점 표. writing 은 `reader_first_override=true` 로 기록하고 개별 글에 7 키워드 강제 박음을 요구하지 않는다. |
 | **b** | 매니페스토 *배반* 부재 | 산출물 어디에도 매니페스토 7 키워드 중 어느 것도 *조롱·부정·역전* 하지 않는다 | §3 배반 패턴 5 종 검사. 1 건이라도 적중 시 즉시 발행 차단. |
 | **c** | 매니페스토 *설교* 부재 | 매니페스토를 *직접 인용 / 슬로건화 / 캐릭터 대사* 로 박지 않는다 | §4 설교 패턴 4 종 검사. 1 건 = 조건부, 2+ 건 = 미통과. |
 | **d** | 작가 코퍼스 인용 정확성 | `~/k-codepoet/my-essay/content/` 인용 시 (i) 출처 경로 명시, (ii) 원문 그대로 (말바꿈 금지), (iii) 시스템이 *재생산* 하지 않음 | 인용 0 건 = N/A 통과. 인용 ≥1 건 = 출처+원문 일치 검사. |
@@ -46,6 +48,7 @@ references:
 - a 의 평균 = 7 키워드 점수의 산술 평균 (단 *최저 키워드* 도 ≥ 0.4 여야 통과 — §0 게이트).
 - b/c/d/e 는 통과(1) / 조건부(0.5) / 미통과(0).
 - **총점 = a × 6 + b × 1 + c × 1 + d × 1 + e × 1 = 0..10**.
+- reader-facing writing 에서는 위 점수를 PASS 로 쓰지 않는다. `prompts/writing/reader-first-standard.md §6` 의 4 문항을 먼저 본다. 점수는 참고값이고, 세계관 언어 과적합 1 건이면 FAIL.
 
 ---
 
@@ -116,6 +119,8 @@ references:
 **적용 대상**: `outputs/writing/**/*.md` 의 **reader portion** (`## 메타 (cold reader 는 본 § 안 읽어도 됨)` 마커 *전*).
 **적용 면제**: 메타 섹션 / 시스템 내부 사고 / frontmatter / tick 로그 / 결정 yaml / arguments / worldbuilding 사양 표.
 
+**v1 override**: 본 §7-1 은 보조 측정이다. 최종 PASS 는 `prompts/writing/reader-first-standard.md` 의 R0/R1/R2 gate, toxic-term budget, actual-author-voice gate 를 먼저 통과해야 한다.
+
 ### 7-1. 5 항목 측정표
 
 | # | 항목 | 통과 기준 | 측정법 | 가중치 |
@@ -131,6 +136,8 @@ references:
 - **PASS** 임계 = ≥ 4.0 / 5 (= 평균 ≥ 0.8) *그리고* 항목 1·3 둘 다 ≥ 0.6 (첫 문단 + 메타포 밀도는 dealbreaker)
 - 1~2 항 미통과 (점수 3~4) = **조건부** → writer 보강 task 1 회 자동 발행
 - 3+ 항 미통과 (점수 < 3) = **FAIL** → writer 재작성 표적
+- `reader-first-standard.md §3` 의 toxic-term hard fail 은 평균으로 완화할 수 없다. 첫 500 자 안 toxic term 1 회라도 있으면 FAIL.
+- `feedback/reader/` 의 R0 fail 은 §7 점수와 무관하게 FAIL.
 
 ### 7-2. critic-r2 가짜 통과 패턴 (정식 박음 1 호)
 

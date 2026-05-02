@@ -130,6 +130,7 @@ def handle_command(ack, command, respond):
     handlers = {
         "list": lambda: cmd_list(respond),
         "decide": lambda: cmd_decide(respond, rest),
+        "feedback": lambda: cmd_feedback(respond, rest, command),
         "pause": lambda: cmd_pause(respond, rest),
         "resume": lambda: cmd_resume(respond),
         "status": lambda: cmd_status(respond),
@@ -149,6 +150,7 @@ def cmd_help(respond):
             "*my-prompts commands*\n"
             "• `/myprompts list` — open 결정 목록 + 버튼\n"
             "• `/myprompts decide D-id key=value [key=value ...]` — 응답 수동 채움\n"
+            "• `/myprompts feedback [fail|candidate|pass] [artifact|general] | notes` — 독자 피드백 기록\n"
             "• `/myprompts pause [reason]` — 시스템 OFF\n"
             "• `/myprompts resume` — 시스템 ON\n"
             "• `/myprompts status` — gen/cycle/usage 1줄 요약\n"
@@ -310,6 +312,84 @@ def button_for(did, picked, label, style=None):
     if style:
         el["style"] = style
     return el
+
+
+def _feedback_slug(s):
+    s = (s or "general").strip()
+    s = re.sub(r"[^A-Za-z0-9가-힣._-]+", "-", s)
+    s = s.strip("-._")
+    return (s or "general")[:48]
+
+
+def _parse_feedback_args(args):
+    text = (args or "").strip()
+    verdict = "fail"
+    if not text:
+        return None, None, None
+
+    first, _, rest = text.partition(" ")
+    if first in {"fail", "candidate", "pass"}:
+        verdict = first
+        text = rest.strip()
+
+    if "|" in text:
+        artifact, notes = [x.strip() for x in text.split("|", 1)]
+        artifact = artifact or "general"
+        notes = notes.strip()
+    else:
+        parts = text.split(maxsplit=1)
+        if len(parts) == 2 and ("/" in parts[0] or "." in parts[0] or parts[0] in {"general", "latest", "latest-writing"}):
+            artifact, notes = parts[0], parts[1]
+        else:
+            artifact, notes = "general", text
+
+    return verdict, artifact, notes
+
+
+def cmd_feedback(respond, args, command):
+    verdict, artifact, notes = _parse_feedback_args(args)
+    if not notes:
+        respond(
+            text=(
+                "사용: `/myprompts feedback [fail|candidate|pass] [artifact|general] | notes`\n"
+                "예: `/myprompts feedback fail outputs/writing/the-map-is-the-journey/paired-dawns-v0.1.md | 너무 추상적이고 내 글 같지 않음`"
+            )
+        )
+        return
+
+    fb_dir = ROOT / "feedback" / "reader"
+    fb_dir.mkdir(parents=True, exist_ok=True)
+    stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S")
+    fid = f"F-{stamp}-{_feedback_slug(artifact)}"
+    path = fb_dir / f"{fid}.yml"
+    data = {
+        "id": fid,
+        "created_at": now_iso(),
+        "source": "slack:/myprompts feedback",
+        "reader_role": "R0",
+        "artifact": artifact,
+        "verdict": verdict,
+        "status": "open",
+        "notes": notes,
+        "must_fix": [],
+        "slack": {
+            "user_id": command.get("user_id"),
+            "user_name": command.get("user_name"),
+            "channel_id": command.get("channel_id"),
+            "team_id": command.get("team_id"),
+        },
+    }
+    with open(path, "w") as f:
+        _rt.dump(data, f)
+
+    rel = path.relative_to(ROOT)
+    respond(
+        text=(
+            f"✅ reader feedback recorded: `{rel}`\n"
+            f"artifact=`{artifact}` verdict=`{verdict}`\n"
+            "writer/critic must read this before the next reader-facing writing pass."
+        )
+    )
 
 
 def cmd_decide(respond, args):

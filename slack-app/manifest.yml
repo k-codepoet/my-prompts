@@ -17,7 +17,7 @@ features:
   slash_commands:
     - command: /myprompts
       description: my-prompts decision queue and system control
-      usage_hint: "list | decide D-id key=value... | pause [reason] | resume | status"
+      usage_hint: "list | decide D-id key=value... | feedback [fail|candidate|pass] [artifact|general] | notes | pause [reason] | resume | status"
       should_escape: false
 
 oauth_config:

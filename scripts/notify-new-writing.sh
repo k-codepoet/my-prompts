@@ -76,6 +76,16 @@ def extract_title(fm_text):
             return m.group(1).strip().strip("'\"")
     return None
 
+def extract_fm_value(fm_text, key):
+    if not fm_text:
+        return None
+    pat = re.compile(r"^" + re.escape(key) + r":\s*(.+?)\s*$")
+    for line in fm_text.splitlines():
+        m = pat.match(line)
+        if m:
+            return m.group(1).strip().strip("'\"")
+    return None
+
 # 알림 완료 hash 읽기
 notified = set()
 if STATE.exists():
@@ -93,10 +103,19 @@ for p in sorted(WDIR.rglob("*.md")):
     if h in notified:
         continue
     fm, body = strip_frontmatter(text)
+    reader_status = (extract_fm_value(fm, "reader_first_status") or "").lower()
+    if reader_status in {"candidate", "fail", "failed"}:
+        results.append({
+            "hash": h,
+            "path": str(p.relative_to(ROOT)),
+            "skip": True,
+            "reason": f"reader_first_status={reader_status}",
+        })
+        continue
     reader = split_reader(body)
     if len(reader.strip()) < 200:
         # 너무 짧으면 reader 분리가 잘못됐거나 빈 파일 — skip + mark notified
-        results.append({"hash": h, "path": str(p.relative_to(ROOT)), "skip": True})
+        results.append({"hash": h, "path": str(p.relative_to(ROOT)), "skip": True, "reason": "too_short"})
         continue
     title = extract_title(fm) or p.stem
     rel = p.relative_to(ROOT)
@@ -127,11 +146,13 @@ echo "$PROCESS_OUTPUT" | python3 -c "
 import json, sys
 items = json.load(sys.stdin)
 for it in items:
-    print('\\t'.join([it['hash'], it['path'], '1' if it.get('skip') else '0', it.get('tmp', ''), it.get('title', '')]))
+    tmp_or_reason = it.get('reason', '') if it.get('skip') else it.get('tmp', '')
+    print('\\t'.join([it['hash'], it['path'], '1' if it.get('skip') else '0', tmp_or_reason, it.get('title', '')]))
 " | while IFS=$'\t' read -r HASH RELPATH SKIP TMPFILE TITLE; do
   if [[ "$SKIP" == "1" ]]; then
-    echo "[notify-writing] skip (too short) — $RELPATH"
-    echo "$HASH	$RELPATH	skipped" >> "$STATE_FILE"
+    REASON="${TMPFILE:-skipped}"
+    echo "[notify-writing] skip ($REASON) — $RELPATH"
+    echo "$HASH	$RELPATH	skipped:$REASON" >> "$STATE_FILE"
     continue
   fi
   URL="https://prompt.codepoet.site/view.html?path=$(python3 -c "import urllib.parse; print(urllib.parse.quote('$RELPATH', safe=''))")"
