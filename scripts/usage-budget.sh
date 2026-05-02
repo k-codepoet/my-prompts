@@ -1,15 +1,18 @@
 #!/usr/bin/env bash
-# usage-budget.sh — 본 시스템의 cron 자체 사용량 추적 + 임계 도달 시 자동 OFF
+# usage-budget.sh — 사용량 추적 + 임계 도달 시 자동 OFF
 #
-# 주의: claude CLI 가 plan-level 사용량(43% 같은 수치)을 노출하지 않으므로,
-# 본 스크립트는 *우리 시스템이 발생시킨* claude -p 호출의 누적량만 본다.
-# 사용자 인터랙티브 사용량은 별도 — 사람이 직접 모니터링해야 함.
+# 1차 소스: ccusage blocks --active --offline --json (5h billing block).
+#          사용자 인터랙티브 + cron 모두 합산된 진짜 사용량.
+# Fallback: 본 스크립트가 누적한 보수 추정값 (claude -p 성공할 때 per_tick_usd 박음).
 #
 # 사용:
-#   scripts/usage-budget.sh check                  # cron 마다 호출. 임계 평가 + 리셋.
-#   scripts/usage-budget.sh add <usd> [model]      # tick 1 회분 비용 누적.
-#   scripts/usage-budget.sh status                 # 현재 사용률 출력.
+#   scripts/usage-budget.sh check                  # cron 마다 호출. ccusage 갱신 + 임계 평가.
+#   scripts/usage-budget.sh add <usd> [model]      # tick 1 회분 비용 누적 (fallback 카운터).
+#   scripts/usage-budget.sh status                 # 현재 사용률 출력 (live + fallback 둘 다).
 #   scripts/usage-budget.sh reset {session|weekly} # 강제 리셋 (디버그용).
+#
+# 환경:
+#   NPX_BIN  — npx 절대경로 (default: PATH 에서 npx). cron 환경에서 PATH 설정 필요.
 
 set -euo pipefail
 
@@ -25,7 +28,7 @@ CMD="${1:-check}"
 
 run_python() {
   python3 - "$BUDGET" "$ROOT" "$@" <<'PY'
-import sys, yaml, datetime, os, subprocess, pathlib
+import sys, yaml, datetime, os, subprocess, pathlib, json, shutil
 from datetime import datetime as dt, timezone, timedelta
 
 KST = timezone(timedelta(hours=9))
@@ -33,6 +36,12 @@ BUDGET_PATH = sys.argv[1]
 ROOT = sys.argv[2]
 CMD = sys.argv[3]
 ARGS = sys.argv[4:]
+
+# ──────────────────────────────────────────────────────────
+# ccusage 통합 (1차 소스) — 실패 시 graceful fallback to self-counter.
+# ──────────────────────────────────────────────────────────
+NPX = os.environ.get("NPX_BIN") or shutil.which("npx")
+LIVE_FRESH_MIN = 15  # live_updated_at 이 이 분(min) 이내면 fresh = 1차 소스 사용.
 
 def load():
     with open(BUDGET_PATH) as f:
@@ -80,13 +89,71 @@ def maybe_reset(data):
     s["last_check_at"] = now_iso()
     return changed
 
+def fetch_ccusage_active_block():
+    """ccusage 호출. 실패 / npx 없음 / 타임아웃 시 None."""
+    if not NPX:
+        return None
+    try:
+        result = subprocess.run(
+            [NPX, "-y", "ccusage@latest", "blocks", "--active", "--offline", "--json"],
+            capture_output=True, text=True, timeout=15,
+        )
+        if result.returncode != 0:
+            return None
+        data = json.loads(result.stdout or "{}")
+        blocks = data.get("blocks") or []
+        return blocks[0] if blocks else None
+    except Exception:
+        return None
+
+def update_live(data):
+    """budget.yml.state 의 live_* 필드 갱신. 성공 시 True."""
+    blk = fetch_ccusage_active_block()
+    s = data.setdefault("state", {})
+    if blk is None:
+        s["live_source"] = None
+        return False
+    s["live_block_id"] = blk.get("id")
+    s["live_block_start"] = blk.get("startTime")
+    s["live_block_end"] = blk.get("endTime")
+    s["live_block_cost_usd"] = round(float(blk.get("costUSD", 0) or 0), 4)
+    burn = blk.get("burnRate") or {}
+    s["live_burn_rate_usd_per_hour"] = round(float(burn.get("costPerHour", 0) or 0), 4)
+    proj = blk.get("projection") or {}
+    s["live_projected_block_cost_usd"] = round(float(proj.get("totalCost", 0) or 0), 4)
+    s["live_updated_at"] = now_iso()
+    s["live_source"] = "ccusage"
+    return True
+
+def live_session_usd_if_fresh(data):
+    """live_block_cost_usd 가 fresh 면 그 값, 아니면 None."""
+    s = data.get("state") or {}
+    cost = s.get("live_block_cost_usd")
+    upd = s.get("live_updated_at")
+    if cost is None or not upd:
+        return None
+    try:
+        u = dt.fromisoformat(upd)
+        if (dt.now(KST) - u) > timedelta(minutes=LIVE_FRESH_MIN):
+            return None
+    except Exception:
+        return None
+    return float(cost)
+
 def score(data):
+    """session 은 live(fresh) 우선 + self counter 와 max. weekly 는 self 만 (ccusage weekly 는 v2)."""
     s = data["state"]
     L = data["limits"]
+    self_session = s.get("session_usd_used", 0) or 0
+    live_session = live_session_usd_if_fresh(data)
+    effective_session = max(self_session, live_session) if live_session is not None else self_session
     return {
-        "session": (s["session_usd_used"] / L["session_5h_usd"]) if L["session_5h_usd"] else 0,
+        "session": (effective_session / L["session_5h_usd"]) if L["session_5h_usd"] else 0,
         "weekly_all": (s["weekly_all_usd_used"] / L["weekly_all_usd"]) if L["weekly_all_usd"] else 0,
         "weekly_sonnet": (s["weekly_sonnet_usd_used"] / L["weekly_sonnet_usd"]) if L["weekly_sonnet_usd"] else 0,
+        "_session_self": self_session,
+        "_session_live": live_session,
+        "_session_effective": effective_session,
     }
 
 def slack(trigger, title, body=""):
@@ -107,10 +174,17 @@ def toggle_off(reason):
 if CMD == "check":
     data = load()
     resets = maybe_reset(data)
+    update_live(data)  # best-effort; ccusage 실패 시 live_source = None.
     sc = score(data)
     th = data["thresholds"]
     save(data)
-    msg = f"session={sc['session']*100:.1f}% weekly_all={sc['weekly_all']*100:.1f}% weekly_sonnet={sc['weekly_sonnet']*100:.1f}%"
+    src = (data.get("state") or {}).get("live_source") or "self"
+    msg = (
+        f"session={sc['session']*100:.1f}% (src={src}, "
+        f"self=${sc['_session_self']:.2f}"
+        + (f", live=${sc['_session_live']:.2f}" if sc['_session_live'] is not None else "")
+        + f") weekly_all={sc['weekly_all']*100:.1f}% weekly_sonnet={sc['weekly_sonnet']*100:.1f}%"
+    )
     print(msg)
     if resets:
         print(f"[usage-budget] reset: {', '.join(resets)}")
@@ -157,9 +231,25 @@ if CMD == "status":
     data = load()
     sc = score(data)
     s = data["state"]
-    print(f"session: ${s.get('session_usd_used',0):.2f} / ${data['limits']['session_5h_usd']} ({sc['session']*100:.1f}%)")
-    print(f"weekly:  ${s.get('weekly_all_usd_used',0):.2f} / ${data['limits']['weekly_all_usd']} ({sc['weekly_all']*100:.1f}%)")
-    print(f"sonnet:  ${s.get('weekly_sonnet_usd_used',0):.2f} / ${data['limits']['weekly_sonnet_usd']} ({sc['weekly_sonnet']*100:.1f}%)")
+    L = data["limits"]
+    src = s.get("live_source")
+    eff = sc["_session_effective"]
+    self_s = sc["_session_self"]
+    live_s = sc["_session_live"]
+    if src == "ccusage" and live_s is not None:
+        print(f"session: ${eff:.2f} / ${L['session_5h_usd']} ({sc['session']*100:.1f}%) [src=ccusage live, self=${self_s:.2f}]")
+        burn = s.get("live_burn_rate_usd_per_hour")
+        proj = s.get("live_projected_block_cost_usd")
+        end = s.get("live_block_end")
+        if burn is not None:
+            print(f"  burn:    ${burn:.2f}/h, projected block end ${proj:.2f}, ends {end}")
+    else:
+        # live stale or 없음 → fallback
+        stale = bool(s.get("live_updated_at")) and live_s is None
+        suffix = " [src=self, ccusage stale]" if stale else " [src=self, no ccusage]"
+        print(f"session: ${self_s:.2f} / ${L['session_5h_usd']} ({sc['session']*100:.1f}%){suffix}")
+    print(f"weekly:  ${s.get('weekly_all_usd_used',0):.2f} / ${L['weekly_all_usd']} ({sc['weekly_all']*100:.1f}%) [self counter — ccusage weekly v2]")
+    print(f"sonnet:  ${s.get('weekly_sonnet_usd_used',0):.2f} / ${L['weekly_sonnet_usd']} ({sc['weekly_sonnet']*100:.1f}%)")
     print(f"paused:  {s.get('paused_at') or 'no'}")
     sys.exit(0)
 

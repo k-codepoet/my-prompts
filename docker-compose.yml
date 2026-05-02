@@ -5,6 +5,9 @@ services:
     container_name: my-prompts-slack-bot
     restart: unless-stopped
     working_dir: /app
+    # host UID/GID 로 실행 — repo 와 ~/.claude/projects/ transcripts 가 root 소유로
+    # 만들어지지 않게. (이전엔 root 로 돌아 ccusage / git ownership 충돌이 발생.)
+    user: "1001:1002"
     volumes:
       - ./:/app                       # repo 전체 bind mount (state, decisions, scripts 모두 컨테이너 안에서 읽기·쓰기)
     environment:

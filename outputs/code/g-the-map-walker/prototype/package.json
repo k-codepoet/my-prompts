@@ -1,0 +1,20 @@
+{
+  "name": "the-map-walker-prototype",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "implementer r3 — 1차 prototype 빌드 (walk-trace-spec-v0+ §1~§4 1:1 박음, vertical-slice-charter §3 2안 1차 표적)",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "pixi.js": "^8.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vite": "^6.0.0"
+  }
+}
