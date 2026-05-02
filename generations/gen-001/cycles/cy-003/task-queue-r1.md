@@ -19,6 +19,7 @@
 - **r1 (b) voice-signature × 인물 3 자리 신규**: 5 known 인물 (cy-002 누적) 위 3 신규 (연강 / 희재 / 유리) voice-signature 1 단락씩 박음. 각 단락 = *말투 결 1 행 + 침묵 결 1 행 + 시간 좌표 1 행* baseline.
 - **2026-05-02 reader-first override**: `prompts/writing/reader-first-standard.md` 가 본 r1 task 위에 우선한다. 기존 character-sheets/characters 산출물은 PASS 가 아니라 `candidate` 로 강등하고, 다음 writer 자리는 신규 확장보다 **reader-facing 재작성** 우선.
 - **r2 우선 task**: 실제 작가 코퍼스 2 편 이상 (`my-essay/content/my-own-game.mdx`, `blame-to-me.mdx`, `my-own-customer.mdx`, `answers.mdx` 등) + `feedback/reader/` 를 읽고, `character-sheets-extended-v0.md` 와 `outputs/writing/.../characters/*.md` 의 reader-facing 부분에서 toxic world terms 를 제거/축소한 v0.1 후보를 만든다.
+- **연재 continuation override (2026-05-02)**: 사용자 요청으로 `prompt.codepoet.site` 의 상단 연재물은 계속 이어 써야 한다. writer 는 `site/manifest.json` 또는 frontmatter 의 `series_id: the-map-is-the-journey` + `episode_no` 최댓값을 확인하고, 신규 단편을 만들 때 항상 다음 번호를 쓴다. 현재 baseline 은 1~3 회이므로 다음 writer 신규 단편은 `episode_no: 4` 이며 경로는 `outputs/writing/the-map-is-the-journey/episode-04-<slug>.md` 형식이다. 한 writer tick 에 1 회차만 작성하고, `episode_status: candidate`, `reader_first_status: candidate` 로 둔 뒤 critic/voice-keeper 가 R0/R1/R2 gate 를 본다.
 - **트립와이어**: ① `reader-first-standard.md` R0/R1/R2 gate 미통과 시 PASS 금지 / ② 첫 500 자 toxic world terms 0 / ③ 1500 자당 toxic terms ≤ 3 / ④ 매니페스토 핵심어 본문 직접 인용 0 / ⑤ forbidden-language §1~§8 grep 적중 0 / ⑥ critic-r2 가짜 통과 패턴 회피 (감정 표면 박음 의무).
 - **챔피언 핵심어**: `자립` (인물 시트 = 자립의 표면 박음).
 - **mode 후보**: r1 = 묶음 (인물 시트 3 자리 + voice-signature 3 자리 = 6 자리 묶음 박음) — writer cy-002 r2 묶음 패턴 유지.

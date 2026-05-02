@@ -3,6 +3,14 @@ world: the-map-is-the-journey@v0.5
 artifact: short-story-pair
 title: 옆에 잇닿은 두 새벽 v0.1 (사람-가독성 적용 — 연강 *가족* / 유리 *연대*)
 version: v0.1
+series_id: the-map-is-the-journey
+series_title: 여정 자체가 지도
+episode_no: 3
+episode_title: 옆에 잇닿은 두 새벽
+episode_summary: 연강과 유리의 시간을 나란히 두고, 누군가의 손을 잡지 않는 일이 어떻게 응원이 되는지 보여 주는 두 편.
+episode_characters: 연강, 유리
+episode_thumb: outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-8-huijae-side-by-side-dawns-v1.png
+episode_status: published
 created_at: 2026-05-02
 gen: 1
 cycle: cy-002

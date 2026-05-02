@@ -129,6 +129,9 @@ Reader-facing writing override:
 - Also scan \`feedback/reader/\` for open R0 feedback. User feedback overrides automated PASS.
 - Do not mark reader-facing writing PASS unless R0/R1/R2 gates and toxic-term budget pass.
 - Do not reward worldbuilding terms as emotional shorthand in reader-facing prose.
+- For the active serial, new story files must include series frontmatter
+  (\`series_id: the-map-is-the-journey\`, \`episode_no\`, \`episode_title\`, \`episode_summary\`).
+  Compute the next episode number from existing frontmatter; do not edit \`site/index.html\` per episode.
 
 BOOTSTRAP §1 (사용자 응답 통합) 자동화:
 - decisions/open/ 의 yml 중 response.decided_at 박힌 것이 있으면 직접 처리 말고
@@ -181,6 +184,9 @@ Reader-facing writing override:
 - Scan \`feedback/reader/\` for target-specific and \`general\` R0 feedback.
 - Open R0 fail feedback blocks PASS; produce a candidate rewrite or fail critique instead.
 - First 500 chars of reader-facing prose must contain zero toxic world terms listed in the standard.
+- If creating the next serial episode, compute \`episode_no = max(existing series episode_no) + 1\`
+  and write exactly one new \`outputs/writing/the-map-is-the-journey/episode-NN-*.md\` file.
+  The publishing surface will render it from manifest metadata.
 
 Constraints:
 - Do not act outside your domain (other roles will object via trip-wires).

@@ -1,0 +1,13 @@
+id: character-sheet-narim-v1
+created_at: '2026-05-02T12:31:03+00:00'
+creator: writer+art-director (cy-003 r2 character-sheet image)
+category: illustration
+caption: |
+  캐릭터 시트 — 나림 (那林, 26, 나 축). 12 색조 박물관, 반쯤 의심의 웃음.
+prompt: |
+  young Korean woman mid-twenties, hesitant half-smile only at corner of lips, twelve faint earth-color hues at resting place, own paper nearly empty, sumukhwa style, faded warm grey #7A6447 to #8B7355
+workflow: z-image-turbo
+source_artifact: outputs/writing/the-map-is-the-journey/characters/narim.md
+source_section: "## 외형 / 분위기"
+size: 1024x1024
+genai_origin_url: https://genai.home.codepoet.site/outputs/2026/05/02/295a077f-9356-42d8-a419-0d75874f9a89.png

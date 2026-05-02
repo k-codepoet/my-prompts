@@ -25,6 +25,14 @@
 | 2026-05-02T11:13:18+00:00 | illustration | 우표 §17.1 — 해온 *손금 새벽*. 14 자국째 해 부터 매일 새벽, 한 사람의 손바닥 위에 자기 지도가 잠시 비친 한 컷. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png` | tick:cy-002/074 (art-director r5 image) |
 | 2026-05-02T11:25:00+00:00 | alignment | stamp-17-1 *손금 새벽* image 정렬 audit (PASS 조건부 → 풀 단위 격상 / 자립·시간이 곧 나 1.0 / 연대 0=영역 의도 / 4 단계 격상 패턴 1 호) | `outputs/alignment/the-map-is-the-journey/stamp-17-1-haeon-palm-line-dawn-audit.md` | tick:cy-002/075 (voice-keeper r6 image-spec-alignment-audit, cy-003 transition 후 cy-002 carry-over) |
 | 2026-05-02T11:36:00+00:00 | illustration | 우표 §17.2 — 정해 *발끝 한 방향*. 27 자국째, 무릎 높이에서 본 한 사람의 맨발과 같은 방향으로 놓인 5 점의 옅은 자국, 멀리 큰 산. 자국빛 0%. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-2-jeonghae-toes-one-direction-v1.png` | tick:cy-003/004 (art-director r1 image) |
+| 2026-05-02T12:31:03+00:00 | illustration | 캐릭터 시트 — 해온 (海溫, 27, 나 축). 매일 새벽 손바닥을 펴는 결의 정면 컷. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-haeon-v1.png` | writer+art-director (cy-003 r2 character-sheet image) |
+| 2026-05-02T12:31:03+00:00 | illustration | 캐릭터 시트 — 정해 (正解, 27, 나 축). 외투 주머니 + 발끝의 한 방향, 한 호흡 정지. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-jeonghae-v1.png` | writer+art-director (cy-003 r2 character-sheet image) |
+| 2026-05-02T12:31:03+00:00 | illustration | 캐릭터 시트 — 나림 (那林, 26, 나 축). 12 색조 박물관, 반쯤 의심의 웃음. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-narim-v1.png` | writer+art-director (cy-003 r2 character-sheet image) |
+| 2026-05-02T12:31:03+00:00 | illustration | 캐릭터 시트 — 유경 (柳敬, 38, 가족 축). 35 자국째 다시 펴는 손바닥, 두 마음의 결. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v1.png` | writer+art-director (cy-003 r2 character-sheet image) |
+| 2026-05-02T12:31:04+00:00 | illustration | 캐릭터 시트 — 인규 (仁圭, 42, 업 축). 옆자리, 눈만 좁히는 웃음. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-ingyu-v1.png` | writer+art-director (cy-003 r2 character-sheet image) |
+| 2026-05-02T12:31:04+00:00 | illustration | 캐릭터 시트 — 연강 (連岡, 60+, 업 축). 산등성이 벤치, 일어섬을 미루는 한 박자. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yeongang-v1.png` | writer+art-director (cy-003 r2 character-sheet image) |
+| 2026-05-02T12:31:04+00:00 | illustration | 캐릭터 시트 — 희재 (熙在, 27, 나 축). 해 질 무렵 길가, 발끝 내려다보는 머쓱한 가벼움. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-huijae-v1.png` | writer+art-director (cy-003 r2 character-sheet image) |
+| 2026-05-02T12:31:04+00:00 | illustration | 캐릭터 시트 — 유리 (柳里, 8, 가족 → 나). 작은 책상 앞 첫 단독 손금 새벽, 8 살의 두 마음. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yuri-v1.png` | writer+art-director (cy-003 r2 character-sheet image) |
 
 ---
 

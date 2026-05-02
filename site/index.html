@@ -98,6 +98,8 @@
   .ep-card .ep-num { font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: 0.04em; }
   .ep-card .ep-title { font-family: var(--serif); font-size: 17px; margin: 4px 0 8px; color: var(--fg); font-weight: 600; }
   .ep-card .ep-desc { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.5; }
+  .ep-card .ep-meta { font-family: var(--mono); font-size: 10px; color: var(--muted); margin-top: 8px; }
+  .ep-card .ep-badge { display: inline-block; margin-left: 6px; padding: 1px 5px; border: 1px solid var(--line); color: var(--warn); font-size: 10px; }
   section.series .characters { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin: 0 0 16px; }
   .ch-card { display: block; padding: 10px 12px; background: var(--bg); border: 1px solid var(--line); text-decoration: none; border-bottom: none; }
   .ch-card:hover { border-color: var(--accent); border-bottom: 1px solid var(--accent); }
@@ -170,63 +172,44 @@
   <section class="series" id="series-section">
     <h2 class="series-h">📖 연재물 — 여정 자체가 지도</h2>
     <p class="series-quote">"세상의 모든 사람은 새벽에 백지 한 장을 받는다."</p>
-    <p class="series-intro">8 자가 살아가는 결의 단편 묶음. 손바닥을 펴면 자기 지도가 잠시 비친다 — <em>손금 새벽</em>.</p>
+    <p class="series-intro">여덟 사람이 자기 삶을 확인하고, 피하고, 다시 시작하는 이야기. 설정 설명보다 사람의 선택과 관계를 먼저 보여 줍니다.</p>
 
-    <h3 class="sub">읽기 순서 — 회차 3 호</h3>
-    <div class="episodes">
-      <a class="ep-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/dawn-first-map.md">
-        <img class="ep-thumb" src="/outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png" alt="회차 1 — 손금 새벽">
-        <span class="ep-num">회차 1</span>
-        <div class="ep-title">처음으로 자기 지도를 본 새벽</div>
-        <p class="ep-desc">해온 / 나림 / 유경 — 같은 새벽, 다른 세 자리의 1 인칭 3 분기. ~2380 자.</p>
-      </a>
-      <a class="ep-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/sideseat-dawn-v0.md">
-        <img class="ep-thumb" src="/outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-7-yeongang-short-grain-v1.png" alt="회차 2 — 짧음의 결">
-        <span class="ep-num">회차 2</span>
-        <div class="ep-title">옆자리에 앉은 한 새벽</div>
-        <p class="ep-desc">인규 28 자국째, 연강과의 첫 만남. 14 년 전의 봄. ~2150 자.</p>
-      </a>
-      <a class="ep-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/paired-dawns-v0.1.md">
-        <img class="ep-thumb" src="/outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-8-huijae-side-by-side-dawns-v1.png" alt="회차 3 — 나란히 두 새벽">
-        <span class="ep-num">회차 3</span>
-        <div class="ep-title">옆에 잇닿은 두 새벽</div>
-        <p class="ep-desc">연강 60+ / 유리 8 — 60 자국째 차이의 시간차 동행. 두 단편 묶음. ~3100 자.</p>
-      </a>
-    </div>
+    <h3 class="sub" id="series-episodes-heading">읽기 순서</h3>
+    <div class="episodes" id="series-episodes"></div>
 
     <h3 class="sub">등장 인물 — 8 자 (5/2/2 = 나/가족/업)</h3>
     <div class="characters">
       <a class="ch-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/characters/haeon.md">
         <div class="ch-head"><span class="ch-axis">나</span><span class="ch-name">해온</span><span class="ch-age">海溫 · 27</span></div>
-        <p class="ch-line">매일 새벽 30 분, 14 자국째 부터 한 번도 안 빠뜨림</p>
+        <p class="ch-line">매일 아침 자신을 확인해야 하루를 시작할 수 있는 사람</p>
       </a>
       <a class="ch-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/characters/jeonghae.md">
         <div class="ch-head"><span class="ch-axis">나</span><span class="ch-name">정해</span><span class="ch-age">正解 · 27</span></div>
-        <p class="ch-line">한 번도 안 폄, 발끝의 방향이 매일 같은 곳</p>
+        <p class="ch-line">자신을 직접 확인하지 않기로 했지만 늘 같은 방향으로 걷는 사람</p>
       </a>
       <a class="ch-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/characters/narim.md">
         <div class="ch-head"><span class="ch-axis">나</span><span class="ch-name">나림</span><span class="ch-age">那林 · 26</span></div>
-        <p class="ch-line">8 자국째 한 번 보고 6 년 멈춤, 12 색조 박물관</p>
+        <p class="ch-line">한 번 자기 모습을 보고 겁이 나서 오랫동안 멈춘 사람</p>
       </a>
       <a class="ch-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/characters/yugyeong.md">
         <div class="ch-head"><span class="ch-axis">가족</span><span class="ch-name">유경</span><span class="ch-age">柳敬 · 38</span></div>
-        <p class="ch-line">아이 새벽 같이 봄, 35 자국째 다시 시작</p>
+        <p class="ch-line">아이를 돌본 뒤 다시 자기 삶을 보기 시작한 어머니</p>
       </a>
       <a class="ch-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/characters/ingyu.md">
         <div class="ch-head"><span class="ch-axis">업</span><span class="ch-name">인규</span><span class="ch-age">仁圭 · 42</span></div>
-        <p class="ch-line">28 자국째 부터 옆에 앉기 14 년, 200 명 자국</p>
+        <p class="ch-line">답을 주기보다 옆에서 기다리는 일을 업으로 삼은 사람</p>
       </a>
       <a class="ch-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/characters/yeongang.md">
         <div class="ch-head"><span class="ch-axis">업</span><span class="ch-name">연강</span><span class="ch-age">連岡 · 60+</span></div>
-        <p class="ch-line">60 년 옆에 앉아 줌, 짧음의 결 (1 분 새벽)</p>
+        <p class="ch-line">오래 기다리는 법을 몸으로 배운 노인</p>
       </a>
       <a class="ch-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/characters/huijae.md">
         <div class="ch-head"><span class="ch-axis">나</span><span class="ch-name">희재</span><span class="ch-age">熙在 · 27</span></div>
-        <p class="ch-line">평생 안 폄, 정해와 두 번 같은 길 (시간차 1 일–1 주)</p>
+        <p class="ch-line">가까워져도 캐묻지 않는 방식으로 곁에 남는 사람</p>
       </a>
       <a class="ch-card" href="/view.html?path=outputs/writing/the-map-is-the-journey/characters/yuri.md">
         <div class="ch-head"><span class="ch-axis">가족</span><span class="ch-name">유리</span><span class="ch-age">柳里 · 8</span></div>
-        <p class="ch-line">7 자국째 어머니 도움 없이 자기 손금 단독 시작</p>
+        <p class="ch-line">엄마 도움 없이 처음 자기 일을 해낸 아이</p>
       </a>
     </div>
 
@@ -279,6 +262,7 @@ const CAT_ORDER = [
   "decisions", "decision-traces", "arguments", "ticks",
 ];
 const COLLAPSE_BY_DEFAULT = new Set(["writings", "world", "art", "design", "alignment", "critique", "code-docs", "decisions", "decision-traces", "arguments", "ticks"]);
+const PRIMARY_SERIES_ID = "the-map-is-the-journey";
 
 function fmtTime(epoch) {
   const d = new Date(epoch * 1000);
@@ -293,6 +277,48 @@ function fmtTime(epoch) {
 
 function viewerUrl(path) {
   return `/view.html?path=${encodeURIComponent(path)}`;
+}
+
+function toEpisodeNo(value) {
+  const n = parseInt(String(value || "").replace(/[^\d]/g, ""), 10);
+  return Number.isFinite(n) ? n : null;
+}
+
+function renderSeries(m) {
+  const writings = (m.categories && m.categories.writings) || [];
+  const episodes = writings
+    .map(f => ({ ...f, episodeNo: toEpisodeNo(f.episode_no) }))
+    .filter(f => f.series_id === PRIMARY_SERIES_ID && f.episodeNo)
+    .sort((a, b) => a.episodeNo - b.episodeNo);
+
+  const heading = document.getElementById("series-episodes-heading");
+  const box = document.getElementById("series-episodes");
+  if (!episodes.length) {
+    heading.textContent = "읽기 순서";
+    box.innerHTML = '<div class="ep-card"><div class="ep-thumb-empty">series metadata missing</div><div class="ep-title">연재 회차 메타데이터 없음</div><p class="ep-desc">outputs/writing frontmatter 에 series_id 와 episode_no 를 박으면 여기에 자동으로 표시됩니다.</p></div>';
+    return;
+  }
+
+  const latest = episodes[episodes.length - 1].episodeNo;
+  heading.textContent = `읽기 순서 — ${latest}회까지`;
+  box.innerHTML = episodes.map(f => {
+    const thumb = f.episode_thumb || "";
+    const title = f.episode_title || f.title || f.path;
+    const summary = f.episode_summary || "";
+    const chars = f.episode_characters || "";
+    const status = f.reader_first_status || f.episode_status || "";
+    const badge = status && status !== "published" ? `<span class="ep-badge">${escapeHtml(status)}</span>` : "";
+    const media = thumb
+      ? `<img class="ep-thumb" src="/${escapeHtml(thumb)}" alt="회차 ${f.episodeNo} — ${escapeHtml(title)}">`
+      : `<div class="ep-thumb-empty">episode ${f.episodeNo}</div>`;
+    return `<a class="ep-card" href="${viewerUrl(f.path)}">
+      ${media}
+      <span class="ep-num">회차 ${f.episodeNo}${badge}</span>
+      <div class="ep-title">${escapeHtml(title)}</div>
+      <p class="ep-desc">${escapeHtml(summary || f.title || f.path)}</p>
+      ${chars ? `<div class="ep-meta">${escapeHtml(chars)}</div>` : ""}
+    </a>`;
+  }).join("");
 }
 
 function renderCategory(key, items) {
@@ -347,6 +373,8 @@ async function main() {
     `).join("");
     window.__ILLS = ills;
   }
+
+  renderSeries(m);
 
   // categories
   const html = CAT_ORDER.map(k => renderCategory(k, m.categories[k] || [])).join("");

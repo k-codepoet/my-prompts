@@ -102,7 +102,9 @@ forbidden_language_grep_pass: true
 
 ## 일러스트 갤러리
 
-> 박힌 컷 0 종. 갤러리는 *비어 있음* 자리 — cy-003 r2 신규 일러스트 표적.
+| 컷 | 자리 | 출처 |
+|-----|-----|------|
+| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yuri-v1.png) | 캐릭터 시트 — 8 자국째, 작은 책상 앞 첫 단독 손금 새벽의 8 살의 두 마음 (회화 톤 baseline) | cy-003 r2 art-director image |
 
 > 확장 자리 (cy-003+ 후보):
 > - *7 자국째 첫 단독 새벽 — 어머니가 손을 안 잡아 준 그 새벽*

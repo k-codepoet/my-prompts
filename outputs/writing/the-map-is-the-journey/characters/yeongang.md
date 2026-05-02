@@ -109,6 +109,7 @@ forbidden_language_grep_pass: true
 | 컷 | 자리 | 출처 |
 |-----|-----|------|
 | ![짧음의 결](../../../worldbuilding/the-map-is-the-journey/illustrations/stamp-17-7-yeongang-short-grain-v1.png) | §17.7 *짧음의 결* — 60+ 자국째 노인의 1 분 새벽 | visual-bible-v0.4 §17.7 (PASS 강) |
+| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yeongang-v1.png) | 캐릭터 시트 — 60+ 자국째, 산등성이 벤치 정면 컷 (회화 톤 baseline) | cy-003 r2 art-director image |
 
 > 확장 자리 (cy-003+ 후보):
 > - *산등성이 벤치 정면 — 얇은 외투 한 자락*

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-02T12:16:09.048435+00:00",
+  "generated_at": "2026-05-02T12:32:06.153609+00:00",
   "root_docs": [
     {
       "path": "current.md",
       "title": "Current State (live pointer)",
       "version": null,
-      "mtime": 1777724156,
-      "size": 157274
+      "mtime": 1777724822,
+      "size": 157961
     },
     {
       "path": "seed.md",
@@ -31,6 +31,110 @@
     }
   ],
   "illustrations": [
+    {
+      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yuri-v1.png",
+      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yuri-v1.png.meta.yml",
+      "title": "character-sheet-yuri-v1",
+      "caption": "캐릭터 시트 — 유리 (柳里, 8, 가족 → 나). 작은 책상 앞 첫 단독 손금 새벽, 8 살의 두 마음.",
+      "category": "illustration",
+      "creator": "writer+art-director (cy-003 r2 character-sheet image)",
+      "source_artifact": "outputs/writing/the-map-is-the-journey/characters/yuri.md",
+      "source_section": "## 외형 / 분위기",
+      "size": "1024x1024",
+      "mtime": 1777725064,
+      "bytes": 1328663
+    },
+    {
+      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-ingyu-v1.png",
+      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-ingyu-v1.png.meta.yml",
+      "title": "character-sheet-ingyu-v1",
+      "caption": "캐릭터 시트 — 인규 (仁圭, 42, 업 축). 옆자리, 눈만 좁히는 웃음.",
+      "category": "illustration",
+      "creator": "writer+art-director (cy-003 r2 character-sheet image)",
+      "source_artifact": "outputs/writing/the-map-is-the-journey/characters/ingyu.md",
+      "source_section": "## 외형 / 분위기",
+      "size": "1024x1024",
+      "mtime": 1777725064,
+      "bytes": 1597942
+    },
+    {
+      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-huijae-v1.png",
+      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-huijae-v1.png.meta.yml",
+      "title": "character-sheet-huijae-v1",
+      "caption": "캐릭터 시트 — 희재 (熙在, 27, 나 축). 해 질 무렵 길가, 발끝 내려다보는 머쓱한 가벼움.",
+      "category": "illustration",
+      "creator": "writer+art-director (cy-003 r2 character-sheet image)",
+      "source_artifact": "outputs/writing/the-map-is-the-journey/characters/huijae.md",
+      "source_section": "## 외형 / 분위기",
+      "size": "1024x1024",
+      "mtime": 1777725064,
+      "bytes": 1593096
+    },
+    {
+      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yeongang-v1.png",
+      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yeongang-v1.png.meta.yml",
+      "title": "character-sheet-yeongang-v1",
+      "caption": "캐릭터 시트 — 연강 (連岡, 60+, 업 축). 산등성이 벤치, 일어섬을 미루는 한 박자.",
+      "category": "illustration",
+      "creator": "writer+art-director (cy-003 r2 character-sheet image)",
+      "source_artifact": "outputs/writing/the-map-is-the-journey/characters/yeongang.md",
+      "source_section": "## 외형 / 분위기",
+      "size": "1024x1024",
+      "mtime": 1777725064,
+      "bytes": 1583281
+    },
+    {
+      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-narim-v1.png",
+      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-narim-v1.png.meta.yml",
+      "title": "character-sheet-narim-v1",
+      "caption": "캐릭터 시트 — 나림 (那林, 26, 나 축). 12 색조 박물관, 반쯤 의심의 웃음.",
+      "category": "illustration",
+      "creator": "writer+art-director (cy-003 r2 character-sheet image)",
+      "source_artifact": "outputs/writing/the-map-is-the-journey/characters/narim.md",
+      "source_section": "## 외형 / 분위기",
+      "size": "1024x1024",
+      "mtime": 1777725063,
+      "bytes": 1462732
+    },
+    {
+      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v1.png",
+      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v1.png.meta.yml",
+      "title": "character-sheet-yugyeong-v1",
+      "caption": "캐릭터 시트 — 유경 (柳敬, 38, 가족 축). 35 자국째 다시 펴는 손바닥, 두 마음의 결.",
+      "category": "illustration",
+      "creator": "writer+art-director (cy-003 r2 character-sheet image)",
+      "source_artifact": "outputs/writing/the-map-is-the-journey/characters/yugyeong.md",
+      "source_section": "## 외형 / 분위기",
+      "size": "1024x1024",
+      "mtime": 1777725063,
+      "bytes": 1100957
+    },
+    {
+      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-jeonghae-v1.png",
+      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-jeonghae-v1.png.meta.yml",
+      "title": "character-sheet-jeonghae-v1",
+      "caption": "캐릭터 시트 — 정해 (正解, 27, 나 축). 외투 주머니 + 발끝의 한 방향, 한 호흡 정지.",
+      "category": "illustration",
+      "creator": "writer+art-director (cy-003 r2 character-sheet image)",
+      "source_artifact": "outputs/writing/the-map-is-the-journey/characters/jeonghae.md",
+      "source_section": "## 외형 / 분위기",
+      "size": "1024x1024",
+      "mtime": 1777725063,
+      "bytes": 1389455
+    },
+    {
+      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-haeon-v1.png",
+      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-haeon-v1.png.meta.yml",
+      "title": "character-sheet-haeon-v1",
+      "caption": "캐릭터 시트 — 해온 (海溫, 27, 나 축). 매일 새벽 손바닥을 펴는 결의 정면 컷.",
+      "category": "illustration",
+      "creator": "writer+art-director (cy-003 r2 character-sheet image)",
+      "source_artifact": "outputs/writing/the-map-is-the-journey/characters/haeon.md",
+      "source_section": "## 외형 / 분위기",
+      "size": "1024x1024",
+      "mtime": 1777725063,
+      "bytes": 1337745
+    },
     {
       "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-2-jeonghae-toes-one-direction-v1.png",
       "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-2-jeonghae-toes-one-direction-v1.png.meta.yml",
@@ -100,216 +204,339 @@
   "categories": {
     "writings": [
       {
+        "path": "outputs/writing/the-map-is-the-journey/sideseat-dawn-v0.md",
+        "title": "옆자리에 앉은 한 새벽",
+        "version": "v0",
+        "mtime": 1777725118,
+        "size": 22107,
+        "artifact": "short-story",
+        "world": "the-map-is-the-journey@v0.4",
+        "series_id": "the-map-is-the-journey",
+        "series_title": "여정 자체가 지도",
+        "episode_no": "2",
+        "episode_title": "옆자리에 앉은 한 새벽",
+        "episode_summary": "인규가 연강 옆에 앉아, 답을 주는 일보다 기다리는 일이 더 어렵다는 것을 배우는 봄.",
+        "episode_characters": "인규, 연강",
+        "episode_thumb": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-7-yeongang-short-grain-v1.png",
+        "episode_status": "published",
+        "axis": "업 (Rule A2 정식 머리말 박음 — 본 단편은 *업* 축 단일 변주)"
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/paired-dawns-v0.1.md",
+        "title": "옆에 잇닿은 두 새벽 v0.1 (사람-가독성 적용 — 연강 *가족* / 유리 *연대*)",
+        "version": "v0.1",
+        "mtime": 1777725118,
+        "size": 24097,
+        "artifact": "short-story-pair",
+        "world": "the-map-is-the-journey@v0.5",
+        "series_id": "the-map-is-the-journey",
+        "series_title": "여정 자체가 지도",
+        "episode_no": "3",
+        "episode_title": "옆에 잇닿은 두 새벽",
+        "episode_summary": "연강과 유리의 시간을 나란히 두고, 누군가의 손을 잡지 않는 일이 어떻게 응원이 되는지 보여 주는 두 편.",
+        "episode_characters": "연강, 유리",
+        "episode_thumb": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-8-huijae-side-by-side-dawns-v1.png",
+        "episode_status": "published"
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/dawn-first-map.md",
+        "title": "처음으로 자기 지도를 본 새벽",
+        "version": "v0",
+        "mtime": 1777725118,
+        "size": 15214,
+        "artifact": "short-story",
+        "world_id": "the-map-is-the-journey",
+        "series_id": "the-map-is-the-journey",
+        "series_title": "여정 자체가 지도",
+        "episode_no": "1",
+        "episode_title": "처음으로 자기 지도를 본 새벽",
+        "episode_summary": "해온, 나림, 유경이 같은 새벽에 각자의 두려움과 변화를 처음 확인하는 이야기.",
+        "episode_characters": "해온, 나림, 유경",
+        "episode_thumb": "outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png",
+        "episode_status": "published"
+      },
+      {
+        "path": "outputs/writing/the-map-is-the-journey/series-index-v0.md",
+        "title": "여정 자체가 지도 — 시리즈 인덱스",
+        "version": "v0",
+        "mtime": 1777724488,
+        "size": 6758,
+        "artifact": "series-index",
+        "world_id": "the-map-is-the-journey"
+      },
+      {
         "path": "outputs/writing/the-map-is-the-journey/characters/yuri.md",
         "title": "유리 (柳里) — *어머니 손을 안 잡고 자기 손금을 처음 펴 본 8 살*",
         "version": "v0",
         "mtime": 1777723995,
-        "size": 7907
+        "size": 7907,
+        "artifact": "character-sheet",
+        "world_id": "the-map-is-the-journey",
+        "character": "yuri",
+        "character_hangul": "유리",
+        "character_hanja": "柳里",
+        "axis": "가족 → 나"
       },
       {
         "path": "outputs/writing/the-map-is-the-journey/characters/huijae.md",
         "title": "희재 (熙在) — *묻지 않은 채 같은 길을 두 번 걸은 사람*",
         "version": "v0",
         "mtime": 1777723936,
-        "size": 7531
+        "size": 7531,
+        "artifact": "character-sheet",
+        "world_id": "the-map-is-the-journey",
+        "character": "huijae",
+        "character_hangul": "희재",
+        "character_hanja": "熙在",
+        "axis": "나"
       },
       {
         "path": "outputs/writing/the-map-is-the-journey/characters/yeongang.md",
         "title": "연강 (連岡) — *옆에 앉는 사람의 60 년*",
         "version": "v0",
         "mtime": 1777723883,
-        "size": 7460
+        "size": 7460,
+        "artifact": "character-sheet",
+        "world_id": "the-map-is-the-journey",
+        "character": "yeongang",
+        "character_hangul": "연강",
+        "character_hanja": "連岡",
+        "axis": "업"
       },
       {
         "path": "outputs/writing/the-map-is-the-journey/characters/ingyu.md",
         "title": "인규 (仁圭) — *옆에 앉는 사람*",
         "version": "v0",
         "mtime": 1777723827,
-        "size": 6907
+        "size": 6907,
+        "artifact": "character-sheet",
+        "world_id": "the-map-is-the-journey",
+        "character": "ingyu",
+        "character_hangul": "인규",
+        "character_hanja": "仁圭",
+        "axis": "업"
       },
       {
         "path": "outputs/writing/the-map-is-the-journey/characters/yugyeong.md",
         "title": "유경 (柳敬) — *한 아이가 자기 종이 위를 가장 많이 걸은 사람*",
         "version": "v0",
         "mtime": 1777723777,
-        "size": 6244
+        "size": 6244,
+        "artifact": "character-sheet",
+        "world_id": "the-map-is-the-journey",
+        "character": "yugyeong",
+        "character_hangul": "유경",
+        "character_hanja": "柳敬",
+        "axis": "가족"
       },
       {
         "path": "outputs/writing/the-map-is-the-journey/characters/narim.md",
         "title": "나림 (那林) — *한 번 보고 도망친 자*",
         "version": "v0",
         "mtime": 1777723719,
-        "size": 5721
+        "size": 5721,
+        "artifact": "character-sheet",
+        "world_id": "the-map-is-the-journey",
+        "character": "narim",
+        "character_hangul": "나림",
+        "character_hanja": "那林",
+        "axis": "나"
       },
       {
         "path": "outputs/writing/the-map-is-the-journey/characters/jeonghae.md",
         "title": "정해 (正解) — *손금 새벽을 한 번도 안 한 자*",
         "version": "v0",
         "mtime": 1777723711,
-        "size": 5936
+        "size": 5936,
+        "artifact": "character-sheet",
+        "world_id": "the-map-is-the-journey",
+        "character": "jeonghae",
+        "character_hangul": "정해",
+        "character_hanja": "正解",
+        "axis": "나"
       },
       {
         "path": "outputs/writing/the-map-is-the-journey/characters/haeon.md",
         "title": "해온 (海溫) — *손금 새벽을 매일 하는 자*",
         "version": "v0",
         "mtime": 1777723703,
-        "size": 5501
+        "size": 5501,
+        "artifact": "character-sheet",
+        "world_id": "the-map-is-the-journey",
+        "character": "haeon",
+        "character_hangul": "해온",
+        "character_hanja": "海溫",
+        "axis": "나"
       },
       {
         "path": "outputs/writing/the-map-is-the-journey/character-sheets-extended-v0.md",
         "title": "여정 자체가 지도 — 인물 시트 *3 신규* 박음 v0 (연강 / 희재 / 유리)",
         "version": "v0",
         "mtime": 1777721458,
-        "size": 32039
-      },
-      {
-        "path": "outputs/writing/the-map-is-the-journey/paired-dawns-v0.1.md",
-        "title": "옆에 잇닿은 두 새벽 v0.1 (사람-가독성 적용 — 연강 *가족* / 유리 *연대*)",
-        "version": "v0.1",
-        "mtime": 1777717528,
-        "size": 23630
+        "size": 32039,
+        "artifact": "character-sheets-extended",
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/writing/the-map-is-the-journey/paired-dawns-v0.md",
         "title": "옆에 잇닿은 두 새벽 (연강 *가족* / 유리 *연대*)",
         "version": "v0",
         "mtime": 1777711295,
-        "size": 28242
+        "size": 28242,
+        "artifact": "short-story-pair",
+        "world": "the-map-is-the-journey@v0.5"
       },
       {
         "path": "outputs/writing/the-map-is-the-journey/forbidden-dialogue-v0.md",
         "title": "여정 자체가 지도 — 금지 대사 사전 v0 (인물 대사 단위 그물)",
         "version": "v0",
         "mtime": 1777709246,
-        "size": 32807
-      },
-      {
-        "path": "outputs/writing/the-map-is-the-journey/sideseat-dawn-v0.md",
-        "title": "옆자리에 앉은 한 새벽",
-        "version": "v0",
-        "mtime": 1777707003,
-        "size": 21669
-      },
-      {
-        "path": "outputs/writing/the-map-is-the-journey/dawn-first-map.md",
-        "title": "처음으로 자기 지도를 본 새벽",
-        "version": "v0",
-        "mtime": 1777692489,
-        "size": 14766
+        "size": 32807,
+        "artifact": "forbidden-dialogue",
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/writing/the-map-is-the-journey/character-sheets-axis-v0.md",
         "title": "여정 자체가 지도 — 인물 시트 *축 보강* v0 (2 인 추가)",
         "version": "v0",
         "mtime": 1777657293,
-        "size": 18907
+        "size": 18907,
+        "artifact": "character-sheets-axis-supplement",
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/writing/the-map-is-the-journey/character-sheets-v0.md",
         "title": "여정 자체가 지도 — 인물 시트 v0 (3 인)",
         "version": "v0",
         "mtime": 1777655923,
-        "size": 12733
+        "size": 12733,
+        "artifact": "character-sheets",
+        "world_id": "the-map-is-the-journey"
       }
     ],
     "world": [
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/chronicle-v1.md",
+        "title": "연대기 v1 — 일곱 사건",
+        "version": "v1",
+        "mtime": 1777724350,
+        "size": 11043,
+        "world_id": "the-map-is-the-journey"
+      },
+      {
+        "path": "outputs/worldbuilding/the-map-is-the-journey/chronicle-v1.1.md",
+        "title": "연대기 v1.1 — 사건 4 인스턴스 풀 + 세대 단위 시간차 동행 (thin-bump)",
+        "version": "v1.1",
+        "mtime": 1777724345,
+        "size": 7406,
+        "world_id": "the-map-is-the-journey"
+      },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/character-relations-v0.md",
         "title": "여정 자체가 지도 — 인물 관계도 v0 (8 자)",
         "version": "v0",
         "mtime": 1777723910,
-        "size": 28718
+        "size": 28718,
+        "artifact": "character-relations",
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.5.md",
         "title": "여정 자체가 지도 (The Map is the Journey) — Bible v0.5",
         "version": "v0.5",
         "mtime": 1777723899,
-        "size": 14926
+        "size": 14926,
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.6.md",
         "title": "여정 자체가 지도 — 세계 바이블 v0.6 (인물 절 baseline 박음)",
         "version": "v0.6",
         "mtime": 1777723503,
-        "size": 9774
+        "size": 9774,
+        "artifact": "world-bible",
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/character-relations-v0.1.md",
         "title": "인물 관계도 v0.1 — 5/3/3 다축 박음 + chronicle 번호 보정 (thin extension)",
         "version": "v0.1",
         "mtime": 1777723418,
-        "size": 10920
+        "size": 10920,
+        "artifact": "character-relations",
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.4.md",
         "title": "여정 자체가 지도 (The Map is the Journey) — Bible v0.4",
         "version": "v0.4",
         "mtime": 1777716713,
-        "size": 13851
-      },
-      {
-        "path": "outputs/worldbuilding/the-map-is-the-journey/chronicle-v1.md",
-        "title": "연대기 v1 — 일곱 사건",
-        "version": "v1",
-        "mtime": 1777710071,
-        "size": 10832
+        "size": 13851,
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/objects-items-v0.md",
         "title": "오브젝트 / 아이템 v0 — 일곱 사물",
         "version": "v0",
         "mtime": 1777709981,
-        "size": 14854
+        "size": 14854,
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/regions-v0.md",
         "title": "지역 v0 — 다섯 종이의 자리",
         "version": "v0",
         "mtime": 1777705795,
-        "size": 17356
+        "size": 17356,
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.3.md",
         "title": "여정 자체가 지도 (The Map is the Journey) — Bible v0.3",
         "version": "v0.3",
         "mtime": 1777660269,
-        "size": 29356
+        "size": 29356,
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/forbidden-language-v0.md",
         "title": "금지 표현 사전 v0 — *본 세계가 말하지 않는 것*",
         "version": "v0",
         "mtime": 1777655958,
-        "size": 7688
+        "size": 7688,
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/chronicle-v0.md",
         "title": "연대기 v0 — 다섯 사건",
         "version": "v0",
         "mtime": 1777655887,
-        "size": 5964
+        "size": 5964,
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/terrain-v0.md",
         "title": "지형 v0 — 다섯 종의 산",
         "version": "v0",
         "mtime": 1777655835,
-        "size": 6638
+        "size": 6638,
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.2.md",
         "title": "여정 자체가 지도 (The Map is the Journey) — Bible v0.2",
         "version": "v0.2",
         "mtime": 1777655074,
-        "size": 19004
+        "size": 19004,
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/worldbuilding/the-map-is-the-journey/bible-v0.1.md",
         "title": "여정 자체가 지도 (The Map is the Journey) — Bible v0.1",
         "version": "v0.1",
         "mtime": 1777652770,
-        "size": 9811
+        "size": 9811,
+        "world_id": "the-map-is-the-journey"
       }
     ],
     "art": [
@@ -318,49 +545,62 @@
         "title": "시각 바이블 v0.3 — *가족·업 인물 hex 정착 + concept v0.1 시각 박자 검수 + writer r3 단편 흡수 + 권력 두 비극 시각 분리 + 6 장 우표 컨셉 시트*",
         "version": "v0.3",
         "mtime": 1777718134,
-        "size": 65077
+        "size": 65077,
+        "artifact": "visual-bible",
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/art/the-map-is-the-journey/visual-bible-v0.4.md",
         "title": "시각 바이블 v0.4 — *thin-bump baseline 박음 자리* (8 우표 풀 + 8 인 hex 매트릭스 + 자국빛 4 종 분포)",
         "version": "v0.4",
         "mtime": 1777718134,
-        "size": 18380
+        "size": 18380,
+        "artifact": "visual-bible",
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/art/the-map-is-the-journey/stamps-extension-v0.md",
         "title": "시각 바이블 §17 확장 v0 — 우표 §17.7 연강 + §17.8 희재 컨셉 시트 박음",
         "version": null,
         "mtime": 1777711875,
-        "size": 21682
+        "size": 21682,
+        "artifact": "visual_extension"
       },
       {
         "path": "outputs/art/the-map-is-the-journey/palette-patch-v0.md",
         "title": "시각 바이블 v0.3 → v0.4 팔레트 patch — 자국빛 3 색조 미세 분리 + 3 신규 인물 hex 정착 (연강 / 희재 / 유리)",
         "version": null,
         "mtime": 1777707331,
-        "size": 20787
+        "size": 20787,
+        "artifact": "palette-patch",
+        "world": "the-map-is-the-journey@v0.4"
       },
       {
         "path": "outputs/art/the-map-is-the-journey/r4-readiness-note-v0.md",
         "title": "r4 Readiness Note v0 — *visual-bible v0.4 전 입력 정리* (디자인 박음 0)",
         "version": "v0",
         "mtime": 1777700412,
-        "size": 13760
+        "size": 13760,
+        "artifact": "r4-readiness-note",
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/art/the-map-is-the-journey/visual-bible-v0.2.md",
         "title": "시각 바이블 v0.2 — *쉼의 자리 · 손금 새벽 · 화살표 자국* 박음",
         "version": "v0.2",
         "mtime": 1777658048,
-        "size": 37312
+        "size": 37312,
+        "artifact": "visual-bible",
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/art/the-map-is-the-journey/visual-bible-v0.1.md",
         "title": "시각 바이블 v0.1 — 여정 자체가 지도",
         "version": "v0.1",
         "mtime": 1777653525,
-        "size": 13180
+        "size": 13180,
+        "artifact": "visual-bible",
+        "world_id": "the-map-is-the-journey"
       },
       {
         "path": "outputs/art/README.md",
@@ -400,95 +640,108 @@
     ],
     "alignment": [
       {
+        "path": "outputs/alignment/the-map-is-the-journey/human-readability-principle-v0.md",
+        "title": "사람-가독성 원칙 v0 — 장면+감정 우선, 메타포는 그 위에",
+        "version": "v0",
+        "mtime": 1777724378,
+        "size": 10068,
+        "artifact": "human-readability-principle"
+      },
+      {
         "path": "outputs/alignment/the-map-is-the-journey/character-sheets-extended-v0-audit.md",
         "title": "character-sheets-extended-v0 정렬 감사 + §7 cold-measurement",
         "version": "v0",
         "mtime": 1777722295,
-        "size": 14662
+        "size": 14662,
+        "artifact": "character-sheets-extended-v0-audit"
       },
       {
         "path": "outputs/alignment/the-map-is-the-journey/stamp-17-1-haeon-palm-line-dawn-audit.md",
         "title": "stamp-17-1 *손금 새벽* 정렬 audit (voice-keeper r6 cy-002)",
         "version": "v0",
         "mtime": 1777720749,
-        "size": 8597
+        "size": 8597,
+        "artifact": "stamp-17-1-haeon-palm-line-dawn-audit"
       },
       {
         "path": "outputs/alignment/the-map-is-the-journey/paired-dawns-v0.1-audit.md",
         "title": "voice-keeper r5 cy-002 — paired-dawns-v0.1 §7 cold + 정렬 재측정 + visual-bible v0.4 e-항 baseline",
         "version": null,
         "mtime": 1777719296,
-        "size": 16736
+        "size": 16736,
+        "artifact": "voice-keeper-audit"
       },
       {
         "path": "outputs/alignment/the-map-is-the-journey/cy-002-r2-roundup-v0.md",
         "title": "cy-002 r2 묶음 마감 정렬 측정 (3 자리 부수 + 누적 평균 갱신)",
         "version": null,
         "mtime": 1777716762,
-        "size": 16181
-      },
-      {
-        "path": "outputs/alignment/the-map-is-the-journey/human-readability-principle-v0.md",
-        "title": "사람-가독성 원칙 v0 — 장면+감정 우선, 메타포는 그 위에",
-        "version": "v0",
-        "mtime": 1777716745,
-        "size": 9804
+        "size": 16181,
+        "artifact": "alignment-roundup"
       },
       {
         "path": "outputs/alignment/the-map-is-the-journey/bible-v0.5-score.md",
         "title": "Bible v0.5 — 매니페스토 정렬 점수 (cy-002 r3 + 룰 A3 자가 적용 3 호 + 룰 B1 도입 사례 1 호)",
         "version": null,
         "mtime": 1777710678,
-        "size": 27550
+        "size": 27550,
+        "artifact": "alignment-score"
       },
       {
         "path": "outputs/alignment/the-map-is-the-journey/forbidden-dialogue-v0-audit.md",
         "title": "Forbidden-Dialogue v0 — 매니페스토 정렬 감사 (cy-002 r2 + 룰 B4 도입 사례 1 호 + 분류 결정 박음)",
         "version": null,
         "mtime": 1777709151,
-        "size": 20850
+        "size": 20850,
+        "artifact": "alignment-audit"
       },
       {
         "path": "outputs/alignment/the-map-is-the-journey/bible-v0.4-score.md",
         "title": "Bible v0.4 — 매니페스토 정렬 점수 (cy-002 r1 + 룰 A3 정식 1 호 적용)",
         "version": null,
         "mtime": 1777706410,
-        "size": 20262
+        "size": 20262,
+        "artifact": "alignment-score"
       },
       {
         "path": "outputs/alignment/the-map-is-the-journey/closing-round-axis-recheck-v0.md",
         "title": "Bible v0.3 e-항 격상 + 마감 라운드 6 자리 정렬 audit (voice-keeper r4 — cy-001 마감 라운드 종결 시점)",
         "version": null,
         "mtime": 1777699272,
-        "size": 19763
+        "size": 19763,
+        "artifact": "closing-round-axis-recheck"
       },
       {
         "path": "outputs/alignment/three-axis-dashboard-v0.md",
         "title": "세 축 균형 대시보드 v0 (cy-001 round 3 종결 시점)",
         "version": "v0",
         "mtime": 1777678863,
-        "size": 10990
+        "size": 10990,
+        "artifact": "three-axis-dashboard"
       },
       {
         "path": "outputs/alignment/the-map-is-the-journey/bible-v0.3-score.md",
         "title": "Bible v0.3 — 매니페스토 정렬 점수 v0 (3 차 측정 + 5 자리 e 항 재측정 + *연대* 재측정)",
         "version": null,
         "mtime": 1777678774,
-        "size": 21145
+        "size": 21145,
+        "artifact": "alignment-score"
       },
       {
         "path": "outputs/alignment/the-map-is-the-journey/bible-v0.2-score.md",
         "title": "Bible v0.2 — 매니페스토 정렬 점수 v0 (재측정)",
         "version": null,
         "mtime": 1777656572,
-        "size": 16629
+        "size": 16629,
+        "artifact": "alignment-score"
       },
       {
         "path": "outputs/alignment/the-map-is-the-journey/bible-v0.1-score.md",
         "title": "Bible v0.1 — 매니페스토 정렬 점수 v0",
         "version": null,
         "mtime": 1777654408,
-        "size": 8308
+        "size": 8308,
+        "artifact": "alignment-score"
       }
     ],
     "design": [
@@ -497,42 +750,48 @@
         "title": "g-the-map-walker — 페일 모드 카탈로그 v0",
         "version": "v0",
         "mtime": 1777718890,
-        "size": 8124
+        "size": 8124,
+        "artifact": "fail-modes-catalog"
       },
       {
         "path": "outputs/design/g-the-map-walker/concept.md",
         "title": "g-the-map-walker — Concept v0",
         "version": "v0",
         "mtime": 1777718883,
-        "size": 13042
+        "size": 13042,
+        "artifact": "concept"
       },
       {
         "path": "outputs/design/g-the-map-walker/fail-modes-v0+.md",
         "title": "g-the-map-walker — 페일 모드 카탈로그 v0+",
         "version": "v0+",
         "mtime": 1777708757,
-        "size": 16053
+        "size": 16053,
+        "artifact": "fail-modes-catalog"
       },
       {
         "path": "outputs/design/g-the-map-walker/concept-diagrams-v0.md",
         "title": "g-the-map-walker — Concept Diagrams v0 (concept v0.1 시각 도식 보강)",
         "version": "v0",
         "mtime": 1777697528,
-        "size": 21344
+        "size": 21344,
+        "artifact": "concept-diagrams"
       },
       {
         "path": "outputs/design/g-the-map-walker/concept-v0.1.md",
         "title": "g-the-map-walker — Concept v0.1 (vertical slice 표적 lock + 세 축 진입 + 마감 라운드 산출)",
         "version": "v0.1",
         "mtime": 1777688717,
-        "size": 26924
+        "size": 26924,
+        "artifact": "concept"
       },
       {
         "path": "outputs/design/g-the-map-walker/mechanics-v0+.md",
         "title": "g-the-map-walker — Mechanics v0+ (옆자리 + 함께 걸은 자리, 5분 세션)",
         "version": "v0+",
         "mtime": 1777659090,
-        "size": 22142
+        "size": 22142,
+        "artifact": "mechanics"
       }
     ],
     "critique": [
@@ -541,42 +800,49 @@
         "title": "character-sheets-extended-v0 첫 5 분 cold-read (3 인 시트 × 5 인 페르소나)",
         "version": null,
         "mtime": 1777722806,
-        "size": 12873
+        "size": 12873,
+        "artifact": "character-sheets-extended-v0-first-5min"
       },
       {
         "path": "outputs/critique/the-map-is-the-journey/paired-dawns-v0.1-first-5min.md",
         "title": "critic r5 cy-002 cold-read — paired-dawns-v0.1 첫 5 분 (Cold-read protocol 첫 정식 적용 1 호 사례)",
         "version": null,
         "mtime": 1777718474,
-        "size": 25718
+        "size": 25718,
+        "artifact": "paired-dawns-v0.1.md",
+        "world": "the-map-is-the-journey@v0.5"
       },
       {
         "path": "outputs/critique/the-map-is-the-journey/stamps-17-7-17-8-first-5min.md",
         "title": "우표 §17.7 + §17.8 5 분 cold-read",
         "version": null,
         "mtime": 1777716190,
-        "size": 9883
+        "size": 9883,
+        "artifact": "stamps-17-7-17-8 first-5min cold-read"
       },
       {
         "path": "outputs/critique/the-map-is-the-journey/bible-v0.3-first-5min.md",
         "title": "Bible v0.3 + 마감 라운드 3 자리 — 첫 5 분 cold-read 묶음 (critic r3)",
         "version": null,
         "mtime": 1777696845,
-        "size": 28422
+        "size": 28422,
+        "artifact": "bible-v0.3-first-5min-critique-bundle"
       },
       {
         "path": "outputs/critique/the-map-is-the-journey/bible-v0.2-first-5min.md",
         "title": "Bible v0.2 — 첫 5 분 재측정 + character-sheets cold-read 시뮬",
         "version": null,
         "mtime": 1777657905,
-        "size": 25672
+        "size": 25672,
+        "artifact": "bible-v0.2-first-5min-critique"
       },
       {
         "path": "outputs/critique/the-map-is-the-journey/bible-v0.1-first-5min.md",
         "title": "Bible v0.1 — 첫 5 분 critique",
         "version": null,
         "mtime": 1777654083,
-        "size": 12466
+        "size": 12466,
+        "artifact": "bible-v0.1-first-5min-critique"
       }
     ],
     "code-docs": [
@@ -585,28 +851,32 @@
         "title": "manual-run 체크리스트 v0",
         "version": "v0",
         "mtime": 1777719760,
-        "size": 6917
+        "size": 6917,
+        "artifact": "manual-run-checklist"
       },
       {
         "path": "outputs/code/g-the-map-walker/walk-trace-spec-v0.md",
         "title": "walk-trace 시스템 — 1 페이지 사양 (v0)",
         "version": "v0",
         "mtime": 1777719759,
-        "size": 9103
+        "size": 9103,
+        "artifact": "walk-trace-spec"
       },
       {
         "path": "outputs/code/g-the-map-walker/manual-run-log-20260502-002.md",
         "title": "manual-run-log 20260502-002 (implementer r1 cy-002 — *instrumentation 박음 + 인터랙티브 round 절차*)",
         "version": null,
         "mtime": 1777715349,
-        "size": 10835
+        "size": 10835,
+        "artifact": "manual-run-log"
       },
       {
         "path": "outputs/code/g-the-map-walker/manual-run-log-20260502-001.md",
         "title": "manual-run-log 20260502-001 (implementer r3 — *spec 자리 + 빌드 자리* 박음)",
         "version": null,
         "mtime": 1777698137,
-        "size": 10618
+        "size": 10618,
+        "artifact": "manual-run-log"
       },
       {
         "path": "outputs/code/g-the-map-walker/prototype/node_modules/pixi.js/README.md",
@@ -844,28 +1114,32 @@
         "title": "cy-001 Vertical Slice 1호 Charter — *the-map-walker* (Game)",
         "version": "v0",
         "mtime": 1777680845,
-        "size": 16973
+        "size": 16973,
+        "artifact": "vertical-slice-charter"
       },
       {
         "path": "outputs/code/g-the-map-walker/manual-run-checklist-v0+.md",
         "title": "manual-run 체크리스트 v0+",
         "version": "v0+",
         "mtime": 1777659653,
-        "size": 9926
+        "size": 9926,
+        "artifact": "manual-run-checklist"
       },
       {
         "path": "outputs/code/g-the-map-walker/walk-trace-spec-v0+.md",
         "title": "walk-trace 시스템 — 1 페이지 사양 (v0+)",
         "version": "v0+",
         "mtime": 1777659575,
-        "size": 19447
+        "size": 19447,
+        "artifact": "walk-trace-spec"
       },
       {
         "path": "outputs/code/g-the-map-walker/engine-choice.md",
         "title": "g-the-map-walker — Engine Choice (cost/value v0)",
         "version": "v0",
         "mtime": 1777655356,
-        "size": 14754
+        "size": 14754,
+        "artifact": "engine-choice"
       }
     ],
     "decisions": [
@@ -913,6 +1187,13 @@
       }
     ],
     "ticks": [
+      {
+        "path": "generations/gen-001/cycles/cy-003/ticks/tick-012.md",
+        "title": "Tick cy-003/012 — role (loremaster r2 cy-003 — chronicle-v1.1 thin-bump + audit-only 묶음)",
+        "version": null,
+        "mtime": 1777724531,
+        "size": 10909
+      },
       {
         "path": "generations/gen-001/cycles/cy-003/ticks/tick-011.md",
         "title": "Tick cy-003/011 — finalize-only orphan-ack (orchestrator: tick-009 + tick-010 후속 B+ 짝 의무 처치 + drift 27 호 회복 합본)",
@@ -1518,6 +1799,13 @@
     ],
     "arguments": [
       {
+        "path": "generations/gen-001/cycles/cy-003/arguments/loremaster-r2.md",
+        "title": "loremaster r2 cy-003 — chronicle-v1.1 thin-bump + cy-003 r1 audit-only 묶음",
+        "version": null,
+        "mtime": 1777724449,
+        "size": 12034
+      },
+      {
         "path": "generations/gen-001/cycles/cy-003/arguments/implementer-r1.md",
         "title": "implementer r1 cy-003 — outputs/timeline.md 정합 회복 + stamp-17-2 entry 박음 (publishing surface 보강)",
         "version": null,
@@ -1571,7 +1859,9 @@
         "title": "implementer r3+ — post-supersede 포인터 stale 처치 implementer 측 1 호 사례 (cy-002 마감 라운드 후속 thin-patch = 4 도구 교차 검증 도달)",
         "version": null,
         "mtime": 1777719761,
-        "size": 17974
+        "size": 17974,
+        "artifact": "argument",
+        "world": "the-map-is-the-journey@v0.5"
       },
       {
         "path": "generations/gen-001/cycles/cy-002/arguments/voice-keeper-r5.md",
@@ -1585,7 +1875,9 @@
         "title": "designer r5+ — post-supersede 포인터 stale 처치 designer 측 1 호 사례 (cy-002 마감 라운드 후속 thin-patch)",
         "version": null,
         "mtime": 1777718982,
-        "size": 13042
+        "size": 13042,
+        "artifact": "argument",
+        "world": "the-map-is-the-journey@v0.5"
       },
       {
         "path": "generations/gen-001/cycles/cy-002/arguments/critic-r5.md",
@@ -1599,14 +1891,16 @@
         "title": "art-director r4 cy-002 thin-bump — visual-bible v0.4 baseline 박음 자리",
         "version": null,
         "mtime": 1777718134,
-        "size": 16491
+        "size": 16491,
+        "artifact": "argument"
       },
       {
         "path": "generations/gen-001/cycles/cy-002/arguments/writer-r3.md",
         "title": "writer r3 (cy-002) — paired-dawns-v0 → v0.1 사람-가독성 재작성",
         "version": null,
         "mtime": 1777717586,
-        "size": 6693
+        "size": 6693,
+        "artifact": "outputs/writing/the-map-is-the-journey/paired-dawns-v0.1.md"
       },
       {
         "path": "generations/gen-001/cycles/cy-002/arguments/critic-r4.md",
@@ -1648,7 +1942,8 @@
         "title": "art-director r3 image 측 — §17.7 + §17.8 실측 image 2 장 박음",
         "version": null,
         "mtime": 1777715767,
-        "size": 11117
+        "size": 11117,
+        "artifact": "argument"
       },
       {
         "path": "generations/gen-001/cycles/cy-002/arguments/implementer-r3.md",
@@ -1662,35 +1957,41 @@
         "title": "designer r5 — A4 정식 룰 자가 적용 1 호 baseline + concept v0.2 r6 이월 박음 (cy-002 r2 묶음 종결 후 thin patch)",
         "version": null,
         "mtime": 1777714760,
-        "size": 13999
+        "size": 13999,
+        "artifact": "argument",
+        "world": "the-map-is-the-journey@v0.5"
       },
       {
         "path": "generations/gen-001/cycles/cy-002/arguments/critic-r2.md",
         "title": "critic r2 (cy-002) — 단편 +3 + F9 처치 회복 + 8 우표 spec cold-read 5 인 시뮬",
         "version": null,
         "mtime": 1777712459,
-        "size": 32522
+        "size": 32522,
+        "artifact": "critic-r2"
       },
       {
         "path": "generations/gen-001/cycles/cy-002/arguments/art-director-r3.md",
         "title": "art-director r3 (cy-002) — §17.7~§17.8 우표 컨셉 spec 박음 + r2 orphan ack 합본",
         "version": null,
         "mtime": 1777711994,
-        "size": 13847
+        "size": 13847,
+        "artifact": "argument"
       },
       {
         "path": "generations/gen-001/cycles/cy-002/arguments/art-director-r2.md",
         "title": "art-director r2 (cy-002) — F9 처치 박음 + §17 6 우표 hex 정합 spec + B1 도입 사례 2 호",
         "version": null,
         "mtime": 1777711514,
-        "size": 21632
+        "size": 21632,
+        "artifact": "argument"
       },
       {
         "path": "generations/gen-001/cycles/cy-002/arguments/writer-r2.md",
         "title": "writer r2 (cy-002) — 연강 *가족* + 유리 *연대* 두 단편 묶음",
         "version": null,
         "mtime": 1777711408,
-        "size": 4109
+        "size": 4109,
+        "artifact": "outputs/writing/the-map-is-the-journey/paired-dawns-v0.md"
       },
       {
         "path": "generations/gen-001/cycles/cy-002/arguments/voice-keeper-r3.md",
@@ -1711,7 +2012,8 @@
         "title": "orchestrator r2 (cy-002) — A8 baseline + B3 가중치 + r2 묶음 dispatch",
         "version": null,
         "mtime": 1777709562,
-        "size": 11143
+        "size": 11143,
+        "world": "the-map-is-the-journey@v0.4"
       },
       {
         "path": "generations/gen-001/cycles/cy-002/arguments/implementer-r2.md",
@@ -1732,21 +2034,25 @@
         "title": "designer r4+ — cy-002 r1 종결 후 fail-modes-v0+ thin patch (F8 / F9 catalog 박음)",
         "version": null,
         "mtime": 1777708833,
-        "size": 9902
+        "size": 9902,
+        "artifact": "argument",
+        "world": "the-map-is-the-journey@v0.4"
       },
       {
         "path": "generations/gen-001/cycles/cy-002/arguments/critic-r1.md",
         "title": "critic r1 (cy-002) — prototype 첫 자국 ≤ 60 s cold-read 5 인 시뮬",
         "version": null,
         "mtime": 1777708167,
-        "size": 18769
+        "size": 18769,
+        "artifact": "critic-r1"
       },
       {
         "path": "generations/gen-001/cycles/cy-002/arguments/art-director-r1.md",
         "title": "art-director r1 (cy-002) — 챔피언 발화 + 트립 자기 검사 + r2 인계",
         "version": null,
         "mtime": 1777707416,
-        "size": 10103
+        "size": 10103,
+        "artifact": "argument"
       },
       {
         "path": "generations/gen-001/cycles/cy-002/arguments/writer-r1.md",
@@ -1760,7 +2066,8 @@
         "title": "voice-keeper r1 (cy-002) — 챔피언 발화 + 트립 자기 검사 + r2 인계",
         "version": null,
         "mtime": 1777706480,
-        "size": 8578
+        "size": 8578,
+        "artifact": "argument"
       },
       {
         "path": "generations/gen-001/cycles/cy-002/arguments/loremaster-r1.md",
@@ -1781,14 +2088,17 @@
         "title": "designer r4 — facing_history N=8 검수 + STEP_DISTANCE_RATIO 가드 박음 (cy-002 r1+r2 묶음)",
         "version": null,
         "mtime": 1777704605,
-        "size": 13570
+        "size": 13570,
+        "artifact": "argument",
+        "world": "the-map-is-the-journey@v0.4"
       },
       {
         "path": "generations/gen-001/cycles/cy-001/arguments/critic-r4.md",
         "title": "Forbidden-Dialogue v0 — 첫 5 분 cold-read (조직 내부 도구 진입 시뮬, critic r4)",
         "version": null,
         "mtime": 1777704013,
-        "size": 18011
+        "size": 18011,
+        "artifact": "critic-r4"
       },
       {
         "path": "generations/gen-001/cycles/cy-001/arguments/orchestrator-r2.md",
@@ -1809,28 +2119,32 @@
         "title": "loremaster r4 — 인물 관계도 v0 (8 자) 발언",
         "version": null,
         "mtime": 1777697883,
-        "size": 5152
+        "size": 5152,
+        "artifact": "outputs/worldbuilding/the-map-is-the-journey/character-relations-v0.md"
       },
       {
         "path": "generations/gen-001/cycles/cy-001/arguments/designer-r3+.md",
         "title": "Designer r3+ — concept-diagrams v0 발언 (마감 라운드 patch, critic r3 §4 인계 직접 응답)",
         "version": null,
         "mtime": 1777697715,
-        "size": 5853
+        "size": 5853,
+        "artifact": "outputs/design/g-the-map-walker/concept-diagrams-v0.md"
       },
       {
         "path": "generations/gen-001/cycles/cy-001/arguments/critic-r3.md",
         "title": "critic r3 발언",
         "version": null,
         "mtime": 1777696902,
-        "size": 5469
+        "size": 5469,
+        "artifact": "outputs/critique/the-map-is-the-journey/bible-v0.3-first-5min.md"
       },
       {
         "path": "generations/gen-001/cycles/cy-001/arguments/art-director-r3.md",
         "title": "art-director r3 발언 (마감 라운드, charter §첫 task #1+#2+#3 완전 박음 + concept v0.1 시각 박자 검수 + writer r3 단편 흡수 + 권력 두 비극 시각 분리)",
         "version": null,
         "mtime": 1777696076,
-        "size": 9863
+        "size": 9863,
+        "artifact": "outputs/art/the-map-is-the-journey/visual-bible-v0.3.md"
       },
       {
         "path": "generations/gen-001/cycles/cy-001/arguments/writer-r3.md",
@@ -1844,7 +2158,8 @@
         "title": "Designer r3 — concept v0.1 발언 (마감 라운드, D-003 picked=game 직접 응답)",
         "version": null,
         "mtime": 1777688787,
-        "size": 8001
+        "size": 8001,
+        "artifact": "outputs/design/g-the-map-walker/concept-v0.1.md"
       },
       {
         "path": "generations/gen-001/cycles/cy-001/arguments/voice-keeper-r3.md",
@@ -1872,7 +2187,8 @@
         "title": "art-director r2 — 시각 바이블 v0.2 induction (drift 7 호 짝 회복)",
         "version": null,
         "mtime": 1777659476,
-        "size": 10259
+        "size": 10259,
+        "artifact": "outputs/art/the-map-is-the-journey/visual-bible-v0.2.md"
       },
       {
         "path": "generations/gen-001/cycles/cy-001/arguments/designer-r2.md",
@@ -1998,17 +2314,17 @@
     ]
   },
   "stats": {
-    "writings": 16,
-    "world": 14,
+    "writings": 17,
+    "world": 15,
     "art": 12,
     "alignment": 13,
     "design": 6,
     "critique": 6,
     "code-docs": 41,
     "decisions": 6,
-    "ticks": 86,
-    "arguments": 63,
+    "ticks": 87,
+    "arguments": 64,
     "decision-traces": 5,
-    "illustrations": 5
+    "illustrations": 13
   }
 }

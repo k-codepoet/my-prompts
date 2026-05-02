@@ -82,7 +82,9 @@ forbidden_language_grep_pass: true
 
 ## 일러스트 갤러리
 
-> 박힌 컷 0 종. 갤러리는 *비어 있음* 자리 — cy-003 r2 신규 일러스트 표적.
+| 컷 | 자리 | 출처 |
+|-----|-----|------|
+| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v1.png) | 캐릭터 시트 — 38 자국째, 35 자국째 다시 펴는 손바닥 두 마음의 결 (회화 톤 baseline) | cy-003 r2 art-director image |
 
 > 확장 자리 (cy-003+ 후보):
 > - *35 자국째 해 다시 펴는 첫 새벽 — 두 색조가 겹친 손바닥*

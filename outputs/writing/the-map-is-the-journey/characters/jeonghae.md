@@ -84,6 +84,7 @@ forbidden_language_grep_pass: true
 | 컷 | 자리 | 출처 |
 |-----|-----|------|
 | ![발끝의 방향](../../../worldbuilding/the-map-is-the-journey/illustrations/stamp-17-2-jeonghae-toes-one-direction-v1.png) | §17.2 *발끝의 한 방향* — 매일 같은 곳을 가리키는 발끝 | visual-bible-v0.3 §17.2 |
+| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-jeonghae-v1.png) | 캐릭터 시트 — 27 자국째, 외투 주머니 + 발끝 정지의 측면 컷 (회화 톤 baseline) | cy-003 r2 art-director image |
 
 > 확장 자리 (cy-003+ 후보):
 > - *어릴 때 한 번 시도하고 거둔 손* — 손바닥 따뜻해지기 직전

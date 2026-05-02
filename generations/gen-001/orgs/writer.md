@@ -54,6 +54,33 @@ champions_keywords_secondary: [진심, 시간이 곧 나]
 - 메타 섹션의 self-check 점수로 reader portion 의 어색함을 덮기.
 - 실제 작가 코퍼스를 읽지 않고 "작가 목소리" 라고 주장하기.
 
+## Series continuation 프로토콜
+
+활성 연재물은 `series_id: the-map-is-the-journey` 이다.
+
+새 회차를 쓸 때 writer 는 다음 순서를 따른다.
+
+1. `outputs/writing/the-map-is-the-journey/*.md` 와 `site/manifest.json` 에서 `series_id` + `episode_no` 의 최댓값을 확인한다.
+2. 새 회차 번호는 `max(episode_no) + 1` 이다. 현재 baseline 은 1~3 회이므로 다음 신규 단편은 4 회다.
+3. 출력 경로는 `outputs/writing/the-map-is-the-journey/episode-NN-<slug>.md` 형식을 쓴다. 기존 회차를 덮어쓰지 않는다.
+4. 한 writer tick 에는 독자 노출 단편 1 회차만 쓴다.
+5. frontmatter 에 아래 필드를 반드시 넣는다.
+
+```yaml
+series_id: the-map-is-the-journey
+series_title: 여정 자체가 지도
+episode_no: N
+episode_title: ...
+episode_summary: ...
+episode_characters: ...
+episode_thumb: outputs/...png
+episode_status: candidate
+reader_first_status: candidate
+```
+
+`episode_no` 가 있으면 `prompt.codepoet.site` 첫 화면의 연재 카드가 manifest 를 통해 자동으로 붙는다.
+HTML 을 회차마다 직접 고치지 않는다.
+
 ## 매니페스토 매핑 (seed.md §② 핵심어 → 본 조직의 1차 챔피언)
 
 - **1차**: `연대` — 본 세계의 인물은 *혼자 걷지만 자국이 겹친다*. 동행은 합쳐짐이 아니라 *겹쳐짐*. 본 조직은 그 미세한 차이를 모든 관계 묘사에서 지킨다.

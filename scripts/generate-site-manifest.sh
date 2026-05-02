@@ -65,6 +65,7 @@ def file_meta(path):
     rel = str(path.relative_to(ROOT))
     title = None
     version = None
+    fm = {}
     try:
         text = path.read_text(errors="ignore")
         fm = parse_fm(text)
@@ -76,13 +77,34 @@ def file_meta(path):
         pass
     if not title:
         title = path.stem
-    return {
+    meta = {
         "path": rel,
         "title": title,
         "version": version,
         "mtime": int(path.stat().st_mtime),
         "size": path.stat().st_size,
     }
+    for key in [
+        "artifact",
+        "world_id",
+        "world",
+        "series_id",
+        "series_title",
+        "episode_no",
+        "episode_title",
+        "episode_summary",
+        "episode_characters",
+        "episode_thumb",
+        "episode_status",
+        "reader_first_status",
+        "character",
+        "character_hangul",
+        "character_hanja",
+        "axis",
+    ]:
+        if fm.get(key):
+            meta[key] = fm[key]
+    return meta
 
 def collect(glob_root, pattern, suffix):
     """glob_root 아래에서 pattern 매칭 + suffix 끝나는 파일 수집."""

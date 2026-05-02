@@ -1,0 +1,13 @@
+id: character-sheet-yeongang-v1
+created_at: '2026-05-02T12:31:04+00:00'
+creator: writer+art-director (cy-003 r2 character-sheet image)
+category: illustration
+caption: |
+  캐릭터 시트 — 연강 (連岡, 60+, 업 축). 산등성이 벤치, 일어섬을 미루는 한 박자.
+prompt: |
+  elderly Korean man over sixty, sitting on wooden bench at mountain ridge, light coat across knees, dawn rising, holding rising one beat longer because someone has come, eyes only narrowed in small smile, sumukhwa style, faded sepia #5A4A35
+workflow: z-image-turbo
+source_artifact: outputs/writing/the-map-is-the-journey/characters/yeongang.md
+source_section: "## 외형 / 분위기"
+size: 1024x1024
+genai_origin_url: https://genai.home.codepoet.site/outputs/2026/05/02/85682ca4-254f-4b74-8b39-7f0c70b72909.png

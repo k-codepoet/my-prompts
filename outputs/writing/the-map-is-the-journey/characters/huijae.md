@@ -107,6 +107,7 @@ forbidden_language_grep_pass: true
 | 컷 | 자리 | 출처 |
 |-----|-----|------|
 | ![나란히 두 새벽](../../../worldbuilding/the-map-is-the-journey/illustrations/stamp-17-8-huijae-side-by-side-dawns-v1.png) | §17.8 *나란히 두 새벽* — 정해의 자국 위에 시간차 1 일 ~ 1 주로 박힌 희재의 자국 | visual-bible-v0.4 §17.8 (PASS 조건부) |
+| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-huijae-v1.png) | 캐릭터 시트 — 27 자국째, 해 질 무렵 길가 외투 주머니 측면 컷 (회화 톤 baseline) | cy-003 r2 art-director image |
 
 > 확장 자리 (cy-003+ 후보):
 > - *해 질 무렵 길가의 정면 — 외투 주머니, 발끝*

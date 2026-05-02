@@ -85,7 +85,9 @@ forbidden_language_grep_pass: true
 
 ## 일러스트 갤러리
 
-> 박힌 컷 0 종. 갤러리는 *비어 있음* 자리 — cy-003 r2 신규 일러스트 표적.
+| 컷 | 자리 | 출처 |
+|-----|-----|------|
+| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-ingyu-v1.png) | 캐릭터 시트 — 42 자국째, 옆자리에서 묻기 잘하는 결의 정면 컷 (회화 톤 baseline) | cy-003 r2 art-director image |
 
 > 확장 자리 (cy-003+ 후보):
 > - *옆자리 30 분 — 다른 사람 손바닥 옆에 앉은 자세*

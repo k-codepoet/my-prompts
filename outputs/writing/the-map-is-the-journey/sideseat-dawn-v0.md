@@ -3,6 +3,14 @@ world: the-map-is-the-journey@v0.4
 artifact: short-story
 title: 옆자리에 앉은 한 새벽
 version: v0
+series_id: the-map-is-the-journey
+series_title: 여정 자체가 지도
+episode_no: 2
+episode_title: 옆자리에 앉은 한 새벽
+episode_summary: 인규가 연강 옆에 앉아, 답을 주는 일보다 기다리는 일이 더 어렵다는 것을 배우는 봄.
+episode_characters: 인규, 연강
+episode_thumb: outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-7-yeongang-short-grain-v1.png
+episode_status: published
 created_at: 2026-05-02
 gen: 1
 cycle: cy-002

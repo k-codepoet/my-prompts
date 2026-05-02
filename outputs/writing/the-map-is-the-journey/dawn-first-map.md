@@ -3,6 +3,14 @@ world_id: the-map-is-the-journey
 artifact: short-story
 title: 처음으로 자기 지도를 본 새벽
 version: v0
+series_id: the-map-is-the-journey
+series_title: 여정 자체가 지도
+episode_no: 1
+episode_title: 처음으로 자기 지도를 본 새벽
+episode_summary: 해온, 나림, 유경이 같은 새벽에 각자의 두려움과 변화를 처음 확인하는 이야기.
+episode_characters: 해온, 나림, 유경
+episode_thumb: outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png
+episode_status: published
 created_at: 2026-05-02
 gen: 1
 cycle: cy-001

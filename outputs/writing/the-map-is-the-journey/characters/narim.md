@@ -82,7 +82,9 @@ forbidden_language_grep_pass: true
 
 ## 일러스트 갤러리
 
-> 박힌 컷 0 종. 갤러리는 *비어 있음* 자리 — cy-003 r2 신규 일러스트 표적.
+| 컷 | 자리 | 출처 |
+|-----|-----|------|
+| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-narim-v1.png) | 캐릭터 시트 — 26 자국째, 12 색조 박물관 자리의 반쯤 의심의 웃음 (회화 톤 baseline) | cy-003 r2 art-director image |
 
 > 확장 자리 (cy-003+ 후보):
 > - *12 색조 박물관 자리* — 본인 정체성의 1 차 시각화

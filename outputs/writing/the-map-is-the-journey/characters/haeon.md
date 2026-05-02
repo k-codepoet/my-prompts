@@ -86,6 +86,7 @@ forbidden_language_grep_pass: true
 | 컷 | 자리 | 출처 |
 |-----|-----|------|
 | ![손금 새벽](../../../worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png) | §17.1 *손금 새벽* — 매일 새벽 손바닥 위에 자기 지도가 잠시 비친 한 컷 | visual-bible-v0.3 §17.1 |
+| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-haeon-v1.png) | 캐릭터 시트 — 27 자국째, 손금 새벽 정면 컷 (회화 톤 baseline) | cy-003 r2 art-director image |
 
 > 확장 자리 (cy-003+ 후보):
 > - *5 자국째 익명 자국이 박힌 그 새벽*
