@@ -18,10 +18,11 @@ limits:
   weekly_all_usd: 30.00         # 매주 토요일 10:00 KST 리셋
   weekly_sonnet_usd: 10.00      # Sonnet 만 (별도 추적은 v2)
 
-# 임계 (한도 대비 비율).
+# 임계 (한도 대비 비율). max(session_pct, weekly_pct, sonnet_pct) 기준.
+# 의도: 한도 끝까지 자동으로 돌고, 리셋되면 자동 재개.
 thresholds:
-  warn: 0.70                    # Slack warn
-  pause: 0.90                   # 시스템 자동 OFF (current.md.paused = true)
+  warn: 0.85                    # ≥85%: 'budget_warn' Slack (1h 쿨다운). tick 계속.
+  pause: 0.99                   # ≥99%: 자동 OFF. 리셋되어 <99% 되면 자동 ON.
 
 # 리셋 시각 — 시스템이 자동 계산하여 갱신.
 # 세션은 첫 사용 시각 + 5h. 주간은 가장 최근 토요일 10:00 KST.
