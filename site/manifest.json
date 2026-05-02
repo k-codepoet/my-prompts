@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T12:35:44.971440+00:00",
+  "generated_at": "2026-05-02T12:38:46.251064+00:00",
   "root_docs": [
     {
       "path": "current.md",
@@ -31,6 +31,19 @@
     }
   ],
   "illustrations": [
+    {
+      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v1.png",
+      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v1.png.meta.yml",
+      "title": "character-sheet-yugyeong-v1",
+      "caption": "캐릭터 시트 — 유경 (柳敬, 38, 가족 축). 35 자국째 다시 펴는 손바닥, 두 마음의 결. (v2 sumukhwa 톤 재생성)",
+      "category": "illustration",
+      "creator": "writer+art-director (cy-003 r2 character-sheet image — yugyeong v2 sumukhwa retake)",
+      "source_artifact": "outputs/writing/the-map-is-the-journey/characters/yugyeong.md",
+      "source_section": "## 외형 / 분위기",
+      "size": "1024x1024",
+      "mtime": 1777725507,
+      "bytes": 1537086
+    },
     {
       "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yuri-v1.png",
       "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yuri-v1.png.meta.yml",
@@ -95,19 +108,6 @@
       "size": "1024x1024",
       "mtime": 1777725063,
       "bytes": 1462732
-    },
-    {
-      "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v1.png",
-      "meta_path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v1.png.meta.yml",
-      "title": "character-sheet-yugyeong-v1",
-      "caption": "캐릭터 시트 — 유경 (柳敬, 38, 가족 축). 35 자국째 다시 펴는 손바닥, 두 마음의 결.",
-      "category": "illustration",
-      "creator": "writer+art-director (cy-003 r2 character-sheet image)",
-      "source_artifact": "outputs/writing/the-map-is-the-journey/characters/yugyeong.md",
-      "source_section": "## 외형 / 분위기",
-      "size": "1024x1024",
-      "mtime": 1777725063,
-      "bytes": 1100957
     },
     {
       "path": "outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-jeonghae-v1.png",

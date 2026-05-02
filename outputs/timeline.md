@@ -33,6 +33,7 @@
 | 2026-05-02T12:31:04+00:00 | illustration | 캐릭터 시트 — 연강 (連岡, 60+, 업 축). 산등성이 벤치, 일어섬을 미루는 한 박자. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yeongang-v1.png` | writer+art-director (cy-003 r2 character-sheet image) |
 | 2026-05-02T12:31:04+00:00 | illustration | 캐릭터 시트 — 희재 (熙在, 27, 나 축). 해 질 무렵 길가, 발끝 내려다보는 머쓱한 가벼움. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-huijae-v1.png` | writer+art-director (cy-003 r2 character-sheet image) |
 | 2026-05-02T12:31:04+00:00 | illustration | 캐릭터 시트 — 유리 (柳里, 8, 가족 → 나). 작은 책상 앞 첫 단독 손금 새벽, 8 살의 두 마음. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yuri-v1.png` | writer+art-director (cy-003 r2 character-sheet image) |
+| 2026-05-02T12:38:27+00:00 | illustration | 캐릭터 시트 — 유경 (柳敬, 38, 가족 축). 35 자국째 다시 펴는 손바닥, 두 마음의 결. (v2 sumukhwa 톤 재생성) | `outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v1.png` | writer+art-director (cy-003 r2 character-sheet image — yugyeong v2 sumukhwa retake) |
 
 ---
 
