@@ -1,0 +1,20 @@
+[
+  {"x": 0.30, "y": 0.50, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 0},
+  {"x": 0.31, "y": 0.50, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 0},
+  {"x": 0.32, "y": 0.50, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 0},
+  {"x": 0.33, "y": 0.50, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 0},
+  {"x": 0.40, "y": 0.55, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 0},
+  {"x": 0.41, "y": 0.55, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 0},
+  {"x": 0.42, "y": 0.55, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 0},
+  {"x": 0.43, "y": 0.55, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 0},
+  {"x": 0.44, "y": 0.55, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 0},
+  {"x": 0.45, "y": 0.55, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 0},
+  {"x": 0.60, "y": 0.40, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 90},
+  {"x": 0.60, "y": 0.41, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 90},
+  {"x": 0.60, "y": 0.42, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 90},
+  {"x": 0.60, "y": 0.43, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 90},
+  {"x": 0.62, "y": 0.40, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 90},
+  {"x": 0.62, "y": 0.41, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 90},
+  {"x": 0.62, "y": 0.42, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 90},
+  {"x": 0.62, "y": 0.43, "hex": "#8B7355", "glow": 0.02, "spawned_at": 0, "source": "companion", "facing_deg": 90}
+]

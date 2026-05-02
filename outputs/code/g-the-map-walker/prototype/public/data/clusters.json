@@ -1,0 +1,4 @@
+[
+  {"center": {"x": 0.42, "y": 0.55}, "hex_family": "other_warm", "point_count": 6, "last_received_at": null},
+  {"center": {"x": 0.62, "y": 0.40}, "hex_family": "other_cool", "point_count": 5, "last_received_at": null}
+]

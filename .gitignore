@@ -26,3 +26,7 @@ state/slack-app.yml
 !.claude/hooks/
 .claude/settings.local.json
 state/.last-role
+
+# Prototype build artifacts (the-map-walker etc.)
+outputs/code/**/node_modules/
+outputs/code/**/dist/

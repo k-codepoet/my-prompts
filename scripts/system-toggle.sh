@@ -91,8 +91,10 @@ case "$CMD" in
     fi
     [[ "$md_paused" == "true" ]] && set_paused "false" >/dev/null
     [[ "$budget_paused" != "no" ]] && clear_budget_pause
-    "$ROOT/scripts/slack-notify.sh" system_toggle "🟢 my-prompts ON" "사람이 시스템을 다시 켰습니다." || true
-    echo "[system-toggle] turned ON (md_paused=$md_paused→false, budget_paused=$budget_paused→cleared)"
+    if [[ "${SILENT:-}" != "1" ]]; then
+      "$ROOT/scripts/slack-notify.sh" system_toggle "🟢 my-prompts ON" "사람이 시스템을 다시 켰습니다." || true
+    fi
+    echo "[system-toggle] turned ON (md_paused=$md_paused→false, budget_paused=$budget_paused→cleared, silent=${SILENT:-0})"
     ;;
   off)
     if [[ "$(read_paused)" == "true" ]]; then

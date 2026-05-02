@@ -42,6 +42,7 @@ state:
   live_block_cost_usd: null              # 활성 5h block 의 현재까지 누적 비용
   live_burn_rate_usd_per_hour: null      # 현재 burn rate
   live_projected_block_cost_usd: null    # block 끝까지 갈 때 예상 비용
+  live_weekly_all_usd: null              # weekly_started_at 부터 ccusage daily 합계
   live_updated_at: null
   live_source: null                       # 'ccusage' | null (실패 시)
 

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the-map-walker — cy-001 vertical slice (2안)</title>
+    <style>
+      html, body { margin: 0; padding: 0; background: #F5EFE3; overflow: hidden; height: 100%; }
+      #app { position: fixed; inset: 0; }
+      #hint {
+        position: fixed; right: 12px; bottom: 8px;
+        font: 11px/1.4 system-ui, sans-serif; color: #8B7355; opacity: 0.55;
+        pointer-events: none; user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="hint">방향키 또는 탭 — 한 입력 = 한 발자국</div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
