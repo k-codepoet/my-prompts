@@ -30,6 +30,8 @@ constitution_invariant_check: |
 
 # 여정 자체가 지도 (The Map is the Journey) — Bible v0.4
 
+> **Superseded by v0.5 (2026-05-02, cy-002 r2)** — 본 v0.4 는 cy-002 r1 baseline (5 지역 박음) 자리로 보존. 활성 baseline = [bible-v0.5.md](./bible-v0.5.md). 신규 산출물은 v0.5 참조 박음 의무 (cy-002 evolution-rules §A.A1).
+
 > 본 v0.4 는 v0.3 (critic 6/6 강 + voice-keeper 9.59 + e=0.95 도달) 위에 *5 지역 카테고리* 1 차 박음. cy-002 r1 (loremaster) 산출 — *지역 = 방향의 물리화* 의 첫 박음. 골격 (§1~§7) 은 v0.3 그대로 유지 + §6.2 신설 (지역 5 종 + 매트릭스 표) + §8 보강 우선순위 갱신 + §9.1 매핑 1 항 강화.
 
 ---

@@ -16,6 +16,8 @@ constitution_anchor: invariant #7 (manual-run 1 회 통과 우선)
 
 # manual-run 체크리스트 v0
 
+> **§0 Superseded by [manual-run-checklist-v0+.md](./manual-run-checklist-v0+.md)** (implementer r2 cy-001 round 3 산출 2026-05-01 + implementer r3+ thin-patch tick-073 헤더 박음). 활성 baseline = `manual-run-checklist-v0+.md` (5 항 → 7 항 = §6 옆자리 받음 + §7 함께 걸은 자리 신규 = mechanics-v0+ §3·§4 두 신규 메카닉의 *발화 1 회* 검증). 본 v0 은 cy-001 r1 baseline (5 항 객관적 통과 기준 + my-life Iron Law *manual-run 1 회 통과* 1 차 게이트) 자리로 보존. 외부 cold reader 진입 = v0+ 직진 (post-supersede 포인터 stale 처치 implementer 측 1 호 사례 = loremaster r4 tick-063 + art-director r4 tick-069 + designer r5+ tick-071 형식 1:1 자기 적용 = 4 도구 교차 검증 도달).
+
 > charter §첫 task #3. vertical slice 가 my-life Iron Law 의 *manual-run 1 회 통과* 를 충족했다고 *선언* 하기 위한 객관적 5 항.
 > 본 5 항 모두 통과 시 — implementer 가 *"manual-run 1 회 통과"* 를 선언 가능. 통과 전 자동화 / cron 등록 금지 (constitution invariant #7).
 

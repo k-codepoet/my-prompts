@@ -42,6 +42,8 @@ constitution_invariant_check: |
 
 # 시각 바이블 v0.3 — *가족·업 인물 hex 정착 + concept v0.1 시각 박자 검수 + writer r3 단편 흡수 + 권력 두 비극 시각 분리 + 6 장 우표 컨셉 시트*
 
+> **§0 Superseded by v0.4** (art-director r4 thin-bump tick-069) — 본 v0.3 본문 1:1 그대로 *현재 baseline*, 단 §17 6 우표 풀 → 8 우표 풀 + §11 5 인 hex → 8 인 hex + §13 자국빛 3 변종 → 4 종 분포 3 자리는 **`visual-bible-v0.4.md` §1~§3 baseline pointer** 가 authoritative. 외부 cold reader = v0.3 본문 + v0.4 §0~§4 두 자리 함께 읽기 (loremaster r4 *post-supersede 포인터 stale* 처치 1 호 사례 자기 적용).
+
 > 본 v0.3 은 D-20260501-003 (Type B, picked=game) 응답 흡수의 *art-director 마감 라운드 산출물*.
 > v0.2 의 §1~§16 골격 위에 — (a) §11.5 *가족 / 업 인물 hex 보존 자리 (2 자리)* 박음 — 유경 = `#5C4A36 + #C8995A` 두 색조 *나란함* / 인규 = `#42321F` 200 화살표 *사방 분포*. (b) §5.4.4 *함께 걸은 자리* 컷 + §5.4.5 *옆자리 받음* 컷 두 신규 처방 — concept v0.1 §3 §4 + walk-trace-spec §M4 §M5 시각 박자 1:1. (c) §12.2 *권력 두 비극 시각 분리* — bible v0.3 §6.1 직접 응답. (d) §17 *6 장 우표 컨셉 시트* (charter §첫 task #2 완전 박음). (e) §18 concept v0.1 시각 박자 검수 / §19 writer r3 단편 시각 박자 흡수 / §20 §21 다음 task / 협업 인계 갱신.
 > 본 v0.3 은 implementer r3 의 *1 차 prototype 빌드* 직접 입력 (§13 §18 시각 박자 1:1 정합) + cy-002 r1 의 6 장 우표 시리즈 직접 입력 (§17).

@@ -14,6 +14,8 @@ consumers: [implementer, art-director, critic]
 
 # g-the-map-walker — 페일 모드 카탈로그 v0
 
+> **§0 Superseded by [fail-modes-v0+.md](./fail-modes-v0+.md)** (designer r4+ cy-002 thin patch tick-048 + designer r5+ thin-patch tick-071 헤더 박음). 활성 baseline = `fail-modes-v0+.md` (5 항 → 9 항 = F1~F5 본문 0 변경 + F6/F7 mechanics-v0+ §8 끌어옴 + F8 HUD = 디버그 패널 오인 + F9 hint opacity ≤ 0.55 미인지). 본 v0 은 cy-001 r1 baseline (F1~F5 5 페일 + 1 차 방어막 + 책임 인계) 자리로 보존. 외부 cold reader 진입 = v0+ 직진 (post-supersede 포인터 stale 처치 designer 측 1 호 사례 = loremaster r4 tick-063 + art-director r4 tick-069 형식 1:1 자기 적용).
+
 > 본 게임의 *재미가 죽는* 5 가지 시나리오 + 각각의 1 차 방어막.
 > charter §task #3 — implementer 의 엔진 선택 + art-director 의 차기 우선순위 입력으로 사용.
 

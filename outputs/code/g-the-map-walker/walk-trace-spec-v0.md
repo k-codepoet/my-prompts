@@ -16,6 +16,8 @@ deferred_to_v2: [멀티플레이 동기화, 봇 매칭 인프라, 계정/저장,
 
 # walk-trace 시스템 — 1 페이지 사양 (v0)
 
+> **§0 Superseded by [walk-trace-spec-v0+.md](./walk-trace-spec-v0+.md)** (implementer r2 cy-001 round 3 산출 2026-05-01 + implementer r3+ thin-patch tick-073 헤더 박음). 활성 baseline = `walk-trace-spec-v0+.md` (옆자리 노드 §3 신규 + 함께 걸은 자리 노드 §4 신규 + facing_history + companion_clusters). 본 v0 은 cy-001 r1 baseline (1 페이지 사양 = 입력·상태·출력 + 5 매핑) 자리로 보존. 외부 cold reader 진입 = v0+ 직진 (post-supersede 포인터 stale 처치 implementer 측 1 호 사례 = loremaster r4 tick-063 + art-director r4 tick-069 + designer r5+ tick-071 형식 1:1 자기 적용 = 4 도구 교차 검증 도달).
+
 > charter §첫 task #2. 입력·상태·출력만. 다른 시스템은 v2 미룸 명시.
 > D-20260501-002 응답 = `web` 흡수. 본 사양은 Pixi.js + WebGL2 fragment shader 기준.
 

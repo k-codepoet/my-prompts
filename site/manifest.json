@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-02T10:18:37.281238+00:00",
+  "generated_at": "2026-05-02T10:52:58.719319+00:00",
   "root_docs": [
     {
       "path": "current.md",
       "title": "Current State (live pointer)",
       "version": null,
-      "mtime": 1777717099,
-      "size": 117240
+      "mtime": 1777719147,
+      "size": 135339
     },
     {
       "path": "seed.md",
@@ -73,6 +73,13 @@
   ],
   "categories": {
     "writings": [
+      {
+        "path": "outputs/writing/the-map-is-the-journey/paired-dawns-v0.1.md",
+        "title": "옆에 잇닿은 두 새벽 v0.1 (사람-가독성 적용 — 연강 *가족* / 유리 *연대*)",
+        "version": "v0.1",
+        "mtime": 1777717528,
+        "size": 23630
+      },
       {
         "path": "outputs/writing/the-map-is-the-journey/paired-dawns-v0.md",
         "title": "옆에 잇닿은 두 새벽 (연강 *가족* / 유리 *연대*)",
@@ -204,6 +211,20 @@
     ],
     "art": [
       {
+        "path": "outputs/art/the-map-is-the-journey/visual-bible-v0.3.md",
+        "title": "시각 바이블 v0.3 — *가족·업 인물 hex 정착 + concept v0.1 시각 박자 검수 + writer r3 단편 흡수 + 권력 두 비극 시각 분리 + 6 장 우표 컨셉 시트*",
+        "version": "v0.3",
+        "mtime": 1777718134,
+        "size": 65077
+      },
+      {
+        "path": "outputs/art/the-map-is-the-journey/visual-bible-v0.4.md",
+        "title": "시각 바이블 v0.4 — *thin-bump baseline 박음 자리* (8 우표 풀 + 8 인 hex 매트릭스 + 자국빛 4 종 분포)",
+        "version": "v0.4",
+        "mtime": 1777718134,
+        "size": 18380
+      },
+      {
         "path": "outputs/art/the-map-is-the-journey/stamps-extension-v0.md",
         "title": "시각 바이블 §17 확장 v0 — 우표 §17.7 연강 + §17.8 희재 컨셉 시트 박음",
         "version": null,
@@ -223,13 +244,6 @@
         "version": "v0",
         "mtime": 1777700412,
         "size": 13760
-      },
-      {
-        "path": "outputs/art/the-map-is-the-journey/visual-bible-v0.3.md",
-        "title": "시각 바이블 v0.3 — *가족·업 인물 hex 정착 + concept v0.1 시각 박자 검수 + writer r3 단편 흡수 + 권력 두 비극 시각 분리 + 6 장 우표 컨셉 시트*",
-        "version": "v0.3",
-        "mtime": 1777695979,
-        "size": 64604
       },
       {
         "path": "outputs/art/the-map-is-the-journey/visual-bible-v0.2.md",
@@ -355,6 +369,20 @@
     ],
     "design": [
       {
+        "path": "outputs/design/g-the-map-walker/fail-modes-v0.md",
+        "title": "g-the-map-walker — 페일 모드 카탈로그 v0",
+        "version": "v0",
+        "mtime": 1777718890,
+        "size": 8124
+      },
+      {
+        "path": "outputs/design/g-the-map-walker/concept.md",
+        "title": "g-the-map-walker — Concept v0",
+        "version": "v0",
+        "mtime": 1777718883,
+        "size": 13042
+      },
+      {
         "path": "outputs/design/g-the-map-walker/fail-modes-v0+.md",
         "title": "g-the-map-walker — 페일 모드 카탈로그 v0+",
         "version": "v0+",
@@ -381,23 +409,16 @@
         "version": "v0+",
         "mtime": 1777659090,
         "size": 22142
-      },
-      {
-        "path": "outputs/design/g-the-map-walker/fail-modes-v0.md",
-        "title": "g-the-map-walker — 페일 모드 카탈로그 v0",
-        "version": "v0",
-        "mtime": 1777654760,
-        "size": 7495
-      },
-      {
-        "path": "outputs/design/g-the-map-walker/concept.md",
-        "title": "g-the-map-walker — Concept v0",
-        "version": "v0",
-        "mtime": 1777654696,
-        "size": 12525
       }
     ],
     "critique": [
+      {
+        "path": "outputs/critique/the-map-is-the-journey/paired-dawns-v0.1-first-5min.md",
+        "title": "critic r5 cy-002 cold-read — paired-dawns-v0.1 첫 5 분 (Cold-read protocol 첫 정식 적용 1 호 사례)",
+        "version": null,
+        "mtime": 1777718474,
+        "size": 25718
+      },
       {
         "path": "outputs/critique/the-map-is-the-journey/stamps-17-7-17-8-first-5min.md",
         "title": "우표 §17.7 + §17.8 5 분 cold-read",
@@ -754,6 +775,48 @@
       }
     ],
     "ticks": [
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-071.md",
+        "title": "Tick cy-002/071 — role (designer r5+ cy-002 thin-patch, post-supersede 포인터 stale 처치 designer 측 1 호 사례)",
+        "version": null,
+        "mtime": 1777719071,
+        "size": 12588
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-070.md",
+        "title": "Tick cy-002/070 — finalize-only orphan-ack (art-director r4 cy-002 thin-bump ack + cy-002 마감 라운드 9 자리 누적)",
+        "version": null,
+        "mtime": 1777718596,
+        "size": 11099
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-069.md",
+        "title": "tick-069",
+        "version": null,
+        "mtime": 1777718122,
+        "size": 10415
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-068.md",
+        "title": "Tick cy-002/068 — finalize-only orphan-ack (writer r3 cy-002 paired-dawns-v0.1 ack + cy-002 마감 라운드 7/7 도달)",
+        "version": null,
+        "mtime": 1777717993,
+        "size": 9845
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-067.md",
+        "title": "Tick cy-002/067 — role (writer r3 cy-002 — paired-dawns-v0 → v0.1 사람-가독성 재작성)",
+        "version": null,
+        "mtime": 1777717746,
+        "size": 4556
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/ticks/tick-066.md",
+        "title": "tick-066",
+        "version": null,
+        "mtime": 1777717457,
+        "size": 7291
+      },
       {
         "path": "generations/gen-001/cycles/cy-002/ticks/tick-065.md",
         "title": "tick-065",
@@ -1212,6 +1275,41 @@
     ],
     "arguments": [
       {
+        "path": "generations/gen-001/cycles/cy-002/arguments/designer-r5+.md",
+        "title": "designer r5+ — post-supersede 포인터 stale 처치 designer 측 1 호 사례 (cy-002 마감 라운드 후속 thin-patch)",
+        "version": null,
+        "mtime": 1777718982,
+        "size": 13042
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/critic-r5.md",
+        "title": "critic r5 cy-002 — Cold-read protocol 첫 정식 적용 (paired-dawns-v0.1 두 측정 분리 박음)",
+        "version": null,
+        "mtime": 1777718768,
+        "size": 10463
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/art-director-r4.md",
+        "title": "art-director r4 cy-002 thin-bump — visual-bible v0.4 baseline 박음 자리",
+        "version": null,
+        "mtime": 1777718134,
+        "size": 16491
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/writer-r3.md",
+        "title": "writer r3 (cy-002) — paired-dawns-v0 → v0.1 사람-가독성 재작성",
+        "version": null,
+        "mtime": 1777717586,
+        "size": 6693
+      },
+      {
+        "path": "generations/gen-001/cycles/cy-002/arguments/critic-r4.md",
+        "title": "critic r4 — Cold-read protocol §7 의무 추가 (charter-update mode)",
+        "version": null,
+        "mtime": 1777717405,
+        "size": 5839
+      },
+      {
         "path": "generations/gen-001/cycles/cy-002/arguments/voice-keeper-r4.md",
         "title": "voice-keeper r4 cy-002 — r2 묶음 마감 audit + 누적 e 0.93+ 도달",
         "version": null,
@@ -1594,16 +1692,16 @@
     ]
   },
   "stats": {
-    "writings": 6,
+    "writings": 7,
     "world": 12,
-    "art": 11,
+    "art": 12,
     "alignment": 10,
     "design": 6,
-    "critique": 4,
+    "critique": 5,
     "code-docs": 41,
     "decisions": 5,
-    "ticks": 65,
-    "arguments": 49,
+    "ticks": 71,
+    "arguments": 54,
     "decision-traces": 5,
     "illustrations": 3
   }

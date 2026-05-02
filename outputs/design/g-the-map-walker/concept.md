@@ -20,6 +20,8 @@ companion_artifact: outputs/design/g-the-map-walker/fail-modes-v0.md
 
 # g-the-map-walker — Concept v0
 
+> **§0 Superseded by [concept-v0.1.md](./concept-v0.1.md)** (designer r3 cy-001 마감 라운드 산출 2026-05-02 + designer r5+ thin-patch tick-071 헤더 박음). 활성 baseline = `concept-v0.1.md`. 본 v0 은 cy-001 r1 baseline (코어 루프 4 노드 + 30 초 빌드 + 메카닉 6 spec + 자기 검증 5/6) 자리로 보존. 외부 cold reader 진입 = v0.1 직진 (post-supersede 포인터 stale 처치 designer 측 1 호 사례 = loremaster r4 tick-063 + art-director r4 tick-069 형식 1:1 자기 적용).
+
 > 본 v0 은 *세계 #2 여정 자체가 지도* 의 첫 vertical slice 컨셉. *30 초에 매니페스토를 한 번 진동시키는 한 게임* 으로 박는다.
 > 본문은 1 페이지를 의도. 깊은 메카닉 분기·밸런스 표는 v1 에서 분해.
 
