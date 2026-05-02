@@ -3,8 +3,8 @@ gen: 1
 cycle: cy-002
 tick: 74
 active_decisions: []
-paused: false
-last_updated: '2026-05-03T01:10:00+00:00'
+paused: true
+last_updated: '2026-05-02T11:15:32+00:00'
 ---
 
 # Current State (live pointer)
