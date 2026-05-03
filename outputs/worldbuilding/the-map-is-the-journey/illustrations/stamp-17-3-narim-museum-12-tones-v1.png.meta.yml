@@ -1,0 +1,99 @@
+id: stamp-17-3-narim-museum-12-tones-v1
+created_at: '2026-05-03T00:08:00+00:00'
+creator: art-director (cy-003 r9 image — visual-bible §17.3 나림 자리 신규 stamp 1 자리 박음 / terrain-visual-rules-v0 §2.6 분지 baseline 1 호 image 박음)
+category: stamp
+caption: |
+  우표 §17.3 — 나림 *박물관 12 색조*. 늘재 분지 자리에서 다른 결의 12 색조
+  옅은 자국 패치를 멀리 두고, 자기 종이는 아직 비워 둔 채 가장자리에서 양 손 닫혀
+  돌아선 한 새벽. terrain-visual-rules-v0 §2.6 분지 (구도 / 붓 결 / 농담 / 종이
+  결 / 안개 / 인물 배치) 6 항 직접 인용 1 호 image baseline. 늘재 권역 색조
+  변주 (#C8995A 두꺼운 흙 위) 1 호 시각 박음. F-20260502-1310 must_fix #5
+  art-director 영역 spec → image 인계 자리 1 호.
+prompt: |
+  traditional Korean ink-and-wash painting (sumukhwa) on rice paper, painterly
+  brushwork visible, ink wash texture, restrained sepia and dust-ochre palette.
+  Composition: a small basin (분지) at dawn — two or three sides of the frame
+  edged by softly built dark earthen ridges that surround a central flat ground,
+  a small village quietly settled on the central plain, paper-grain laid along
+  the central plain direction, the surrounding ridge brushwork in short top-down
+  strokes (the basin walls) while the central plain reads in slow horizontal
+  strokes (the inhabited rest), thick dawn mist sitting low across the central
+  plain at about 0.4 paper-width depth (wet-on-wet wash), a faint clearing of
+  paper-white sky between the ridges. Within the central plain, twelve very
+  faint earth-color trace patches arranged at quiet distance like a small museum
+  of marks left by others, each patch a slightly different muted earth tone
+  (warm sepia, dust ochre, cool stone-grey, faint ash, pale clay) — the colors
+  restrained, never bright. A Korean woman in her mid-twenties standing slightly
+  turned three-quarters away from the viewer at the basin's central plain edge
+  facing the twelve traces, both hands clasped softly together palms held closed
+  never opened, gaze level toward the edge of her own still-empty paper not
+  opening it, faint half-smile only at the corner of her lips with shoulders
+  and eyes held still, light brown hair short or shoulder length neatly kept,
+  faded warm grey-brown linen cardigan over a plain undertone shirt, soft cloth
+  shoes. Dust-ochre dawn light #C8995A laid heavier across the thick basin
+  earth (the 늘재 region tone), the woman's own cardigan kept cooler
+  #7A6447 to #8B7355 so she reads cooler than the surrounding earth, dawn light
+  indirect not direct sunrise. Restrained turned-aside composition with others'
+  traces visible behind. Aspect framed slightly square for a postage-stamp
+  feel. NOT photograph.
+negative_prompt: |
+  photorealistic, photograph, realistic skin texture, 3D render, CGI,
+  hyperrealism, modern photograph, studio photo, glossy, plastic skin,
+  duplicate face, identical features, same character repeated, twin brothers,
+  young face, late twenties face, opened palms, palms spread, hands raised,
+  bright saturated color patches, neon, rainbow, modern museum interior,
+  gallery wall, picture frames, photographs on wall, second figure, two
+  figures, companion, water reflection, ocean, river crossing, flat plain
+  without surrounding ridges, mountain peak in foreground, isometric view,
+  top-down view, aerial view
+workflow: z-image-turbo
+size: 1024x1024
+genai_origin_url: https://genai.home.codepoet.site/outputs/2026/05/03/9137af9f-867f-4985-928b-df7e081ae421.png
+source_artifact: outputs/art/the-map-is-the-journey/terrain-visual-rules-v0.md
+source_section: "§2.6 분지 + §3 늘재 + §4 §17.3 짝맞춤"
+source_argument: generations/gen-001/cycles/cy-003/arguments/art-director-r9.md
+binds:
+  - outputs/art/the-map-is-the-journey/terrain-visual-rules-v0.md  # §2.6 6 항 1:1 인용 + §3 늘재 색조 + §4 §17.3 짝
+  - outputs/art/the-map-is-the-journey/visual-bible-v0.4.md  # §17.3 자리 + §11 나림 hex 카디건 톤
+  - outputs/art/the-map-is-the-journey/tone-lock-v0.md  # §1 매체 + §2 4 키워드 + §3 negative baseline
+  - outputs/worldbuilding/the-map-is-the-journey/terrain-v1.md  # §6 분지 사실 baseline
+  - outputs/worldbuilding/the-map-is-the-journey/regions-v1.md  # 늘재 권역 + §8 나림 거주지 후보
+  - outputs/worldbuilding/the-map-is-the-journey/character-sheets-extended-v0.md  # 나림 외형 baseline
+  - outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-narim-v2.png  # 얼굴/카디건/손 닫힘 자세 baseline
+acks_feedback:
+  - F-20260502-1310-terrain-as-actual-living-geography
+  - F-20260502-1251-character-visuals-too-similar
+self_check_tone_lock_v0:
+  s1_medium_baseline: pass — sumukhwa rice paper 결, 실사/3D 드리프트 0
+  s2_required_keywords: pass — 4/4 박음 (sumukhwa + painterly brushwork visible + restrained sepia/dust-ochre + NOT photograph)
+  s3_negative_baseline: pass — tone-lock 10 자리 + 분지 추가 negative (top-down view / aerial view / mountain peak in foreground / flat plain without surrounding ridges) 박음
+self_check_terrain_visual_rules_v0_2_6:
+  composition: pass — 분지 가장자리 산이 좌우 둘러쌈 + 가운데 평지 + 한 줄 마을 모임
+  brush_direction: pass — 둘러싼 능선 짧은 위→아래 stroke + 가운데 평지 옆 흐름 stroke = 두 stroke 한 화면
+  ink_density: pass — 진한 폭 ≈ 40% (능선 + 두꺼운 흙) / 옅은 폭 ≈ 40% (평지 흙 + 새벽 빛) / 종이 흰 폭 ≈ 20% (능선 사이 트인 하늘)
+  paper_grain: pass — 가운데 평지 방향 결, 둘러싼 능선 자리에서 결 멈춤
+  dawn_mist: conditional — 평지 위 안개 결 박힘. 단 *0.4 폭 두께* 베이스라인 대비 다소 옅음 (≈ 0.25 폭) → 차후 v2 후보 자리 (자가 발화 1 자리 = mist 강화 negative `thin mist` 박음 후보)
+  figure_placement: pass — 가운데 평지 자리 인물 1 명 + 둘러싼 산을 향해 시선 (떠남 결 변주 — *옆자리 12 자국* 을 본인 자리에서 본 자리)
+self_check_region_3_늘재:
+  base_tone: pass — 두꺼운 흙 위 자국빛 #C8995A 진하게 깔림
+  region_marker: pass — 12 색조 옅은 패치 자리 = *둘러싸인 평지 안 이미 굳은 자국* 결 (regions v1 늘재 1:1)
+self_check_visual_differentiator_F_1251:
+  silhouette: pass — 등 돌린 1/4 정면-옆 (트리오 정면 / 인규 앉음 / 유경 손바닥 비빔과 분별 강 / character-sheet-narim-v2 baseline 1:1 유지)
+  pose: pass — 양 손 닫힘 (해온/유경/유리/연강 펴는 결과 reverse)
+  face: pass — 우표 자리 특성으로 거리감 박혀 표정 미세 (트리오 분별은 silhouette + palette 측이 우선)
+  palette: pass — 카디건 회갈 #7A6447~#8B7355 + 배경 황톳빛 #C8995A → 인물이 *배경보다 차가운 결* 로 분별
+  background: pass — 12 색조 박물관 자리 (8 인물 풀 다른 자리와 배경 자체 분별 강 — 산골/포구/한복판/들녘과 시각 즉시 분별)
+constitution_invariant_check: |
+  - #2 단일 진실: terrain-visual-rules-v0 §2.6 + §3 늘재 + §4 §17.3 짝 1:1 직접 인용. 신규 사실 0.
+  - #6 추적 가능성: binds 7 자리 frontmatter 직접 인용 + acks_feedback 2 자리.
+  - #7 수동 검증 우선: 본 image = 1 차 박음 / 자동화 0 (사용자 직접 발의 시 v2 박음 후보).
+  - forbidden-language §1~§8 grep 적중 0.
+trip_self_check:
+  medium_drift: 미발화 (sumukhwa baseline 1:1)
+  style_drift_model_default: 미발화 (시그니처 narim v2 1:1 + 분지 §2.6 spec 직접 흡수)
+  domain_violation_game: 미발화 (단편 일러스트 한정 / 게임 시각 0)
+  domain_violation_loremaster: 미발화 (terrain v1 §6 + regions v1 늘재 1:1 인용 / 신규 사실 0)
+  domain_violation_writer: 미발화 (회차 본문 0 LOC)
+champions_keywords_primary: [축복]
+champions_keywords_secondary: [움직임, 방향]
+self_check: 5/5

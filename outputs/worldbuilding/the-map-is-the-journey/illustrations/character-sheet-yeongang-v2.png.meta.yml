@@ -1,0 +1,28 @@
+id: character-sheet-yeongang-v2
+created_at: '2026-05-02T20:57:00+00:00'
+creator: art-director (cy-003 r6 character-sheet image — yeongang v2 8-인물 풀 분별 baseline 격상)
+category: illustration
+caption: |
+  캐릭터 시트 — 연강 (連岡, 60+, 업 축, v2). 산등성이 벤치, 무릎 위 얇은 외투 한 자락, 옆자리 빈 자리, 60+ 흰빛 머리 + 깊은 주름. r5 §2.2 visual differentiator 5 자리 1:1 시각화. 인규 ↔ 본인 face crop 단독 ⚠ 임계 인접 = 외부 시선 검증 의무 이월.
+prompt: |
+  traditional Korean ink-and-wash painting (sumukhwa) on rice paper, painterly brushwork visible, restrained sepia and dust-ochre palette, elderly Korean man in his sixties or older seated calmly on a simple wooden bench at the edge of a mountain ridge at first dawn, a thin overcoat draped across his lap (not worn), both hands resting softly on his knees palms held just finished (not opening not opened), gaze level toward the empty space beside him with quiet attentiveness as if waiting one extra beat, faint smile only at the corners of the eyes mouth held nearly still, deep wrinkles at the corners of mouth and eyes, white short hair lightly combed, plain dust-toned linen shirt under the overcoat, dark trousers, worn leather walking shoes flat on the ground, distant ridge silhouettes pale background wash with first dawn warmth, palette around #5A4A35 slightly heavier than the dawn wash, faint trace-glow #C8995A at most 0.3% of frame near the bench, restrained beside-empty-seat composition NOT same as indoor empty chair (this is mountain ridge bench), NOT photograph
+negative_prompt: |
+  photorealistic, photograph, realistic skin texture, 3D render, CGI, hyperrealism, modern photograph, studio photo, glossy, plastic skin, duplicate face, identical features, same character repeated, twin brothers, young face, late twenties face, middle-aged face, fluorescent indoor light, indoor wall, sitting indoors
+workflow: z-image-turbo
+source_artifact: outputs/writing/the-map-is-the-journey/characters/yeongang.md
+source_section: "## 외형 / 분위기 + ## 시각 단서"
+source_argument: generations/gen-001/cycles/cy-003/arguments/art-director-r5.md §3.2
+size: 1024x1024
+genai_origin_url: https://genai.home.codepoet.site/outputs/2026/05/02/e3605f3f-78d5-4f33-8895-4608bdd55e14.png
+self_check_tone_lock_v0:
+  s1_medium_baseline: pass — sumukhwa rice paper 결, 산등성이 자연광, 인공 광원 0
+  s2_required_keywords: pass — 4/4 박음
+  s3_negative_baseline: pass — tone-lock + r5 추가 (middle-aged face / fluorescent / indoor) 의무 박음
+self_check_visual_differentiator:
+  silhouette: 60+ 장년 + 산등성이 벤치 앉음 + 무릎 위 얇은 외투 (앉음 풀 = 인규 / 연강 / 유리 안 60+ 1 차 분별 강)
+  pose: 양손 무릎 위 옅게 + 시선 옆 빈 자리 (인규 옆 의자 빈 자리와 *옥외 산등성이 ↔ 옥내 작은 방* 1 차 reverse)
+  face: 깊은 주름 + 흰빛 머리 + 눈만 좁힘 + 입 정지 (인규 ↔ 본인 face crop 단독 ⚠ — 1 차 분별 = 나이 + 산등성이 시각)
+  palette: '#5A4A35 + 자국빛 #C8995A ≤ 0.3%'
+  background: 산등성이 능선 옅은 wash + 막 올라온 dawn (인규 작은 방 형광등과 1 차 reverse)
+external_check_carry_over:
+  - 인규 ↔ 연강 face crop 단독 ⚠ 임계 인접 — critic R0 재검수 자리에서 face crop 외부 시선 의무

@@ -31,6 +31,8 @@ constitution_invariant_check: |
 
 # 오브젝트 / 아이템 v0 — 일곱 사물
 
+> **§0 Superseded by [objects-items-v0.1.md](./objects-items-v0.1.md) (2026-05-03, cy-003 r21, D-20260503-001 vocabulary_shift palm closure carry — §3 손바닥 → §3 신발 (the shoes) 전면 carry + §8·§9 표 *손바닥* 행 → *신발* 행 1:1 carry).** 활성 baseline = v0.1. 본 v0 = palm 시대 historical baseline 자리 보존 (chronicle §5 *지도-스승 시대* 의 시대 단위 자취 자리). v0 §1·§2·§4·§5·§6·§7·§10·§11 = v0.1 안 1:1 보존 (재인용 0, 본 v0 직접 읽음 자리). v0 §3 손바닥 = palm 시대 historical 자리 — 신규 산출물은 v0.1 §3 신발 1:1 인용.
+
 > 본 세계의 *사물* 은 도구가 아니라 *결의 박힘*. 백지는 종이가 아니라 *받음의 외형*. 흙은 흙이 아니라 *진심·방향* 이 굳은 외형. 본 v0 는 4 오브젝트 (근본 사물) + 3 아이템 (도구·자취) 의 1 차 박음. seed §70 + bible v0.4 §1·§2·§4·§6.2 + chronicle-v0 §4·§5 + regions-v0 §5 + character-relations-v0 §메타 의 그림 위에 *사물 단위 명명* — 신규 사실 0.
 
 ---

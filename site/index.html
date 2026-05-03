@@ -111,6 +111,30 @@
   .ch-card .ch-line { font-size: 12px; color: var(--muted); margin: 6px 0 0; line-height: 1.4; }
   section.series .ix-link { font-family: var(--mono); font-size: 13px; color: var(--accent); margin: 8px 0 0; }
 
+  /* terrain — 지형 hero (5 산 + 5 지역) */
+  section.terrain { margin: 28px 0 36px; padding: 24px 0; border-top: 2px solid var(--accent); border-bottom: 1px solid var(--line); }
+  section.terrain .series-h { font-family: var(--mono); font-size: 14px; text-transform: uppercase; color: var(--accent); letter-spacing: 0.06em; margin: 0 0 12px; }
+  section.terrain .series-quote { font-style: italic; color: var(--fg); margin: 0 0 6px; font-size: 17px; line-height: 1.5; }
+  section.terrain .series-intro { color: var(--muted); margin: 0 0 24px; font-size: 14px; line-height: 1.6; }
+  section.terrain .pending-note { background: #f0ebde; border-left: 3px solid var(--warn); padding: 10px 14px; margin: 0 0 20px; font-family: var(--mono); font-size: 12px; color: var(--fg); }
+  section.terrain h3.sub { font-family: var(--mono); font-size: 12px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.06em; margin: 24px 0 12px; }
+  section.terrain .terrain-hero { display: block; margin: 0 0 20px; border: none; }
+  section.terrain .terrain-hero img { width: 100%; max-height: 280px; object-fit: cover; display: block; background: #1a1612; }
+  section.terrain .terrain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin: 0 0 16px; }
+  .tr-card { display: block; padding: 12px 14px; background: var(--bg); border: 1px solid var(--line); text-decoration: none; border-bottom: none; }
+  .tr-card:hover { border-color: var(--accent); border-bottom: 1px solid var(--accent); background: #f0ebde; }
+  .tr-card .tr-emoji { font-size: 18px; margin-right: 6px; }
+  .tr-card .tr-name { font-family: var(--serif); font-size: 15px; color: var(--fg); font-weight: 600; }
+  .tr-card .tr-en { display: block; font-family: var(--mono); font-size: 11px; color: var(--muted); margin: 2px 0 0; letter-spacing: 0.02em; }
+  .tr-card .tr-line { font-size: 12px; color: var(--muted); margin: 6px 0 0; line-height: 1.5; }
+  .tr-card .tr-residents { font-family: var(--mono); font-size: 11px; color: var(--muted); margin: 10px 0 0; padding-top: 8px; border-top: 1px dashed var(--line); }
+  .tr-card .tr-residents .label { color: var(--muted); margin-right: 4px; }
+  .tr-card .tr-residents .name { color: var(--accent); font-family: var(--serif); font-weight: 600; font-size: 13px; margin-right: 8px; }
+  .tr-card .tr-residents .name.dim { color: var(--muted); font-weight: 400; font-size: 12px; font-style: italic; }
+  .tr-card .tr-residents .empty { font-style: italic; color: var(--muted); }
+  .terrain-aux { font-family: var(--mono); font-size: 12px; color: var(--muted); margin: 16px 0 0; padding: 10px 14px; background: #f0ebde; border-left: 3px solid var(--line); }
+  .terrain-aux a { color: var(--accent); }
+
   /* appendix banner — categories 부록 격하 */
   .appendix-banner { margin: 36px 0 8px; padding: 16px 0 8px; border-top: 1px dashed var(--line); }
   .appendix-label { font-family: var(--mono); font-size: 13px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.06em; margin: 0 0 4px; }
@@ -225,6 +249,73 @@
     <p class="ix-link"><a href="/view.html?path=outputs/writing/the-map-is-the-journey/series-index-v0.md">전체 시리즈 인덱스 + 시간선 ↗</a></p>
   </section>
 
+  <section class="terrain" id="terrain-section">
+    <h2 class="series-h">🗺 사람 사는 자리 — 6 권역</h2>
+    <p class="series-quote">"같은 자리를 오래 다니면 길이 한 줄로 남는다."</p>
+    <p class="series-intro">8 인물이 사는 한국의 여섯 자리. 산골 한 줄 마을, 평야의 분산 마을, 강변의 한 줄, 작은 포구, 분지의 정착, 도시 변두리의 빽빽 골목. 매일 새벽 다섯 시쯤 일어나 현관에서 신발을 한 번 본다 — 어제 어디 다녀왔는지 신발 끝의 흙으로 한 번 안다.</p>
+
+    <a class="terrain-hero" href="/view.html?path=outputs/worldbuilding/the-map-is-the-journey/regions-v1.md">
+      <img src="/outputs/worldbuilding/the-map-is-the-journey/illustrations/key-visual-blank-page-dawn.png" alt="백지의 새벽 — 본 세계의 첫 자리">
+    </a>
+
+    <h3 class="sub">여섯 자리 — 8 인물이 사는 한국의 마을</h3>
+    <div class="terrain-grid">
+      <a class="tr-card" href="/view.html?path=outputs/worldbuilding/the-map-is-the-journey/vocabulary-shift-v1.md">
+        <span class="tr-emoji">⛰</span><span class="tr-name">정선</span>
+        <span class="tr-en">강원 · 산골 한 줄 마을</span>
+        <p class="tr-line">비탈 위에 한 줄로 늘어선 마을. 새벽 안개가 가장 길게 깔리고, 골을 따라 바람이 한 방향으로만 분다. 윗집 부엌 빛이 차례로 들어오면 아랫집도 한 박자 늦게 들어온다.</p>
+        <p class="tr-residents"><span class="label">거주:</span><span class="name">정해</span><span class="name">연강</span><span class="name">희재</span></p>
+      </a>
+      <a class="tr-card" href="/view.html?path=outputs/worldbuilding/the-map-is-the-journey/vocabulary-shift-v1.md">
+        <span class="tr-emoji">🌾</span><span class="tr-name">김제</span>
+        <span class="tr-en">전라 · 만경평야 분산 마을</span>
+        <p class="tr-line">만경평야의 평지에 마을이 흩어져 있다. 사방에서 바람이 분다. 옆집까지 한참 걸어가야 만나는 자리. 흙은 빨리 마르고, 어제 다녀온 자리도 한 박자에 옅어진다.</p>
+        <p class="tr-residents"><span class="label">거주:</span><span class="name">해온</span><span class="name dim">유리(자라는 자리)</span></p>
+      </a>
+      <a class="tr-card" href="/view.html?path=outputs/worldbuilding/the-map-is-the-journey/vocabulary-shift-v1.md">
+        <span class="tr-emoji">🌊</span><span class="tr-name">단양</span>
+        <span class="tr-en">충북 · 남한강 강가 한 줄 마을</span>
+        <p class="tr-line">남한강 강변에 한 줄로 박힌 작은 마을. 새벽이면 강 위로 안개가 낮게 깔려 강을 따라 한 방향으로 흐른다. 윗집의 부엌 빛이 한 박자 늦게 강을 따라 아랫집까지 닿는다.</p>
+        <p class="tr-residents"><span class="label">거주:</span><span class="name">유경</span><span class="name">유리</span></p>
+      </a>
+      <a class="tr-card" href="/view.html?path=outputs/worldbuilding/the-map-is-the-journey/vocabulary-shift-v1.md">
+        <span class="tr-emoji">🌅</span><span class="tr-name">통영</span>
+        <span class="tr-en">경남 · 작은 포구</span>
+        <p class="tr-line">바다 가장자리의 작은 포구 마을. 떠나는 사람과 남는 사람이 한 골목에 같이 산다. 바람이 강하고 한 방향이 분명하다. 새벽 안개는 짧다.</p>
+        <p class="tr-residents"><span class="label">거주:</span><span class="empty">현재 풀 0 — 외부 인물 후보 자리</span></p>
+      </a>
+      <a class="tr-card" href="/view.html?path=outputs/worldbuilding/the-map-is-the-journey/vocabulary-shift-v1.md">
+        <span class="tr-emoji">🏘</span><span class="tr-name">무주</span>
+        <span class="tr-en">전라 · 분지 정착 마을</span>
+        <p class="tr-line">산에 사방이 둘러싸인 분지의 마을. 새벽이 다른 자리보다 늦게 도착한다. 햇빛이 분지 안쪽으로 한꺼번에 들어왔다 한꺼번에 빠진다. 같은 집에 여러 세대가 살았다.</p>
+        <p class="tr-residents"><span class="label">거주:</span><span class="name">나림</span></p>
+      </a>
+      <a class="tr-card" href="/view.html?path=outputs/worldbuilding/the-map-is-the-journey/vocabulary-shift-v1.md">
+        <span class="tr-emoji">🏙</span><span class="tr-name">성남 변두리</span>
+        <span class="tr-en">경기 · 도시 변두리 빽빽 골목</span>
+        <p class="tr-line">변두리의 빽빽한 골목. 새벽 다섯 시 반에도 옆집 문 닫히는 소리, 첫 출근 발소리가 들린다. 사방에서 사람의 흔적이 겹쳐 누구의 것인지 잘 알 수 없는 자리.</p>
+        <p class="tr-residents"><span class="label">거주:</span><span class="name">인규</span></p>
+      </a>
+    </div>
+
+    <p class="terrain-aux" style="border-left-color: var(--warn);">
+      <strong>🪧 세계 톤 격하 v1 (D-20260503-001 채택, 2026-05-03)</strong> —
+      합성 권역명 (새벽재 / 옅은들 / 자국강 / 흙포구 / 굳은마을 / 빽빽골목) 폐기, 한국 실제 지명으로 격상.
+      손바닥 의식 이름 (손금 새벽) 폐기 — <em>매일 새벽 현관에서 신발 한 번</em> 행동만 남김.
+      <em>자국 / 박힘 / 결</em> 같은 합성 메타포는 <em>남다 / 적다 / 느낌</em> 등 일상어로 평이화.
+      메타포는 인물의 행동·대사 안에서 가끔만 (서술자 어휘는 평이한 한국어).
+      <a href="/view.html?path=outputs/worldbuilding/the-map-is-the-journey/vocabulary-shift-v1.md">전역 어휘 매핑표 ↗</a> ·
+      <a href="/view.html?path=decisions/open/D-20260503-001.yml">D-20260503-001 ↗</a>.
+      bible / 인물 시트 / 단편 본문 1:1 치환은 단계별 진행 중.
+    </p>
+
+    <p class="ix-link">
+      <a href="/view.html?path=outputs/worldbuilding/the-map-is-the-journey/vocabulary-shift-v1.md">어휘 매핑 v1 ↗</a> ·
+      <a href="/view.html?path=outputs/worldbuilding/the-map-is-the-journey/regions-v1.md">regions v1 (구 baseline) ↗</a> ·
+      <a href="/view.html?path=outputs/worldbuilding/the-map-is-the-journey/bible-v0.6.md">bible v0.6 ↗</a>
+    </p>
+  </section>
+
   <section class="cat" id="illustrations-section">
     <h2><span class="arrow">▾</span> 🖼 일러스트 <span class="count" id="ill-count"></span></h2>
     <div class="gallery" id="gallery"></div>
@@ -284,8 +375,13 @@ function fmtTime(epoch) {
   return d.toISOString().slice(0, 10);
 }
 
+// F-20260502-1252 guard: tolerate leading-slash drift in manifest paths.
+// view.html refuses path params starting with "/" (security guard) — strip
+// any leading slash before encoding so encodeURIComponent does not bake "%2F"
+// into the URL.
 function viewerUrl(path) {
-  return `/view.html?path=${encodeURIComponent(path)}`;
+  const p = String(path || "").replace(/^\/+/, "");
+  return `/view.html?path=${encodeURIComponent(p)}`;
 }
 
 function toEpisodeNo(value) {
@@ -318,7 +414,7 @@ function renderSeries(m) {
     const status = f.reader_first_status || f.episode_status || "";
     const badge = status && status !== "published" ? `<span class="ep-badge">${escapeHtml(status)}</span>` : "";
     const media = thumb
-      ? `<img class="ep-thumb" src="/${escapeHtml(thumb)}" alt="회차 ${f.episodeNo} — ${escapeHtml(title)}">`
+      ? `<img class="ep-thumb" src="${escapeHtml(absPath(thumb))}" alt="회차 ${f.episodeNo} — ${escapeHtml(title)}">`
       : `<div class="ep-thumb-empty">episode ${f.episodeNo}</div>`;
     return `<a class="ep-card" href="${viewerUrl(f.path)}">
       ${media}
@@ -350,6 +446,13 @@ function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 }
 
+// F-20260502-1252 guard: tolerate leading-slash drift in manifest paths without emitting "//path".
+function absPath(p) {
+  if (!p) return "";
+  const s = String(p);
+  return s.startsWith("/") ? s : "/" + s;
+}
+
 async function main() {
   const r = await fetch("/manifest.json", { cache: "no-store" });
   const m = await r.json();
@@ -371,7 +474,7 @@ async function main() {
     gal.innerHTML = ills.map((im, i) => `
       <figure>
         <a href="javascript:void(0)" onclick="openLightbox(${i})">
-          <img src="/${im.path}" alt="${escapeHtml(im.title)}" loading="lazy">
+          <img src="${escapeHtml(absPath(im.path))}" alt="${escapeHtml(im.title)}" loading="lazy">
         </a>
         <figcaption>
           <div class="ttl">${escapeHtml(im.title)}</div>
@@ -411,10 +514,10 @@ main().catch(e => {
 function openLightbox(i) {
   const im = (window.__ILLS || [])[i];
   if (!im) return;
-  document.getElementById("lb-img").src = "/" + im.path;
+  document.getElementById("lb-img").src = absPath(im.path);
   document.getElementById("lb-cap").innerHTML = escapeHtml(im.caption);
   const src = im.source_artifact
-    ? `↗ <a href="/view.html?path=${encodeURIComponent(im.source_artifact)}">${escapeHtml(im.source_artifact)}</a>${im.source_section ? " " + escapeHtml(im.source_section) : ""} · ${escapeHtml(im.creator)}`
+    ? `↗ <a href="${viewerUrl(im.source_artifact)}">${escapeHtml(im.source_artifact)}</a>${im.source_section ? " " + escapeHtml(im.source_section) : ""} · ${escapeHtml(im.creator)}`
     : escapeHtml(im.creator);
   document.getElementById("lb-src").innerHTML = src;
   document.getElementById("lightbox").classList.add("open");

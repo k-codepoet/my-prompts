@@ -14,10 +14,15 @@ authored_by: writer
 source_aggregate:
   - outputs/writing/the-map-is-the-journey/character-sheets-axis-v0.md §2
   - outputs/worldbuilding/the-map-is-the-journey/character-relations-v0.md §1·§3.2·§4
-illustrations: []
+illustrations:
+  - outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-ingyu-v2.png
+  - outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-5-ingyu-side-chair-empty-v0.png
 champions_keywords_primary: [연대]
 manifesto_direct_quote_count: 0
 forbidden_language_grep_pass: true
+region: 성남 변두리 (경기, 도시 변두리 빽빽 골목, vocabulary-shift v1)
+terrain_physical: 도시 변두리 (경기 성남, 빽빽한 골목)
+acks_decision: D-20260503-001
 ---
 
 # 인규 (仁圭) — *옆에 앉는 사람*
@@ -36,6 +41,10 @@ forbidden_language_grep_pass: true
 | terrain | 통과의 산 가장자리 (옆자리 200 자리) |
 | 누적 시간 | 14 년 누적 |
 | 1 차 chronicle 사건 | 사건 3 *낯선 흙 색조 1 점 발견* — 28 자국째 *연강 색조* + 사건 4 *지도-스승의 침묵* (28~42 자국째 = 14 년) |
+
+## 일상 풍경
+
+빽빽한 골목. 새벽 다섯 시 반에도 옆자리에서 누군가 첫 출근하는 발소리가 들린다. 자국이 너무 많이 겹쳐서 누구의 자국인지 알 수 없는 자리 — 흙은 진하지만 익명이다. 한 평짜리 작업방의 책상 옆 빈 의자가 매일 밤 200 명의 옆자리 자국을 받는다.
 
 ## 동기
 
@@ -87,11 +96,14 @@ forbidden_language_grep_pass: true
 
 | 컷 | 자리 | 출처 |
 |-----|-----|------|
-| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-ingyu-v1.png) | 캐릭터 시트 — 42 자국째, 옆자리에서 묻기 잘하는 결의 정면 컷 (회화 톤 baseline) | cy-003 r2 art-director image |
+| ![캐릭터 시트 v2](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-ingyu-v2.png) | 캐릭터 시트 v2 — 42 자국째, 옆 의자에 차분히 앉은 자세 (4 인물 분별 baseline 격상 자리, 작은 방 형광등 인공 광원, 외투는 의자 등받이에 걸린 결, 두 손 무릎 위 모음) | cy-003 r4 art-director image (F-20260502-1251 + F-20260502-1252-content-illustrations-routing 직접 응답) |
+| ![우표 17-5 옆 의자 빈 자세 v0](../../../worldbuilding/the-map-is-the-journey/illustrations/stamp-17-5-ingyu-side-chair-empty-v0.png) | 우표 17-5 — *옆 의자가 비어 있는 자리에 인규가 차분히 앉은 한 컷* (visual-bible v0.4 §17.5 인규 자리 신규 박음, *답을 박지 않는 결*의 시각 본체) | cy-003 r4 art-director image (stamps-extension-v0 §1 *옆자리가 비어 있는 결* 시각 룰 1 호 직접 흡수) |
 
-> 확장 자리 (cy-003+ 후보):
-> - *옆자리 30 분 — 다른 사람 손바닥 옆에 앉은 자세*
-> - *눈만 살짝 좁히는 웃음 클로즈업*
+> v1 자리 (supersede 직전 baseline): `character-sheet-ingyu-v1.png` = 4 인물 분별 baseline 재측정 spec (art-director-r3.md §0 진단) 위반 자리 — *young face / late twenties face* 모델 default 수렴 + tone-lock §3 negative prompt 0 자리. v2 가 1:1 supersede.
+>
+> 확장 자리 (cy-004+ 후보):
+> - *옆자리 30 분 클로즈업 — 다른 사람 손바닥 옆에 앉은 자세 측면 컷*
+> - *눈만 살짝 좁히는 웃음 클로즈업 (face crop)*
 > - *200 명 자국이 한 자리에 모인 산 — 방향이 사방으로 흩어진 가까이 컷*
 > - *연강 ↔ 인규 28 자국째 첫 만남 (관계 컷)*
 

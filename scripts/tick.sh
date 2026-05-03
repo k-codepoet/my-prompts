@@ -296,9 +296,12 @@ ROOT = sys.argv[1]
 state = os.path.join(ROOT, "state/.last-role")
 cur_text = open(os.path.join(ROOT, "current.md")).read()
 end = cur_text.find("\n---", 3)
-gen = (yaml.safe_load(cur_text[3:end]) or {}).get("gen", 1)
+fm = yaml.safe_load(cur_text[3:end]) or {}
+gen = fm.get("gen", 1)
+frozen = set(fm.get("frozen_orgs") or [])
 orgs_dir = os.path.join(ROOT, f"generations/gen-{gen:03d}/orgs")
 orgs = sorted(os.path.basename(p)[:-3] for p in glob.glob(os.path.join(orgs_dir, "*.md")))
+orgs = [o for o in orgs if o not in frozen]
 if not orgs:
     print(""); sys.exit(0)
 last = open(state).read().strip() if os.path.isfile(state) else ""
@@ -363,6 +366,9 @@ if [[ "$STATUS" == "ok" ]]; then
   "$ROOT/scripts/generate-site-manifest.sh" >>"$LOG" 2>&1 || true
   # 신규 단편 박혔으면 슬랙에 reader portion 만 첨부 (메타 / audit 자기 검사 제외).
   "$ROOT/scripts/notify-new-writing.sh" >>"$LOG" 2>&1 || true
+  # publishing surface regression watcher — 본문 안 img 참조가 disk 위 실제 파일을 가리키는지.
+  # broken 자리 있으면 stderr + 슬랙 알림, exit 0 유지 (tick 차단 안 함).
+  "$ROOT/scripts/check-image-paths.sh" >>"$LOG" 2>&1 || true
 else
   log "ERROR — see $CLAUDE_OUT (last 20 lines logged)"
   tail -20 "$CLAUDE_OUT" >> "$LOG"

@@ -125,20 +125,39 @@ function splitReaderDebug(body) {
 
 // marked 결과 본문의 상대경로 img/a 를 md 파일 기준으로 절대경로 보정.
 // view.html 은 root 에 있어 상대경로가 root 기준으로 풀려 깨짐 (예: 인물 md 의 ../../../worldbuilding/...).
+// img[src]: 절대경로로 변환 (root-anchored 는 패스).
+// a[href]: 절대경로로 변환 + .md/.yml/.yaml 짝은 /view.html?path=... 로 wrap (raw 직진 회피).
 function resolveRelativeRefs(html, mdPath) {
   const dir = mdPath.slice(0, mdPath.lastIndexOf("/") + 1); // "/outputs/writing/.../characters/"
   const tmp = document.createElement("div");
   tmp.innerHTML = html;
-  const fix = (el, attr) => {
-    const v = el.getAttribute(attr);
+  const fixImg = (el) => {
+    const v = el.getAttribute("src");
     if (!v) return;
-    if (/^(?:[a-z]+:|\/\/|#|\/)/i.test(v)) return; // absolute / scheme / fragment / anchor 만은 패스
+    if (/^(?:[a-z]+:|\/\/|#|\/)/i.test(v)) return; // scheme / protocol-relative / fragment / root-anchored 패스
     try {
       const u = new URL(v, "http://_local" + dir);
-      el.setAttribute(attr, u.pathname + u.search + u.hash);
+      el.setAttribute("src", u.pathname + u.search + u.hash);
     } catch (e) { /* leave as-is */ }
   };
-  tmp.querySelectorAll("img[src]").forEach(el => fix(el, "src"));
+  const isViewable = (path) => /\.(md|ya?ml)$/i.test(path);
+  const fixAnchor = (el) => {
+    const v = el.getAttribute("href");
+    if (!v) return;
+    if (/^(?:[a-z]+:|\/\/|#)/i.test(v)) return; // scheme / protocol-relative / fragment 패스 (root-anchored 는 통과 → md 짝은 wrap)
+    try {
+      const base = v.startsWith("/") ? "http://_local/" : "http://_local" + dir;
+      const u = new URL(v, base);
+      const abs = u.pathname;
+      if (isViewable(abs)) {
+        el.setAttribute("href", "/view.html?path=" + abs.replace(/^\//, "") + u.search + u.hash);
+      } else {
+        el.setAttribute("href", abs + u.search + u.hash);
+      }
+    } catch (e) { /* leave as-is */ }
+  };
+  tmp.querySelectorAll("img[src]").forEach(fixImg);
+  tmp.querySelectorAll("a[href]").forEach(fixAnchor);
   return tmp.innerHTML;
 }
 

@@ -28,6 +28,7 @@ state/tick.lock.d/
 !.claude/hooks/
 .claude/settings.local.json
 state/.last-role
+state/last-relative-img-count
 
 # Prototype build artifacts (the-map-walker etc.)
 outputs/code/**/node_modules/

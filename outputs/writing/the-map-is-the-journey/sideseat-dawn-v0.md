@@ -46,6 +46,8 @@ constitution_invariant_check: |
 
 # 옆자리에 앉은 한 새벽 — *업* 축, 28 자국째 1 인칭
 
+> **Superseded by v0.1 (cy-003 r24, tick-109)** — D-20260503-001 step-4 palm closure ritual swap 적용. body 11 자리 *손바닥 의식* → *신발 의식* voice rewrite. 현재 baseline = `outputs/writing/the-map-is-the-journey/sideseat-dawn-v0.1.md`. 본 v0 은 v0.1 patch 표 (§A) 의 인용 baseline 으로 보존.
+
 ![짧음의 결 — 연강의 옆자리](/outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-7-yeongang-short-grain-v1.png)
 
 > 본 단편은 cy-002 r1 단편 1 호 — *업* 축 단일 변주. cy-001 마감 라운드의 *세 축 분리 응답 = 분기 사이 여백 글 형식* (writer r3 *처음으로 자기 지도를 본 새벽* 1 호) 의 직접 후속 자리. 그 단편이 *나·가족* 두 축의 분기 묶음이었다면, 본 단편은 *업* 축의 분리된 한 자리. 분기 사이 여백 대신 *축 단일 1 인칭* 형식이 본 변주의 결.
@@ -55,7 +57,7 @@ constitution_invariant_check: |
 
 ![인규](/outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-ingyu-v1.png)
 
-새벽 다섯 시였다. 본인의 손바닥은 5 분이면 충분했다. 그 5 분이 끝난 자리에 한 사람의 1 분이 먼저 끝나 있었다.
+새벽 다섯 시였다. 정선 산골의 비탈 길 끝, 산등성이 가장자리. 안개가 골을 따라 한 방향으로 내려가고 있었고, 비탈 중간쯤의 한 줄 마을에서는 윗집부터 차례로 부엌 불이 들어왔다. 본인의 손바닥은 5 분이면 충분했다. 그 5 분이 끝난 자리에 한 사람의 1 분이 먼저 끝나 있었다.
 
 연강이라는 이름은 본인이 그 새벽에 처음 들었다. 28 자국째 해의 봄, 본인은 통과의 산 정상 가장자리에 와 있었다. 정상이라고 부를 만한 표지는 없었다 — 본인이 그 자리를 정상이라고 부른 것은, 그 자리에 와서 더 오를 자리가 안 보였기 때문이지, 본인이 도달했기 때문이 아니었다. 흙의 결이 다른 자리였다. 발자국이 지나간 자국이 옅게 비치는 가장자리. 그 자리에 한 사람이 앉아 있었다.
 

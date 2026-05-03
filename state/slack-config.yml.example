@@ -27,4 +27,6 @@ triggers:
   budget_resume: true       # 사용량 회복 → 시스템 자동 ON
   system_toggle: true       # 사람의 on/off
   image_generated: true     # save-image.sh 통과한 이미지마다 — 캡션·프롬프트·이미지 인라인
+  image_paths_broken: true  # check-image-paths.sh — 본문 안 img src 가 disk 위 파일을 못 찾음
+  image_paths_relative_drift_increase: true  # check-image-paths.sh — relative-path img drift 가 직전 tick 보다 늘어남 (regression)
   tick_failure: false       # tick 실패 (디버그용 — 기본 off)

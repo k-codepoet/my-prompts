@@ -1,0 +1,52 @@
+id: stamp-17-4-yugyeong-yuri-walked-together-v1
+created_at: '2026-05-03T01:07:00+00:00'
+creator: art-director (cy-003 r10 — §17.4 *함께 걸은 자리* baseline image / 8 지형 image 누적 4/8 = v0.5 thin-bump 임계 도달 / F-1251 2-인 1 프레임 분별 baseline 1 호)
+category: illustration
+caption: |
+  우표 §17.4 — 유경 + 유리 *함께 걸은 자리* (느릿내 강가 §2.3). 35 자국째 다시 펴는 어머니 손바닥 옆, 8 살 유리가 처음 펴는 손바닥. 두 손은 안 잡음 (yuri-v2 baseline 1:1 인용 — 부모-자식 색조 패밀리 #5C4A36 ↔ #C8995A). 강은 *물의 반사 0 + 자국빛 줄지어 굳음* 결 (terrain v1 §3 + bible v0.5 §6 1:1 인용). 강 위 안개 0.3 폭 두께 (terrain-visual-rules-v0 §2.3 baseline).
+prompt: |
+  traditional Korean ink-and-wash painting (sumukhwa) on rice paper, painterly brushwork visible, restrained sepia and dust-ochre palette, two figures at the bank of a slow river at first dawn in a small riverside village, a Korean woman in her late thirties (mother, 38) standing beside her eight-year-old Korean daughter (half the height of her mother), both walking quietly along the bank facing the river, both opening their palms gently in unison but their hands clearly NOT joined and never touching, the mother with calm late-thirties contemplative bearing palette around #5C4A36 dust-path-center tone with golden ochre warmth, the eight-year-old girl with whole-body smile (shoulders eyes mouth all moving together) palette around #C8995A trace-glow child-tone, parent-child color family side by side, the river crossing the composition as a single long horizontal stroke depicted not as reflective water but as pale trace-marks settling in rows along the river course (dust-ochre #C8995A trace-glow lined along the flow), a single row of riverside village rooftops parallel to the river on the far bank, low pale dawn mist hovering above the river surface 0.3 width thick (wet-on-wet ink wash), rice paper grain laid horizontally along the river flow, plain pale linen clothing on both figures, mother in plain pale linen long sleeves, daughter with shoulder-length hair tied simply and plain pale linen morning shirt, composition with figures small at the 1/3 line in the riverside village strip, river occupying the lower 60% as a long horizontal ink stroke, no reflective water, no water shine, the two faces clearly distinct adult woman versus eight-year-old child not twins not duplicates, NOT photograph
+negative_prompt: |
+  photorealistic, photograph, realistic skin texture, 3D render, CGI, hyperrealism, modern photograph, studio photo, glossy, plastic skin, duplicate face, identical features, twin faces, same character repeated, two adult women, two children, mother holding child's hand, hands joined, hand holding, characters crossing the river, water reflection, glossy water, water shine, bridge, boat, modern clothing
+workflow: z-image-turbo
+provider: comfyui
+size: 1024x1024
+genai_origin_url: https://genai.home.codepoet.site/outputs/2026/05/03/cbb9d886-a403-457c-947e-3ded4e2b8183.png
+binds:
+  - outputs/art/the-map-is-the-journey/visual-bible-v0.4.md  # §17.4 자리
+  - outputs/art/the-map-is-the-journey/terrain-visual-rules-v0.md  # §2.3 강가 6 항 + §3 느릿내 + §4 §17.4 짝 1:1 인용
+  - outputs/art/the-map-is-the-journey/tone-lock-v0.md  # §1·§2·§3 baseline
+  - outputs/worldbuilding/the-map-is-the-journey/terrain-v1.md  # §3 강가 사실 baseline
+  - outputs/worldbuilding/the-map-is-the-journey/regions-v1.md  # 느릿내 + §8 유경/유리 거주지
+  - outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v2.png  # 어머니 얼굴/자세 baseline
+  - outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yuri-v2.png  # 유리 얼굴/자세 baseline + parent_child_color_family rule 1 호
+acks_feedback:
+  - F-20260502-1310-terrain-as-actual-living-geography  # must_fix #5 art-director — visual-bible 실제 지형 시각 룰 image baseline 4/8 도달 자리
+  - F-20260502-1251-character-visuals-too-similar  # 2-인 1 프레임 분별 baseline 1 호 (silhouette/pose/face/palette/background)
+  - F-20260502-1252-content-illustrations-routing  # ep-07 episode_thumb 짝 후보 자리 (writer 인계)
+self_check_tone_lock_v0:
+  s1_medium_baseline: pass — sumukhwa rice paper 결, 강 위 dawn mist wet-on-wet, 실사·3D 0
+  s2_required_keywords: pass — 4/4 박음 (sumukhwa / painterly brushwork visible / restrained sepia and dust-ochre palette / NOT photograph)
+  s3_negative_baseline: pass — tone-lock §3 baseline + 추가 강가 전용 (water reflection / glossy water / water shine / bridge / boat / characters crossing the river / hands joined / mother holding child's hand) 의무 박음
+self_check_terrain_visual_rules_v0:
+  composition_skeleton: pass — 강이 화면을 한 줄로 가름 (수평 long stroke) + 한 줄 마을 강 한 쪽
+  brushstroke_direction: pass — 강을 따라 가로 stroke / 강과 직교한 stroke 0
+  tone_density_range: pass — 옅은 폭 60% (강 + 강가 흙) + 진한 폭 25% (강가 한 줄 마을 + 인물) + 종이 흰 폭 15% (하늘) baseline 박음
+  paper_grain: pass — rice paper 결 강 흐름 방향
+  dawn_mist: pass — 강 위 0.3 폭 두께 wet-on-wet (§2.3 baseline 1:1)
+  figure_placement: pass — 두 인물 강가 한 줄 마을 자리에서 강 *바라보는* 결 / 강 *건너가는* 결 0
+self_check_visual_differentiator_pair:  # F-1251 must_fix #3 — 2 인 1 프레임 silhouette/pose/face/clothing/palette 분별 의무
+  silhouette: 38 세 어머니 키 + 8 세 유리 키 절반 (어른 ↔ 어린이 임계 강 분별) / 시리즈 안 유일한 부모-자식 짝
+  pose: 두 인물 모두 손바닥 펴는 결 (어머니 = 35 자국째 다시 펴는 결 + 유리 = 처음 펴는 결) / 손은 안 잡음 (yuri-v2 *어머니 옆자리 + 손은 안 잡음* baseline 1:1 인용)
+  face: 어머니 = 늦은 30 대 차분한 결 / 유리 = 8 살 몸 전체 웃음 (어깨·눈·입 다 같이) / 두 얼굴 *adult woman vs eight-year-old child* 명시 prompt + duplicate face / twin faces negative
+  clothing: 어머니 = 평한 옅은 린넨 long sleeves + golden ochre warmth / 유리 = shoulder-length hair tied simply + 평한 옅은 린넨 morning shirt
+  palette: 어머니 #5C4A36 + 유리 #C8995A = parent-child color family 1 호 동기화 결 (yuri-v2 meta.yml parent_child_color_family rule 1:1 인용)
+  background: §2.3 강가 강 한 줄 + 강가 한 줄 마을 + 강 위 자국빛 #C8995A 줄지어 + 강 위 안개 0.3 폭 (다른 7 우표 배경과 분별 임계 강 — 강가 = 본 자리 1 호)
+self_check_region_jagukgang:  # regions v1 §3 느릿내 권역 baseline
+  region: 느릿내 (강 위 자국빛 줄지어 굳음 결)
+  trace_glow_variant: '#C8995A 첫 자국 색조 = 강 위 줄지어' (visual-bible v0.4 §13 1 변종 1:1 인용)
+champions_keywords_primary: [축복]
+champions_keywords_secondary: [움직임, 방향]
+constitution_invariant_check: |
+  - #1 매니페스토 정렬: 7 키워드 본문 직접 인용 0 (메타 자리만).
+  - #2 단일 진실: visual-bible v0.4 §17.4 + terrain-visual-rules-v0 §2.3 + tone-lock-v0 §1·§2·§3 1:1 인용. 신규 사실 0.

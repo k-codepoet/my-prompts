@@ -1,0 +1,34 @@
+id: F-20260503-region-names-as-korean-toponyms
+created_at: '2026-05-03T00:00:00+00:00'
+source: chat:user
+reader_role: R0
+artifact: outputs/worldbuilding/the-map-is-the-journey/regions-v1.md
+verdict: partial
+status: open
+target_orgs: [loremaster, writer, art-director]
+notes: |
+  사용자 진단 (2026-05-03):
+  > "자국강 말고 실제로 있을 거 같은 한국 지명으로 하자"
+
+  진단:
+  - regions-v1 의 6 권역명 중 4 자리가 *세계관 단어 + 일반 지형어* 합성 (자국강·흙포구·굳은마을·빽빽골목).
+  - 한국 지명 결 (한계령·미시령·청계천·부산포·진부령마을·골목길) 의 토착 어휘 패턴이 아니라
+    합성 추상어로 들림 → reader-first toxic-term-budget 위반의 권역명 측 변주.
+
+  처치 (랜딩 카드 표면 v1.1 즉시 적용 박음):
+  - 자국강 → **느릿내** (~내 = 청계천·정선천 결, 강가 한 줄 마을의 안개 흐름 결)
+  - 흙포구 → **마른포** (~포 = 부산포·동래포 결, 종이 가장자리 결)
+  - 굳은마을 → **늘재** (~재 = 한계령·진부령 결, 비탈/분지 정착 결)
+  - 빽빽골목 → **빽빽골** (~골 = 한국 골목 결, 짧음 박음)
+  - 새벽재 + 옅은들 = 보존 (이미 한국적 결).
+
+  남은 의무 (loremaster):
+  - regions-v1.md 본문 6 §자리 권역명 1:1 갱신 + supersede 처리 (또는 v1.1 신규 박음).
+  - terrain-v1 §11 + regions-v1 §8 8 인물 거주지 표 권역명 갱신.
+  - bible v0.6 / character-sheets / 인물 시트 8 자리 frontmatter `region:` 갱신.
+  - 단편 본문 안 *자국강* / *굳은마을* / *빽빽골목* 박힘 자리 grep 후 v1.1 명칭으로 1:1 치환.
+must_fix:
+  - loremaster: regions-v1 본체 6 권역명 v1.1 갱신 + supersede.
+  - loremaster: terrain-v1 §11 + character-relations 등 횡단 지명 grep 후 1:1 치환.
+  - writer: 인물 시트 8 자리 frontmatter `region` 값 갱신 + 단편 본문 안 권역명 grep 치환.
+  - critic: 다음 cold-read 시 권역명이 *한국 지명 결* 인지 5 분 즉답 측정 항목 추가.

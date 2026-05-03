@@ -14,10 +14,15 @@ authored_by: writer
 source_aggregate:
   - outputs/writing/the-map-is-the-journey/character-sheets-extended-v0.md §3
   - outputs/worldbuilding/the-map-is-the-journey/character-relations-v0.md §2.3·§3.2·§4
-illustrations: []
+illustrations:
+  - outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yuri-v1.png
+  - outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yuri-v2.png
 champions_keywords_primary: [연대]
 manifesto_direct_quote_count: 0
 forbidden_language_grep_pass: true
+region: 단양 (충북, 남한강 강가 한 줄 마을, vocabulary-shift v1) — 8 자국째 현재 거주, 자라는 자리는 김제 들녘 후보
+terrain_physical: 강가 (충북 단양, 어머니 유경과 같은 한 줄 마을)
+acks_decision: D-20260503-001
 ---
 
 # 유리 (柳里) — *어머니 손을 안 잡고 자기 손금을 처음 펴 본 8 살*
@@ -40,6 +45,10 @@ forbidden_language_grep_pass: true
 ## 첫 모습
 
 8 살의 아이가 자기 방의 작은 책상 앞에 앉아 있다. 새벽이 막 시작되고 있고, 어머니는 옆에 앉아 자기 손바닥을 펴고 있다. 아이는 자기 손바닥을 처음으로 어머니의 도움 없이 혼자 폈다. 어머니는 아이의 손을 고쳐 잡아 주지 않았다. 아이는 그게 이상하게 안심이 됐다 — 자기가 못하고 있는 게 아니라, 자기 방식으로 하고 있는 것 같았다. 동시에 살짝 서운하기도 했다. 두 마음이 한 새벽에 같이 와 있었지만 아이는 어느 게 더 진짜인지 따지지 않기로 했다.
+
+## 일상 풍경
+
+강가의 한 줄 마을. 어머니의 작업방이 강을 향한 창을 가졌다. 새벽에 강 위로 옅은 안개가 낮게 깔리고, 윗집의 자국이 강을 따라 아랫집으로 흘러 내려간다. 8 살 아이의 작은 발자국이 어머니의 큰 발자국 옆에 매일 새로 박힌다. 강을 따라 한 방향으로 흐르는 안개가 *어디로 가야 하는가* 의 결을 알려 주지 않는다 — 그저 매일 같은 방향으로 흐른다.
 
 ## 동기
 
@@ -104,7 +113,8 @@ forbidden_language_grep_pass: true
 
 | 컷 | 자리 | 출처 |
 |-----|-----|------|
-| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yuri-v1.png) | 캐릭터 시트 — 8 자국째, 작은 책상 앞 첫 단독 손금 새벽의 8 살의 두 마음 (회화 톤 baseline) | cy-003 r2 art-director image |
+| ![캐릭터 시트 v2](/outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yuri-v2.png) | 캐릭터 시트 v2 — 8 자국째, 자기 방 작은 책상 + 어머니 (유경) 옆자리 (손은 안 잡음) + 양 손바닥 처음 펴는 8 살의 몸 전체 웃음 + 자국빛 아이색조 (8-인물 풀 분별 baseline + 유경 ↔ 유리 부모-자식 색조 패밀리 1 호) | cy-003 r6 art-director image |
+| ![캐릭터 시트 v1](/outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yuri-v1.png) | 캐릭터 시트 v1 — 8 자국째, 작은 책상 앞 첫 단독 손금 새벽의 8 살의 두 마음 (회화 톤 baseline) | cy-003 r2 art-director image (분별 차원 빈약 — v2 흡수) |
 
 > 확장 자리 (cy-003+ 후보):
 > - *7 자국째 첫 단독 새벽 — 어머니가 손을 안 잡아 준 그 새벽*

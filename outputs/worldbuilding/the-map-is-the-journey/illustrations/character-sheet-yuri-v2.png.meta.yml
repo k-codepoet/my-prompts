@@ -1,0 +1,30 @@
+id: character-sheet-yuri-v2
+created_at: '2026-05-02T20:57:00+00:00'
+creator: art-director (cy-003 r6 character-sheet image — yuri v2 8-인물 풀 분별 baseline 격상)
+category: illustration
+caption: |
+  캐릭터 시트 — 유리 (柳里, 8, 가족→나 축, v2). 자기 방 작은 책상, 어머니 (유경) 옆자리 + 손은 안 잡음, 8 살의 웃음 (어깨·눈·입 다 같이), 자국빛 + 아이색조. r5 §2.3 visual differentiator 5 자리 1:1 시각화. 유경 ↔ 유리 = 부모-자식 색조 패밀리 시각 결 동기화 1 호 자리.
+prompt: |
+  traditional Korean ink-and-wash painting (sumukhwa) on rice paper, painterly brushwork visible, restrained sepia and dust-ochre palette, eight-year-old Korean girl seated at a small low wooden desk in her own bedroom at first dawn, both palms opening for the first time on her own without holding mother's hand, a middle-aged Korean woman (her mother) seated beside her opening her own palms not holding the child's hand, the child's smile moving shoulders eyes and mouth all together (eight-year-old whole-body smile), expression carrying both quiet relief and faint loneliness, short or shoulder-length hair tied simply, plain pale linen sleeping or morning shirt, mother in plain pale linen long sleeves with golden ochre warmth, small low desk with a sheet of pale paper on top, soft dawn light through a paper window warm, pale beige room wash background, palette around #C8995A child trace-glow tone slightly brighter than mother tone #5C4A36 (parent-child color family side by side), restrained mother-beside-no-hand-holding composition (mother visible but hands not joined), NOT photograph
+negative_prompt: |
+  photorealistic, photograph, realistic skin texture, 3D render, CGI, hyperrealism, modern photograph, studio photo, glossy, plastic skin, duplicate face, identical features, same character repeated, twin brothers, young face, late twenties face, adult face, mother holding child's hand, hands joined
+workflow: z-image-turbo
+source_artifact: outputs/writing/the-map-is-the-journey/characters/yuri.md
+source_section: "## 외형 / 분위기 + ## 시각 단서"
+source_argument: generations/gen-001/cycles/cy-003/arguments/art-director-r5.md §3.3
+size: 1024x1024
+genai_origin_url: https://genai.home.codepoet.site/outputs/2026/05/02/c6cbbd7e-7f6e-4db7-b193-27c5b58d8621.png
+self_check_tone_lock_v0:
+  s1_medium_baseline: pass — sumukhwa rice paper 결, 자기 방 옅은 dawn 자연광
+  s2_required_keywords: pass — 4/4 박음
+  s3_negative_baseline: pass — tone-lock + r5 추가 (adult face / mother holding child's hand / hands joined) 의무 박음
+self_check_visual_differentiator:
+  silhouette: 8 살 아이 + 작은 책상 앞 의자 + 키가 셋의 절반 + 어머니 옆 (시리즈 안 유일한 어린이 인물 = 임계 강)
+  pose: 양 손바닥 처음 펴는 결 + 어깨도 같이 들썩 (8 살의 몸 전체 웃음)
+  composition: 어머니 옆자리 + 손은 안 잡음 (인규 옆자리 빈 자리와 *비어 있음 ↔ 채워짐 단 손은 안 잡음* 1 호 분별)
+  palette: '#C8995A 자국빛 + 아이색조 (유경 #5C4A36 와 부모-자식 색조 패밀리 1 호)'
+  background: 자기 방 작은 책상 + 종이창 옅은 dawn wash
+parent_child_color_family:
+  parent: outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v2.png
+  child: outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yuri-v2.png
+  rule: 유경 #5C4A36 ↔ 유리 #C8995A 시각 결 동기화 1 호 자리 (cy-003 r5 §2.3 #4)

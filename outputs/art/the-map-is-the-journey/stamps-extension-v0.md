@@ -22,6 +22,8 @@ references:
 
 # 시각 바이블 §17 확장 v0 — 우표 §17.7 연강 + §17.8 희재 컨셉 시트 박음
 
+> **§0 Superseded by v0.1** (art-director r16 thin-bump 2026-05-03, tick-102) — 본 v0 §0~§10 본문 1:1 그대로 *현재 §17.7 / §17.8 컨셉 spec baseline*, 단 §0 (자기 검사 표) + §3.1 (8 우표 풀 매트릭스) + §2 표 안 *손금 새벽* / *손바닥* 4 hits (L20·L34·L69·L98) 어휘 자리는 D-20260503-001 vocabulary_shift palm closure (손금 새벽 이름 폐기 + 손바닥 → 신발) 후 **`stamps-extension-v0.1.md` §1 rename mapping** 이 authoritative. §17.7 (연강) + §17.8 (희재) 컨셉 본체 0 변경 — palm 어휘 자리는 §17.1 (해온) 행에만 자리. 외부 cold reader = v0 본문 + v0.1 §0~§2 두 자리 함께 읽기 (post-supersede 포인터 stale 처치 art-director 측 5 호).
+
 > **patch_kind = thin-extension**. visual-bible v0.3 본문 0 변경. §17.7~§17.8 두 자리 *추가 박음* — palette-patch v0 §F *patch 산출물 = v 격상 없는 부속 박음 표준* 의 2 호 사례. 본 patch = visual-bible v0.4 정식 발행 *전* 의 *컨셉 spec 만 박음 — 실측 image 발행 자리 분리* (art-director r2 §2.4 `B1 도입 사례 3 호 도달 후 정식 진입` 임계 직접 인용).
 >
 > 본 patch 가 박는 자리: visual-bible v0.3 §17 의 *5 known + 1 쉼의 자리만 = 6 장* baseline 위에 character-relations-v0 §2.1 연강 + §2.2 희재 *3 신규 인물 박음* 중 2 자리의 우표 컨셉 신설. (유리 = 이미 §17.4 *함께 걸은 자리* 우표 안 어머니 짝으로 박힘 — palette-patch §B.3 *모녀 동시 시연 1 호 인물* 자리 그대로.)

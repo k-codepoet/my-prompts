@@ -14,6 +14,8 @@ source_character_relations: outputs/worldbuilding/the-map-is-the-journey/charact
 champion_keyword: 진심
 ---
 
+> **Superseded by bible-v0.7.md (2026-05-03, cy-003 r12, F-1310 응답 bible 단위 absorption).** 활성 baseline = [bible-v0.7.md](./bible-v0.7.md) (공간 단위 3 축 박음 룰 §15 신규 = 6 권역명 + 8 지형 + 5 결 부속 + 5 산 부속 + 4 축 다축 박음 룰 + 8 인물 좌표 baseline). 본 v0.6 = *인물 8 자리 절 baseline* + *축 매핑 다축 박음 룰* baseline 자리로 보존 — bible v0.7 §1~§14 본문 0 변경 직접 인용.
+
 > **§0 현재 baseline (v0.6).** 본 v0.6 = v0.5 (8 핵심 문서 도달 baseline) 위 *인물 8 자리 절 baseline* + *축 매핑 다축 박음 룰* 두 자리 박음의 thin-patch. v0.5 본문 0 변경 / 신규 사실 0 / 신규 사물 0 / 신규 인물 0. 본 v0.6 = bible 안 *인물 절* 1 차 박음 자리 = G-WORLD-1 + G-CHAR-1 두 표적 동시 진척 박음.
 
 > **참조**: v0.5 §1~§11 본문 그대로 (변동 0). 본 v0.6 = §12 신규 *인물 8 자리 절 baseline* + §13 신규 *축 매핑 다축 박음 룰* 두 자리만 박음.

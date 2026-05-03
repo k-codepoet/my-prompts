@@ -1,0 +1,51 @@
+id: F-20260503-palm-reading-metaphor-deliberation
+created_at: '2026-05-03T00:00:00+00:00'
+source: chat:user
+reader_role: R0
+artifact: outputs/worldbuilding/the-map-is-the-journey/bible-v0.6.md (§4 손금 새벽)
+verdict: resolved_by_decision
+status: closed
+closed_at: '2026-05-03T12:40:01+00:00'
+closed_by: orchestrator-r26 (tick-108 routing-correction)
+resolved_by: D-20260503-001
+resolution_summary: |
+  D-20260503-001 picked=picked 의 vocabulary_shift 가 본 deliberation 의 1 차 결정.
+    손바닥/손금 → 신발
+    손금 새벽 → (이름 폐기, 행동만 = *매일 새벽 현관에서 신발 한 번 본다*)
+  D-001 acks_feedback 안 본 F-id 직접 명시 = ack 자리 명확.
+  본 yml 의 status: open 은 stale (D-001 closed 후 미갱신) — tick-108 routing-correction
+  자가 적용으로 closed 격상. ritual swap 큐 (sideseat-dawn-v0 body 11 행) unblock = writer
+  next task 격상 = body voice rewrite (tick-105 next 1 위 자리 회복).
+target_orgs: [loremaster, writer, critic, voice-keeper]
+notes: |
+  사용자 발의 (2026-05-03):
+  > "손바닥을 보는 행위... 는 음 다른 메타포가 좋은거같은데 고민이네"
+
+  현재 baseline:
+  - bible v0.6 §4 *손금 새벽* = 매일 새벽 30 분, 손바닥 펴서 자기 자국 (어제 자국 + 옅게 비치는 결) 보는 의식.
+  - 본 세계 핵심 메타포 1 호 — 8 인물 voice 의 시간 단위 + 자기-자기 만남의 결.
+  - terminology-layers v0 §1 *손금 새벽* (시간/행위) ≠ §2 *자국빛* (시각 효과) 분리.
+
+  사용자 결: *손바닥 = 자기 보는 행위* 메타포가 너무 무거움. 한국 일상 결의 더 자연스러운 의식이 있을지 고민중.
+
+  본 피드백은 *결정 미정 발의 박음* 자리 — 사용자가 답을 박기 전엔 *deliberation* 상태 유지.
+  loremaster·writer·critic·voice-keeper 가 각자 영역에서 대안 후보 1 자리씩 박음 가능.
+
+  대안 후보 (chat 1 차 박음, 추가 박음 자리):
+  1. **창 새벽** — 작은 방의 창 너머 옅은 빛에 자기 모습이 한 박자 비치는 결. 한국 산골/강가 마을 결.
+  2. **차 새벽** — 차 한 잔 우리고 그 표면에 자기 모습 한 번 비치는 결. 한국 식탁 결.
+  3. **신발 새벽** — 신발 끝의 흙 색조로 어제 어디 다녀왔는지 보는 결. 정해의 *발끝 한 방향* 와 직접 정합.
+  4. **종이 새벽** — 손바닥 → 종이 직접. 매일 자기 종이 한 장 펴서 어제 자국 보는 결. *몸* 매개 제거.
+  5. **거울 한 번** — 현관 거울 한 번 보는 결. 한 박자 자기 보는 한국 일상 결.
+
+  각 후보의 비용 (cost-of-change):
+  - bible §4 본체 1 ~ 2 자리 갱신 + 8 인물 시트 voice-signature 갱신 + 단편 본문 안 *손금 새벽* / *손바닥* grep 치환 + visual-bible 시각 룰 갱신 = cy-003+ 큰 산출물.
+  - terminology-layers v0 §1 갱신 짝.
+  - forbidden-dialogue v0 §3.x voice-signature 갱신 짝.
+
+  본 피드백은 *결정 자리* — 큰 작업이라 사용자 결정 없이 박지 않는다.
+  사용자 응답 기다림 (Type C 후보 자리 박음 직전 대기).
+must_fix:
+  - 사용자 결정 자리 (이 피드백은 *고민 박음* 이지 *수정 명령* 이 아님).
+  - loremaster·writer 는 결정 박힘 전까지 *대안 후보 추가 박음만* 가능, 본체 변경 0.
+  - 결정 박힘 시 Type C 결정 yml 박음 (전략·세계 핵심 메타포 변경 = constitution invariant #2 영향).

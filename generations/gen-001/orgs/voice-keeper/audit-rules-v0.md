@@ -110,18 +110,21 @@ references:
 
 ---
 
-## 7. human-readability gate (writing 카테고리 한정, 2026-05-02 신설)
+## 7. human-readability gate (writing 카테고리 한정, 2026-05-02 신설 / 2026-05-03 6 항목 격상)
 
 > 본 §은 사용자 직접 발의 (`human-readability-principle-v0.md`) 의 측정 측 박음.
 > critic 의 *전달* (5분 즉답률) 과 voice-keeper 의 *정렬* (매니페스토 박힘) 사이에
 > 누락된 한 자리 — *독자가 첫 한 문단에서 사람·상황·감정을 잡을 수 있는가* — 를 채운다.
+> **2026-05-03 격상** (R0 사용자 발의 `F-20260503-episode-10-voice-as-gold-standard.yml` 직접 흡수):
+> 5 항목 → 6 항목. 신규 #6 = *자기 시점 거리* — 회상의 메타가 아니라 *지금* 의 결.
+> ep-10 (8 살 유리 1인칭) = 사용자 PASS gold standard 박힘 자리. 본 항목은 그 결의 측정 측 박음.
 
 **적용 대상**: `outputs/writing/**/*.md` 의 **reader portion** (`## 메타 (cold reader 는 본 § 안 읽어도 됨)` 마커 *전*).
 **적용 면제**: 메타 섹션 / 시스템 내부 사고 / frontmatter / tick 로그 / 결정 yaml / arguments / worldbuilding 사양 표.
 
 **v1 override**: 본 §7-1 은 보조 측정이다. 최종 PASS 는 `prompts/writing/reader-first-standard.md` 의 R0/R1/R2 gate, toxic-term budget, actual-author-voice gate 를 먼저 통과해야 한다.
 
-### 7-1. 5 항목 측정표
+### 7-1. 6 항목 측정표 (2026-05-03 5 → 6 항목 격상)
 
 | # | 항목 | 통과 기준 | 측정법 | 가중치 |
 |---|------|----------|--------|--------|
@@ -130,14 +133,26 @@ references:
 | **3** | 메타포 밀도 ≤ 30% | 세계 메타포 단어 (자국 / 결 / 손바닥 / 새벽 / 흙 / 자국빛 / 옆자리 / 묻음) 가 전체 문장의 30% 이하 | reader portion 문장 단위 / 메타포어 사전 매칭 비율 | 0..1 (≤30%=1, 30~50%=0.5, >50%=0) |
 | **4** | 메타포는 일상 장면 위에 박힘 | 모든 메타포 문장이 직전 1~2 문장 안에 *사람 행동 + 물건 + 신체 감각* 을 깔고 있다 | 각 메타포 문장 검사 → 직전 2 문장 일상 단서 ≥ 1 자리 | 0..1 (전체 메타포 문장 중 통과 비율) |
 | **5** | 요약 가능성 | reader portion 전체를 *대학 1학년 문학 동아리 학생* 이 한 문단으로 요약 가능 — 핵심 사건 + 핵심 감정 두 자리만 남기면 됨 | (수동/cold reader 측정) writer self-check 또는 critic r-N image 모드에서 작성 | 0..1 |
+| **6** | 자기 시점 거리 (*지금* 결) — 2026-05-03 신설 | 화자가 *지금 보고 있는 것 + 지금 느끼는 것* 을 가까이서 박는다. 회상 메타 (*그때 우리는* / *돌아보면* / *결국* / *본인은 ~* / *그는 ~* 추상 거리) 가 reader portion 의 1 차 시점이 아니다. *나/너* 또는 인물 결에 맞는 close-3rd person 으로 *지금 자리* 를 박는다 | reader portion 첫 1500 자 안 (i) *지금* 단서 (현재 시제 동사 / 직접 지각: "보인다·들린다·느껴진다" / 직접 지시: "이 / 여기 / 지금") ≥ 3 자리, (ii) 회상 거리 단어 (*본인 / 그 / 그는 / 결국 / 돌아보면 / 그때*) 가 1 차 시점이 아님 (있으면 보조 자리 한정) | 0..1 (지금 단서 ≥3 + 회상 거리 1 차 시점 0 = 1.0 / 지금 단서 1~2 = 0.5 / 회상 거리가 1 차 시점 = 0.0) |
 
-**산출물 단위 점수 산정**:
-- §7 점수 = 5 항목 평균 × 5 = 0..5
-- **PASS** 임계 = ≥ 4.0 / 5 (= 평균 ≥ 0.8) *그리고* 항목 1·3 둘 다 ≥ 0.6 (첫 문단 + 메타포 밀도는 dealbreaker)
-- 1~2 항 미통과 (점수 3~4) = **조건부** → writer 보강 task 1 회 자동 발행
-- 3+ 항 미통과 (점수 < 3) = **FAIL** → writer 재작성 표적
+**산출물 단위 점수 산정 (2026-05-03 갱신)**:
+- §7 점수 = 6 항목 평균 × 6 = 0..6
+- **PASS** 임계 = ≥ 4.8 / 6 (= 평균 ≥ 0.8) *그리고* 항목 1·3·6 셋 다 ≥ 0.6 (첫 문단 + 메타포 밀도 + 자기 시점 거리는 dealbreaker)
+- 1~2 항 미통과 (점수 3.6~4.7) = **조건부** → writer 보강 task 1 회 자동 발행
+- 3+ 항 미통과 (점수 < 3.6) = **FAIL** → writer 재작성 표적
 - `reader-first-standard.md §3` 의 toxic-term hard fail 은 평균으로 완화할 수 없다. 첫 500 자 안 toxic term 1 회라도 있으면 FAIL.
 - `feedback/reader/` 의 R0 fail 은 §7 점수와 무관하게 FAIL.
+
+### 7-1a. PASS gold standard baseline (2026-05-03 신설)
+
+R0 사용자 직접 PASS gold 박힘 자리 = 본 §7-1 6 항목 측정의 1.0 baseline (재측정 시 비교 좌표).
+
+| 자리 | PASS 박힘 결 | 항목 #6 (자기 시점 거리) baseline |
+|------|-------------|-------------------------------|
+| `outputs/writing/the-map-is-the-journey/episode-10-mom-has-her-own-dawn.md` | 8 살 유리 1인칭 / 평균 ≤ 25 자 / 풍경 단서 첫 2 단락 / 메타포 밀도 ≤ 25% / 일상어 감정 명명 / 회상 메타 0 | *나는 ~ / ~ 가 보여 / ~ 이 들려 / 지금 ~* 결 = 1.0 |
+| `outputs/writing/the-map-is-the-journey/paired-dawns-v0.1.md` §2 (유리 1인칭 어린이 voice) | ep-10 의 발전 전 형태 = baseline 짝 자리 | 1.0 (*지금* 결 baseline 1 호) |
+
+> 다음 회차들 (11+ / 재작성) 은 본 두 자리와 1:1 비교 측정. 인물별 voice 차이 보존 = 8 살 유리 voice (1인칭 어린이) ≠ 60+ 연강 voice (3 회차 §1 close-3rd 보존 가능) ≠ 27 정해 voice (1인칭 단정형) — 단 *지금 결* (#6) 은 모든 인물 공통 baseline.
 
 ### 7-2. critic-r2 가짜 통과 패턴 (정식 박음 1 호)
 
@@ -155,3 +170,59 @@ critic-r2 cy-002 가 paired-dawns-v0 / sideseat-dawn-v0 / forbidden-dialogue-v0 
 
 - "이 단편의 reader portion 은 §7-1 항목 N 미통과 (점수 X/5). human-readability gate FAIL — writer 재작성 표적."
 - "이 단편의 reader portion 은 §7-2 critic 가짜 통과 패턴 적중. critic r-N 재측정 필요."
+
+---
+
+## 8. visual blind-distinction gate (character visuals 카테고리 한정, 2026-05-02 신설 / cy-003 r4)
+
+> 본 §은 사용자 직접 발의 (`feedback/reader/F-20260502-1251-character-visuals-too-similar.yml`)
+> *applies_to: voice-keeper* 측 직접 응답 자리. character-sheet / 인물 일러스트가 *이름 가림
+> R0 cold-read 5 초 분별* 임계에 도달하는지 측정. §7 (writing 카테고리 reader gate) 짝의
+> visual 카테고리 분별 gate 1 호 박음. art-director r1 cy-003 §4 *blind-distinction 검수
+> 그물* 의 voice-keeper 측 정식 흡수.
+
+**적용 대상**: `outputs/worldbuilding/**/illustrations/character-sheet-*.png` + 인물 portrait /
+캐릭터 시각 자료 (게임 카테고리 game character-art 포함 후행 후보).
+**적용 면제**: stamp / 풍경 / 환경 시각 자료 / spec 표 / 차이표 / hex 매트릭스 (시각 메타 자리).
+
+### 8-1. 3 항목 측정표 (R0 cold-read)
+
+| # | 항목 | 통과 기준 | 측정법 | 가중치 |
+|---|------|----------|--------|--------|
+| **1** | 3+ image 동시 5 초 분별 | 이름·hex·메타 가린 채 5 초 안에 *어느 자리가 어느 인물* 분별 + 분별 단서 ≥ 1 자리 명시 | R0 cold-read 페르소나 측정 (voice-keeper 또는 critic) | 0..1 |
+| **2** | silhouette 만 (검은 실루엣 처치) 분별 | 키 + 외투 길이 + 어깨 폭 1 차 차원 분별 | 실루엣 변환 후 측정 | 0..1 |
+| **3** | face crop 만 분별 | 얼굴 결 + 눈썹 + 표정 + 머리 결 분별 | crop 후 측정 | 0..1 |
+
+**산출물 단위 점수 산정**:
+- §8 점수 = 3 항목 평균 = 0..1
+- **PASS** 임계 = ≥ 0.8 / 1.0 *그리고* 항목 1 (5 초 분별) ≥ 0.6 (5 초 분별이 dealbreaker)
+- 1 항 미통과 (점수 0.5~0.79) = **조건부** → art-director r-N 보강 spec 1 회 자동 발행
+- 2+ 항 미통과 (점수 < 0.5) = **FAIL** → art-director r-N+1 v2.1 재발주
+- `feedback/reader/` 의 R0 visual fail 은 §8 점수와 무관하게 FAIL.
+
+### 8-2. pre-regen baseline + post-regen 재측정 짝 의무
+
+R0 visual fail 직접 응답 자리는 **반드시 두 측 짝 박음 의무**:
+
+1. **pre-regen baseline** = v1 (또는 fail 박힌 버전) 에 §8-1 측정 박음. fail 의 뿌리 1 차
+   분별 차원 명시.
+2. **post-regen 재측정** = v2 박힘 직후 동일 §8-1 측정 박음 = 분별 임계 도달 입증 의무.
+
+→ **분리 측정 의무** = 정렬 측 voice-keeper 단독 (critic R0 페르소나 검수와 *분리* 측정).
+critic R0 cold-read 와 voice-keeper §8 cold-read 두 측 동시 ≥ 0.8 도달 시 *3 측 동시 통과
+게이트* 의 visual 카테고리 짝 1 호 박음 자리.
+
+### 8-3. 첫 적용 표적 (cy-003 r4 박음)
+
+- `outputs/alignment/the-map-is-the-journey/character-visual-distinction-baseline-v0.md` (본 r4
+  박음) = pre-regen baseline 1 호.
+- art-director r-N image v2 (해온 / 정해 / 희재 v2.png) 박힘 후 동일 도구 재측정 = post-regen
+  자리 (voice-keeper r-N+1 cy-003 큐).
+- 5 인물 (나림 / 유경 / 인규 / 연강 / 유리) 풀 위험 audit = §3 baseline 안 1 차 분별 차원
+  임계 도달 5/5 = 본 §8 적용 후행 의무 0 (R0 추가 fail 박힘 시 발사 자리만).
+
+### 8-4. 발화 형식
+
+- "이 인물 시트 풀의 §8-1 항목 N 미통과 (점수 X / 1.0). visual blind-distinction gate FAIL — art-director r-N 재발주 표적."
+- "이 인물 시트 풀의 §8-1 #1 (5 초 분별) dealbreaker 적중. v2 재발주 자리 도달."
+- "이 인물 시트 풀의 §8-2 post-regen 재측정 자리 미박음 (v2 박힘 위 baseline 짝 박음 누락). 분리 측정 의무 위반."

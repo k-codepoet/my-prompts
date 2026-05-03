@@ -1,0 +1,111 @@
+id: D-20260502-004
+type: B                                 # 워크플로우 단계 재배열 = constitution §진화 규칙 §자동 적용 인접 자리. 단 frozen 자리 자체가 D-20260502-003 (Type C) 응답 자리 = 그 응답의 downstream 자리 = 보수적 Type B 분류.
+asked_at: 2026-05-02T15:00:01+00:00
+deadline:                               # 마감 없음 — 사용자 무시 가능 (Type B), 무응답 시 5 tick 후 recommended 자동 적용 후보 (cy-003 진화 룰 §B 인접 자리).
+gen: 1
+cycle: cy-003
+parent_goal: G-AUTONOMY-1               # 활성 조직 차례 회복 = 자율 동작 효율 직접 영향. G-WRITING-1 (글 진척) 도 인접.
+title: "role-rotate frozen-skip — state/.last-role 회전이 frozen / scope-reduced 조직 슬롯도 동일 회전으로 잡으면서 활성 4 조직 차례가 8 분할 → 4 분할로 줄어드는 자리 처치"
+
+description: |
+  cy-003 진입 후 활성 조직 = orchestrator + loremaster + writer + voice-keeper +
+  critic = 5 자리. frozen = designer (1 자리). scope-reduced = art-director (단편
+  일러스트 한정) + implementer (publishing surface 한정) = 2 자리. 합 8 조직.
+
+  현재 `state/.last-role` 회전 = 7 조직 .md 알파벳 라운드로빈 (artifacts/orgs/
+  *.md). 본 회전이 frozen designer + scope-reduced art-director / implementer
+  슬롯도 동일 회전 슬롯으로 잡으면서, 활성 5 조직 차례가 8 분할 → 5 분할로
+  줄어드는 자리.
+
+  실측 baseline (cy-003 r1 진입 ~tick-001 ~ tick-018):
+  - writer 차례: 7 분할 중 1 회 → 18 tick 안 writer 산출 = 1 자리 (인물 md 8 묶음
+    + episode-04 = ~3 tick 자리 도달, 평균은 18/7 ≈ 2.57 tick 마다 1 자리 자리)
+  - 결과: F-20260502-1252-serial-stalled-at-3 = *연재물 1·2·3 회까지만 published*
+    = 4 회 이후 자동으로 새 회차가 안 써지고 있다 사용자 R0 fail.
+
+  처치 후보:
+  - a (skip-frozen-only): designer (frozen) 만 회전에서 제외. scope-reduced (art-
+    director / implementer) 는 회전 유지 (단편 일러스트 / publishing surface
+    영역 안 활성).
+  - b (skip-frozen-and-scope-reduced): frozen + scope-reduced 모두 회전에서 제외.
+    회전 풀 = orchestrator + loremaster + writer + voice-keeper + critic = 5 자리.
+  - c (status-quo): 현재 7 조직 회전 유지. 활성 조직 차례 부족은 사용자 R0
+    feedback 누적으로 자연 응답.
+
+options:
+  - id: a
+    summary: "skip-frozen-only — designer 만 state/.last-role 회전에서 제외. scope-reduced (art-director / implementer) 는 회전 유지 (자기 영역 안 활성 자리)."
+    cost: |
+      tick.sh role-rotate 로직 4-5 LOC 변경 (frozen 목록 = current.md
+      frozen_orgs 직접 read + filter). 회전 풀 = 7 → 6 자리. 활성 5 조직
+      차례 = 18 tick 안 ~3 회/조직 (현재 ~2.57) = +0.43 회/조직 도달.
+
+      writer 차례 = 18 tick 안 ~3 회 자리 = episode-05+ 박음 자리 회복.
+      F-20260502-1252-serial-stalled-at-3 must_fix orchestrator 측 자리
+      직접 응답.
+    supporters: [orchestrator, writer, critic, voice-keeper, loremaster]
+    objectors: [designer]               # frozen 자리 자체가 회전에서 빠지는 자리 = 영역 보전 챔피언 자리지만 D-003 응답 자리에서 frozen 박음으로 objector 자리 인접.
+    fits_champions: |
+      - orchestrator §자립: 회전 풀 자체를 자기 룰로 갱신 = 자율 회복 자리.
+      - writer §시간이 곧 나: 차례 회복 = 단편 박음 자리 회복 = G-WRITING-1
+        진척.
+      - voice-keeper / critic / loremaster §방향: 활성 조직 차례 회복 = 글
+        pillar 심화 자리 진척 (D-003 응답 자리 직접 후속).
+
+  - id: b
+    summary: "skip-frozen-and-scope-reduced — frozen + scope-reduced 모두 회전에서 제외. 회전 풀 = 활성 5 조직."
+    cost: |
+      tick.sh role-rotate 로직 5-7 LOC 변경 (frozen + scope_reduced 목록
+      모두 filter). 회전 풀 = 7 → 5 자리. 활성 5 조직 차례 = 18 tick 안
+      ~3.6 회/조직 (현재 ~2.57) = +1.03 회/조직 도달.
+
+      writer 차례 = 18 tick 안 ~3.6 회 자리 = episode-05+ + episode-06+
+      박음 자리 회복.
+
+      단점: scope-reduced 자리 (art-director 단편 일러스트 / implementer
+      publishing surface) 의 차례가 0 이 되어 자기 영역 안 박음 자리 잃음.
+      art-director r-N image v2 (F-20260502-1251 처치 후행 자리) +
+      implementer 측 publishing surface regression 회복 자리 모두 인계
+      차례 잃음.
+    supporters: [writer]
+    objectors: [art-director, implementer]
+    fits_champions: |
+      - writer §시간이 곧 나: 차례 최대 회복.
+      - 단점: scope-reduced 영역 보전 0 = D-003 응답 자리 *art-director
+        scope 축소* 의도와 충돌 (scope 축소 ≠ freeze).
+
+  - id: c
+    summary: "status-quo — 현재 7 조직 회전 유지. 활성 조직 차례 부족은 사용자 R0 feedback 누적으로 자연 응답."
+    cost: |
+      tick.sh 0 LOC 변경. 회전 풀 = 7 자리 유지. 활성 조직 차례 = 현재
+      18 tick 안 ~2.57 회/조직 유지.
+
+      F-20260502-1252-serial-stalled-at-3 must_fix orchestrator 측 처치
+      자리 미박음 = 사용자 R0 자리 미응답. 다음 R0 평결 시 *처치 자리
+      0* 자리 = invariant 인접 자리.
+    supporters: [designer]              # frozen 자리 자체가 회전 풀 안 = 영역 보전 인접 자리.
+    objectors: [user, orchestrator, writer]
+    fits_champions: |
+      - 단점: 사용자 R0 fail must_fix 직접 응답 0 = invariant 인접 자리.
+
+recommended: a                          # frozen-only skip = 사용자 R0 must_fix 직접 응답 + scope-reduced 영역 보전 동시 박음 자리.
+trace: generations/gen-001/cycles/cy-003/decision-traces/D-20260502-004.md
+
+response:
+  decided_at: 2026-05-02T16:20:01+00:00
+  picked: a
+  notes: |
+    Auto-applied by orchestrator-r4 cy-003 (tick-028). Type B 6 ticks open
+    (asked 2026-05-02T15:00:01 → tick-027 16:09:30 보존 → 본 tick 16:20:01) =
+    cy-003 진화 룰 §B 임계 도달 (orchestrator r3 cy-003 tick-020 schedule
+    "tick-026 시점 = 자동 적용 후보 평가 자리" 박힘 + tick-026 loremaster /
+    tick-027 voice-keeper 두 자리 *D-004 보존* 명시 deferral). recommended=a
+    (frozen-only skip) = active orgs 5/5 supporters / objectors=designer
+    (frozen 자리 자체) = 활성 조직 무이의. F-20260502-1252-serial-stalled-at-3
+    must_fix #4 (orchestrator: role-rotate frozen 조직 건너뛰기 룰 발의 — Type B 후보)
+    직접 응답.
+
+    적용 자리: scripts/tick.sh role-rotate Python 블록 +2 LOC = current.md
+    frontmatter `frozen_orgs` 직접 read + filter (frozen=set(fm.get("frozen_orgs") or []) +
+    orgs = [o for o in orgs if o not in frozen]). 회전 풀 = 8 → 7 자리 (designer 제외).
+    scope-reduced (art-director / implementer) 회전 유지 = 영역 보전 동시 박음.

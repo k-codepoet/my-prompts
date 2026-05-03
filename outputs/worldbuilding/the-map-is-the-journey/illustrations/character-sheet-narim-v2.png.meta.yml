@@ -1,0 +1,26 @@
+id: character-sheet-narim-v2
+created_at: '2026-05-02T20:57:00+00:00'
+creator: art-director (cy-003 r6 character-sheet image — narim v2 8-인물 풀 분별 baseline 격상)
+category: illustration
+caption: |
+  캐릭터 시트 — 나림 (那林, 26, 나 축, v2). 12 색조 박물관 가장자리에서 반쯤 등 돌린 1/4 정면-옆 + 손바닥 닫힘 + 입꼬리만 살짝의 *반쯤 의심* 의 웃음. r5 §2.1 visual differentiator 5 자리 1:1 시각화. 자국빛 0%, 옅은 회갈 카디건.
+prompt: |
+  traditional Korean ink-and-wash painting (sumukhwa) on rice paper, painterly brushwork visible, restrained sepia and dust-ochre palette, Korean woman in her mid-twenties standing slightly turned three-quarters away from the viewer at the edge of a quiet earth-toned resting place, both hands clasped softly together palms not opened (palms held closed never opened), gaze level toward the edge of her own paper not opening it, faint half-smile only at the corner of her lips with shoulders and eyes held still, light brown hair short or shoulder length neatly kept, faded warm grey-brown linen cardigan over a plain undertone shirt, soft cloth shoes, behind her twelve faint earth-color trace patches arranged at a distance pale wash background, her own paper nearly empty, dawn light very faint and indirect (not direct sunrise), palette around #7A6447 to #8B7355 cooler than the room, restrained turned-aside composition with others traces visible behind, NOT photograph
+negative_prompt: |
+  photorealistic, photograph, realistic skin texture, 3D render, CGI, hyperrealism, modern photograph, studio photo, glossy, plastic skin, duplicate face, identical features, same character repeated, twin brothers, young face, late twenties face, opened palms, palms spread, hands raised
+workflow: z-image-turbo
+source_artifact: outputs/writing/the-map-is-the-journey/characters/narim.md
+source_section: "## 외형 / 분위기 + ## 시각 단서"
+source_argument: generations/gen-001/cycles/cy-003/arguments/art-director-r5.md §3.1
+size: 1024x1024
+genai_origin_url: https://genai.home.codepoet.site/outputs/2026/05/02/7fdaad2c-ac71-48c9-aaed-b3d371ac208c.png
+self_check_tone_lock_v0:
+  s1_medium_baseline: pass — sumukhwa rice paper 결, 실사/3D 드리프트 0
+  s2_required_keywords: pass — 4/4 박음 (sumukhwa + painterly brushwork visible + restrained sepia/dust-ochre + NOT photograph)
+  s3_negative_baseline: pass — tone-lock 10 자리 + r1/r3/r5 추가 9 자리 모두 박음
+self_check_visual_differentiator:
+  silhouette: 반쯤 등 돌린 1/4 정면-옆 (트리오 정면 / 인규 앉음 / 유경 손바닥 비빔과 분별 강)
+  pose: 양 손바닥 접혀 있음 + 시선 자기 종이 가장자리 (해온/유경/유리/연강 펴는 결과 reverse)
+  face: 입꼬리만 살짝 + 어깨/눈 정지 (트리오와 분별)
+  palette: '#7A6447 ~ #8B7355 옅은 회갈 + 자국빛 0% (자기 자국 박음 0 결의 시각 본체)'
+  background: 12 색조 박물관 자리 옅은 wash (다른 7 인물 풀과 배경 자체 분별 강)

@@ -1,0 +1,47 @@
+id: character-sheet-ingyu-v2
+created_at: '2026-05-02T18:46:00+00:00'
+creator: art-director (cy-003 r4 image — F-20260502-1251 + F-20260502-1252-content-illustrations-routing 직접 응답 자리)
+category: illustration
+caption: |
+  캐릭터 시트 — 인규 (仁圭, 42, 업 축) v2.
+  art-director-r3.md §3.1 v2 prompt baseline 1:1 입력. v1 대비 차이점:
+  앉은 자세 (트리오 = 모두 서 있음 → 1 차 분별 차원 격상) + 42 세 장년 결
+  (모서리 옅은 주름 + 광대 곱은 결 + 옅은 회갈 머리) + 작은 방 형광등 인공
+  광원 (시리즈 안 1 호 인공 광원) + 외투는 의자 등받이에 걸린 결 (착용 0)
+  + 두 손 무릎 위 모음 (해온 손바닥 펴기와 reverse) + 옆 의자 빈 자리
+  (charter §시각 단서 *옆 사람 손바닥 위에 자기 손을 놓지 않고 옆에 두는
+  자세* 1:1 흡수). tone-lock §2 4 키워드 + §3 negative + 본 r3 추가
+  *young face / late twenties face* 2 자리 박음.
+prompt: |
+  traditional Korean ink-and-wash painting (sumukhwa) on rice paper, painterly
+  brushwork visible, restrained sepia and dust-ochre palette, Korean man in his
+  early forties seated on a wooden chair beside an empty companion chair, both
+  hands clasped softly on his knees palms not opened, gaze level toward the empty
+  seat with quiet attentiveness, faint smile only at the corners of the eyes mouth
+  held nearly still, light grey-brown hair short and slightly thinned at the
+  temples (older than the late-twenties figures), one or two faint lines at the
+  corners of the mouth and eyes (early forties character), grey-brown linen shirt
+  with sleeves rolled once forearms visible, dark grey-brown trousers, soft
+  leather-cloth shoes flat on the floor, dark overcoat draped over the back of his
+  own chair (not worn), small interior room with a single fluorescent light strip
+  casting calm even artificial light (NOT dawn NOT dusk), pale beige wall wash
+  background, low wooden side table in the foreground, palette around #42321F
+  slightly heavier than the room tone, restrained companion-seat-empty composition,
+  NOT photograph
+negative_prompt: |
+  photorealistic, photograph, realistic skin texture, 3D render, CGI, hyperrealism,
+  modern photograph, studio photo, glossy, plastic skin, duplicate face, identical
+  features, same character repeated, twin brothers, young face, late twenties face
+workflow: z-image-turbo
+binds:
+  - generations/gen-001/cycles/cy-003/arguments/art-director-r3.md (§3.1 v2 prompt baseline + §1 4-인물 분별 매트릭스)
+  - outputs/art/the-map-is-the-journey/tone-lock-v0.md (§2 4 키워드 + §3 negative baseline)
+  - outputs/art/the-map-is-the-journey/visual-bible-v0.4.md (§11.5 인규 hex `#42321F`)
+acks_feedback:
+  - F-20260502-1251-character-visuals-too-similar
+  - F-20260502-1252-content-illustrations-routing
+source_artifact: outputs/writing/the-map-is-the-journey/characters/ingyu.md
+source_section: "## 외형 / 분위기 + ## 시각 단서"
+size: 1024x1024
+genai_origin_url: https://genai.home.codepoet.site/outputs/2026/05/02/6d2ec764-c20f-4002-acdc-8da2fe5bdca2.png
+supersedes: outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-ingyu-v1.png

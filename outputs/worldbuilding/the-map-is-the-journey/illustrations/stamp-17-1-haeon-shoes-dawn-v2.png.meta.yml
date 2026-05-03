@@ -1,0 +1,40 @@
+id: stamp-17-1-haeon-shoes-dawn-v2
+created_at: '2026-05-03T12:18:00+00:00'
+creator: tick:cy-003/104 (art-director r18 image)
+category: illustration
+caption: |
+  우표 §17.1 — 해온 (이름 폐기 — 매일 새벽 현관에서 신발 한 켤레를 한 번 본다 행동만).
+  현관 문턱의 작은 신발 한 켤레 close-up, 신발 끝의 옅은 흙빛 (어제 다녀온 길의 색조).
+  뒤로 김제 만경평야의 옅은 평지 + 짧은 안개 + 분산 점 (시작점) 한 자리.
+prompt: |
+  traditional Korean ink-and-wash painting (sumukhwa), painterly brushwork visible,
+  restrained sepia and dust-ochre palette, extreme close-up of a single pair of small
+  worn shoes at the threshold of a wooden doorway, faint dust-ochre tint at the toes
+  hinting at yesterday's path, soft dawn light grazing from upper-left, calm rice-paper
+  texture, vast pale plain (Gimje manggyeong rice paddy) glimpsed faintly in the
+  background mist with a few sparse dots suggesting a starting point, ink wash
+  gradients, palette around #5C4A36 dust-path center and #C8995A faint trace amber
+  ≤0.5%, no human figure, NOT photograph
+negative_prompt: |
+  photorealistic, photograph, realistic skin texture, 3D render, CGI, hyperrealism,
+  modern photograph, studio photo, glossy, plastic skin, hands, palm, fingers,
+  body parts, person, face
+workflow: z-image-turbo
+provider: comfyui
+size: 1024x1024
+genai_origin_url: https://genai.home.codepoet.site/outputs/2026/05/03/b6a51ce8-097d-42d6-a82c-a00602b21a5b.png
+supersedes: outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png
+source_artifact: outputs/art/the-map-is-the-journey/visual-bible-v0.6.md
+source_section: "§3 §17.1 v2 image 발행 baseline (현관 신발 한 켤레 close-up + 들녘 §22.2 + 김제 권역 + sumukhwa medium)"
+source_decision: decisions/closed/D-20260503-001.yml  # vocabulary_shift palm closure
+source_tone_lock: outputs/art/the-map-is-the-journey/tone-lock-v0.md  # §1~§3 의무 키워드 + negative prompt
+acks_feedback:
+  - F-20260503-palm-reading-metaphor-deliberation  # D-001 closure 의 art-director 측 image carry
+  - F-20260502-1252-content-illustrations-routing  # ep-01 dawn-first-map 측 hero stale stamp 갱신 짝
+self_check:
+  tone_lock_medium: sumukhwa (rice-paper + ink wash + painterly brushwork) — 본 v2 결 1:1 통과
+  no_human_figure: ✓ (shoes only — palm/hands/face 부재)
+  palette_band: #5C4A36 dust-path 중앙 + #C8995A 옅은 자국빛 ≤ 0.5% 1:1 통과
+  terrain_match: 들녘 §22.2 (옅은 평지 + 짧은 안개 + 분산 점) 1:1 통과
+  region_match: 김제 (만경평야 결) 1:1 통과
+  vocabulary_shift_carry: 손바닥 close-up → 현관 신발 close-up 1:1 carry (palm closure)

@@ -14,10 +14,15 @@ authored_by: writer
 source_aggregate:
   - outputs/writing/the-map-is-the-journey/character-sheets-v0.md §3
   - outputs/worldbuilding/the-map-is-the-journey/character-relations-v0.md §1·§3.1·§4
-illustrations: []
+illustrations:
+  - outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-narim-v1.png
+  - outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-narim-v2.png
 champions_keywords_primary: [연대]
 manifesto_direct_quote_count: 0
 forbidden_language_grep_pass: true
+region: 무주 (전라, 분지 정착 마을, vocabulary-shift v1)
+terrain_physical: 분지 (전라 무주, 산에 사방이 둘러싸임)
+acks_decision: D-20260503-001
 ---
 
 # 나림 (那林) — *한 번 보고 도망친 자*
@@ -36,6 +41,10 @@ forbidden_language_grep_pass: true
 | terrain | 12 색조 박물관 (쉼의 자리) |
 | 누적 시간 | 1 회 + 6 년 멈춤 |
 | 1 차 chronicle 사건 | 사건 1 *처음 백지를 받은 새벽* + 사건 2 *흙이 굳어지는 첫 자국* (1 ~ 8 자국째) |
+
+## 일상 풍경
+
+둘러싸인 평지. 사방으로 산이 닫혀 있어 새벽 안개가 한 자리에 오래 머문다. 자국이 다른 자리보다 천천히 옅어지는 자리. 6 자국째 해 동안 같은 안방의 같은 창에서 같은 풍경을 본다 — 산이 닫힌 자리는 바람도 한 곳에 오래 머무는 자리.
 
 ## 동기
 
@@ -84,7 +93,8 @@ forbidden_language_grep_pass: true
 
 | 컷 | 자리 | 출처 |
 |-----|-----|------|
-| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-narim-v1.png) | 캐릭터 시트 — 26 자국째, 12 색조 박물관 자리의 반쯤 의심의 웃음 (회화 톤 baseline) | cy-003 r2 art-director image |
+| ![캐릭터 시트 v2](/outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-narim-v2.png) | 캐릭터 시트 v2 — 26 자국째, 12 색조 박물관 가장자리의 *반쯤 등 돌린* 1/4 정면-옆 + 손바닥 닫힘 + 입꼬리만 살짝 (8-인물 풀 분별 baseline) | cy-003 r6 art-director image |
+| ![캐릭터 시트 v1](/outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-narim-v1.png) | 캐릭터 시트 v1 — 26 자국째, 12 색조 박물관 자리의 반쯤 의심의 웃음 (회화 톤 baseline) | cy-003 r2 art-director image (분별 차원 빈약 — v2 흡수) |
 
 > 확장 자리 (cy-003+ 후보):
 > - *12 색조 박물관 자리* — 본인 정체성의 1 차 시각화

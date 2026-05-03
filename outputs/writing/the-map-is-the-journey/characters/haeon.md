@@ -15,10 +15,14 @@ source_aggregate:
   - outputs/writing/the-map-is-the-journey/character-sheets-v0.md §1
   - outputs/worldbuilding/the-map-is-the-journey/character-relations-v0.md §1·§3.1·§4
 illustrations:
-  - outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png
+  - outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-shoes-dawn-v2.png  # supersedes stamp-17-1-haeon-palm-line-dawn-v1.png (D-20260503-001 vocabulary_shift palm closure carry)
+  - outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-haeon-v2.png  # supersedes character-sheet-haeon-v1.png (F-1251 응답 자리)
 champions_keywords_primary: [연대]
 manifesto_direct_quote_count: 0
 forbidden_language_grep_pass: true
+region: 김제 변두리 (전라, 만경평야 ↔ 도시 변두리 경계, vocabulary-shift v1)
+terrain_physical: 도시 변두리 (들녘 권역 옆 변두리)
+acks_decision: D-20260503-001
 ---
 
 # 해온 (海溫) — *손금 새벽을 매일 하는 자*
@@ -37,6 +41,10 @@ forbidden_language_grep_pass: true
 | terrain | 분포 (큰 산 ≠) |
 | 누적 시간 | 13 년 |
 | 1 차 chronicle 사건 | 사건 3 *낯선 흙 색조 1 점 발견* — 5 자국째 익명 자국 |
+
+## 일상 풍경
+
+변두리의 한 줄 골목. 새벽 다섯 시 반, 가로등이 아직 켜져 있고 옆집 문 닫히는 소리가 들린다. 손바닥을 펴는 30 분 동안 창밖으로 도시 한복판으로 가는 첫 버스가 한 대 지나간다. 평지 끝에 옅게 깔린 흙은 사방으로 옅어지지만, 매일 같은 자리에 같은 한 점이 다시 박혀 있다.
 
 ## 동기
 
@@ -85,8 +93,9 @@ forbidden_language_grep_pass: true
 
 | 컷 | 자리 | 출처 |
 |-----|-----|------|
-| ![손금 새벽](../../../worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-palm-line-dawn-v1.png) | §17.1 *손금 새벽* — 매일 새벽 손바닥 위에 자기 지도가 잠시 비친 한 컷 | visual-bible-v0.3 §17.1 |
-| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-haeon-v1.png) | 캐릭터 시트 — 27 자국째, 손금 새벽 정면 컷 (회화 톤 baseline) | cy-003 r2 art-director image |
+| ![§17.1 새벽 신발 v2](../../../worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-shoes-dawn-v2.png) | §17.1 *(이름 폐기 — 매일 새벽 현관에서 신발 한 켤레를 한 번 본다)* — 김제 변두리의 현관 문턱, 작은 신발 한 켤레 close-up + 신발 끝의 옅은 흙빛 + 들녘 옅은 평지 + 짧은 안개 한 자리 (D-001 vocabulary_shift palm closure carry, supersedes v1) | visual-bible-v0.6 §1·§3 |
+| ![캐릭터 시트 v2](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-haeon-v2.png) | 캐릭터 시트 v2 — 27 자국째, 손금 새벽 정면 + 어깨가 먼저 들썩이는 짧은 웃음의 결 (F-1251 응답: 셋 인물 분별 baseline 재측정) | cy-003 r4 art-director image (supersedes v1) |
+| ![캐릭터 시트 v1](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-haeon-v1.png) | 캐릭터 시트 v1 — 27 자국째, 손금 새벽 정면 컷 (회화 톤 baseline, superseded) | cy-003 r2 art-director image |
 
 > 확장 자리 (cy-003+ 후보):
 > - *5 자국째 익명 자국이 박힌 그 새벽*

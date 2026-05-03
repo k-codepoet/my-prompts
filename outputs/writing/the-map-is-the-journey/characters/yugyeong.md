@@ -14,10 +14,14 @@ authored_by: writer
 source_aggregate:
   - outputs/writing/the-map-is-the-journey/character-sheets-axis-v0.md §1
   - outputs/worldbuilding/the-map-is-the-journey/character-relations-v0.md §1·§3.2·§4
-illustrations: []
+illustrations:
+  - outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v2.png
 champions_keywords_primary: [연대]
 manifesto_direct_quote_count: 0
 forbidden_language_grep_pass: true
+region: 단양 (충북, 남한강 강가 한 줄 마을, vocabulary-shift v1)
+terrain_physical: 강가 (충북 단양, 남한강 강변)
+acks_decision: D-20260503-001
 ---
 
 # 유경 (柳敬) — *한 아이가 자기 종이 위를 가장 많이 걸은 사람*
@@ -31,11 +35,15 @@ forbidden_language_grep_pass: true
 | 항목 | 값 |
 |------|-----|
 | 축 | 가족 |
-| 자국째 해 (현재) | 38 (35 자국째 부터 매일 15 분) |
+| 자국째 해 (현재) | 42 (35 자국째 부터 매일 15 분 — 7 년째) |
 | 손금 새벽 | 새벽 15 분 |
 | terrain | 분포 + *함께 걸은 자리* (집 + 길 가) |
-| 누적 시간 | 3 년 누적 (현재) + 25–35 자국째 = 10 년 *아이 새벽 같이 본 자리* |
+| 누적 시간 | 7 년 누적 (현재) + 25–35 자국째 = 10 년 *아이 새벽 같이 본 자리* |
 | 1 차 chronicle 사건 | 사건 3 *낯선 흙 색조 1 점 발견* — 35 자국째 *아이 색조* (= 유리) |
+
+## 일상 풍경
+
+강가의 한 줄 마을. 새벽에 강 위로 옅은 안개가 낮게 깔리고, 윗집의 흙이 강을 따라 아랫집으로 흘러간다. 집 마당과 강가의 한 길이 같은 자리에서 만난다 — 25 자국째부터 35 자국째까지 한 아이의 작은 발자국이 그 길에 매일 같이 박혔다. 강을 따라 나란히 걸은 사람의 자국은 한 사람의 자국이 옅어진 후에도 다른 한 사람의 자국 옆에 한참 남는다.
 
 ## 동기
 
@@ -66,7 +74,7 @@ forbidden_language_grep_pass: true
 
 ## 외형 / 분위기
 
-- **나이**: 38 자국째 해 (중년 — 25 자국째 부터 아이 새벽 같이 본 13 년 + 35 자국째 부터 자기 새벽 다시 시작)
+- **나이**: 42 자국째 해 (중년 — 25 자국째 부터 아이 새벽 같이 본 17 년 + 35 자국째 부터 자기 새벽 다시 시작 7 년째)
 - **분위기**: 두 마음을 같이 두는 결 — 기쁨과 두려움, 안심과 서운함을 같은 자리에
 - **자세**: 손바닥을 한 번 가볍게 비비는 웃음 — 아이를 기다리던 습관에서 온 동작
 - **종이**: 큰 산 = 아이의 첫 자국 (어머니 자기 자국과 두 색조가 겹친 자리)
@@ -84,7 +92,7 @@ forbidden_language_grep_pass: true
 
 | 컷 | 자리 | 출처 |
 |-----|-----|------|
-| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v2.png) | 캐릭터 시트 — 38 자국째, 35 자국째 다시 펴는 손바닥 두 마음의 결 (회화 톤 baseline, v1 실사 드리프트 → v2 sumukhwa 정정) | cy-003 r2 art-director image |
+| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v2.png) | 캐릭터 시트 — 42 자국째 (35 자국째 다시 펴기 시작 7 년째), 두 마음의 결 (회화 톤 baseline, v1 실사 드리프트 → v2 sumukhwa 정정) | cy-003 r2 art-director image |
 
 > 확장 자리 (cy-003+ 후보):
 > - *35 자국째 해 다시 펴는 첫 새벽 — 두 색조가 겹친 손바닥*

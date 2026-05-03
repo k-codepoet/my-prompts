@@ -16,9 +16,13 @@ source_aggregate:
   - outputs/worldbuilding/the-map-is-the-journey/character-relations-v0.md §1·§3.2·§4
 illustrations:
   - outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-2-jeonghae-toes-one-direction-v1.png
+  - outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-jeonghae-v2.png  # supersedes character-sheet-jeonghae-v1.png (F-1251 응답 자리)
 champions_keywords_primary: [연대]
 manifesto_direct_quote_count: 0
 forbidden_language_grep_pass: true
+region: 정선 (강원, 산골 한 줄 마을, vocabulary-shift v1)
+terrain_physical: 산골 (강원 정선 비탈 한 줄 마을)
+acks_decision: D-20260503-001
 ---
 
 # 정해 (正解) — *손금 새벽을 한 번도 안 한 자*
@@ -37,6 +41,10 @@ forbidden_language_grep_pass: true
 | terrain | 발끝 방향 (분포) |
 | 누적 시간 | 0 년 누적 |
 | 동행자 | 희재 — *묻지 않은 채 같은 길 두 번* (17 자국째 + 24 자국째) |
+
+## 일상 풍경
+
+비탈의 좁은 길. 새벽이 길고 안개가 두껍다. 발끝은 골 아래 한 방향만 향해 있다. 한 줄 마을의 윗집 굴뚝 연기가 안개에 묻혀 거의 보이지 않는다. 골을 따라 부는 바람이 한 방향이라, *어디로 갈지* 를 정할 일이 그다지 없는 자리.
 
 ## 동기
 
@@ -84,7 +92,8 @@ forbidden_language_grep_pass: true
 | 컷 | 자리 | 출처 |
 |-----|-----|------|
 | ![발끝의 방향](../../../worldbuilding/the-map-is-the-journey/illustrations/stamp-17-2-jeonghae-toes-one-direction-v1.png) | §17.2 *발끝의 한 방향* — 매일 같은 곳을 가리키는 발끝 | visual-bible-v0.3 §17.2 |
-| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-jeonghae-v1.png) | 캐릭터 시트 — 27 자국째, 외투 주머니 + 발끝 정지의 측면 컷 (회화 톤 baseline) | cy-003 r2 art-director image |
+| ![캐릭터 시트 v2](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-jeonghae-v2.png) | 캐릭터 시트 v2 — 27 자국째, 외투 주머니 + 발끝 정지 + 두 박자 머무는 결론 안 박는 표정 (F-1251 응답: 셋 인물 분별 baseline 재측정) | cy-003 r4 art-director image (supersedes v1) |
+| ![캐릭터 시트 v1](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-jeonghae-v1.png) | 캐릭터 시트 v1 — 27 자국째, 외투 주머니 + 발끝 정지의 측면 컷 (회화 톤 baseline, superseded) | cy-003 r2 art-director image |
 
 > 확장 자리 (cy-003+ 후보):
 > - *어릴 때 한 번 시도하고 거둔 손* — 손바닥 따뜻해지기 직전

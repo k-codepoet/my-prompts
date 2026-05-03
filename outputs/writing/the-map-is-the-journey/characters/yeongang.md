@@ -16,9 +16,14 @@ source_aggregate:
   - outputs/worldbuilding/the-map-is-the-journey/character-relations-v0.md §2.1·§3.2·§4
 illustrations:
   - outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-7-yeongang-short-grain-v1.png
+  - outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yeongang-v1.png
+  - outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yeongang-v2.png
 champions_keywords_primary: [연대]
 manifesto_direct_quote_count: 0
 forbidden_language_grep_pass: true
+region: 정선 (강원, 산골 한 줄 마을, vocabulary-shift v1)
+terrain_physical: 산골 (강원 정선 산등성이 가장자리)
+acks_decision: D-20260503-001
 ---
 
 # 연강 (連岡) — *옆에 앉는 사람의 60 년*
@@ -41,6 +46,10 @@ forbidden_language_grep_pass: true
 ## 첫 모습
 
 이른 아침 산등성이의 벤치에 한 노인이 앉아 있다. 햇빛이 막 올라오고 있고, 그의 무릎에는 얇은 외투 한 자락이 덮여 있다. 그는 5 분쯤 앉아 있다 일어선다. 옆에 누군가가 와 앉으면 그 시간을 천천히 늘린다. 본인은 그 일어섬을 미루는 게 *친절* 이라고 생각한 적이 한 번도 없다 — 옆 사람이 일어설 때 한 박자 정도 마음이 가벼워 보이는 게 본인에게 따뜻한 일이었기 때문이다.
+
+## 일상 풍경
+
+비탈 위 한 줄 마을. 골을 따라 안개가 한 방향으로 천천히 깔린다. 60+ 자국째 해의 박자는 짧다 — 한 점이 박히기도 전에 다음 점이 다른 자리에 박힌다. 새벽 안개 속에서 손녀의 새 자국이 막 박히는 소리가 윗집과 아랫집 두 자리에서 동시에 들린다.
 
 ## 동기
 
@@ -108,8 +117,9 @@ forbidden_language_grep_pass: true
 
 | 컷 | 자리 | 출처 |
 |-----|-----|------|
-| ![짧음의 결](../../../worldbuilding/the-map-is-the-journey/illustrations/stamp-17-7-yeongang-short-grain-v1.png) | §17.7 *짧음의 결* — 60+ 자국째 노인의 1 분 새벽 | visual-bible-v0.4 §17.7 (PASS 강) |
-| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yeongang-v1.png) | 캐릭터 시트 — 60+ 자국째, 산등성이 벤치 정면 컷 (회화 톤 baseline) | cy-003 r2 art-director image |
+| ![캐릭터 시트 v2](/outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yeongang-v2.png) | 캐릭터 시트 v2 — 60+ 자국째, 산등성이 벤치 + 무릎 위 얇은 외투 + 옆자리 빈 자리 + 흰빛 머리 + 깊은 주름 (8-인물 풀 분별 baseline) | cy-003 r6 art-director image |
+| ![짧음의 결](/outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-7-yeongang-short-grain-v1.png) | §17.7 *짧음의 결* — 60+ 자국째 노인의 1 분 새벽 | visual-bible-v0.4 §17.7 (PASS 강) |
+| ![캐릭터 시트 v1](/outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yeongang-v1.png) | 캐릭터 시트 v1 — 60+ 자국째, 산등성이 벤치 정면 컷 (회화 톤 baseline) | cy-003 r2 art-director image (분별 차원 빈약 — v2 흡수) |
 
 > 확장 자리 (cy-003+ 후보):
 > - *산등성이 벤치 정면 — 얇은 외투 한 자락*

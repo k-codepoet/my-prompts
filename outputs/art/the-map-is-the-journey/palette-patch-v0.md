@@ -30,6 +30,8 @@ self_check_summary:
 
 # 시각 바이블 v0.3 → v0.4 팔레트 patch — 자국빛 3 색조 미세 분리 + 3 신규 인물 hex 정착 (연강 / 희재 / 유리)
 
+> **§0 Superseded by v0.1** (art-director r16 thin-bump 2026-05-03, tick-102) — 본 v0 §A~§F 본문 1:1 그대로 *현재 hex baseline*, 단 §B.3 + §C 표 안 *손금 새벽* / *손금* 4 hits (L99·L106·L117·L133) 어휘 자리는 D-20260503-001 vocabulary_shift palm closure (손금 새벽 이름 폐기 + 행동만) 후 **`palette-patch-v0.1.md` §1 rename mapping** 이 authoritative. hex 폭 (#5C4A36 / #C8995A / #B8884A 등) + 인물 시각 룰 본체 0 변경. 외부 cold reader = v0 본문 + v0.1 §0~§2 두 자리 함께 읽기 (post-supersede 포인터 stale 처치 art-director 측 4 호).
+
 > 본 patch 는 visual-bible v0.3 의 §2.6~§2.8 + §11 의 *부속 박음* — *전체 v0.4 발행은 r2 (6 우표 6 장 실측 묶음) 자리* (룰 B1 1 호). 본 patch = 시각 측 *팔레트 영역* 만 박음.
 > *룰 A6 정식 1 호 자가 적용* — 시각 산출 발행 전 팔레트 가이드 일치 검사 = 본 patch 가 evolution-rules-v1 §A.A6 정식 룰 진입 후 1 호 자가 적용 사례.
 > 본 patch 채택 시 visual-bible v0.3 §2.8 매트릭스 1 행 (`#C8995A`) → 3 행 (`#D4A766` / `#C8995A` / `#B8884A`) 격상 + §11 신설 §11.9 (연강) / §11.10 (희재) / §11.11 (유리).

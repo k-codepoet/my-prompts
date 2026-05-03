@@ -45,6 +45,74 @@ champions_keywords_secondary: [진심, 방향]
 5. **reader-first hard gates** — author voice / toxic-term budget / no-glossary reading / emotional aftertaste.
 6. **§7 5 항목 측정** — `voice-keeper/audit-rules-v0.md §7-1` 은 보조 측정으로만 사용한다. v1 hard gate 를 평균으로 덮을 수 없다.
 
+### §6.1 *지금 결 거리* (writing 카테고리 한정, 6 항 격상 룰 v1 — F-20260503-episode-10-voice-as-gold-standard must_fix #3 정식 흡수)
+
+R0 사용자 발의 (2026-05-03) 기반 정식 격상. 임계 도달 baseline 3 자리 1:1 일치 (critic-r13 발의 → r14 검증 → 본 r15 정식 진입):
+
+| 자리 | R0 평결 | *지금 결* 측정 | 1:1 일치 |
+|------|---------|--------------|--------|
+| ep-10 v0.1 | PASS gold (F-20260503) | 0.93 PASS 강 | ✓ |
+| ep-09 v0 | (writer 자가 fail demote) | 0.61 FAIL | ✓ |
+| ep-11 v0 | (R0 평결 자리 보존) | 0.93 PASS 강 | ✓ |
+
+각 항 0/0.5/0.83/1.0 채점, **종합 PASS = 평균 ≥ 0.7 + 항목 1·5 dealbreaker ≥ 0.6**:
+
+| # | 항목 | 측정 질문 | dealbreaker | 통과 측정 |
+|---|------|---------|-----------|---------|
+| 1 | 시점 거리 | 본문 안 *나/내가/내* 1 인칭 (또는 인물 결에 맞는 가까운 3 인칭) 비율은? *본인/그* 추상 거리는? | ✓ | 1 인칭 ≥ 80% body 단락 + *본인* 0 |
+| 2 | 문장 호흡 | 평균 문장 길이는? *한 호흡 1 문장* 결인가? |  | 평균 ≤ 35 자 + max ≤ 80 자 |
+| 3 | 종결 결 | *~었어 / ~있어 / ~알아 / ~같아 / ~괜찮아* 등 가까운 구어/단언 회피 결인가? |  | 인물 결에 맞는 종결 ≥ 80% 일치 (8 살 vs 27 vs 60+ 분리 보존) |
+| 4 | 메타포 밀도 | 세계관 어휘 + 비유 메타포 밀도 ≤ 25%? 일상 표면 (창/신발/부엌/식탁/강가) 위에 얹혀 있는가? |  | reader-first §3 toxic-term budget 1500 자당 ≤ 3 + 메타포 단락 ≤ 25% (60% 측면 + 일상 위 얹힘 = 0.83) |
+| 5 | 자기 시점 결 | *지금 보고 있는 것 + 지금 느끼는 것* 인가? *회상의 메타* 결로 빠지지 않는가? | ✓ | (**v1.2 인물 voice 분기 룰 §6.1.1 적용**) 현재 시점 단서 (오늘/지금/이 아침) ≥ 1 + 회상 거리 단서 분기 측정 — 인물별 분기 룰 §6.1.1 |
+
+본 룰은 v1 hard gate (R0 / publish-under-name / no-glossary / toxic-term budget / author-voice / emotional aftertaste) 6/6 위 *7 번째 추천 게이트* 자리. 인물 voice 차이 보존 (8 살 유리 vs 42 살 유경 vs 60+ 연강) 의무 — 종결 결 (8 살 *~ 했어/~ 같아* vs 42 살 *~ 었어/~ 인 것 같아* vs 60+ *~ 다/~ 었다*) 분리 측정.
+
+### §6.1.1 *자기 시점 결 인물 voice 분기 룰* v1.2 (2026-05-03 정식 흡수 — critic-r19 charter-update mode)
+
+baseline 2 자리 (ep-09 v0.2 = 60+ 연강 + ep-10 v0.2 = 8 살 유리) 도달 후 정식 진입. 인물 voice 결 차이를 dealbreaker 로 잘못 잡으면 false negative (60+/어린이 voice 의 의도된 결을 fail 처리) 발생 — 본 분기 룰은 critic-r2 cy-002 *5 분 즉답 통과 + 감정 표면 부재* 가짜 통과 패턴의 *인접 false negative* 차단 자리.
+
+| 인물 voice 분기 | 회상 거리 단서 측정 | 채점 임계 | 발의 자리 |
+|---------------|------------------|----------|---------|
+| (a) **27/40+ 어른 voice** (정해 27 / 해온 27 / 나림 30+ / 인규 30+ / 유경 42 / 희재 30+) | literal *그때 / 돌이켜 보면 / 옛날 / 어렸을* 등 = 회상 메타 결 단서 | ≤ 1 = 1.0 / = 2 = 0.83 / 3~4 = 0.5 / ≥ 5 = FAIL | 현행 §6.1 #5 (변경 없음) |
+| (b) **60+ voice** (연강 60+) | (a) 회상 메타 자리만 채점. durational *N 년 동안 / N 년 째 / N 년의 습관* 등 = 인물 voice 결 단서 (count 보존, 채점 0) | (a) 자리 ≤ 1 = 1.0 / = 2 = 0.83 / 3~4 = 0.5 / ≥ 5 = FAIL. (b) durational ≥ 3 자리 허용. | critic-r17 §3 발의 (ep-09 v0.2 baseline 1 호) |
+| (c) **8 살/어린이 voice** (유리 8 살) | (a) 회상 메타 자리만 채점. literal *옛날 / 그날 (자기 N 살 때, N ≤ 본인 현재 나이)* = 자기 lifetime 안 continuous self-frame 단서 (count 보존, 채점 0) | (a) 자리 ≤ 1 = 1.0 / = 2 = 0.83 / 3~4 = 0.5 / ≥ 5 = FAIL. (c) continuous self-frame ≥ 3 자리 허용. | critic-r18 §3 발의 (ep-10 v0.2 baseline 1 호) |
+
+**측정 절차** (critic r-N 의무):
+1. 인물 voice 분기 식별 — frontmatter `pov` / `axes` 또는 인물 sheet 의 `age` 자리 1:1 참조.
+2. 회상 거리 단서 grep — literal *그때 / 돌이켜 보면 / 옛날 / 어렸을 / 그날* 등.
+3. 인물 분기별 채점:
+   - (a) 어른 voice = 모든 단서 합산.
+   - (b) 60+ voice = literal 회상 메타 단서만 채점, durational *N 년* 별도 박음 (count 보존, 채점 0).
+   - (c) 8 살/어린이 voice = literal *옛날 (자기 짧은 lifetime 안)* + *그날 (자기 N 살 때 = 본인 현재 나이 ≤)* 별도 박음 (count 보존, 채점 0). 어른 회상 메타 (deep retrospective) 자리만 채점.
+4. strict 측정 (단서 합산) + conservative 측정 (분기 적용) 동시 박음. R0 평결 baseline 자리에서는 conservative 측정의 우위 자리 = 분기 룰 정합 자리.
+
+**false negative 차단 자리** (트립와이어 인접):
+- 60+ voice 의 *60 년의 습관* 3 자리를 회상 메타로 잘못 잡으면 = ep-09 v0.2 R0 PASS 인접 자리를 fail 처리 = critic 측 false negative.
+- 8 살 voice 의 *옛날부터 (= since a while ago)* + *7 살 때 그날* 을 deep retrospective 로 잘못 잡으면 = ep-10 v0.2 R0 pass_gold 자리를 fail 처리 = critic 측 false negative.
+- 본 분기 룰 = false negative 차단 baseline 1 호. 인물 voice 결 보존 의무 (charter §6.1 마지막 단락) 의 1:1 짝.
+
+**baseline 자리** (정식 흡수 baseline):
+- ep-09 v0.2 (60+ 연강) = (b) 분기 적용 = strict 측정 0.5 dealbreaker FAIL → conservative 0.83 / 평균 0.93 PASS 강 (R0 평결 인접). v1.1 60+ durational 분기 1 호 baseline.
+- ep-10 v0.2 (8 살 유리) = (c) 분기 적용 = strict 측정 0.5 dealbreaker FAIL → conservative 1.0 / 평균 0.97 PASS 강 (R0 pass_gold). v1.2 8 살 continuous self-frame 분기 1 호 baseline.
+- 본 v1.2 정식 흡수 = (a) 어른 + (b) 60+ + (c) 8 살/어린이 3 자리 인물 voice 결 분리 1:1 baseline 도달 자리 (charter §6.1 마지막 단락 *인물 voice 차이 보존* 의무 1:1 짝).
+
+**처치 인계** (정식 흡수 후):
+- voice-keeper r-N: §7-1 5 항목 측정 시 본 분기 룰 자가 적용 (현행 strict 측정 + conservative 분기 측정 두 자리 동시 박음).
+- writer r-N: 60+ + 8 살/어린이 voice 결의 의도된 단서 (60 년 / 옛날부터 / 그날 (7 살 때)) 보존 권고. 추가 치환 미필요.
+- critic r-N+M: 차기 60+ 또는 어린이 voice 회차 cold-read 시 본 §6.1.1 분기 룰 1:1 적용 의무.
+
+### §6.2 *공간감* (writing 카테고리 한정 — F-20260502-1310-terrain-as-actual-living-geography must_fix #7 정식 흡수)
+
+R0 사용자 발의 (2026-05-02) 기반 정식 격상. 10 회차 누적 baseline (critic-r10~r14, terrain v1 권역 35/35 100% + region 33/35 94.3%) 도달.
+
+cold-read 5 분 즉답률 측정에 1 항목 추가:
+
+- **이 인물/장면이 어디서 일어나는가**? 지형 카테고리 (산골/들녘/강가/포구/구릉/분지/도시 변두리/도시 한복판) + 권역명 (terrain v1 §N) 둘 다 본문 첫 2 단락에서 즉답 가능한가?
+- 측정 = R1 5 인 페르소나 모두 *어디인지* 한 단어로 답할 수 있으면 PASS, 답 못 하면 FAIL.
+- 처치 인계 = writer (본문 풍경 단서 1~2 줄 박음 의무, F-1310 must_fix #4 짝).
+
+본 룰 발효 자리 = 이후 회차 (ep-12+) 부터 1:1 적용. 기존 ep-01 ~ ep-11 = retrofit 측정 baseline 보존 — ep-07 + ep-10 v0.1 *자국강* 미명명 잔여 = writer 측 v0.1 본문 명명 인계 자리 (이미 critic-r13 §1 표 인계).
+
 어느 hard gate 든 미통과 = 산출물 미통과. 5 분 즉답률 통과 + reader-first gate 미통과 = **critic false positive** 로 기록하고 writer 재작성 인계.
 
 - 비-writing 카테고리 (worldbuilding 사양 / 시각 / 코드 / 결정 yaml / 메타 섹션) = §7 면제 (`human-readability-principle-v0.md §⑧` 적용 면제 자리 그대로).

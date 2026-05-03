@@ -1,0 +1,91 @@
+id: D-20260503-001
+type: C
+asked_at: '2026-05-03T00:00:00+00:00'
+deadline: null
+gen: 1
+cycle: cy-003
+parent_goal: G-WORLD-1
+title: 세계 톤 격하 — 우화 결 → 한국 일상 결 (어휘 + 권역 + 의식 동시 갱신)
+
+# Type C — 비전·세계 핵심 메타포 / 어휘 / 풍경 동시 변경. 사용자 직접 발의 + 1차 응답.
+
+context: |
+  사용자 R0 발의 누적 (2026-05-02 ~ 2026-05-03):
+
+  1. F-20260502-1216 — 글이 추상적, 손금/손바닥/자국 같은 세계관 단어가 사람 공감 안 옴.
+  2. F-20260502-1310 — terrain 이 사람 사는 지형이 아님. 실제 지형 + 8 인물 거주지 할당 필요.
+  3. F-20260503 (chat) — 자국강 같은 세계관 합성어 거부, 한국 지명 결.
+  4. F-20260503 (chat) — 손바닥 보는 행위 다른 메타포 고민. 결정: *이름 떼고 행동만* (현관에서 신발 한 번).
+  5. F-20260503 (chat) — 박기/박다/박음/박힘 거부. 결정: *적다* (시스템) + *남다* (흔적) 분리.
+  6. F-20260503 (chat) — 권역 6 자리 한국 지명 결정: 정선/김제/단양/통영/무주/성남 변두리.
+  7. F-20260503 (chat) — 메타포는 인물 행동·대사에서 간혹만. 서술자 어휘는 평이한 한국어.
+
+  본 결정은 위 7 자리를 1 호 Type C 로 묶는다. constitution invariant #1 (매니페스토 정렬) + #2 (단일 진실 = bible) 두 자리 영향.
+
+options:
+  - id: picked
+    summary: 한국 일상 결 격하 — 6 권역 한국 지명 + 의식 이름 폐기 + 어휘 평이화 + 메타포 룰 강화
+    cost: |
+      대규모. bible §4·§6 + terminology-layers + regions v1 + terrain v1 + 인물 시트 8 자리 +
+      forbidden-dialogue + visual-bible + 단편 11 자리 본문 grep 1:1 치환.
+      단계별 진행 — Type C 결정 trace 가 단계 추적.
+    supporters: [orchestrator, writer, critic, voice-keeper, loremaster]
+    objectors: []
+  - id: rejected_keep_as_is
+    summary: 현 baseline (우화 결 + 합성 권역명 + 손금 새벽 의식) 유지
+    cost: 사용자 R0 7 자리 누적 미해소 — reader-first standard 위반 지속.
+    supporters: []
+    objectors: [orchestrator, writer, critic]
+
+recommended: picked
+trace: generations/gen-001/cycles/cy-003/decision-traces/D-20260503-001.md
+
+response:
+  decided_at: '2026-05-03T00:00:00+00:00'
+  picked: picked
+  notes: |
+    사용자 직접 채택 (chat). 한 turn 안 단계별 진행:
+    1. vocabulary-shift-v1.md (전역 매핑표) 적기 — 단일 진실
+    2. 랜딩 6 권역 한국 지명 카드 갱신
+    3. (다음 turn) 인물 시트 8 자리 frontmatter region 갱신
+    4. (다음 turn) 단편 11 자리 본문 grep 1:1 치환
+    5. (다음 turn) bible §4 + terminology-layers + forbidden-dialogue + visual-bible 짝 갱신
+
+vocabulary_shift:
+  손바닥/손금: 신발 (현관 신발 한 번)
+  손금 새벽: (이름 폐기 — *매일 새벽 현관에서 신발 한 번 본다* 행동만)
+  자국 (흔적 의미): 다녀온 자리 / 어제 다녀온 길 / 흔적 / 묻은 흙
+  박다/박음 (시스템·기록): 적다
+  박다/박힘 (단편 안 흔적): 남다
+  결 (메타포): 평이화 — 결을 *느낌 / 결정 / 방식* 등 일상어로
+  자리 (메타포): 평이화 — *자리* 는 그대로 두되 *~의 자리* 추상 합성 회피
+
+region_mapping_v2:
+  새벽재: 정선 (강원, 산골 한 줄 마을)
+  옅은들: 김제 (전라, 만경평야)
+  느릿내: 단양 (충북, 남한강 강변)
+  마른포: 통영 (경남, 작은 포구)
+  늘재: 무주 (전라, 분지)
+  빽빽골: 성남 변두리 (인규 거주)
+
+resident_mapping:
+  정선: [정해, 연강, 희재]
+  김제: [해온(어릴 때), 유리(자라는 자리)]
+  김제 변두리 또는 김제: [해온(현재 도시 변두리 결)]
+  단양: [유경, 유리]
+  통영: []
+  무주: [나림]
+  성남 변두리: [인규]
+
+metaphor_rule:
+  서술자_어휘: 평이한 한국어 (메타포 ≤ 첫 1500자 안 3 회)
+  허용: 인물의 행동·대사·생각 안에서 가끔
+  금지: 추상 합성어 (자국강 / 손금 새벽 / 굳은마을 / 박힘 등)
+  측정: critic 5분 cold-read + voice-keeper §7
+
+acks_feedback:
+  - F-20260502-1216-general-writing-too-abstract
+  - F-20260502-1310-terrain-as-actual-living-geography
+  - F-20260503-region-names-as-korean-toponyms
+  - F-20260503-palm-reading-metaphor-deliberation
+  - F-20260503-episode-10-voice-as-gold-standard

@@ -42,6 +42,8 @@ manifesto_inline_quotes: 0
 
 # 시각 바이블 v0.4 — *thin-bump baseline 박음 자리* (8 우표 풀 + 8 인 hex 매트릭스 + 자국빛 4 종 분포)
 
+> **§0 Superseded by v0.5** (art-director r11 thin-bump 2026-05-03) — 본 v0.4 §1~§3 *thin-bump baseline pointer* 1:1 그대로 *현재 baseline*, 단 §22 *8 지형 시각 룰* + §23 *6 권역 시각 톤* + §17 *우표 배경 결 한 열* 3 자리 신규 baseline 은 **`visual-bible-v0.5.md` §1~§4 baseline pointer** 가 authoritative. 외부 cold reader = v0.3 본문 + v0.4 §0~§10 + v0.5 §0~§10 세 자리 함께 읽기 (loremaster r4 *post-supersede 포인터 stale* 처치 자가 적용 art-director 측 2 호).
+
 > **본 v0.4 = thin-bump 박음 자리 — v0.3 본문 0 변경 + §17 8 우표 풀 baseline + §11 8 인 hex 매트릭스 baseline + §13 자국빛 4 종 분포 baseline 3 자리 신규 박음**.
 > v0.3 §1~§16 + §18~§21 본문은 1:1 그대로 *현재 baseline* — 외부 cold reader 진입 시 v0.3 직접 읽기 의무 (본 v0.4 = pointer 자리 형식).
 > **3 신규 baseline = palette-patch-v0 (cy-002 r1 자리) + stamps-extension-v0 (cy-002 r3 spec 자리) + r3 image 2 장 (cy-002 r3 image 자리) 의 *thin-bump 흡수 1 호 사례***.
@@ -71,7 +73,7 @@ manifesto_inline_quotes: 0
 | §17.2 *발끝 한 방향* | 정해 | 나 | 진심 + 방향 | 0% | r5 baseline 후보 |
 | §17.3 *박물관 12 색조* | 나림 | 나 | 연대 (겹쳐짐) | `#C8995A` 12 변종 안 1 자리 | r5 baseline 후보 |
 | §17.4 *함께 걸은 자리* | 유경 + 유리 | 가족 | 연대 (나란함) + 시간이 곧 나 | `#D4A766` + `#C8995A` + `#B8884A` 3 변종 | r5 baseline 후보 |
-| §17.5 *옆에 앉은 자* | 인규 + 200 cluster | 업 | 연대 (받음) + 방향 | `#D4A766` ≤ 0.5% | r5 baseline 후보 |
+| **§17.5 *옆에 앉은 자*** | **인규 + 200 cluster** | **업** | **연대 (받음) + 방향** | **자국빛 0%** (cy-003 r4 v0 = *답 안 박는 결* 시각 본체 → 받음 색조 0% 박음, charter §시각 단서 1:1 흡수) | **cy-003 r4 image 박음 ✓** (`stamp-17-5-ingyu-side-chair-empty-v0.png`) |
 | §17.6 *쉼의 자리만* | 부재 | 횡단 | 축복 + 시간이 곧 나 | `#C8995A` 1~3% (1 회 예외) | r5 baseline 후보 |
 | **§17.7 *짧음의 결*** | **연강** | **업** | **축복 + 시간이 곧 나** | **`#C8995A` ≤ 0.3%** | **r3 image 박음 ✓** (`stamp-17-7-yeongang-short-grain-v1.png`) |
 | **§17.8 *나란히 두 새벽*** | **희재** (정해 짝) | **나** | **연대 (나란함) + 진심** | **0%** | **r3 image 박음 ✓** (`stamp-17-8-huijae-side-by-side-dawns-v1.png`) |

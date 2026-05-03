@@ -34,6 +34,7 @@
 | 2026-05-02T12:31:04+00:00 | illustration | 캐릭터 시트 — 희재 (熙在, 27, 나 축). 해 질 무렵 길가, 발끝 내려다보는 머쓱한 가벼움. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-huijae-v1.png` | writer+art-director (cy-003 r2 character-sheet image) |
 | 2026-05-02T12:31:04+00:00 | illustration | 캐릭터 시트 — 유리 (柳里, 8, 가족 → 나). 작은 책상 앞 첫 단독 손금 새벽, 8 살의 두 마음. | `outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yuri-v1.png` | writer+art-director (cy-003 r2 character-sheet image) |
 | 2026-05-02T12:38:27+00:00 | illustration | 캐릭터 시트 — 유경 (柳敬, 38, 가족 축). 35 자국째 다시 펴는 손바닥, 두 마음의 결. (v2 sumukhwa 톤 재생성) | `outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-yugyeong-v1.png` | writer+art-director (cy-003 r2 character-sheet image — yugyeong v2 sumukhwa retake) |
+| 2026-05-03T12:18:00+00:00 | illustration | 우표 §17.1 v2 — 해온 *(이름 폐기 — 매일 새벽 현관에서 신발 한 켤레를 한 번 본다)*. 김제 변두리 현관 문턱의 작은 신발 한 켤레 close-up + 신발 끝 옅은 흙빛 + 들녘 평지 + 짧은 안개. (D-001 vocabulary_shift palm closure carry, supersedes v1 palm-line) | `outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-1-haeon-shoes-dawn-v2.png` | tick:cy-003/104 (art-director r18 image — palm closure 후 v2 baseline) |
 
 ---
 

@@ -16,9 +16,13 @@ source_aggregate:
   - outputs/worldbuilding/the-map-is-the-journey/character-relations-v0.md §2.2·§3.2·§4
 illustrations:
   - outputs/worldbuilding/the-map-is-the-journey/illustrations/stamp-17-8-huijae-side-by-side-dawns-v1.png
+  - outputs/worldbuilding/the-map-is-the-journey/illustrations/character-sheet-huijae-v2.png  # supersedes character-sheet-huijae-v1.png (F-1251 응답 자리)
 champions_keywords_primary: [연대]
 manifesto_direct_quote_count: 0
 forbidden_language_grep_pass: true
+region: 정선 (강원, 산골 한 줄 마을, vocabulary-shift v1)
+terrain_physical: 산골 (강원 정선, 정해와 같은 권역)
+acks_decision: D-20260503-001
 ---
 
 # 희재 (熙在) — *묻지 않은 채 같은 길을 두 번 걸은 사람*
@@ -41,6 +45,10 @@ forbidden_language_grep_pass: true
 ## 첫 모습
 
 해 질 무렵의 길가에 한 사람이 잠시 멈춰 서 있다. 외투 주머니에 손을 넣은 채 발끝의 방향을 내려다보고 있다. 본인은 길의 갈래에서 자주 멈추지만, 멈추는 시간이 길지는 않다. 한 호흡 들이마시고 발끝이 가리키는 쪽으로 다시 걷는다. 본인은 그 한 호흡을 *고민* 이라고 부르지 않는다. *습관* 이라고도 부르지 않는다. 부를 단어가 없다는 게 본인에게는 가벼운 일이다 — 머쓱한 가벼움이지만, 가벼움인 것은 맞다.
+
+## 일상 풍경
+
+비탈의 좁은 길. 정해의 마을과 같은 새벽재 안 — 한 골 두 마을 자리. 안개가 길고 같은 방향으로 분다. 두 번 겹친 자국 (17 자국째 + 24 자국째) 이 같은 안개를 통과한 자리. 골을 따라 걷다 보면 옆 마을의 굴뚝 연기와 자기 마을의 굴뚝 연기가 같은 안개에 묻혀 같은 한 색조로 보인다.
 
 ## 동기
 
@@ -107,7 +115,8 @@ forbidden_language_grep_pass: true
 | 컷 | 자리 | 출처 |
 |-----|-----|------|
 | ![나란히 두 새벽](../../../worldbuilding/the-map-is-the-journey/illustrations/stamp-17-8-huijae-side-by-side-dawns-v1.png) | §17.8 *나란히 두 새벽* — 정해의 자국 위에 시간차 1 일 ~ 1 주로 박힌 희재의 자국 | visual-bible-v0.4 §17.8 (PASS 조건부) |
-| ![캐릭터 시트](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-huijae-v1.png) | 캐릭터 시트 — 27 자국째, 해 질 무렵 길가 외투 주머니 측면 컷 (회화 톤 baseline) | cy-003 r2 art-director image |
+| ![캐릭터 시트 v2](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-huijae-v2.png) | 캐릭터 시트 v2 — 27 자국째, 해 질 무렵 길가 외투 주머니 + 입꼬리만 살짝 올라가는 머쓱한 가벼움 (F-1251 응답: 셋 인물 분별 baseline 재측정) | cy-003 r4 art-director image (supersedes v1) |
+| ![캐릭터 시트 v1](../../../worldbuilding/the-map-is-the-journey/illustrations/character-sheet-huijae-v1.png) | 캐릭터 시트 v1 — 27 자국째, 해 질 무렵 길가 외투 주머니 측면 컷 (회화 톤 baseline, superseded) | cy-003 r2 art-director image |
 
 > 확장 자리 (cy-003+ 후보):
 > - *해 질 무렵 길가의 정면 — 외투 주머니, 발끝*

@@ -1,0 +1,34 @@
+id: F-20260503-episode-10-voice-as-gold-standard
+created_at: '2026-05-03T00:00:00+00:00'
+source: chat:user
+reader_role: R0
+artifact: outputs/writing/the-map-is-the-journey/episode-10-mom-has-her-own-dawn.md
+verdict: pass_gold
+status: open
+target_orgs: [writer, critic, voice-keeper]
+notes: |
+  사용자 발의 (2026-05-03):
+  > "10회차같이 자기시점에서 말하는거 좋음"
+
+  10 회차 = episode-10-mom-has-her-own-dawn.md (8 살 유리 1인칭, *나 / 엄마 / 강가 한 줄 마을 / 부엌의 작은 창 / 두 마음*).
+  사용자 PASS gold standard 박음 자리 = paired-dawns-v0.1 §2 유리 (1인칭 어린이 voice) 의 발전형.
+
+  voice 골자:
+  - **시점**: 1인칭, 가까운 거리. *본인* / *그* 추상화 회피.
+  - **문장 길이**: 짧다. 평균 ≤ 25 자. 한 문장 한 결.
+  - **종결**: *~ 었어 / ~ 있어 / ~ 알아* 어린이/구어 톤 또는 단언 회피의 *~ 인 것 같아* / *~ 그 정도* 결.
+  - **메타포 밀도**: ≤ 25%. 일상 표면 (창 / 신발 / 부엌 / 식탁 / 강가) 위에 메타포가 얹힘.
+  - **감정 명명**: 일상어 (따뜻함 / 신기함 / 두 마음 / 기뻤어 / 무섭지 않았어).
+  - **풍경 단서**: 첫 1~2 단락에 *어디인지* 박음 (강가 한 줄 마을의 우리 집 / 부엌 옆 작은 창 등).
+  - **자기 시점**: *내가 지금 보고 있는 것 + 지금 느끼는 것* — 회상의 메타가 아니라 *지금* 의 결.
+
+  처치 방향 (다음 회차/재작성):
+  - writer: 11 회차 + 12 회차 (cy-003+) = 본 voice 결 1:1 baseline. 회차마다 풍경 단서 첫 2 단락 박음 의무 + 메타포 밀도 25% 이하 + 자기 시점 1인칭.
+  - voice-keeper: §7 5 항목 측정에 *자기 시점 거리* 항목 추가 후보 (현재는 사람·상황·감정 + 메타포 밀도 + 일상 위 박음 + 요약 가능성). 6 항목 격상 1 호 발의 자리.
+  - critic: cold-read 5 분 즉답률 측정에 *지금 보고 있는 결인가* 항목 추가 후보.
+  - 인물별 voice 분리: 8 살 유리 voice (10 회차) ≠ 60+ 연강 voice (3 회차 §1, 3인칭 보존) ≠ 27 정해 voice (4 회차, 1인칭 단정형) — 각 인물 voice 차이 보존하면서 *자기 시점* 결만 공통 baseline.
+must_fix:
+  - writer: 11 회차 부터 1인칭 (또는 인물 결에 맞는 시점) + 풍경 단서 첫 2 단락 + 메타포 밀도 ≤ 25% baseline 박음 의무.
+  - voice-keeper: §7 *자기 시점 거리* 6 항목 격상 발의 자리 박음.
+  - critic: cold-read 5 분 측정에 *지금* 결 항목 신규 발의.
+  - 사용자 PASS gold 박음 = paired-dawns-v0.1 §2 + episode-10 두 자리. 다음 회차들이 본 두 자리 voice 결 1:1 자가 측정 의무.

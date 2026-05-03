@@ -1,0 +1,46 @@
+id: stamp-17-5-ingyu-side-chair-empty-v0
+created_at: '2026-05-02T18:46:00+00:00'
+creator: art-director (cy-003 r4 image — visual-bible §17.5 인규 자리 신규 stamp 1 자리 박음)
+category: stamp
+caption: |
+  *옆 의자가 비어 있는 자리에 인규가 차분히 앉아 옆 사람의 새벽을 깨우지 않으려는
+  자세를 짓는 한 컷*. 답을 박지 않는 결의 시각 본체. visual-bible v0.4 §17.5
+  인규 자리 = 기존 후보 자리에 v0 신규 박음. stamps-extension-v0 §1 *옆자리가 비어
+  있는 결* 시각 룰 1 호 직접 흡수 자리 + episode-06 *옆에 앉는 일* (writer r4)
+  hero/POV 짝의 art-director 측 신규 stamp 응답.
+prompt: |
+  traditional Korean ink-and-wash painting (sumukhwa) on rice paper, painterly
+  brushwork visible, restrained sepia and dust-ochre palette, three-quarter side
+  composition of two simple wooden chairs side by side in a small quiet room, the
+  right chair empty, the left chair occupied by a Korean man in his early forties
+  seated calmly with both hands clasped softly on his knees palms not opened, gaze
+  level toward the empty seat with quiet attentiveness, faint smile only at the
+  corners of the eyes mouth held nearly still, light grey-brown hair short and
+  slightly thinned at temples, one or two faint lines at the corners of the mouth
+  and eyes, grey-brown linen shirt sleeves rolled once, dark grey-brown trousers,
+  dark overcoat draped over the back of his own chair, single fluorescent light
+  strip casting calm even artificial light, pale beige wall wash background, low
+  wooden side table in the foreground, palette around #42321F slightly heavier
+  than the room tone, restrained empty-companion-seat composition, no second
+  figure visible, NOT photograph
+negative_prompt: |
+  photorealistic, photograph, realistic skin texture, 3D render, CGI, hyperrealism,
+  modern photograph, studio photo, glossy, plastic skin, duplicate face, identical
+  features, same character repeated, twin brothers, young face, late twenties face,
+  second person visible, two figures, companion in chair
+workflow: z-image-turbo
+binds:
+  - generations/gen-001/cycles/cy-003/arguments/art-director-r3.md (§4.3 stamp prompt baseline + §4.2 spec 1 자리 표)
+  - outputs/art/the-map-is-the-journey/stamps-extension-v0.md (§1 *옆자리가 비어 있는 결* 시각 룰 1 호 직접 흡수)
+  - outputs/art/the-map-is-the-journey/visual-bible-v0.4.md (§17.5 인규 자리 + §11.5 hex `#42321F`)
+  - outputs/art/the-map-is-the-journey/tone-lock-v0.md (§2 + §3 baseline)
+  - outputs/writing/the-map-is-the-journey/episode-06-sit-beside.md (writer r4 *옆에 앉는 일* 1:1 응답)
+acks_feedback:
+  - F-20260502-1252-content-illustrations-routing
+source_artifact: outputs/writing/the-map-is-the-journey/characters/ingyu.md
+source_section: "## 시각 단서"
+size: 1024x1024
+genai_origin_url: https://genai.home.codepoet.site/outputs/2026/05/02/42d55717-7322-4878-8ec1-e23bc5e38be6.png
+supersedes: null
+stamp_id: 17-5
+stamp_pool: visual-bible-v0.4 §17 (8 우표 풀)
